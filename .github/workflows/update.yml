@@ -20,14 +20,15 @@ jobs:
         with:
           python-version: '3.12'
 
-      # AGGIUNGI QUESTO STEP PER INSTALLARE NODE.JS (Necessario per yt-dlp)
+      # --- 1. CONFIGURA NODE.JS (Necessario per yt-dlp) ---
       - name: Configura Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Installa e aggiorna yt-dlp
-        run: pip install --upgrade yt-dlp
+      # --- 2. INSTALLA YT-DLP CON LE DIPENDENZE DEFAULT ---
+      - name: Installa e aggiorna yt-dlp con le dipendenze default
+        run: pip install --upgrade "yt-dlp[default]"
 
       - name: Crea il file dei cookie dal Secret
         run: echo "${{ secrets.YT_COOKIES }}" > cookies.txt
