@@ -49,11 +49,12 @@
           "referer": "https://video.gjirafa.com/"
         },
         {
-        "id": "debat-plus",
-        "name": "Debat Plus",
-        "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/debat-plus.jpg",
-        "type": "offline",
-        "message": "Ska debat sonte kap futja gjum se han rre"
+          "id": "debat-plus",
+          "name": "Debat Plus",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/debat-plus.jpg",
+          "type": "hls",
+          "url": "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1792885568/ei/3-7catPNOvaYsfIPhu6nmQo/ip/20.171.23.113/id/53xVo5qd3ag.1/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr4---sn-aj2im9-5q.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AWzQHwqWZ_b3kxDjhzL_GhrcB2Gqg-aRVmiIVjmF0iLmx6V3H9vGiDXGyavpvDbixxcXomuMTZ1riTrT/spc/mpRQ_52y44AQn2mw5zo8QoRiKq-WoNJ8zKImgWetNRwW5pXcAXvC8q0PSCcb/vprv/1/ns/h3wNFPF8TUBenIfKxRKCl7kZ/reg/0/playlist_type/DVR/met/1792863969,/mh/02/mm/44/mn/sn-aj2im9-5q/ms/lva/mv/u/mvi/4/pl/16/rms/lva,lva/dover/11/pacing/0/epbp/1/keepalive/yes/fexp/51565115/n/w-y2Nfd-0hnjlA/mt/1792863650/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,ns,reg,playlist_type/sig/AE0s2JYwRQIhALYBYLWiDCfRZuQTXnykDh7eNPIERDoWgBxuTpzy1eixAiAgDKMSjKr9pV_ZPbH0rniv8aOQE4-u0vfe5wsGs78KKA%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIgVqrCM9NGrmmmTVhLfW1dWqjLR_jxXI39YLy8c9HWdGgCIQDzgW9fkRpCchdMp2ZrQjJ6bYSBHawlTcbtqy9ZEPUNWA%3D%3D/playlist/index.m3u8",
+          "liveVideoId": "53xVo5qd3ag"
         },
         {
           "id": "rtk-group",
