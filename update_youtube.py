@@ -5,7 +5,7 @@ from zoneinfo import ZoneInfo
 
 import yt_dlp
 
-YOUTUBE_URL = "https://www.youtube.com/@TopChannelAlbania/live"
+YOUTUBE_URL = "https://www.youtube.com/@DukagjiniTV/live"
 ITEM_ID = "debat-plus"
 
 TZ = ZoneInfo("Europe/Rome")
