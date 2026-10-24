@@ -301,7 +301,6 @@ def video_ts(info):
             pass
     return None
 
-
 def search_video(film, min_ts, tab=None):
     """Primo video del canale col titolo giusto, uscito dopo min_ts.
 
@@ -322,17 +321,19 @@ def search_video(film, min_ts, tab=None):
         if info.get("live_status") == "is_upcoming":
             print("  premiere ancora in attesa di iniziare")
             return None
+        
         ts = video_ts(info)
-        if ts is not None and ts < min_ts:
-            return None  # il più recente col titolo giusto è di una settimana vecchia
+        # --- MODIFICA: Commentiamo questo controllo per accettare i video vecchi ---
+        # if ts is not None and ts < min_ts:
+        #     return None  # il più recente col titolo giusto è di una settimana vecchia
+        
         m3u8 = pick_m3u8(info)
         if not m3u8:
             print("  video trovato ma senza flusso m3u8 (forse ancora in elaborazione)")
             return None
         return info, m3u8
     return None
-
-
+  
 def set_link(item, info, m3u8, now):
     item["type"] = "hls"
     item["url"] = m3u8
