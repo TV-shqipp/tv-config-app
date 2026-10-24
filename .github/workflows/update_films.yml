@@ -1,0 +1,75 @@
+name: Aggiorna Filma Shqip
+
+on:
+  schedule:
+    # Finestre serali di venerdì e sabato (ore UTC: coprono sia ora legale sia solare)
+    - cron: '*/5 17-22 * * 5,6'
+    # Ogni ora: rinnovo dei link e controlli di recupero
+    - cron: '7 * * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Test: cerca subito l ultimo film di ogni canale'
+        type: boolean
+        default: false
+
+# Serializza gli aggiornamenti con Debat Plus: entrambi modificano config.json.
+concurrency:
+  group: update-debat
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update-films:
+    runs-on: ubuntu-latest
+    env:
+      FORCE: ${{ inputs.force }}
+    steps:
+      - name: Clona il repository
+        uses: actions/checkout@v4
+
+      - name: Configura Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Controllo veloce senza rete: se non c'è niente da fare, il resto viene saltato
+      - name: Decidi se c e qualcosa da fare
+        id: gate
+        run: python update_films.py --plan
+
+      - name: Configura Node.js
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Installa yt-dlp e il solver JS
+        if: steps.gate.outputs.run == 'true'
+        run: pip install --upgrade "yt-dlp[default]" yt-dlp-ejs
+
+      - name: Crea il file dei cookie dal Secret
+        if: steps.gate.outputs.run == 'true'
+        env:
+          YT_COOKIES: ${{ secrets.YT_COOKIES }}
+        run: printf '%s\n' "$YT_COOKIES" > cookies.txt
+
+      - name: Esegui lo script
+        if: steps.gate.outputs.run == 'true'
+        run: python update_films.py
+
+      - name: Salva il config su GitHub
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "action@github.com"
+          git add config.json
+          if git diff --staged --quiet; then
+            echo "Nessuna modifica da committare."
+          else
+            git commit -m "Aggiornati film Filma Shqip"
+            git pull --rebase origin main
+            git push
+          fi
