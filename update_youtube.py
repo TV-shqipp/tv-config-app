@@ -11,9 +11,8 @@ def get_live_m3u8(url):
         'cookiefile': 'cookies.txt',
         'verbose': True,  # temporaneo: toglilo quando funziona
         'js_runtimes': {'node': {}},
-        'remote_components': ['ejs:github'],
         'extractor_args': {
-            'youtube': {'player_client': ['web', 'tv']}
+            'youtube': {'player_client': ['web_safari', 'web']}
         },
     }
     try:
