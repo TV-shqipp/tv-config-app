@@ -223,7 +223,7 @@ def due_task(film, item, now):
                 and not throttled(item, now, CATCHUP_MIN)):
             return "search"
     else:
-        # Prima che la live venga trovata, la cerco ogni 5 minuti per 2 ore
+        # Prima che la live venga trovata, la cerco ogni minuto per 2 ore
         # dall'orario previsto. Una volta trovata, conto le 2 ore dall'inizio
         # effettivo della diretta, se YouTube fornisce quel dato.
         is_current_live = found and item.get("state") == "live"
@@ -263,9 +263,10 @@ def extract(url):
         return ydl.extract_info(url, download=False)
 
 
-def list_channel(film):
+def list_channel(film, tab=None):
     import yt_dlp
-    tab = "videos" if film["mode"] == "upload" else "streams"
+    if tab is None:
+        tab = "videos" if film["mode"] == "upload" else "streams"
     url = f"https://www.youtube.com/{film['channel']}/{tab}"
     opts = base_opts()
     opts.update({"extract_flat": "in_playlist", "playlistend": 25})
@@ -299,16 +300,26 @@ def video_ts(info):
     return None
 
 
-def search_video(film, min_ts):
-    """Primo video del canale col titolo giusto, uscito dopo min_ts. Ritorna (info, m3u8) o None."""
-    for entry in list_channel(film):
+def search_video(film, min_ts, tab=None):
+    """Primo video del canale col titolo giusto, uscito dopo min_ts.
+
+    Le premiere (anteprime) su YouTube hanno live_status == "is_upcoming"
+    prima di iniziare: NON vanno scartate, vanno rilevate ma restituendo None
+    finché non hanno un flusso m3u8 (cioè finché non partono). Al ciclo
+    successivo, quando sono diventate "is_live", vengono restituite.
+    """
+    for entry in list_channel(film, tab):
         if not title_ok(entry.get("title"), film):
             continue
+        # Il canale ci dice già che è una premiere non ancora partita:
+        # la riprenderemo al prossimo giro.
         if entry.get("live_status") == "is_upcoming":
-            continue
+            print(f"  premiere programmata: {entry.get('title')}")
+            return None
         info = extract(f"https://www.youtube.com/watch?v={entry['id']}")
         if info.get("live_status") == "is_upcoming":
-            continue
+            print("  premiere ancora in attesa di iniziare")
+            return None
         ts = video_ts(info)
         if ts is not None and ts < min_ts:
             return None  # il più recente col titolo giusto è di una settimana vecchia
@@ -362,108 +373,23 @@ def run_task(film, item, task, now):
         return
 
     if task == "live":
+        # 1) Tenta il flusso live diretto. Funziona per vere dirette,
+        #    ma NON per le premiere (YouTube non le espone su /live
+        #    finché non partono).
         try:
             info = extract(f"https://www.youtube.com/{film['channel']}/live")
+            title = info.get("title")
+            if (info.get("is_live") or info.get("live_status") == "is_live") and title_ok(title, film):
+                m3u8 = pick_m3u8(info)
+                if not m3u8:
+                    print("  in diretta ma senza flusso m3u8")
+                    return
+                set_link(item, info, m3u8, now)
+                item["week"] = wk
+                print(f"  diretta trovata: {title}")
+                return
+            if title:
+                print(f"  in diretta ma con un altro titolo: {title}")
         except Exception as e:
             msg = str(e).lower()
-            if "not currently live" in msg or "is not live" in msg:
-                print("  canale non in diretta")
-                return
-            raise
-        title = info.get("title")
-        if not (info.get("is_live") or info.get("live_status") == "is_live"):
-            print("  non in diretta")
-            return
-        if not title_ok(title, film):
-            print(f"  in diretta ma con un altro titolo: {title}")
-            return
-        m3u8 = pick_m3u8(info)
-        if not m3u8:
-            print("  in diretta ma senza flusso m3u8")
-            return
-        set_link(item, info, m3u8, now)
-        item["week"] = wk
-        print(f"  diretta trovata: {title}")
-        return
-
-    # task == "search"
-    item["lastTry"] = iso(now)
-    if FORCE:
-        min_ts = (now - timedelta(days=8)).timestamp()
-    else:
-        min_ts = (sched - timedelta(hours=3)).timestamp()
-    result = search_video(film, min_ts)
-    if not result:
-        print("  nessun video nuovo trovato")
-        return
-    info, m3u8 = result
-    set_link(item, info, m3u8, now)
-    item["week"] = wk
-    if since >= (RECHECK_UPLOAD_MIN if film["mode"] == "upload" else LIVE_MIN):
-        item["recheck"] = wk
-    print(f"  video trovato: {info.get('title')}")
-
-
-# ------------------------------------------------------------------------ main
-def write_output(run):
-    path = os.environ.get("GITHUB_OUTPUT")
-    if path:
-        with open(path, "a", encoding="utf-8") as f:
-            f.write(f"run={'true' if run else 'false'}\n")
-
-
-def main():
-    now = datetime.now(TZ)
-    data = load_config()
-    changed = ensure_group(data)
-
-    work = []
-    for film in FILMS:
-        item = find_item(data, film["id"])
-        if item is None:
-            continue
-        task = "search" if FORCE else due_task(film, item, now)
-        if task is None and refresh_needed(item, now):
-            task = "refresh"
-        if task:
-            work.append((film, item, task))
-
-    print(f"Ora italiana: {now:%Y-%m-%d %H:%M}")
-    for film, _, task in work:
-        print(f"- {film['name']}: {task}")
-    run = bool(work) or changed
-
-    if PLAN:
-        if not run:
-            print("Niente da fare.")
-        write_output(run)
-        return
-
-    if not run:
-        print("Niente da fare.")
-        return
-
-    for film, item, task in work:
-        print(f"[{film['name']}] {task}")
-        before = json.dumps(item, sort_keys=True)
-        try:
-            run_task(film, item, task, now)
-        except Exception as e:  # errore di rete/anti-bot: non tocco il resto
-            print(f"  errore: {e}")
-        if task != "refresh" and refresh_needed(item, now):
-            try:
-                do_refresh(item, now)
-            except Exception as e:
-                print(f"  errore nel rinnovo: {e}")
-        if json.dumps(item, sort_keys=True) != before:
-            changed = True
-
-    if changed:
-        save_config(data)
-        print("config.json aggiornato.")
-    else:
-        print("Nessuna modifica necessaria.")
-
-
-if __name__ == "__main__":
-    main()
+            if
