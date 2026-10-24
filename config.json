@@ -8,12 +8,12 @@
       "subtitle": "Albania e Kosovo",
       "icon": "",
       "items": [
-        {
+       {
           "id": "klan-kosova",
           "name": "Klan Kosova",
           "icon": "",
           "type": "dynamic_hls",
-          "pageUrl": "https://stream.klankosova.tv/",
+          "pageUrl": "https://klankosova.tv/tv",
           "referer": "https://klankosova.tv/"
         },
         {
