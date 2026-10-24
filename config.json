@@ -6,12 +6,12 @@
       "id": "tv",
       "title": "Canali TV",
       "subtitle": "Albania e Kosovo",
-      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/canale.png",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/canale.png",
       "items": [
         {
           "id": "klan-kosova",
           "name": "Klan Kosova",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/klan-kosova.webp",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/klan-kosova.webp",
           "type": "dynamic_hls",
           "pageUrl": "https://klankosova.tv/tv",
           "referer": "https://klankosova.tv/"
@@ -19,7 +19,7 @@
         {
           "id": "rtk-sat",
           "name": "RTK Sat",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/rtk-sat.png",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtk-sat.png",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/rtk-sat/index.m3u8",
           "referer": "https://video.gjirafa.com/"
@@ -27,7 +27,7 @@
         {
           "id": "atv",
           "name": "ATV Kosova",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/atv.png",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/atv.png",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/0nj-g63-92x-few/index.m3u8",
           "referer": "https://video.gjirafa.com/"
@@ -35,7 +35,7 @@
         {
           "id": "rtv-21",
           "name": "RTV 21",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/rtv-21.jpg",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtv-21.jpg",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/2cz-npl-jfn-9he/index.m3u8",
           "referer": "https://video.gjirafa.com/"
@@ -43,7 +43,7 @@
         {
           "id": "ktv",
           "name": "KTV Kohavision",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/ktv.jpg",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/ktv.jpg",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/lj9-pxm-o53-rp0/index.m3u8",
           "referer": "https://video.gjirafa.com/"
@@ -51,7 +51,7 @@
         {
           "id": "debat-plus",
           "name": "Debat Plus",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/debat-plus.jpg",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/debat-plus.jpg",
           "type": "hls",
           "url": "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1792885568/ei/3-7catPNOvaYsfIPhu6nmQo/ip/20.171.23.113/id/53xVo5qd3ag.1/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr4---sn-aj2im9-5q.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AWzQHwqWZ_b3kxDjhzL_GhrcB2Gqg-aRVmiIVjmF0iLmx6V3H9vGiDXGyavpvDbixxcXomuMTZ1riTrT/spc/mpRQ_52y44AQn2mw5zo8QoRiKq-WoNJ8zKImgWetNRwW5pXcAXvC8q0PSCcb/vprv/1/ns/h3wNFPF8TUBenIfKxRKCl7kZ/reg/0/playlist_type/DVR/met/1792863969,/mh/02/mm/44/mn/sn-aj2im9-5q/ms/lva/mv/u/mvi/4/pl/16/rms/lva,lva/dover/11/pacing/0/epbp/1/keepalive/yes/fexp/51565115/n/w-y2Nfd-0hnjlA/mt/1792863650/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,ns,reg,playlist_type/sig/AE0s2JYwRQIhALYBYLWiDCfRZuQTXnykDh7eNPIERDoWgBxuTpzy1eixAiAgDKMSjKr9pV_ZPbH0rniv8aOQE4-u0vfe5wsGs78KKA%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIgVqrCM9NGrmmmTVhLfW1dWqjLR_jxXI39YLy8c9HWdGgCIQDzgW9fkRpCchdMp2ZrQjJ6bYSBHawlTcbtqy9ZEPUNWA%3D%3D/playlist/index.m3u8",
           "liveVideoId": "53xVo5qd3ag"
@@ -60,34 +60,34 @@
           "id": "rtk-group",
           "title": "Rtk-Group",
           "subtitle": "RTK 1, 2, 3, 4 (Richiede VPN)",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/rtk-group.png",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtk-group.png",
           "type": "group",
           "items": [
             {
               "id": "rtk1",
               "name": "RTK 1",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/rtk-1.png",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtk-1.png",
               "type": "dynamic_hls",
               "pageUrl": "https://www.rtklive.com/sq/livestream/rtk1/"
             },
             {
               "id": "rtk2",
               "name": "RTK 2",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/rtk-2.png",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtk-2.png",
               "type": "dynamic_hls",
               "pageUrl": "https://www.rtklive.com/sq/livestream/rtk2/"
             },
             {
               "id": "rtk3",
               "name": "RTK 3",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/rtk-3.png",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtk-3.png",
               "type": "dynamic_hls",
               "pageUrl": "https://www.rtklive.com/sq/livestream/rtk3/"
             },
             {
               "id": "rtk4",
               "name": "RTK 4",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/rtk-4.png",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtk-4.png",
               "type": "dynamic_hls",
               "pageUrl": "https://www.rtklive.com/sq/livestream/rtk4/"
             }
