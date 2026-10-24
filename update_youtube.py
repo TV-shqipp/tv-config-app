@@ -1,7 +1,8 @@
 import yt_dlp
 import json
 
-YOUTUBE_URL = "https://www.youtube.com/@DukagjiniTV/live"
+# Mettiamo Top Channel Albania per il test
+YOUTUBE_URL = "https://www.youtube.com/@TopChannelAlbania/live"
 
 def get_live_m3u8(url):
     # Forza yt-dlp a restituire la Master Playlist HLS (.m3u8) combinata
