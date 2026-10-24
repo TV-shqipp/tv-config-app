@@ -1,11 +1,5 @@
-"""Filma Shqip: tiene aggiornati nel config.json i link dei film presi da YouTube.
+"""Filma Shqip: tiene aggiornati nel config.json i link dei film presi da YouTube."""
 
-Uso:
-  python update_films.py --plan   -> dice solo se c'è qualcosa da fare (non usa la rete)
-  python update_films.py          -> esegue i controlli e aggiorna config.json
-  FORCE=true python update_films.py  (o --force)
-                                  -> test: cerca subito l'ultimo film di ogni canale
-"""
 import json
 import os
 import re
@@ -20,19 +14,16 @@ TZ = ZoneInfo("Europe/Rome")
 UTC = timezone.utc
 
 # ---------------------------------------------------------------- impostazioni
-REFRESH_HOURS = 5          # il link viene rinnovato ogni 5 ore
-EXPIRE_MARGIN_MIN = 90     # ...o prima, se mancano meno di 90 minuti alla scadenza
-RECHECK_UPLOAD_MIN = 90    # film caricati: secondo controllo dopo 1h30 dall'inizio
-LIVE_MIN = 120             # dirette: dopo 2 ore smetto di chiedere "è in live?"
-RETRY_MIN = 15             # pausa tra due tentativi di ricerca (ricontrolli)
-CATCHUP_MIN = 60           # pausa tra tentativi se il film della settimana manca
-CATCHUP_MAX_MIN = 72 * 60  # smetto di cercare il film di una settimana dopo 72 ore
+REFRESH_HOURS = 5
+EXPIRE_MARGIN_MIN = 90
+RECHECK_UPLOAD_MIN = 90
+LIVE_MIN = 120
+RETRY_MIN = 15
+CATCHUP_MIN = 60
+CATCHUP_MAX_MIN = 72 * 60
 
 OFFLINE_MESSAGE = "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
 
-# day: 0=lunedì ... 4=venerdì, 5=sabato   time: ora italiana
-# mode "upload": video caricato, controllo per `window` minuti dall'orario
-# mode "live"  : diretta, controllo ogni 5 minuti per 2 ore dall'orario
 FILMS = [
     {
         "id": "edhe-malet-flasin",
@@ -81,15 +72,12 @@ FILMS = [
 FORCE = os.environ.get("FORCE", "").lower() == "true" or "--force" in sys.argv
 PLAN = "--plan" in sys.argv
 
-
 # --------------------------------------------------------------------- utilità
 def norm(text):
-    """Minuscolo, senza accenti né punteggiatura (così 'Rrugët' = 'rruget')."""
     text = unicodedata.normalize("NFKD", text or "")
     text = "".join(c for c in text if not unicodedata.combining(c))
     text = re.sub(r"[^\w\s]", " ", text.lower())
     return re.sub(r"\s+", " ", text).strip()
-
 
 def title_ok(title, film):
     t = norm(title)
@@ -97,14 +85,11 @@ def title_ok(title, film):
         return False
     return not any(norm(x) in t for x in film["exclude"])
 
-
 def minutes_between(a, b):
     return (a.astimezone(UTC) - b.astimezone(UTC)).total_seconds() / 60
 
-
 def iso(dt):
     return dt.astimezone(UTC).isoformat(timespec="seconds")
-
 
 def parse_iso(text):
     try:
@@ -112,9 +97,7 @@ def parse_iso(text):
     except (TypeError, ValueError):
         return None
 
-
 def last_occurrence(day, hhmm, now):
-    """L'ultima volta (<= adesso) in cui è scattato quel giorno/ora della settimana."""
     h, m = map(int, hhmm.split(":"))
     cand = now.replace(hour=h, minute=m, second=0, microsecond=0)
     cand -= timedelta(days=(now.weekday() - day) % 7)
@@ -122,45 +105,34 @@ def last_occurrence(day, hhmm, now):
         cand -= timedelta(days=7)
     return cand
 
-
 def expire_of(url):
     m = re.search(r"/expire/(\d+)", url or "") or re.search(r"[?&]expire=(\d+)", url or "")
     return int(m.group(1)) if m else None
 
-
 def throttled(item, now, gap_min):
     last = parse_iso(item.get("lastTry"))
     return last is not None and minutes_between(now, last) < gap_min
-
 
 # --------------------------------------------------------------------- config
 def load_config():
     with open(CONFIG_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
 
-
 def save_config(data):
     with open(CONFIG_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
-
 def ensure_group(data):
-    """Crea (se manca) il gruppo 'Filma Shqip' dentro la sezione 'tv' con i 4 film."""
     tv = next((s for s in data.get("sections", []) if s.get("id") == "tv"), None)
     if tv is None:
-        print("Sezione 'tv' non trovata nel config.")
         return False
     changed = False
     items = tv.setdefault("items", [])
     group = next((i for i in items if i.get("id") == GROUP_ID), None)
     if group is None:
         group = {
-            "id": GROUP_ID,
-            "title": "Filma Shqip",
-            "subtitle": "Filme shqiptare",
-            "icon": "",
-            "type": "group",
-            "items": [],
+            "id": GROUP_ID, "title": "Filma Shqip", "subtitle": "Filme shqiptare",
+            "icon": "", "type": "group", "items": [],
         }
         items.append(group)
         changed = True
@@ -168,15 +140,11 @@ def ensure_group(data):
     for film in FILMS:
         if not any(i.get("id") == film["id"] for i in sub):
             sub.append({
-                "id": film["id"],
-                "name": film["name"],
-                "icon": "",
-                "type": "offline",
-                "message": OFFLINE_MESSAGE,
+                "id": film["id"], "name": film["name"], "icon": "",
+                "type": "offline", "message": OFFLINE_MESSAGE,
             })
             changed = True
     return changed
-
 
 def find_item(data, item_id):
     for section in data.get("sections", []):
@@ -187,70 +155,50 @@ def find_item(data, item_id):
                         return sub
     return None
 
-
 # ------------------------------------------------------------ cosa c'è da fare
 def refresh_needed(item, now):
     if item.get("type") != "hls" or not item.get("videoId"):
         return False
     updated = parse_iso(item.get("linkUpdated"))
-    if updated is None:
-        return True
-    if minutes_between(now, updated) >= REFRESH_HOURS * 60:
-        return True
+    if updated is None: return True
+    if minutes_between(now, updated) >= REFRESH_HOURS * 60: return True
     exp = expire_of(item.get("url", ""))
-    if exp and (exp - now.timestamp()) / 60 < EXPIRE_MARGIN_MIN:
-        return True
+    if exp and (exp - now.timestamp()) / 60 < EXPIRE_MARGIN_MIN: return True
     return False
 
-
 def due_task(film, item, now):
-    """Ritorna 'search', 'live' oppure None (il rinnovo del link si valuta a parte)."""
     sched = last_occurrence(film["day"], film["time"], now)
     wk = sched.isoformat()
     since = minutes_between(now, sched)
     found = item.get("week") == wk
 
     if film["mode"] == "upload":
-        if since <= film["window"] and not found:
-            return "search"
+        if since <= film["window"] and not found: return "search"
         if (RECHECK_UPLOAD_MIN <= since <= 240 and item.get("recheck") != wk
-                and not throttled(item, now, RETRY_MIN)):
-            return "search"
-        # Se il video non è stato trovato, cerchiamo sempre (anche video vecchi)
+                and not throttled(item, now, RETRY_MIN)): return "search"
         if (not found and (since <= CATCHUP_MAX_MIN or item.get("type") == "offline")
-                and not throttled(item, now, CATCHUP_MIN)):
-            return "search"
+                and not throttled(item, now, CATCHUP_MIN)): return "search"
     else:
         is_current_live = found and item.get("state") == "live"
         if not is_current_live:
-            if since < LIVE_MIN:
-                return "live"
+            if since < LIVE_MIN: return "live"
             live_since = since
         else:
             started = parse_iso(item.get("liveStartedAt")) or sched
             live_since = minutes_between(now, started)
-            if live_since < LIVE_MIN:
-                return None
+            if live_since < LIVE_MIN: return None
         
-        # Se non c'è la diretta, cerchiamo sempre (anche video vecchi)
         if ((LIVE_MIN <= live_since <= CATCHUP_MAX_MIN or item.get("type") == "offline") 
                 and item.get("recheck") != wk
-                and not throttled(item, now, RETRY_MIN)):
-            return "search"
+                and not throttled(item, now, RETRY_MIN)): return "search"
     return None
-
 
 # --------------------------------------------------------------------- YouTube
 def base_opts():
     return {
-        "format": "best",
-        "simulate": True,
-        "quiet": True,
-        "cookiefile": "cookies.txt",
-        "js_runtimes": {"node": {}},
-        "extractor_args": {"youtube": {"player_client": ["web_safari", "web"]}},
+        "format": "best", "simulate": True, "quiet": True, "cookiefile": "cookies.txt",
+        "js_runtimes": {"node": {}}, "extractor_args": {"youtube": {"player_client": ["web_safari", "web"]}},
     }
-
 
 def extract(url):
     import yt_dlp
@@ -259,49 +207,38 @@ def extract(url):
     with yt_dlp.YoutubeDL(opts) as ydl:
         return ydl.extract_info(url, download=False)
 
-
 def list_channel(film, tab=None):
     import yt_dlp
     if tab is None:
         tab = "videos" if film["mode"] == "upload" else "streams"
     url = f"https://www.youtube.com/{film['channel']}/{tab}"
     opts = base_opts()
-    opts.update({"extract_flat": "in_playlist", "playlistend": 25})
+    # AUMENTATO A 50: così trova i video anche se ci sono molte news nel canale
+    opts.update({"extract_flat": "in_playlist", "playlistend": 50})
     with yt_dlp.YoutubeDL(opts) as ydl:
         info = ydl.extract_info(url, download=False)
     return [e for e in ((info or {}).get("entries") or []) if e and e.get("id")]
 
-
 def pick_m3u8(info):
-    """Seleziona l'HLS con lo stesso criterio già verificato in Debat Plus."""
     for fmt in reversed(info.get("formats") or []):
         url = fmt.get("url") or ""
         protocol = str(fmt.get("protocol") or "")
-        if ".m3u8" in url or protocol.startswith("m3u8"):
-            return url
-    # Stessi fallback usati dallo script Debat Plus.
+        if ".m3u8" in url or protocol.startswith("m3u8"): return url
     return info.get("manifest_url") or info.get("url")
-
 
 def video_ts(info):
     ts = info.get("release_timestamp") or info.get("timestamp")
-    if ts:
-        return ts
+    if ts: return ts
     date = info.get("upload_date")
     if date:
         try:
             day = datetime.strptime(date, "%Y%m%d").replace(tzinfo=TZ)
-            return (day + timedelta(days=1)).timestamp() - 1  # fine giornata
-        except ValueError:
-            pass
+            return (day + timedelta(days=1)).timestamp() - 1
+        except ValueError: pass
     return None
 
-
 def search_video(film, min_ts, tab=None):
-    """Cerca il video più recente. Restituisce (info, m3u8, is_this_week)."""
-    # Per le live cerchiamo sia nei video normali che negli stream passati
     tabs = ["videos", "streams"] if film["mode"] == "live" and tab is None else [tab] if tab else ["videos"]
-    
     for current_tab in tabs:
         try:
             entries = list_channel(film, current_tab)
@@ -310,10 +247,7 @@ def search_video(film, min_ts, tab=None):
             continue
             
         for entry in entries:
-            if not title_ok(entry.get("title"), film):
-                continue
-            
-            # Se è una premiere in attesa, la saltiamo per cercare il video vecchio
+            if not title_ok(entry.get("title"), film): continue
             if entry.get("live_status") == "is_upcoming":
                 print(f"  premiere programmata: {entry.get('title')} (salto per cercare video vecchi)")
                 continue
@@ -324,9 +258,7 @@ def search_video(film, min_ts, tab=None):
                 print(f"  errore estrazione: {e}")
                 continue
                 
-            if info.get("live_status") == "is_upcoming":
-                continue
-
+            if info.get("live_status") == "is_upcoming": continue
             ts = video_ts(info)
             m3u8 = pick_m3u8(info)
             
@@ -334,7 +266,6 @@ def search_video(film, min_ts, tab=None):
                 print("  video trovato ma senza flusso m3u8")
                 continue
             
-            # Controlliamo se il video è di questa settimana o è vecchio
             is_this_week = True
             if ts is not None and ts < min_ts:
                 is_this_week = False
@@ -343,9 +274,7 @@ def search_video(film, min_ts, tab=None):
                 print(f"  trovato video recente: {info.get('title')}")
                 
             return info, m3u8, is_this_week
-            
     return None, None, False
-
 
 def set_link(item, info, m3u8, now):
     item["type"] = "hls"
@@ -356,18 +285,13 @@ def set_link(item, info, m3u8, now):
     item["state"] = "live" if live else "vod"
     item["linkUpdated"] = iso(now)
     if live:
-        # Se YouTube fornisce l'istante di inizio, usalo per contare le 2 ore
-        # dall'inizio effettivo della diretta, non dall'orario programmato.
         started = info.get("release_timestamp") or info.get("timestamp")
-        if started:
-            item["liveStartedAt"] = iso(datetime.fromtimestamp(started, UTC))
-        elif not item.get("liveStartedAt"):
-            item["liveStartedAt"] = iso(now)
+        if started: item["liveStartedAt"] = iso(datetime.fromtimestamp(started, UTC))
+        elif not item.get("liveStartedAt"): item["liveStartedAt"] = iso(now)
     else:
         item.pop("liveStartedAt", None)
     item.pop("message", None)
     item.pop("pageUrl", None)
-
 
 def do_refresh(item, now):
     info = extract(f"https://www.youtube.com/watch?v={item['videoId']}")
@@ -377,7 +301,6 @@ def do_refresh(item, now):
         return
     set_link(item, info, m3u8, now)
     print("  link rinnovato")
-
 
 def run_task(film, item, task, now):
     sched = last_occurrence(film["day"], film["time"], now)
@@ -404,10 +327,8 @@ def run_task(film, item, task, now):
             if title:
                 print(f"  in diretta ma con un altro titolo: {title}")
         except Exception as e:
-            msg = str(e).lower()
-            if "not currently live" not in msg and "is not live" not in msg:
-                raise
-            print("  canale non in diretta")
+            # FIX: Non facciamo crashare tutto se /live dà errore, passiamo ai video normali
+            print(f"  errore su /live: {e}. Passo alla ricerca nel canale...")
 
         print("  cerco la premiere/video nel canale...")
         item["lastTry"] = iso(now)
@@ -417,8 +338,7 @@ def run_task(film, item, task, now):
         
         if result_info and result_m3u8:
             set_link(item, result_info, result_m3u8, now)
-            if is_this_week:
-                item["week"] = wk
+            if is_this_week: item["week"] = wk
             print(f"  video/premiere trovato: {result_info.get('title')}")
         return
 
@@ -436,15 +356,11 @@ def run_task(film, item, task, now):
         return
         
     set_link(item, result_info, result_m3u8, now)
-    
-    # Salviamo la "settimana" solo se è davvero il video nuovo
     if is_this_week:
         item["week"] = wk
         if since >= (RECHECK_UPLOAD_MIN if film["mode"] == "upload" else LIVE_MIN):
             item["recheck"] = wk
-            
     print(f"  video trovato: {result_info.get('title')}")
-
 
 # ------------------------------------------------------------------------ main
 def write_output(run):
@@ -452,7 +368,6 @@ def write_output(run):
     if path:
         with open(path, "a", encoding="utf-8") as f:
             f.write(f"run={'true' if run else 'false'}\n")
-
 
 def main():
     now = datetime.now(TZ)
@@ -462,13 +377,10 @@ def main():
     work = []
     for film in FILMS:
         item = find_item(data, film["id"])
-        if item is None:
-            continue
+        if item is None: continue
         task = "search" if FORCE else due_task(film, item, now)
-        if task is None and refresh_needed(item, now):
-            task = "refresh"
-        if task:
-            work.append((film, item, task))
+        if task is None and refresh_needed(item, now): task = "refresh"
+        if task: work.append((film, item, task))
 
     print(f"Ora italiana: {now:%Y-%m-%d %H:%M}")
     for film, _, task in work:
@@ -476,8 +388,7 @@ def main():
     run = bool(work) or changed
 
     if PLAN:
-        if not run:
-            print("Niente da fare.")
+        if not run: print("Niente da fare.")
         write_output(run)
         return
 
@@ -490,7 +401,7 @@ def main():
         before = json.dumps(item, sort_keys=True)
         try:
             run_task(film, item, task, now)
-        except Exception as e:  # errore di rete/anti-bot: non tocco il resto
+        except Exception as e:
             print(f"  errore: {e}")
         if task != "refresh" and refresh_needed(item, now):
             try:
@@ -505,7 +416,6 @@ def main():
         print("config.json aggiornato.")
     else:
         print("Nessuna modifica necessaria.")
-
 
 if __name__ == "__main__":
     main()
