@@ -1,55 +1,62 @@
-import subprocess
 import json
+import subprocess
+import sys
 import os
 
-# Canali YouTube da monitorare
-CHANNELS = {
-    "debat-plus": "https://www.youtube.com/@ufc",
-    "rtk1": "https://www.youtube.com/@RTKOfficial/live"
-}
+# Percorso del tuo config.json (assicurati che sia corretto per il tuo repository)
+CONFIG_PATH = "app/src/main/assets/config.json"  # o "config.json" a seconda di dove lo hai messo
 
-def get_direct_stream_url(youtube_url):
+# Link del canale live di Dukagjini
+CHANNEL_URL = "https://www.youtube.com/@DukagjiniTV/live"
+
+def get_live_video_id(url):
+    """Usa yt-dlp per estrarre solo l'ID del video, senza scaricare il flusso"""
     try:
-        # Usa yt-dlp per estrarre il link HLS diretto (.m3u8) della live
-        cmd = ["yt-dlp", "-g", "--no-warnings", youtube_url]
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=20)
-        if result.returncode == 0:
-            urls = result.stdout.strip().splitlines()
-            if urls:
-                return urls[0]
-    except Exception as e:
-        print(f"Errore con {youtube_url}: {e}")
-    return None
+        # --get-id dice a yt-dlp di stampare solo l'ID e uscire
+        result = subprocess.run(
+            ["yt-dlp", "--get-id", url],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        video_id = result.stdout.strip()
+        # Un ID di YouTube è lungo 11 caratteri
+        if len(video_id) == 11:
+            return video_id
+        return None
+    except subprocess.CalledProcessError as e:
+        print(f"Errore durante l'estrazione dell'ID: {e}")
+        return None
 
-def update_config():
-    config_path = "config.json"
-    if not os.path.exists(config_path):
-        print("File config.json non trovato.")
+def update_config(video_id):
+    """Legge, modifica e risalva il config.json"""
+    if not os.path.exists(CONFIG_PATH):
+        print(f"File non trovato: {CONFIG_PATH}")
         return
 
-    with open(config_path, "r", encoding="utf-8") as f:
+    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
         config = json.load(f)
 
     updated = False
     for section in config.get("sections", []):
         for item in section.get("items", []):
-            channel_id = item.get("id")
-            if channel_id in CHANNELS:
-                yt_url = CHANNELS[channel_id]
-                print(f"Cerco la diretta per: {item['name']}...")
-                direct_url = get_direct_stream_url(yt_url)
-                if direct_url:
-                    item["url"] = direct_url
-                    item["type"] = "hls"  # Trasforma in flusso HLS nativo per ExoPlayer!
+            if item.get("id") == "debat-plus":
+                if video_id:
+                    item["url"] = video_id
                     updated = True
-                    print(f"Trovato! Link diretto inserito.")
+                    print(f"Trovata diretta! Nuovo ID: {video_id}")
                 else:
-                    print(f"Nessuna live attiva trovata al momento per {item['name']}.")
+                    print("Nessuna diretta trovata o ID non valido.")
+                break
 
     if updated:
-        with open(config_path, "w", encoding="utf-8") as f:
+        with open(CONFIG_PATH, "w", encoding="utf-8") as f:
             json.dump(config, f, indent=2, ensure_ascii=False)
-        print("config.json aggiornato con successo.")
+        print("config.json aggiornato con successo!")
+    else:
+        print("config.json non modificato.")
 
 if __name__ == "__main__":
-    update_config()
+    print("Ricerca della diretta YouTube di Debat Plus...")
+    new_video_id = get_live_video_id(CHANNEL_URL)
+    update_config(new_video_id)
