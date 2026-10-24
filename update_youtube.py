@@ -4,7 +4,7 @@ import os
 
 # Canali YouTube da monitorare
 CHANNELS = {
-    "debat-plus": "https://www.youtube.com/@DukagjiniTV/live",
+    "debat-plus": "https://www.youtube.com/@ufc",
     "rtk1": "https://www.youtube.com/@RTKOfficial/live"
 }
 
