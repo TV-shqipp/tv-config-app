@@ -1,38 +1,39 @@
 import json
 import subprocess
-import sys
 import os
+import sys
 
-# Percorso del tuo config.json (assicurati che sia corretto per il tuo repository)
-CONFIG_PATH = "app/src/main/assets/config.json"  # o "config.json" a seconda di dove lo hai messo
+# 👇 ASSICURATI CHE QUESTO PERCORSO SIA CORRETTO 👇
+CONFIG_PATH = "app/src/main/assets/config.json" 
 
-# Link del canale live di Dukagjini
 CHANNEL_URL = "https://www.youtube.com/@DukagjiniTV/live"
 
 def get_live_video_id(url):
-    """Usa yt-dlp per estrarre solo l'ID del video, senza scaricare il flusso"""
     try:
-        # --get-id dice a yt-dlp di stampare solo l'ID e uscire
-        result = subprocess.run(
-            ["yt-dlp", "--get-id", url],
-            capture_output=True,
-            text=True,
-            check=True
-        )
+        # Aggiungiamo un User-Agent finto per non farci riconoscere come bot
+        cmd = [
+            "yt-dlp",
+            "--get-id",
+            "--no-warnings",
+            "--user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            url
+        ]
+        
+        result = subprocess.run(cmd, capture_output=True, text=True, check=True)
         video_id = result.stdout.strip()
+        
         # Un ID di YouTube è lungo 11 caratteri
         if len(video_id) == 11:
             return video_id
         return None
     except subprocess.CalledProcessError as e:
-        print(f"Errore durante l'estrazione dell'ID: {e}")
+        print(f"Errore durante l'estrazione (forse non c'è la diretta?): {e.stderr}")
         return None
 
 def update_config(video_id):
-    """Legge, modifica e risalva il config.json"""
     if not os.path.exists(CONFIG_PATH):
-        print(f"File non trovato: {CONFIG_PATH}")
-        return
+        print(f"❌ File non trovato: {CONFIG_PATH}")
+        sys.exit(1) # Fa fallire l'azione se il file non c'è, così te ne accorgi
 
     with open(CONFIG_PATH, "r", encoding="utf-8") as f:
         config = json.load(f)
@@ -44,17 +45,17 @@ def update_config(video_id):
                 if video_id:
                     item["url"] = video_id
                     updated = True
-                    print(f"Trovata diretta! Nuovo ID: {video_id}")
+                    print(f"✅ Trovata diretta! Nuovo ID: {video_id}")
                 else:
-                    print("Nessuna diretta trovata o ID non valido.")
+                    print("❌ Nessuna diretta trovata o canale offline. Il file resta invariato.")
                 break
 
     if updated:
         with open(CONFIG_PATH, "w", encoding="utf-8") as f:
             json.dump(config, f, indent=2, ensure_ascii=False)
-        print("config.json aggiornato con successo!")
+        print("✅ config.json aggiornato con successo!")
     else:
-        print("config.json non modificato.")
+        print("Nessuna modifica necessaria.")
 
 if __name__ == "__main__":
     print("Ricerca della diretta YouTube di Debat Plus...")
