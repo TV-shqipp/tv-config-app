@@ -147,13 +147,14 @@
               "name": "Nusja me shkollë",
               "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/nusjameshkoll.jpg",
               "type": "hls",
-              "lastTry": "2026-10-24T20:25:20+00:00",
-              "url": "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1792895130/ei/ORTdapHUNNCYsfIPkdvZ6A4/ip/172.182.225.196/id/6b64c64d24f7e3e0/itag/96/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D50256641%3Bdur%3D3105.297%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1792828768177833/sgovp/clen%3D1022181716%3Bdur%3D3105.240%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1792828762539570/rqh/1/hls_chunk_host/rr5---sn-2imern7r.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/cps/545/met/1792873529,/mh/el/mm/18,29/mn/sn-2imern7r,sn-2imeyn7r/ms/aub,rdu/mv/m/mvi/5/pl/14/rms/aub,aub/force_finished/1/initcwndbps/8066625/bui/AWzQHwoKBOw5Wn2KV36F6IoCRgEdK88TlVP1Keu_TC7a4_pBp10kygwzIRhbiHxD5VXdaOXGucpLpU7X/spc/mpRQ_8PbI4uV6Fpme5WERjALaRZDBAamuAazO51YsCfYg9T_-pnwJ_zAMeHZEuXxIWMnGryDFv_ZBxs/vprv/1/ns/PKPBfqenbrKO6XD1X-IZfKEZ/playlist_type/CLEAN/dover/11/txp/3309224/epbp/1/mt/1792873265/fvip/1/keepalive/yes/fexp/51565115/n/p5gFYwHbqAJ6VA/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,force_finished,bui,spc,vprv,ns,playlist_type/sig/AE0s2JYwRgIhAMbzh3cr2GLQ2CaPrlX3JhihbaG4j_50aHFoj4aflttsAiEAh4E90f4FC5V2uYeEqqFNfL-hIbir7pm-1SF0CTXnnu4%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRQIhAIXtYKiZjQuqrNVBNzfZGbONO0ZyymwehB_M7pPk1J4WAiBbsMMo4sGquWUrdzCpi-a3LV9mCeDBdAYhaErttDeWHw%3D%3D/playlist/index.m3u8",
+              "lastTry": "2026-10-24T21:01:54+00:00",
+              "url": "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1792897318/ei/xhzdapHkA_uV-LAP4KLCiAs/ip/68.211.146.29/id/6b64c64d24f7e3e0/itag/96/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D50256641%3Bdur%3D3105.297%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1792828768177833/sgovp/clen%3D1022181716%3Bdur%3D3105.240%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1792828762539570/rqh/1/hls_chunk_host/rr3---sn-2onja5-5i.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/cps/314/met/1792875718,/mh/el/mm/18,26/mn/sn-2onja5-5i,sn-5uaezned/ms/aub,onr/mv/u/mvi/3/pl/20/rms/aub,aub/force_finished/1/bui/AWzQHwrQJJCvTFzj8Qpgozi8xrI-qSLMbnofZsufd69Bgpzr8xs31024-0bbkf3GJMKhO_J49t7vqmBK/spc/mpRQ_4rDyF6nP_VugrTTUz2CblVfkrX_bf0ETeU0ME6jLwUgsZWAJuWCTF27U9vJQaG7PbzV2yY9PlI/vprv/1/ns/68jeBbbAwnV7Cr40kF0wKkcZ/playlist_type/CLEAN/dover/11/txp/3309224/epbp/1/mt/1792875228/fvip/1/keepalive/yes/fexp/51565115/n/7hnDhfHaexsPtQ/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,force_finished,bui,spc,vprv,ns,playlist_type/sig/AE0s2JYwRQIgWfLaD8H18renev1QjqJVJeFi_Z-mkiuMQhKUM1kyNCQCIQC78UwcIPWfTlqLJDq1jQWtTlqWuTbuHwaz7pz-PV7YtQ%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRAIgOxZzpRQzgOb4OnYJI1X0mdab9yOIaRETwXKKXtVtX8wCICAffxrryYk8Po81cgD9EZvx9pF4XyhC8SpUo2_2i4z_/playlist/index.m3u8",
               "videoId": "a2TGTST34-A",
               "videoTitle": "Nusja me shkollë - Episoda 81 (Tregim Popullor)",
               "state": "vod",
-              "linkUpdated": "2026-10-24T20:25:20+00:00",
-              "week": "2026-10-24T20:30:00+02:00"
+              "linkUpdated": "2026-10-24T21:01:54+00:00",
+              "week": "2026-10-24T20:30:00+02:00",
+              "recheck": "2026-10-24T20:30:00+02:00"
             }
           ]
         }
