@@ -6,32 +6,33 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write 
+  contents: write
 
 jobs:
   update-json:
     runs-on: ubuntu-latest
     steps:
       - name: Clona il repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Configura Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      # --- 1. CONFIGURA NODE.JS (Necessario per yt-dlp) ---
+      # Node.js serve a yt-dlp per risolvere la challenge JS di YouTube
       - name: Configura Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      # --- 2. INSTALLA YT-DLP CON LE DIPENDENZE DEFAULT ---
-      - name: Installa e aggiorna yt-dlp con le dipendenze default
-        run: pip install --upgrade "yt-dlp[default]"
+      - name: Installa yt-dlp e il solver JS
+        run: pip install --upgrade "yt-dlp[default]" yt-dlp-ejs
 
       - name: Crea il file dei cookie dal Secret
-        run: echo "${{ secrets.YT_COOKIES }}" > cookies.txt
+        env:
+          YT_COOKIES: ${{ secrets.YT_COOKIES }}
+        run: printf '%s\n' "$YT_COOKIES" > cookies.txt
 
       - name: Esegui lo script di estrazione
         run: python update_youtube.py
@@ -41,5 +42,9 @@ jobs:
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "action@github.com"
           git add config.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Aggiornato link HLS per Debat Plus"
-          git push
+          if git diff --staged --quiet; then
+            echo "Nessuna modifica da committare."
+          else
+            git commit -m "Aggiornato link HLS per Debat Plus"
+            git push
+          fi
