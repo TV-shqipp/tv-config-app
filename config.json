@@ -49,11 +49,11 @@
           "referer": "https://video.gjirafa.com/"
         },
         {
-          "id": "debat-plus",
-          "name": "Debat Plus",
-          "icon": "",
-          "type": "youtube",
-          "url": "https://www.youtube.com/@DukagjiniTV/live"
+        "id": "debat-plus",
+        "name": "Test Top Channel",
+        "icon": "",
+        "type": "youtube",
+        "url": "https://www.youtube.com/@TopChannelAlbania/live"
         },
         {
           "id": "rtk-group",
