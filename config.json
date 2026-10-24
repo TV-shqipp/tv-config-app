@@ -134,15 +134,21 @@
               "icon": "",
               "type": "offline",
               "message": "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi.",
-              "lastTry": "2026-10-24T18:21:37+00:00"
+              "lastTry": "2026-10-24T18:47:49+00:00"
             },
             {
               "id": "nusja-me-shkolle",
               "name": "Nusja me shkollë",
               "icon": "",
-              "type": "offline",
-              "message": "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi.",
-              "lastTry": "2026-10-24T18:21:37+00:00"
+              "type": "hls",
+              "lastTry": "2026-10-24T18:47:49+00:00",
+              "url": "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1792889276/ei/XP3capHXAbORsfIPrPq9sAw/ip/20.29.223.65/id/a2TGTST34-A.0/itag/96/source/yt_premiere_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr4---sn-vgqsrn67.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AWzQHwpdNJQH_xV6hyj3S32Eh1Y4xnTSgjdgsxuqQEqaZ2rrkY0WnBFkxiGLn0pU5vBsBMbXNM9IPSc_/spc/mpRQ_-fuCRRkFfHcMfF28-u6G52r-552AeYTEAppx0-gHyeWB5b9n6BfKoCf/vprv/1/ns/sDSjxJoWzMRv9kk0La8v1r0Z/reg/0/playlist_type/DVR/met/1792867677,/mh/el/mm/44/mn/sn-vgqsrn67/ms/lva/mv/u/mvi/4/pl/16/rms/lva,lva/dover/11/pacing/0/epbp/1/keepalive/yes/fexp/51565115/n/OiLnnSu_Y3zbAg/mt/1792867643/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,ns,reg,playlist_type/sig/AE0s2JYwRQIgMhSAC8aYdJmasOklpUfBvDSMRPzdx5FSZCvWFzU9Q7kCIQDE8K70ggXf9eNrySthQqgOBfrYuJGxZdG8n_FRhWqSPQ%3D%3D/lsparams/hls_chunk_host,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIgbqbVivCsTNrnKv0mIsm-J-92yCDyn7B6dY7wZ5VrrIkCIQCpcDDwW92SoYKLDjlCugGn6TatX7acnCF7KsVMJO18Iw%3D%3D/playlist/index.m3u8",
+              "videoId": "a2TGTST34-A",
+              "videoTitle": "Nusja me shkollë - Episoda 81 (Tregim Popullor) 2026-10-24 18:47",
+              "state": "live",
+              "linkUpdated": "2026-10-24T18:47:49+00:00",
+              "liveStartedAt": "2026-10-24T18:30:08+00:00",
+              "week": "2026-10-24T20:30:00+02:00"
             }
           ]
         }
