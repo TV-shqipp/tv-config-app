@@ -2,13 +2,14 @@ name: Aggiorna Link Streaming TV
 
 on:
   schedule:
-    # Esegue automaticamente dal lunedì al venerdì alle 18:50 UTC (19:50 locali)
     - cron: '50 18 * * 1-5'
-  workflow_dispatch: # <-- QUESTO PERMETTE IL TEST MANUALE ADESSO!
+  workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Necessario per permettere al bot di salvare le modifiche sul repository
     steps:
       - name: Clona il repository
         uses: actions/checkout@v4
@@ -25,8 +26,10 @@ jobs:
       - name: Esegui script YouTube
         run: python update_youtube.py
 
-      - name: Salva modifiche su GitHub
-        uses: stefanzifelice/git-autocommit-commit-action@v5
-        with:
-          commit_message: "Aggiornamento automatico link live YouTube"
-          branch: main
+      - name: Salva e carica modifiche su GitHub
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add config.json
+          git commit -m "Aggiornamento automatico link live YouTube" || echo "Nessuna modifica da committare"
+          git push
