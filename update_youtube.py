@@ -1,63 +1,51 @@
+import yt_dlp
 import json
-import subprocess
-import os
-import sys
 
-# 👇 ASSICURATI CHE QUESTO PERCORSO SIA CORRETTO 👇
-CONFIG_PATH = "app/src/main/assets/config.json" 
+YOUTUBE_URL = "https://www.youtube.com/@DukagjiniTV/live"
 
-CHANNEL_URL = "https://www.youtube.com/@DukagjiniTV/live"
-
-def get_live_video_id(url):
+def get_live_m3u8(url):
+    # Forza yt-dlp a restituire la Master Playlist HLS (.m3u8) combinata
+    ydl_opts = {
+        'format': 'best[protocol^=m3u8]', 
+        'quiet': True,
+        'simulate': True,
+        'forceurl': True,
+    }
     try:
-        # Aggiungiamo un User-Agent finto per non farci riconoscere come bot
-        cmd = [
-            "yt-dlp",
-            "--get-id",
-            "--no-warnings",
-            "--user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-            url
-        ]
-        
-        result = subprocess.run(cmd, capture_output=True, text=True, check=True)
-        video_id = result.stdout.strip()
-        
-        # Un ID di YouTube è lungo 11 caratteri
-        if len(video_id) == 11:
-            return video_id
-        return None
-    except subprocess.CalledProcessError as e:
-        print(f"Errore durante l'estrazione (forse non c'è la diretta?): {e.stderr}")
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            info = ydl.extract_info(url, download=False)
+            
+            # Se la diretta è attiva, restituisce il link .m3u8
+            m3u8_url = info.get('url')
+            if m3u8_url and '.m3u8' in m3u8_url:
+                return m3u8_url
+            
+            # Fallback se l'url principale non è HLS, cerca nel manifest
+            return info.get('manifest_url')
+    except Exception as e:
+        print(f"Errore durante l'estrazione: {e}")
         return None
 
-def update_config(video_id):
-    if not os.path.exists(CONFIG_PATH):
-        print(f"❌ File non trovato: {CONFIG_PATH}")
-        sys.exit(1) # Fa fallire l'azione se il file non c'è, così te ne accorgi
+def update_config(m3u8_url):
+    with open('config.json', 'r') as file:
+        data = json.load(file)
 
-    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
-        config = json.load(f)
+    for section in data.get('sections', []):
+        for item in section.get('items', []):
+            if item.get('id') == 'debat-plus':
+                # Imposta come normale canale HLS compatibile con ExoPlayer
+                item['type'] = 'hls'
+                item['url'] = m3u8_url
+                # Rimuove il vecchio sistema a iframe
+                item.pop('pageUrl', None) 
 
-    updated = False
-    for section in config.get("sections", []):
-        for item in section.get("items", []):
-            if item.get("id") == "debat-plus":
-                if video_id:
-                    item["url"] = video_id
-                    updated = True
-                    print(f"✅ Trovata diretta! Nuovo ID: {video_id}")
-                else:
-                    print("❌ Nessuna diretta trovata o canale offline. Il file resta invariato.")
-                break
-
-    if updated:
-        with open(CONFIG_PATH, "w", encoding="utf-8") as f:
-            json.dump(config, f, indent=2, ensure_ascii=False)
-        print("✅ config.json aggiornato con successo!")
-    else:
-        print("Nessuna modifica necessaria.")
+    with open('config.json', 'w') as file:
+        json.dump(data, file, indent=2)
 
 if __name__ == "__main__":
-    print("Ricerca della diretta YouTube di Debat Plus...")
-    new_video_id = get_live_video_id(CHANNEL_URL)
-    update_config(new_video_id)
+    live_url = get_live_m3u8(YOUTUBE_URL)
+    if live_url:
+        print("Link .m3u8 estratto con successo!")
+        update_config(live_url)
+    else:
+        print("Nessuna diretta trovata al momento.")
