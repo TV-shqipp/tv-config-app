@@ -9,7 +9,7 @@ def get_live_m3u8(url):
         'quiet': True,
         'simulate': True,
         'forceurl': True,
-        # TRUCCO ANTI-BOT: Finge di essere l'app Android invece che un browser web
+        'cookiefile': 'cookies.txt',  # Legge i cookie per superare il controllo anti-bot
         'extractor_args': {
             'youtube': {
                 'client': ['android', 'ios']
@@ -19,11 +19,9 @@ def get_live_m3u8(url):
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(url, download=False)
-            
             m3u8_url = info.get('url')
             if m3u8_url and '.m3u8' in m3u8_url:
                 return m3u8_url
-            
             return info.get('manifest_url')
     except Exception as e:
         print(f"Errore durante l'estrazione: {e}")
@@ -50,4 +48,3 @@ if __name__ == "__main__":
         update_config(live_url)
     else:
         print("Nessuna diretta trovata al momento.")
-    
