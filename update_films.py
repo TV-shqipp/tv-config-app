@@ -392,4 +392,100 @@ def run_task(film, item, task, now):
                 print(f"  in diretta ma con un altro titolo: {title}")
         except Exception as e:
             msg = str(e).lower()
-            if
+            if "not currently live" not in msg and "is not live" not in msg:
+                raise
+            print("  canale non in diretta")
+
+        # 2) Fallback: potrebbe essere una premiere pubblicata come video.
+        #    La cerco nel tab "videos" del canale (dove le premiere compaiono).
+        print("  cerco la premiere/video nel canale...")
+        item["lastTry"] = iso(now)
+        result = search_video(film, (sched - timedelta(hours=3)).timestamp(), tab="videos")
+        if result:
+            info, m3u8 = result
+            set_link(item, info, m3u8, now)
+            item["week"] = wk
+            print(f"  video/premiere trovato: {info.get('title')}")
+        return
+
+    # task == "search"
+    item["lastTry"] = iso(now)
+    if FORCE:
+        min_ts = (now - timedelta(days=8)).timestamp()
+    else:
+        min_ts = (sched - timedelta(hours=3)).timestamp()
+    result = search_video(film, min_ts)
+    if not result:
+        print("  nessun video nuovo trovato")
+        return
+    info, m3u8 = result
+    set_link(item, info, m3u8, now)
+    item["week"] = wk
+    if since >= (RECHECK_UPLOAD_MIN if film["mode"] == "upload" else LIVE_MIN):
+        item["recheck"] = wk
+    print(f"  video trovato: {info.get('title')}")
+
+
+# ------------------------------------------------------------------------ main
+def write_output(run):
+    path = os.environ.get("GITHUB_OUTPUT")
+    if path:
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(f"run={'true' if run else 'false'}\n")
+
+
+def main():
+    now = datetime.now(TZ)
+    data = load_config()
+    changed = ensure_group(data)
+
+    work = []
+    for film in FILMS:
+        item = find_item(data, film["id"])
+        if item is None:
+            continue
+        task = "search" if FORCE else due_task(film, item, now)
+        if task is None and refresh_needed(item, now):
+            task = "refresh"
+        if task:
+            work.append((film, item, task))
+
+    print(f"Ora italiana: {now:%Y-%m-%d %H:%M}")
+    for film, _, task in work:
+        print(f"- {film['name']}: {task}")
+    run = bool(work) or changed
+
+    if PLAN:
+        if not run:
+            print("Niente da fare.")
+        write_output(run)
+        return
+
+    if not run:
+        print("Niente da fare.")
+        return
+
+    for film, item, task in work:
+        print(f"[{film['name']}] {task}")
+        before = json.dumps(item, sort_keys=True)
+        try:
+            run_task(film, item, task, now)
+        except Exception as e:  # errore di rete/anti-bot: non tocco il resto
+            print(f"  errore: {e}")
+        if task != "refresh" and refresh_needed(item, now):
+            try:
+                do_refresh(item, now)
+            except Exception as e:
+                print(f"  errore nel rinnovo: {e}")
+        if json.dumps(item, sort_keys=True) != before:
+            changed = True
+
+    if changed:
+        save_config(data)
+        print("config.json aggiornato.")
+    else:
+        print("Nessuna modifica necessaria.")
+
+
+if __name__ == "__main__":
+    main()
