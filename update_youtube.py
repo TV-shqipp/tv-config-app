@@ -11,7 +11,7 @@ ITEM_ID = "debat-plus"
 TZ = ZoneInfo("Europe/Rome")
 WINDOW_START = (19, 30)  # inizio controlli (ora italiana)
 WINDOW_END = (21, 10)    # ultimo controllo utile (ora italiana)
-OFFLINE_MESSAGE = "Debat Plus non è in diretta al momento.\nRiprova dalle 19:30."
+OFFLINE_MESSAGE = "Ska debat sonte kap futja gjum se han rre"
 
 FORCE = "--force" in sys.argv  # per test manuali: ignora la fascia oraria
 
