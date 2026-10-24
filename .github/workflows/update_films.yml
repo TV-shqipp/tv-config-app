@@ -3,7 +3,10 @@ name: Aggiorna Filma Shqip
 on:
   schedule:
     # Finestre serali di venerdì e sabato (ore UTC: coprono sia ora legale sia solare)
-    - cron: '*/5 17-22 * * 5,6'
+    # '*' = ogni minuto, per ridurre al minimo il ritardo sulle premiere.
+    # NB: GitHub può ritardare i cron ad alta frequenza (minimo consigliato 5 min);
+    #     in pratica con '*' spesso si riesce ad andare ogni 1-2 minuti.
+    - cron: '* 17-22 * * 5,6'
     # Ogni ora: rinnovo dei link e controlli di recupero
     - cron: '7 * * * *'
   workflow_dispatch:
