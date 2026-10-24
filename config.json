@@ -1,0 +1,125 @@
+{
+  "version": 2,
+  "updated": "2026-10-24T12:00:00Z",
+  "sections": [
+    {
+      "id": "tv",
+      "title": "Canali TV",
+      "subtitle": "Albania e Kosovo",
+      "icon": "",
+      "items": [
+        {
+          "id": "klan-kosova",
+          "name": "Klan Kosova",
+          "icon": "",
+          "type": "dynamic_hls",
+          "pageUrl": "https://klankosova.tv/tv",
+          "referer": "https://klankosova.tv/"
+        },
+        {
+          "id": "tv-klan",
+          "name": "TV Klan Shqipëria",
+          "icon": "",
+          "type": "dynamic_hls",
+          "pageUrl": "https://tvklan.al/live/",
+          "referer": "https://tvklan.al/"
+        },
+        {
+          "id": "rtk1",
+          "name": "RTK 1",
+          "icon": "",
+          "type": "hls",
+          "url": "",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "rtk2",
+          "name": "RTK 2",
+          "icon": "",
+          "type": "hls",
+          "url": "",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "rtk3",
+          "name": "RTK 3",
+          "icon": "",
+          "type": "hls",
+          "url": "",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "rtk4",
+          "name": "RTK 4",
+          "icon": "",
+          "type": "hls",
+          "url": "",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "atv",
+          "name": "ATV Kosova",
+          "icon": "",
+          "type": "hls",
+          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/0nj-g63-92x-few/index.m3u8",
+          "pageUrl": "https://atvlive.tv/live/",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "rtv-21",
+          "name": "RTV 21",
+          "icon": "",
+          "type": "hls",
+          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/2cz-npl-jfn-9he/index.m3u8",
+          "pageUrl": "https://rtv21.tv/live/",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "ktv",
+          "name": "KTV Kohavision",
+          "icon": "",
+          "type": "hls",
+          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/lj9-pxm-o53-rp0/index.m3u8",
+          "pageUrl": "https://www.koha.net/koha-vision-live/",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "radio-dukagjini",
+          "name": "Radio Dukagjini",
+          "icon": "",
+          "type": "audio",
+          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-radio/lmd-jx9-lwm-xgf/index.m3u8",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "dukagjini-offline",
+          "name": "RTV Dukagjini",
+          "icon": "",
+          "type": "offline",
+          "message": "Hec flej se nuk ka debata sonte krisja gjumit"
+        },
+        {
+          "id": "test-mux",
+          "name": "TEST Mux",
+          "icon": "",
+          "type": "hls",
+          "url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+        }
+      ]
+    },
+    {
+      "id": "sport",
+      "title": "Sport",
+      "subtitle": "In arrivo",
+      "icon": "",
+      "items": []
+    },
+    {
+      "id": "cinema",
+      "title": "Cinema",
+      "subtitle": "In arrivo",
+      "icon": "",
+      "items": []
+    }
+  ]
+}
