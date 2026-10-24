@@ -97,13 +97,13 @@
           "id": "filma-shqip",
           "title": "Filma Shqip",
           "subtitle": "Filme shqiptare",
-          "icon": "",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/filmashqip.jpg",
           "type": "group",
           "items": [
             {
               "id": "edhe-malet-flasin",
               "name": "Edhe malet flasin",
-              "icon": "",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/edhemalet.jpg",
               "type": "hls",
               "lastTry": "2026-10-24T20:04:23+00:00",
               "url": "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1792893867/ei/Sw_datjLLZbAsfIPh8aKsQo/ip/20.169.103.14/id/455648582c7f5e5f/itag/96/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D71062489%3Bdur%3D4390.893%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1792794681963073/sgovp/clen%3D1207512874%3Bdur%3D4390.840%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1792794580810338/rqh/1/hls_chunk_host/rr1---sn-aj2im9-5q.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/cps/465/met/1792872267,/mh/1q/mm/18,26/mn/sn-aj2im9-5q,sn-a5m7lnld/ms/aub,onr/mv/m/mvi/1/pl/15/rms/aub,aub/initcwndbps/8190250/bui/AWzQHwr2L7l4IafohnK2rqtMobxRCZRWU9vawqwOD_M4wJEll7MOwqlz0aNlh9bTYa5L7rTwOmUJCB_J/spc/mpRQ_6o20G5wUiqirNqTIguc-SzpHBcjRaMeViJgOFd-qhs2VsI_6IA6gVgwM0THMbeE4C_SJS1tZFE/vprv/1/ns/pIyC-dpBuvgyMd5QQDeJ0qQZ/playlist_type/CLEAN/dover/11/txp/3309224/epbp/1/mt/1792871845/fvip/3/keepalive/yes/fexp/51565115/n/TZAC2ekKlRanPA/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,bui,spc,vprv,ns,playlist_type/sig/AE0s2JYwRQIhAJE9Pb8J9NlKQiBbdB-vsbld72zMfcGBaQn2PHf3mRdjAiADj54Y8drWhX2wVcQlj6SDQweOL8oMuZryC73oi5jt1w%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRgIhAIA55t-BMBRPymX5FTkVux7ZlJBgTfzCFOcbweopoR9NAiEAjRufrbWfaW0qtn5mO5Hox5MW0pQlCFXg7PsvejGnGpc%3D/playlist/index.m3u8",
@@ -117,7 +117,7 @@
             {
               "id": "rrugt-e-lirise",
               "name": "Rrugët e Lirisë",
-              "icon": "",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rrugeteliris.jpg",
               "type": "hls",
               "lastTry": "2026-10-24T20:04:23+00:00",
               "url": "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1792893877/ei/VA_dav2yOvbRsfIP8q6IwQ4/ip/20.169.103.14/id/a564d8471cc61af7/itag/301/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D90282227%3Bdur%3D5578.477%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1792753576685059/sgovp/clen%3D1645634877%3Bdur%3D5578.420%3Bgir%3Dyes%3Bitag%3D299%3Blmt%3D1792753467511504/rqh/1/hls_chunk_host/rr5---sn-2o2imf-5j.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/cps/252/met/1792872276,/mh/m0/mm/31,29/mn/sn-2o2imf-5j,sn-aj2im9-5j/ms/au,rdu/mv/m/mvi/5/pl/15/rms/au,au/initcwndbps/7206250/bui/AWzQHwp8ZaNWIRDIecque8lu3IluiQ2K41YKaLff3fnj6kOJIEeRmfew6-ZqBKS4Uywq_WpXHGmN3HPF/spc/mpRQ_25R368IFDaBxVGCXtGolMnDEsKWXEW4magpjWs4o-18snQVkyNAB_w7g_F369y6NbOnjbSyHlI/vprv/1/ns/7j4nAxy-R9IUsLg3vST76LoZ/playlist_type/CLEAN/dover/11/txp/3309224/epbp/1/mt/1792871691/fvip/2/keepalive/yes/fexp/51565115/n/x3oWeqRfA5KaUw/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,bui,spc,vprv,ns,playlist_type/sig/AE0s2JYwRQIhAK5nsZb4gRxPugc7GJIe349KM9ue8dzQHzL4qoXyPNrrAiBk3jBIoaSneUaOzP3WJkf-c8M2_9Jn8GbK_MCuvmLNmw%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRQIhANQ5Xc5DMrMMohxCo9uU3wRE9yqVSaFSqUDh_92Mb24tAiA2cjFl9-nuFlECys2O7WAqr0o_FoJ--IEcAj_H3EnPDg%3D%3D/playlist/index.m3u8",
@@ -131,7 +131,7 @@
             {
               "id": "bashkallajk",
               "name": "Bashkallajk",
-              "icon": "",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bashkallajk.jpg",
               "type": "hls",
               "lastTry": "2026-10-24T20:04:23+00:00",
               "url": "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1792893888/ei/YA_davfjAZ7XsfIP6rrLqQE/ip/20.169.103.14/id/12141d6585155684/itag/96/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D23991564%3Bdur%3D1482.385%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1792856420671190/sgovp/clen%3D463049711%3Bdur%3D1482.320%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1792859307222674/rqh/1/hls_chunk_host/rr2---sn-2o2imf-5j.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/cps/332/met/1792872288,/mh/ng/mm/18,29/mn/sn-2o2imf-5j,sn-2imern7r/ms/aub,rdu/mv/m/mvi/2/pl/15/rms/aub,aub/force_finished/1/initcwndbps/7464500/bui/AWzQHwpM9MtVtVMN_BA9HVQIzxxRClx-FnDs7kCXJPK0MyUGqjjlaueZg0iN1zg08z9Ca4_p6CYQI7uV/spc/mpRQ_8g0GNpXxhUecAjNYCk5pVA_FfGvwkNgoOz-0zvbj_eOPJcwh4Ug5nyWZjJX23kgBUsS6_iKTn8/vprv/1/ns/VUjbxVw4-eFKHMM8gGA89tAZ/playlist_type/CLEAN/dover/11/txp/5532234/epbp/1/mt/1792871845/fvip/2/keepalive/yes/fexp/51565115/n/4ADyD7UehyFgdQ/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,force_finished,bui,spc,vprv,ns,playlist_type/sig/AE0s2JYwRQIhAMAvDElWQpq2NY9JlASwvz3Ka3J9dO8dR202qiSqLo_4AiB1v3fvR8pQ89iDCAtHmuHBEjDGVYJuqwfIvfIIJVv5Cg%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms,initcwndbps/lsig/APaTxxMwRgIhAMf5lGgYKMFAiiznaiFz8N_QufOqJJoIMTErdUyxd4XCAiEAuTRehJEHwmS3kIa61HchrW6adOoZG49L4ZiANp5NBvA%3D/playlist/index.m3u8",
@@ -145,7 +145,7 @@
             {
               "id": "nusja-me-shkolle",
               "name": "Nusja me shkollë",
-              "icon": "",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/nusjameshkoll.jpg",
               "type": "hls",
               "lastTry": "2026-10-24T20:12:33+00:00",
               "url": "https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1792894360/ei/NxHdapfDOdeXsfIPuv6TkQs/ip/4.242.197.192/id/6b64c64d24f7e3e0/itag/96/source/youtube/requiressl/yes/ratebypass/yes/pfa/1/sgoap/clen%3D50256641%3Bdur%3D3105.297%3Bgir%3Dyes%3Bitag%3D140%3Blmt%3D1792828768177833/sgovp/clen%3D1022181716%3Bdur%3D3105.240%3Bgir%3Dyes%3Bitag%3D137%3Blmt%3D1792828762539570/rqh/1/hls_chunk_host/rr3---sn-nx57ynsk.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/cps/486/met/1792872759,/mh/el/mm/18,26/mn/sn-nx57ynsk,sn-a5mekndd/ms/aub,onr/mv/u/mvi/3/pl/16/rms/aub,aub/force_finished/1/bui/AWzQHwoJH7rKdZLIkTmytKvkYyxEJlEh0b45s0LnJk51ViYku83n5FdVKrn2U1C11cYqw_WH27UV4zDM/spc/mpRQ_7z0zDt0RKTRFM9kIS9q32EBQdqE7pKtLwTTXzMHtzz-QE5KkERUzKZLgT1WaGNpFjmkb3qKYvM/vprv/1/ns/uN-x0BRzfPGCmiG1ZaeFu5AZ/playlist_type/CLEAN/dover/11/txp/3309224/epbp/1/mt/1792872237/fvip/2/keepalive/yes/fexp/51565115/n/Barxmd5St-bnYA/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,pfa,sgoap,sgovp,rqh,xpc,force_finished,bui,spc,vprv,ns,playlist_type/sig/AE0s2JYwRQIhAIvYwATiPY1d9GEH2jB3AkOxpBPGppbvokYedpMSQy7tAiBN_KxHy5sa_-VFx_5y3ojD8M5xZKtlmbchfegVnt1ezQ%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRAIgCzWEFE8nKglE4smnG6KcIERSl2NEZsNWNLdR6MJu34QCIFr4Y1PZRjRH3WV9mufD1ROQ04QvomoGenabiKXGEVkq/playlist/index.m3u8",
