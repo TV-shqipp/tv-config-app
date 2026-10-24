@@ -1,0 +1,32 @@
+name: Aggiorna Link Streaming TV
+
+on:
+  schedule:
+    # Esegue automaticamente dal lunedì al venerdì alle 18:50 UTC (19:50 locali)
+    - cron: '50 18 * * 1-5'
+  workflow_dispatch: # <-- QUESTO PERMETTE IL TEST MANUALE ADESSO!
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clona il repository
+        uses: actions/checkout@v4
+
+      - name: Configura Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Installa yt-dlp
+        run: |
+          pip install --upgrade yt-dlp
+
+      - name: Esegui script YouTube
+        run: python update_youtube.py
+
+      - name: Salva modifiche su GitHub
+        uses: stefanzifelice/git-autocommit-commit-action@v5
+        with:
+          commit_message: "Aggiornamento automatico link live YouTube"
+          branch: main
