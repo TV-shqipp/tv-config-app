@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-10-24T12:30:00Z",
+  "updated": "2026-10-24T12:11:23Z",
   "sections": [
     {
       "id": "tv",
@@ -49,7 +49,7 @@
           "name": "RTK Sat",
           "icon": "",
           "type": "hls",
-          "url": "",
+          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/rtk-sat/index.m3u8",
           "referer": "https://video.gjirafa.com/"
         },
         {
@@ -57,7 +57,7 @@
           "name": "ATV Kosova",
           "icon": "",
           "type": "hls",
-          "url": "",
+          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/0nj-g63-92x-few/index.m3u8",
           "referer": "https://video.gjirafa.com/"
         },
         {
@@ -65,7 +65,7 @@
           "name": "RTV 21",
           "icon": "",
           "type": "hls",
-          "url": "",
+          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/2cz-npl-jfn-9he/index.m3u8",
           "referer": "https://video.gjirafa.com/"
         },
         {
@@ -73,7 +73,7 @@
           "name": "KTV Kohavision",
           "icon": "",
           "type": "hls",
-          "url": "",
+          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/lj9-pxm-o53-rp0/index.m3u8",
           "referer": "https://video.gjirafa.com/"
         },
         {
