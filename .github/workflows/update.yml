@@ -24,8 +24,8 @@ jobs:
       - name: Configura Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-
+          node-version: '24'
+          
       - name: Installa yt-dlp e il solver JS
         run: pip install --upgrade "yt-dlp[default]" yt-dlp-ejs
 
