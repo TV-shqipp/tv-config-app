@@ -276,16 +276,18 @@ def list_channel(film, tab=None):
 
 
 def pick_m3u8(info):
-    """Seleziona l'HLS con lo stesso criterio già verificato in Debat Plus."""
+    # 1° tentativo: cerca esplicitamente un manifest DVR
+    for fmt in reversed(info.get("formats") or []):
+        url = fmt.get("url") or ""
+        if ("DVR" in url or "playlist_type/DVR" in url) and ".m3u8" in url:
+            return url
+    # 2° tentativo: qualsiasi m3u8 (comportamento attuale)
     for fmt in reversed(info.get("formats") or []):
         url = fmt.get("url") or ""
         protocol = str(fmt.get("protocol") or "")
         if ".m3u8" in url or protocol.startswith("m3u8"):
             return url
-    # Stessi fallback usati dallo script Debat Plus.
     return info.get("manifest_url") or info.get("url")
-
-
 def video_ts(info):
     ts = info.get("release_timestamp") or info.get("timestamp")
     if ts:
