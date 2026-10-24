@@ -1,4 +1,4 @@
-name: Aggiorna Link Streaming TV
+name: Aggiorna ID YouTube Debat Plus
 
 on:
   schedule:
@@ -9,7 +9,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Necessario per permettere al bot di salvare le modifiche sul repository
+      contents: write
     steps:
       - name: Clona il repository
         uses: actions/checkout@v4
@@ -30,6 +30,8 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add config.json
-          git commit -m "Aggiornamento automatico link live YouTube" || echo "Nessuna modifica da committare"
+          # 👇 CONTROLLA QUESTO PERCORSO 👇
+          # Se il tuo config.json è in un'altra posizione, cambia questo percorso
+          git add app/src/main/assets/config.json
+          git commit -m "Aggiornamento automatico ID live YouTube" || echo "Nessuna modifica da committare"
           git push
