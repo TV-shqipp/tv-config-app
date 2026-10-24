@@ -211,21 +211,16 @@ def due_task(film, item, now):
     found = item.get("week") == wk
 
     if film["mode"] == "upload":
-        # 1) finestra di controllo (10 minuti) finché non lo trovo
         if since <= film["window"] and not found:
             return "search"
-        # 2) secondo controllo dopo 1h30: sostituisce il video con quello definitivo
         if (RECHECK_UPLOAD_MIN <= since <= 240 and item.get("recheck") != wk
                 and not throttled(item, now, RETRY_MIN)):
             return "search"
-        # 3) recupero: se il film della settimana non è mai stato trovato
-        if (not found and film["window"] < since <= CATCHUP_MAX_MIN
+        # Se il video non è stato trovato, cerchiamo sempre (anche video vecchi)
+        if (not found and (since <= CATCHUP_MAX_MIN or item.get("type") == "offline")
                 and not throttled(item, now, CATCHUP_MIN)):
             return "search"
     else:
-        # Prima che la live venga trovata, la cerco ogni minuto per 2 ore
-        # dall'orario previsto. Una volta trovata, conto le 2 ore dall'inizio
-        # effettivo della diretta, se YouTube fornisce quel dato.
         is_current_live = found and item.get("state") == "live"
         if not is_current_live:
             if since < LIVE_MIN:
@@ -236,8 +231,10 @@ def due_task(film, item, now):
             live_since = minutes_between(now, started)
             if live_since < LIVE_MIN:
                 return None
-        # Dopo 2 ore dall'inizio della live, cerco il video registrato.
-        if (LIVE_MIN <= live_since <= CATCHUP_MAX_MIN and item.get("recheck") != wk
+        
+        # Se non c'è la diretta, cerchiamo sempre (anche video vecchi)
+        if ((LIVE_MIN <= live_since <= CATCHUP_MAX_MIN or item.get("type") == "offline") 
+                and item.get("recheck") != wk
                 and not throttled(item, now, RETRY_MIN)):
             return "search"
     return None
@@ -276,18 +273,16 @@ def list_channel(film, tab=None):
 
 
 def pick_m3u8(info):
-    # 1° tentativo: cerca esplicitamente un manifest DVR
-    for fmt in reversed(info.get("formats") or []):
-        url = fmt.get("url") or ""
-        if ("DVR" in url or "playlist_type/DVR" in url) and ".m3u8" in url:
-            return url
-    # 2° tentativo: qualsiasi m3u8 (comportamento attuale)
+    """Seleziona l'HLS con lo stesso criterio già verificato in Debat Plus."""
     for fmt in reversed(info.get("formats") or []):
         url = fmt.get("url") or ""
         protocol = str(fmt.get("protocol") or "")
         if ".m3u8" in url or protocol.startswith("m3u8"):
             return url
+    # Stessi fallback usati dallo script Debat Plus.
     return info.get("manifest_url") or info.get("url")
+
+
 def video_ts(info):
     ts = info.get("release_timestamp") or info.get("timestamp")
     if ts:
@@ -301,39 +296,57 @@ def video_ts(info):
             pass
     return None
 
-def search_video(film, min_ts, tab=None):
-    """Primo video del canale col titolo giusto, uscito dopo min_ts.
 
-    Le premiere (anteprime) su YouTube hanno live_status == "is_upcoming"
-    prima di iniziare: NON vanno scartate, vanno rilevate ma restituendo None
-    finché non hanno un flusso m3u8 (cioè finché non partono). Al ciclo
-    successivo, quando sono diventate "is_live", vengono restituite.
-    """
-    for entry in list_channel(film, tab):
-        if not title_ok(entry.get("title"), film):
+def search_video(film, min_ts, tab=None):
+    """Cerca il video più recente. Restituisce (info, m3u8, is_this_week)."""
+    # Per le live cerchiamo sia nei video normali che negli stream passati
+    tabs = ["videos", "streams"] if film["mode"] == "live" and tab is None else [tab] if tab else ["videos"]
+    
+    for current_tab in tabs:
+        try:
+            entries = list_channel(film, current_tab)
+        except Exception as e:
+            print(f"  errore lettura tab {current_tab}: {e}")
             continue
-        # Il canale ci dice già che è una premiere non ancora partita:
-        # la riprenderemo al prossimo giro.
-        if entry.get("live_status") == "is_upcoming":
-            print(f"  premiere programmata: {entry.get('title')}")
-            return None
-        info = extract(f"https://www.youtube.com/watch?v={entry['id']}")
-        if info.get("live_status") == "is_upcoming":
-            print("  premiere ancora in attesa di iniziare")
-            return None
-        
-        ts = video_ts(info)
-        # --- MODIFICA: Commentiamo questo controllo per accettare i video vecchi ---
-        # if ts is not None and ts < min_ts:
-        #     return None  # il più recente col titolo giusto è di una settimana vecchia
-        
-        m3u8 = pick_m3u8(info)
-        if not m3u8:
-            print("  video trovato ma senza flusso m3u8 (forse ancora in elaborazione)")
-            return None
-        return info, m3u8
-    return None
-  
+            
+        for entry in entries:
+            if not title_ok(entry.get("title"), film):
+                continue
+            
+            # Se è una premiere in attesa, la saltiamo per cercare il video vecchio
+            if entry.get("live_status") == "is_upcoming":
+                print(f"  premiere programmata: {entry.get('title')} (salto per cercare video vecchi)")
+                continue
+                
+            try:
+                info = extract(f"https://www.youtube.com/watch?v={entry['id']}")
+            except Exception as e:
+                print(f"  errore estrazione: {e}")
+                continue
+                
+            if info.get("live_status") == "is_upcoming":
+                continue
+
+            ts = video_ts(info)
+            m3u8 = pick_m3u8(info)
+            
+            if not m3u8:
+                print("  video trovato ma senza flusso m3u8")
+                continue
+            
+            # Controlliamo se il video è di questa settimana o è vecchio
+            is_this_week = True
+            if ts is not None and ts < min_ts:
+                is_this_week = False
+                print(f"  trovato video vecchio: {info.get('title')}")
+            else:
+                print(f"  trovato video recente: {info.get('title')}")
+                
+            return info, m3u8, is_this_week
+            
+    return None, None, False
+
+
 def set_link(item, info, m3u8, now):
     item["type"] = "hls"
     item["url"] = m3u8
@@ -376,9 +389,6 @@ def run_task(film, item, task, now):
         return
 
     if task == "live":
-        # 1) Tenta il flusso live diretto. Funziona per vere dirette,
-        #    ma NON per le premiere (YouTube non le espone su /live
-        #    finché non partono).
         try:
             info = extract(f"https://www.youtube.com/{film['channel']}/live")
             title = info.get("title")
@@ -399,34 +409,41 @@ def run_task(film, item, task, now):
                 raise
             print("  canale non in diretta")
 
-        # 2) Fallback: potrebbe essere una premiere pubblicata come video.
-        #    La cerco nel tab "videos" del canale (dove le premiere compaiono).
         print("  cerco la premiere/video nel canale...")
         item["lastTry"] = iso(now)
-        result = search_video(film, (sched - timedelta(hours=3)).timestamp(), tab="videos")
-        if result:
-            info, m3u8 = result
-            set_link(item, info, m3u8, now)
-            item["week"] = wk
-            print(f"  video/premiere trovato: {info.get('title')}")
+        fallback_min_ts = sched.timestamp()
+        
+        result_info, result_m3u8, is_this_week = search_video(film, fallback_min_ts)
+        
+        if result_info and result_m3u8:
+            set_link(item, result_info, result_m3u8, now)
+            if is_this_week:
+                item["week"] = wk
+            print(f"  video/premiere trovato: {result_info.get('title')}")
         return
 
     # task == "search"
     item["lastTry"] = iso(now)
     if FORCE:
-        min_ts = (now - timedelta(days=8)).timestamp()
+        min_ts = (now - timedelta(days=30)).timestamp() 
     else:
         min_ts = (sched - timedelta(hours=3)).timestamp()
-    result = search_video(film, min_ts)
-    if not result:
-        print("  nessun video nuovo trovato")
+        
+    result_info, result_m3u8, is_this_week = search_video(film, min_ts)
+    
+    if not result_info:
+        print("  nessun video trovato")
         return
-    info, m3u8 = result
-    set_link(item, info, m3u8, now)
-    item["week"] = wk
-    if since >= (RECHECK_UPLOAD_MIN if film["mode"] == "upload" else LIVE_MIN):
-        item["recheck"] = wk
-    print(f"  video trovato: {info.get('title')}")
+        
+    set_link(item, result_info, result_m3u8, now)
+    
+    # Salviamo la "settimana" solo se è davvero il video nuovo
+    if is_this_week:
+        item["week"] = wk
+        if since >= (RECHECK_UPLOAD_MIN if film["mode"] == "upload" else LIVE_MIN):
+            item["recheck"] = wk
+            
+    print(f"  video trovato: {result_info.get('title')}")
 
 
 # ------------------------------------------------------------------------ main
