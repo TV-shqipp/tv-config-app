@@ -1,15 +1,6 @@
 #!/usr/bin/env python3
 """
 Aggiorna in config.json i link .m3u8 dei canali GjirafaVideo.
-
-Differenze rispetto alla vecchia versione:
-  - raccoglie TUTTI i .m3u8 visti dalla pagina (non solo il primo)
-  - scarta quelli che sembrano pubblicita' (VAST, doubleclick, ...)
-  - verifica ogni candidato scaricandolo: deve rispondere 200, essere una playlist
-    HLS valida e NON essere un video registrato (#EXT-X-ENDLIST = spot/VOD)
-  - preferisce la master playlist (tutte le qualita')
-  - se non trova nulla di valido NON tocca il link che c'era
-  - non cambia mai il "type" del canale (la radio resta "audio")
 """
 import asyncio
 import json
@@ -22,16 +13,13 @@ from playwright.async_api import async_playwright
 
 CONFIG_PATH = Path(__file__).resolve().parent / "config.json"
 
-# id del canale nel config.json -> pagina GjirafaVideo (da verificare nel browser!)
+# Solo i canali senza blocco geografico per i server USA di GitHub
 PAGES = {
     "radio-dukagjini": "https://video.gjirafa.com/radio-dukagjini",
     "rtv-21": "https://video.gjirafa.com/rtv-21-live",
     "ktv": "https://video.gjirafa.com/ktv-live",
     "atv": "https://video.gjirafa.com/atv-live-tv",
-    "rtk1": "https://video.gjirafa.com/rtk-1-live",
-    "rtk2": "https://video.gjirafa.com/rtk-2-live",
-    "rtk3": "https://video.gjirafa.com/rtk-3-live",
-    "rtk4": "https://video.gjirafa.com/rtk-4-live"
+    "rtk-sat": "https://video.gjirafa.com/rtk-1-sat"
 }
 
 UA = (
@@ -45,7 +33,6 @@ AD_WORDS = (
     "preroll", "/vast", "vast.", "adsystem",
 )
 
-# Prova a far partire il video (molti player aspettano un click)
 PLAY_JS = """() => {
   try {
     const v = document.querySelector('video');
@@ -57,11 +44,9 @@ PLAY_JS = """() => {
   } catch (e) {}
 }"""
 
-
 def is_ad(url: str) -> bool:
     u = url.lower()
     return any(w in u for w in AD_WORDS)
-
 
 def fetch(url: str, referer: str = REFERER):
     try:
@@ -70,9 +55,7 @@ def fetch(url: str, referer: str = REFERER):
     except requests.RequestException as e:
         return 0, str(e)
 
-
 def inspect(url: str, referer: str = REFERER):
-    """Ritorna (ok, is_live, is_master, nota)."""
     status, text = fetch(url, referer)
     if status != 200 or not text.lstrip().startswith("#EXTM3U"):
         return False, False, False, f"HTTP {status}" if status else f"errore: {text[:60]}"
@@ -91,27 +74,20 @@ def inspect(url: str, referer: str = REFERER):
             live = "#EXT-X-ENDLIST" not in vt
     return True, live, is_master, "ok"
 
-
 def pick_best(candidates, referer: str = REFERER):
     good = []
     for url in candidates:
         if is_ad(url):
-            print(f"  [scartato: pubblicita'] {url}")
             continue
         ok, live, master, note = inspect(url, referer)
-        tipo = "master" if master else "media"
-        stato = "LIVE" if live else "NON-live (VOD/spot)"
-        print(f"  [{note}] [{tipo}] [{stato}] {url}")
         if ok and live:
             good.append((0 if master else 1, url))
     if not good:
         return None
-    good.sort(key=lambda t: t[0])  # sort stabile: master prima, poi ordine di apparizione
+    good.sort(key=lambda t: t[0])
     return good[0][1]
 
-
 async def collect(browser, page_url: str, wait_ms: int = 12000):
-    """Apre la pagina e restituisce tutti gli URL .m3u8 richiesti, in ordine."""
     seen = []
     context = await browser.new_context(user_agent=UA, viewport={"width": 1280, "height": 720})
     page = await context.new_page()
@@ -124,18 +100,17 @@ async def collect(browser, page_url: str, wait_ms: int = 12000):
     page.on("request", on_request)
     try:
         await page.goto(page_url, wait_until="domcontentloaded", timeout=45000)
-    except Exception as e:  # noqa: BLE001
-        print(f"  attenzione caricamento pagina: {e}")
+    except Exception:
+        pass
     await page.wait_for_timeout(3000)
-    for frame in page.frames:  # il player e' spesso dentro un iframe
+    for frame in page.frames:
         try:
             await frame.evaluate(PLAY_JS)
-        except Exception:  # noqa: BLE001
+        except Exception:
             pass
     await page.wait_for_timeout(wait_ms)
     await context.close()
     return seen
-
 
 async def main():
     config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
@@ -152,23 +127,16 @@ async def main():
         for cid, page_url in PAGES.items():
             item = items.get(cid)
             if item is None:
-                print(f"::warning::{cid}: non presente nel config.json, salto")
                 continue
 
-            print(f"\n=== {cid}  ({page_url}) ===")
             candidates = await collect(browser, page_url)
-            print(f"  trovati {len(candidates)} link .m3u8")
             new_url = pick_best(candidates)
 
             if not new_url:
-                print(f"::warning::{cid}: nessun link valido, mantengo quello precedente")
                 continue
             if item.get("url") != new_url:
                 item["url"] = new_url
                 changed = True
-                print("  -> AGGIORNATO")
-            else:
-                print("  -> invariato")
         await browser.close()
 
     if changed:
@@ -176,10 +144,9 @@ async def main():
         CONFIG_PATH.write_text(
             json.dumps(config, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
         )
-        print("\nconfig.json aggiornato")
+        print("config.json aggiornato")
     else:
-        print("\nNessuna modifica")
-
+        print("Nessuna modifica")
 
 if __name__ == "__main__":
     asyncio.run(main())
