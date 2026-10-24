@@ -54,12 +54,13 @@
           "icon": "",
           "type": "youtube",
           "url": "https://www.youtube.com/@DukagjiniTV/live"
-        },    
+        },
         {
           "id": "rtk-group",
           "title": "Rtk-Group",
           "subtitle": "RTK 1, 2, 3, 4 (Richiede VPN)",
           "icon": "",
+          "type": "group",
           "items": [
             {
               "id": "rtk1",
@@ -97,6 +98,13 @@
       "id": "sport",
       "title": "Sport",
       "subtitle": "In arrivo",
+      "icon": "",
+      "items": []
+    },
+    {
+      "id": "cinema",
+      "title": "Cinema",
+      "subtitle": "Film e Serie TV",
       "icon": "",
       "items": []
     }
