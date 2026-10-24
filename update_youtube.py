@@ -9,7 +9,10 @@ def get_live_m3u8(url):
         'quiet': True,
         'simulate': True,
         'forceurl': True,
-        'cookiefile': 'cookies.txt',  # Legge i cookie per superare il controllo anti-bot
+        'cookiefile': 'cookies.txt',
+        'js_runtimes': {
+            'node': {}  # Attiva l'uso di Node.js per superare la sfida di YouTube
+        },
         'extractor_args': {
             'youtube': {
                 'client': ['android', 'ios']
