@@ -19,7 +19,6 @@ EXPIRE_MARGIN_MIN = 90
 RECHECK_UPLOAD_MIN = 90
 LIVE_MIN = 120
 RETRY_MIN = 15
-LIVE_POLL_MIN = 3   # modalità "live": al massimo un controllo ogni 3 minuti (meno chiamate a YouTube e meno commit)
 CATCHUP_MIN = 60
 CATCHUP_MAX_MIN = 72 * 60
 
@@ -182,8 +181,7 @@ def due_task(film, item, now):
     else:
         is_current_live = found and item.get("state") == "live"
         if not is_current_live:
-            if since < LIVE_MIN:
-                return None if throttled(item, now, LIVE_POLL_MIN) else "live"
+            if since < LIVE_MIN: return "live"
             live_since = since
         else:
             started = parse_iso(item.get("liveStartedAt")) or sched
@@ -321,7 +319,6 @@ def run_task(film, item, task, now):
                 m3u8 = pick_m3u8(info)
                 if not m3u8:
                     print("  in diretta ma senza flusso m3u8")
-                    item["lastTry"] = iso(now)  # registra il tentativo, altrimenti il controllo riparte a ogni minuto
                     return
                 set_link(item, info, m3u8, now)
                 item["week"] = wk
