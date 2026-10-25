@@ -26,11 +26,9 @@ jobs:
           python-version: '3.x'
 
       - name: Run update_cinema.py
-        id: run_script
         run: python update_cinema.py
 
       - name: Commit and push changes
-        if: steps.run_script.outputs.run == 'true'
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
