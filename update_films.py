@@ -1,9 +1,13 @@
 """Filma Shqip: tiene aggiornati nel config.json i link dei film presi da YouTube.
 
-Usa un Cloudflare Worker come proxy per garantire stabilità e aggirare i limiti di IP.
-- VOD: preferisce itag 22 (720p muxed), poi itag 18 (360p muxed).
-- Live/Premiere: manifest HLS master.
-- Client yt-dlp: ios + mweb + tv (NO web_safari/web → 403).
+Strategia:
+- Tutti i flussi (VOD, live, premiere) usano HLS (m3u8), che contiene già le
+  varianti di qualità e permette al player di scegliere dinamicamente.
+- Limite massimo di altezza: 1080p, per evitare bitrate troppo alti che
+  causerebbero buffering sulla TV.
+- Tutti gli URL vengono passati attraverso un Cloudflare Worker che fa da proxy,
+  evitando i blocchi IP di YouTube.
+- Nessun download, nessun merge, nessun hosting: solo URL diretti.
 """
 
 import json
@@ -27,6 +31,8 @@ EXPIRE_MARGIN_MIN = 120
 RECHECK_UPLOAD_MIN = 90
 RETRY_MIN = 10
 CATCHUP_MAX_MIN = 72 * 60
+
+MAX_HEIGHT = 1080  # tetto massimo di risoluzione per evitare buffering
 
 # URL del tuo Cloudflare Worker
 WORKER_URL = "https://tvshqip.ardit-asllanaj-2003.workers.dev/"
@@ -159,6 +165,8 @@ def refresh_needed(item, now):
         return True
     if minutes_between(now, updated) >= REFRESH_HOURS * 60:
         return True
+    # L'expire è dentro l'URL originale di YouTube, non in quella del proxy.
+    # Lo teniamo per sicurezza se presente anche nell'URL proxato (non lo sarà di solito).
     exp = expire_of(item.get("url", ""))
     if exp and (exp - now.timestamp()) / 60 < EXPIRE_MARGIN_MIN:
         return True
@@ -190,6 +198,7 @@ def due_task(film, item, now):
 
 # --------------------------------------------------------------------- YouTube
 def base_opts():
+    """Client ios+mweb+tv: ios funziona per m3u8, mweb/tv evitano 403 di web_safari."""
     return {
         "format": "best",
         "simulate": True,
@@ -226,44 +235,66 @@ def list_channel(film, tab):
 
 
 def pick_stream(info):
+    """
+    Restituisce l'URL del flusso HLS (m3u8) con altezza <= MAX_HEIGHT (1080p).
+
+    Ordine di preferenza:
+    1) manifest_url principale (contiene tutte le varianti, il player sceglie).
+    2) m3u8 muxed (audio+video) con height <= 1080, il più alto possibile.
+    3) qualsiasi m3u8 con height <= 1080.
+    4) qualsiasi m3u8, anche sopra 1080 (meglio che niente).
+    5) fallback su MP4 progressivo muxed.
+    """
     formats = info.get("formats") or []
-    live = info.get("live_status") == "is_live" or info.get("is_live")
 
-    if live:
-        if info.get("manifest_url"):
-            return info["manifest_url"]
-        for f in reversed(formats):
-            if ".m3u8" in (f.get("url") or ""):
-                return f["url"]
-        return info.get("url")
+    # 1) manifest master (per live e alcuni VOD)
+    manifest = info.get("manifest_url")
+    if manifest and ".m3u8" in manifest:
+        return manifest
 
-    for itag in ("22", "18"):
-        for f in formats:
-            if f.get("format_id") == itag and f.get("url"):
-                return f["url"]
-
+    # 2) m3u8 muxed sotto 1080p
     muxed = [
+        f for f in formats
+        if ".m3u8" in (f.get("url") or "")
+        and f.get("height") is not None
+        and f.get("height") <= MAX_HEIGHT
+        and f.get("vcodec") not in (None, "none")
+        and f.get("acodec") not in (None, "none")
+    ]
+    if muxed:
+        muxed.sort(key=lambda f: f.get("height", 0), reverse=True)
+        return muxed[0]["url"]
+
+    # 3) qualsiasi m3u8 sotto 1080p
+    any_hls = [
+        f for f in formats
+        if ".m3u8" in (f.get("url") or "")
+        and f.get("height") is not None
+        and f.get("height") <= MAX_HEIGHT
+    ]
+    if any_hls:
+        any_hls.sort(key=lambda f: f.get("height", 0), reverse=True)
+        return any_hls[0]["url"]
+
+    # 4) qualsiasi m3u8 (anche sopra 1080)
+    fallback_hls = [f for f in formats if ".m3u8" in (f.get("url") or "")]
+    if fallback_hls:
+        fallback_hls.sort(key=lambda f: f.get("height") or 0, reverse=True)
+        return fallback_hls[0]["url"]
+
+    # 5) MP4 progressivo muxed (limitato qualitativamente, ma funziona)
+    mp4 = [
         f for f in formats
         if str(f.get("protocol", "")).startswith(("http", "https"))
         and ".m3u8" not in (f.get("url") or "")
         and f.get("vcodec") not in (None, "none")
         and f.get("acodec") not in (None, "none")
     ]
-    if muxed:
-        return muxed[-1]["url"]
+    if mp4:
+        mp4.sort(key=lambda f: f.get("height") or 0, reverse=True)
+        return mp4[0]["url"]
 
     return info.get("url")
-
-
-def resolve_redirect(url):
-    if not url or "cms_redirect=yes" not in url:
-        return url
-    try:
-        req = urllib.request.Request(url, method="HEAD")
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            return resp.geturl()
-    except Exception:
-        return url
 
 
 def video_ts(info):
@@ -281,40 +312,50 @@ def video_ts(info):
 
 
 def search_video(film, min_ts):
+    """
+    Cerca il video della settimana sia in /videos che in /streams.
+    Per le premiere il video sta in /streams durante la messa in onda.
+    """
     for tab in ("videos", "streams"):
         try:
             entries = list_channel(film, tab)
         except Exception as e:
             print(f"  errore lettura tab {tab}: {e}")
             continue
+
         for entry in entries:
             if not title_ok(entry.get("title"), film):
                 continue
             if entry.get("live_status") == "is_upcoming":
                 print(f"  premiere programmata: {entry.get('title')} (salto)")
                 continue
+
             try:
                 info = extract(f"https://www.youtube.com/watch?v={entry['id']}")
             except Exception as e:
                 print(f"  errore estrazione: {e}")
                 continue
+
             if info.get("live_status") == "is_upcoming":
                 continue
+
             ts = video_ts(info)
+            if ts is not None and ts < min_ts:
+                print(f"  video vecchio saltato: {info.get('title')}")
+                continue
+
             url = pick_stream(info)
             if not url:
                 print("  video trovato ma senza flusso utilizzabile")
                 continue
-            if ts is not None and ts < min_ts:
-                print(f"  video vecchio saltato: {info.get('title')}")
-                continue
+
             return info, url
+
     return None, None
 
 
 def set_link(item, info, url, now):
     item["type"] = "hls"
-    # Applica il proxy all'URL prima di salvarlo
     item["url"] = proxy_url(url)
     item["videoId"] = info.get("id")
     item["videoTitle"] = info.get("title")
@@ -331,7 +372,6 @@ def do_refresh(item, now):
     if not url:
         print("  rinnovo fallito: nessun flusso, tengo il link vecchio")
         return
-    url = resolve_redirect(url)
     set_link(item, info, url, now)
     print("  link rinnovato")
 
@@ -344,6 +384,7 @@ def run_task(film, item, task, now):
         do_refresh(item, now)
         return
 
+    # task == "search"
     item["lastTry"] = iso(now)
     if FORCE:
         min_ts = (now - timedelta(days=30)).timestamp()
@@ -357,12 +398,11 @@ def run_task(film, item, task, now):
             item["recheck"] = wk
         return
 
-    url = resolve_redirect(url)
     set_link(item, info, url, now)
     item["week"] = wk
     if minutes_between(now, sched) >= RECHECK_UPLOAD_MIN:
         item["recheck"] = wk
-    print(f"  video trovato: {info.get('title')} ({item['state']})")
+    print(f"  video trovato: {info.get('title')} ({item['state']}, {MAX_HEIGHT}p max)")
 
 
 # ------------------------------------------------------------------------ main
