@@ -2,8 +2,8 @@ import json
 import re
 import sys
 import urllib.parse
-import requests
-from bs4 import BeautifulSoup
+import urllib.request
+import os
 
 CONFIG_FILE = "config.json"
 SPORT_SECTION_ID = "sport"
@@ -17,136 +17,141 @@ def save_config(data):
     with open(CONFIG_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
-def extract_real_stream_link(page_url, headers):
-    """Entra nella pagina di Google Sites e cerca l'iframe del player."""
+def get_html(url, referer=None):
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+    }
+    if referer:
+        headers['Referer'] = referer
+    req = urllib.request.Request(url, headers=headers)
     try:
-        print(f"   -> Analisi pagina: {page_url}")
-        resp = requests.get(page_url, headers=headers, timeout=10)
-        soup = BeautifulSoup(resp.text, "html.parser")
-        
-        iframes = soup.find_all("iframe")
-        
-        # Domini pubblicitari da ignorare
-        ad_domains = ["googlesyndication", "doubleclick", "googleadservices"]
-        
-        for iframe in iframes:
-            src = iframe.get("src")
-            if not src:
-                continue
-            if any(ad in src for ad in ad_domains):
-                continue
-                
-            # Rende il link assoluto (a volte Google Sites usa link relativi)
-            src = urllib.parse.urljoin(page_url, src)
-            
-            # Controlla che tipo di player è
-            if "youtube.com" in src or "youtu.be" in src or "youtube-nocookie.com" in src:
-                print(f"      -> Trovato YouTube: {src}")
-                return "youtube", src
-            elif ".m3u8" in src:
-                print(f"      -> Trovato m3u8 diretto: {src}")
-                return "hls", src
-            elif "drive.google.com" in src:
-                print(f"      -> Trovato Google Drive: {src}")
-                return "hls", src
-            elif "http" in src:
-                print(f"      -> Trovato Player generico: {src}")
-                return "dynamic_hls", src
-                
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            return resp.read().decode('utf-8', errors='ignore')
     except Exception as e:
-        print(f"      -> Errore estrazione: {e}")
+        print(f"      -> Errore lettura {url}: {e}")
+        return ""
+
+def extract_real_stream_link(google_sites_url):
+    """
+    Segue la catena di redirect:
+    1) Google Sites -> estrae link 'www.google.com/url?q=...'
+    2) Blogger (fitnessshapesstyle.net) -> estrae iframe dell'AlbaPlayer (healthfirstin.com)
+    """
+    try:
+        print(f"   -> Analisi Google Sites: {google_sites_url}")
+        html_google = get_html(google_sites_url)
         
-    print("      -> Nessun player trovato, uso la pagina originale.")
-    return "dynamic_hls", page_url
+        # 1. Trova il link di reindirizzamento Google per il blog
+        match_google = re.search(r'https://www\.google\.com/url\?q=([^&"]+)', html_google)
+        if not match_google:
+            print("      -> Nessun link di reindirizzamento trovato in Google Sites.")
+            return google_sites_url
+
+        blogger_url = urllib.parse.unquote(match_google.group(1))
+        print(f"      -> Trovato Blog: {blogger_url}")
+
+        # 2. Scarica il blog e cerca l'iframe del player
+        html_blogger = get_html(blogger_url, referer=google_sites_url)
+        match_alba = re.search(r'<iframe.*?src=["\']([^"\']*albaplayer[^"\']*)["\']', html_blogger)
+        if not match_alba:
+            match_alba = re.search(r'<iframe.*?src=["\']([^"\']+)["\']', html_blogger)
+            
+        if match_alba:
+            player_url = match_alba.group(1)
+            if player_url.startswith('//'):
+                player_url = 'https:' + player_url
+            print(f"      -> Trovato AlbaPlayer finale: {player_url}")
+            return player_url
+
+        print("      -> Iframe non ancora attivo (partita non iniziata). Uso il Blog.")
+        return blogger_url
+
+    except Exception as e:
+        print(f"      -> Errore analisi profonda: {e}")
+        return google_sites_url
 
 def fetch_matches():
     print(f"-> Connessione a {SOURCE_URL} ...")
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-    }
-    try:
-        resp = requests.get(SOURCE_URL, headers=headers, timeout=15)
-        resp.raise_for_status()
-    except Exception as e:
-        print(f"ERRORE DI RETE: {e}")
+    html_home = get_html(SOURCE_URL)
+    if not html_home:
+        print("ERRORE DI RETE: Impossibile scaricare la pagina principale.")
         return []
+
+    print("-> Pagina scaricata, inizio l'analisi dei blocchi partita...")
     
-    print("-> Pagina scaricata, inizio l'analisi HTML...")
-    soup = BeautifulSoup(resp.text, "html.parser")
+    # Estrae tutti i blocchi partita
+    blocks = re.findall(r'<div[^>]*class=["\'][^"\']*AF_Match[^"\']*["\'][^>]*>(.*?)</a>\s*</div>', html_home, re.DOTALL)
+    print(f"-> Trovati {len(blocks)} blocchi partita. Inizio analisi approfondita...")
+
     matches = []
-    
-    match_divs = soup.find_all("div", class_="AF_Match")
-    print(f"-> Trovati {len(match_divs)} blocchi partita. Inizio analisi approfondita...")
-    
-    for match_div in match_divs:
+    seen_ids = set()
+
+    for b in blocks:
         try:
-            teams = match_div.find_all("div", class_="AF_TeamName")
-            if len(teams) < 2:
+            link_m = re.search(r'href=["\'](https://sites\.google\.com/[^"\']+)["\']', b)
+            if not link_m:
                 continue
-            team1 = teams[0].get_text(strip=True)
-            team2 = teams[1].get_text(strip=True)
-            match_name = f"{team1} - {team2}"
-            
-            link_tag = match_div.find("a", class_="AF_EventMask")
-            if not link_tag or not link_tag.get("href"):
-                continue
-            link = urllib.parse.urljoin(SOURCE_URL, link_tag["href"])
-            
-            icon_tag = match_div.find("div", class_="AF_TeamLogo").find("img") if match_div.find("div", class_="AF_TeamLogo") else None
-            icon = icon_tag["src"] if icon_tag and icon_tag.get("src") else ""
-            icon = urllib.parse.urljoin(SOURCE_URL, icon)
-            
-            # Esegue l'analisi profonda per trovare il player
-            real_type, real_url = extract_real_stream_link(link, headers)
-            
+            google_link = link_m.group(1)
+
+            # Estrae il nome dal link slug
+            slug = google_link.split('/')[-1].replace('-', ' ').title()
+            match_name = slug
+
             match_id = "match-" + re.sub(r'[^a-z0-9]', '-', match_name.lower())
-            
+            if match_id in seen_ids:
+                continue
+            seen_ids.add(match_id)
+
+            print(f"\n[Partita] {match_name}")
+            real_url = extract_real_stream_link(google_link)
+
             match_item = {
                 "id": match_id,
                 "name": match_name,
-                "icon": icon,
-                "subtitle": "Partita di calcio"
+                "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
+                "subtitle": "Partita di Calcio",
+                "type": "dynamic_hls",
+                "pageUrl": real_url,
+                "referer": "https://kosovari.online/",
+                "forceWeb": True
             }
-            
-            # Assegna i campi corretti in base al tipo trovato
-            if real_type == "dynamic_hls":
-                match_item["type"] = "dynamic_hls"
-                match_item["pageUrl"] = real_url
-            else:
-                match_item["type"] = real_type
-                match_item["url"] = real_url
-                
+
             matches.append(match_item)
-            
+
         except Exception as e:
             print(f"Errore parsing singola partita: {e}")
-            
+
     return matches
 
 def main():
     print(f"Inizio aggiornamento sport...")
     new_matches = fetch_matches()
-    
+
     if not new_matches:
         print("Nessuna partita trovata. Il file config.json non verrà modificato.")
         sys.exit(0)
-        
+
     data = load_config()
     sport_section = None
     for section in data.get("sections", []):
         if section.get("id") == SPORT_SECTION_ID:
             sport_section = section
             break
-            
+
     if sport_section is None:
         print("Sezione 'sport' non trovata nel config.json.")
         sys.exit(1)
-        
-    existing_fixed = [item for item in sport_section.get("items", []) if not item.get("id", "").startswith("match-")]
-    sport_section["items"] = existing_fixed + new_matches
-    
+
+    sport_section["items"] = new_matches
+    sport_section["subtitle"] = f"Partite di oggi ({len(new_matches)})"
+
     save_config(data)
-    print(f"config.json aggiornato con {len(new_matches)} partite.")
+    print(f"\nconfig.json aggiornato con successo con {len(new_matches)} partite!")
+
+    path = os.environ.get("GITHUB_OUTPUT")
+    if path:
+        with open(path, "a", encoding="utf-8") as f:
+            f.write("run=true\n")
 
 if __name__ == "__main__":
     main()
