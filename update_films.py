@@ -210,7 +210,6 @@ def base_opts():
         "extractor_args": {
             "youtube": {
                 "player_client": ["ios", "mweb", "tv"],
-                "player_skip": ["webpage", "configs"],
             }
         },
     }
