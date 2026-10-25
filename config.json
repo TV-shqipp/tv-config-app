@@ -167,22 +167,20 @@
       "icon": "",
       "items": [
         {
-          "id": "sport-liverpool-brighton",
-          "name": "Liverpool Brighton",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
-          "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/exactly-what-to-eat-before-and-after-your-workout/?serv=3",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
+          "id": "sport-liverpool---brighton",
+          "name": "Liverpool - Brighton",
+          "icon": "https://kosovari.online/wp-content/uploads/2026/02/250px-Liverpool_FC.svg_.png",
+          "type": "hls",
+          "url": "https://ter.eroouden.lol/nova1.m3u8",
+          "referer": "https://healthfirstin.com/albaplayer/exactly-what-to-eat-before-and-after-your-workout/?serv=5"
         },
         {
-          "id": "sport-man-united-bournemouth",
-          "name": "Man United Bournemouth",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
-          "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/why-active-recovery-builds-muscle-faster-than-daily-training/?serv=3",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
+          "id": "sport-manchester-united---bournemouth",
+          "name": "Manchester United - Bournemouth",
+          "icon": "https://kosovari.online/wp-content/uploads/2026/02/Manchester_United_FC_crest.svg_.png",
+          "type": "hls",
+          "url": "https://c2f2zq.fubo18.com:443/espn/mono.m3u8?token=29ca22c73a59f33312c74f8f625c6573f430f377-8f-1792949527-1792931527",
+          "referer": "https://healthfirstin.com/albaplayer/why-active-recovery-builds-muscle-faster-than-daily-training/?serv=5"
         }
       ]
     },
