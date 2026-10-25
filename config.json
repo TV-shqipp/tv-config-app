@@ -163,24 +163,15 @@
     {
       "id": "sport",
       "title": "Sport",
-      "subtitle": "Partite attive in diretta (3)",
+      "subtitle": "Partite attive in diretta (2)",
       "icon": "",
       "items": [
-        {
-          "id": "sport-inter-fiorentina",
-          "name": "Inter Fiorentina",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
-          "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/how-daily-micro-habits-rebuild-your-immune-system/?serv=5",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
-        },
         {
           "id": "sport-liverpool-brighton",
           "name": "Liverpool Brighton",
           "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
           "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/exactly-what-to-eat-before-and-after-your-workout/?serv=5",
+          "pageUrl": "https://healthfirstin.com/albaplayer/exactly-what-to-eat-before-and-after-your-workout/?serv=3",
           "referer": "https://kosovari.online/",
           "forceWeb": true
         },
