@@ -319,11 +319,16 @@ def extract_best(url):
     return best
 
 
-def list_channel(film, tab):
+def list_channel(film, tab, limit=50):
+    """Elenco dei video di una tab del canale (più recenti per primi).
+    tab="search:parola" cerca dentro il canale (utile se i video sono tanti)."""
     import yt_dlp
-    url = f"https://www.youtube.com/{film['channel']}/{tab}"
+    if tab.startswith("search:"):
+        url = f"https://www.youtube.com/{film['channel']}/search?query={quote(tab[7:])}"
+    else:
+        url = f"https://www.youtube.com/{film['channel']}/{tab}"
     opts = base_opts()
-    opts.update({"extract_flat": "in_playlist", "playlistend": 50})
+    opts.update({"extract_flat": "in_playlist", "playlistend": limit})
     with yt_dlp.YoutubeDL(opts) as ydl:
         info = ydl.extract_info(url, download=False)
     return [e for e in ((info or {}).get("entries") or []) if e and e.get("id")]
@@ -413,8 +418,38 @@ def video_ts(info):
     return None
 
 
+def _fetch_meta(watch):
+    """Titolo, data e stato del video (lettura veloce, con ripiego su quella normale)."""
+    try:
+        return extract(watch, meta_only=True)
+    except Exception:
+        return extract(watch)
+
+
+def _stream_for(info, watch):
+    """Dal video giusto ricava cosa scrivere nel config ('' in modalità id)."""
+    if LINK_MODE == "id":
+        print(f"  salvo solo il videoId {info.get('id')}: {info.get('title')}")
+        return info, ""
+
+    is_live = info.get("live_status") == "is_live" or info.get("is_live")
+    ok = has_hls_pair(info) or (is_live and info.get("manifest_url"))
+    if not ok:
+        try:
+            info = extract_best(watch) or info
+        except Exception as e:
+            print(f"  errore estrazione: {e}")
+            return None, None
+
+    url = pick_stream(info)
+    if not url:
+        print("  video trovato ma senza flusso utilizzabile: mi fermo")
+        return None, None
+    return info, url
+
+
 def search_video(film, min_ts):
-    """Cerca il video della settimana in /videos e /streams."""
+    """Cerca il video della settimana: prima nelle tab del canale, poi con la ricerca."""
     # I canali dei film caricati non hanno la tab /streams (errore inutile).
     tabs = ("streams", "videos") if film["live"] else ("videos",)
     for tab in tabs:
@@ -424,19 +459,17 @@ def search_video(film, min_ts):
             print(f"  errore lettura tab {tab}: {e}")
             continue
 
-        for entry in entries:
-            if not title_ok(entry.get("title"), film):
-                continue
+        matches = [e for e in entries if title_ok(e.get("title"), film)]
+        print(f"  tab {tab}: {len(entries)} video, {len(matches)} col titolo giusto")
+
+        for entry in matches:
             if entry.get("live_status") == "is_upcoming":
                 print(f"  premiere programmata: {entry.get('title')} (salto)")
                 continue
 
             watch = f"https://www.youtube.com/watch?v={entry['id']}"
             try:
-                try:
-                    info = extract(watch, meta_only=True)  # veloce: serve solo a data e stato
-                except Exception:
-                    info = extract(watch)
+                info = _fetch_meta(watch)
             except Exception as e:
                 print(f"  errore estrazione: {e}")
                 continue
@@ -449,28 +482,43 @@ def search_video(film, min_ts):
                 print(f"  video vecchio saltato: {info.get('title')} (mi fermo qui)")
                 break  # l'elenco è dal più recente: i successivi sono ancora più vecchi
 
-            if LINK_MODE == "id":
-                print(f"  salvo solo il videoId {info.get('id')}: {info.get('title')}")
-                return info, ""
+            return _stream_for(info, watch)
 
-            # Video giusto: ora cerca il flusso migliore provando più client.
-            is_live = info.get("live_status") == "is_live" or info.get("is_live")
-            ok = has_hls_pair(info) or (is_live and info.get("manifest_url"))
-            if not ok:
-                try:
-                    info = extract_best(watch) or info
-                except Exception as e:
-                    print(f"  errore estrazione: {e}")
-                    continue
+    # Ripiego: ricerca dentro il canale. Serve quando il canale carica tanti video
+    # e quello cercato è oltre i primi 50. I risultati non sono in ordine di data:
+    # si guardano i primi e si sceglie il più recente.
+    key = film["keywords"][0]
+    try:
+        entries = list_channel(film, f"search:{key}", limit=15)
+    except Exception as e:
+        print(f"  errore nella ricerca nel canale: {e}")
+        return None, None
 
-            url = pick_stream(info)
-            if not url:
-                print("  video trovato ma senza flusso utilizzabile: mi fermo")
-                return None, None  # inutile insistere sugli altri episodi
+    matches = [e for e in entries if title_ok(e.get("title"), film)]
+    print(f"  ricerca nel canale '{key}': {len(entries)} risultati, "
+          f"{len(matches)} col titolo giusto")
 
-            return info, url
+    best, best_ts = None, -1
+    for entry in matches[:10]:
+        if entry.get("live_status") == "is_upcoming":
+            continue
+        try:
+            info = _fetch_meta(f"https://www.youtube.com/watch?v={entry['id']}")
+        except Exception as e:
+            print(f"  errore estrazione: {e}")
+            continue
+        if info.get("live_status") == "is_upcoming":
+            continue
+        ts = video_ts(info)
+        if ts is not None and ts < min_ts:
+            continue
+        if (ts or 0) > best_ts:
+            best, best_ts = info, ts or 0
 
-    return None, None
+    if best is None:
+        return None, None
+    print(f"  trovato con la ricerca: {best.get('title')}")
+    return _stream_for(best, f"https://www.youtube.com/watch?v={best['id']}")
 
 
 def set_link(item, info, url, now):
