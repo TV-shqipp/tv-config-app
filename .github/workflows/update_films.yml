@@ -2,7 +2,7 @@ name: Aggiorna Filma Shqip
 
 on:
   schedule:
-    # Gio/ven/sab: polling ogni 5 min nelle fasce serali
+    # Gio/ven/sab: polling ogni 5 min nelle fasce serali (UTC 17-22)
     - cron: '*/5 17-22 * * 4,5,6'
     # Resto della settimana: ogni 15 min per refresh e recuperi
     - cron: '*/15 * * * *'
