@@ -1,0 +1,39 @@
+name: Update Cinema StreamingCommunity
+
+on:
+  schedule:
+    # Ogni 30 minuti dalle 20:00 alle 02:00
+    - cron: '*/30 20-23 * * *'
+    - cron: '*/30 0-2 * * *'
+    # Ogni 30 minuti dalle 09:00 alle 12:00
+    - cron: '*/30 9-12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-cinema:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run update_cinema.py
+        id: run_script
+        run: python update_cinema.py
+
+      - name: Commit and push changes
+        if: steps.run_script.outputs.run == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add config.json
+          git commit -m "Auto-update Cinema Trending Movies [skip ci]" || exit 0
+          git push
