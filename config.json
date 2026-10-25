@@ -167,20 +167,20 @@
       "icon": "",
       "items": [
         {
-          "id": "sport-liverpool---brighton",
-          "name": "Liverpool - Brighton",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/02/250px-Liverpool_FC.svg_.png",
+          "id": "sport-hoffenheim---bayer-leverkusen",
+          "name": "Hoffenheim - Bayer Leverkusen",
+          "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Logo_TSG_Hoffenheim.svg_.png",
           "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/exactly-what-to-eat-before-and-after-your-workout/?serv=3",
+          "pageUrl": "https://healthfirstin.com/albaplayer/how-daily-micro-habits-rebuild-your-immune-system/?serv=5",
           "referer": "https://kosovari.online/",
           "forceWeb": true
         },
         {
-          "id": "sport-manchester-united---bournemouth",
-          "name": "Manchester United - Bournemouth",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/02/Manchester_United_FC_crest.svg_.png",
+          "id": "sport-freiburg---bayern-munich",
+          "name": "Freiburg - Bayern Munich",
+          "icon": "https://kosovari.online/wp-content/uploads/2026/02/250px-SC_Freiburg_logo.svg_.png",
           "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/why-active-recovery-builds-muscle-faster-than-daily-training/?serv=3",
+          "pageUrl": "https://healthfirstin.com/albaplayer/how-daily-micro-habits-rebuild-your-immune-system/?serv=5",
           "referer": "https://kosovari.online/",
           "forceWeb": true
         }
