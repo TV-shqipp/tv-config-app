@@ -167,29 +167,29 @@
       "icon": "",
       "items": [
         {
-          "id": "sport-hoffenheim---bayer-leverkusen",
-          "name": "Hoffenheim - Bayer Leverkusen",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Logo_TSG_Hoffenheim.svg_.png",
-          "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/how-daily-micro-habits-rebuild-your-immune-system/?serv=5",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
-        },
-        {
-          "id": "sport-freiburg---bayern-munich",
-          "name": "Freiburg - Bayern Munich",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/02/250px-SC_Freiburg_logo.svg_.png",
-          "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/how-daily-micro-habits-rebuild-your-immune-system/?serv=5",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
-        },
-        {
           "id": "sport-lecce---juventus",
           "name": "Lecce - Juventus",
           "icon": "https://kosovari.online/wp-content/uploads/2026/02/US_Lecce_crest.svg_.png",
           "type": "dynamic_hls",
           "pageUrl": "https://healthfirstin.com/albaplayer/how-to-optimize-your-workouts-for-your-specific-goals/?serv=5",
+          "referer": "https://kosovari.online/",
+          "forceWeb": true
+        },
+        {
+          "id": "sport-udinese---milan",
+          "name": "Udinese - Milan",
+          "icon": "https://kosovari.online/wp-content/uploads/2026/03/Udinese_Calcio_logo.svg_.png",
+          "type": "dynamic_hls",
+          "pageUrl": "https://healthfirstin.com/albaplayer/why-your-sleep-schedule-controls-your-lifespan/?serv=5",
+          "referer": "https://kosovari.online/",
+          "forceWeb": true
+        },
+        {
+          "id": "sport-formula-1---formula-1",
+          "name": "Formula 1 - Formula 1",
+          "icon": "https://kosovari.online/wp-content/uploads/2026/03/formula-1-logo-png_seeklogo-330361.png",
+          "type": "dynamic_hls",
+          "pageUrl": "https://healthfirstin.com/albaplayer/5-subtle-red-flags-your-body-is-sending-you/?serv=5",
           "referer": "https://kosovari.online/",
           "forceWeb": true
         }
