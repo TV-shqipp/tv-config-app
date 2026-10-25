@@ -235,67 +235,41 @@ def list_channel(film, tab):
 
 
 def pick_stream(info):
-    """
-    Restituisce l'URL del flusso HLS (m3u8) con altezza <= MAX_HEIGHT (1080p).
-
-    Ordine di preferenza:
-    1) manifest_url principale (contiene tutte le varianti, il player sceglie).
-    2) m3u8 muxed (audio+video) con height <= 1080, il più alto possibile.
-    3) qualsiasi m3u8 con height <= 1080.
-    4) qualsiasi m3u8, anche sopra 1080 (meglio che niente).
-    5) fallback su MP4 progressivo muxed.
-    """
     formats = info.get("formats") or []
 
-    # 1) manifest master (per live e alcuni VOD)
-    manifest = info.get("manifest_url")
-    if manifest and ".m3u8" in manifest:
-        return manifest
+    # Seleziona solo formati HLS nativi con altezza <= 1080p
+    hls_candidates = [
+        f for f in formats
+        if f.get("protocol") in ("m3u8_native", "m3u8")
+        and f.get("height") is not None
+        and f.get("height") <= 1080
+        and f.get("url")
+    ]
 
-    # 2) m3u8 muxed sotto 1080p
+    if hls_candidates:
+        # Ordina per altezza decrescente: prendi il 1080p (o il più alto sotto)
+        hls_candidates.sort(key=lambda f: f["height"], reverse=True)
+        best = hls_candidates[0]
+        print(f"  HLS selezionato: {best.get('height')}p ({best.get('format_id')})")
+        return best["url"]
+
+    # Fallback: cerca un manifest generico (comportamento precedente)
+    if info.get("manifest_url"):
+        return info["manifest_url"]
+
+    # Fallback estremo: MP4 progressivo
     muxed = [
-        f for f in formats
-        if ".m3u8" in (f.get("url") or "")
-        and f.get("height") is not None
-        and f.get("height") <= MAX_HEIGHT
-        and f.get("vcodec") not in (None, "none")
-        and f.get("acodec") not in (None, "none")
-    ]
-    if muxed:
-        muxed.sort(key=lambda f: f.get("height", 0), reverse=True)
-        return muxed[0]["url"]
-
-    # 3) qualsiasi m3u8 sotto 1080p
-    any_hls = [
-        f for f in formats
-        if ".m3u8" in (f.get("url") or "")
-        and f.get("height") is not None
-        and f.get("height") <= MAX_HEIGHT
-    ]
-    if any_hls:
-        any_hls.sort(key=lambda f: f.get("height", 0), reverse=True)
-        return any_hls[0]["url"]
-
-    # 4) qualsiasi m3u8 (anche sopra 1080)
-    fallback_hls = [f for f in formats if ".m3u8" in (f.get("url") or "")]
-    if fallback_hls:
-        fallback_hls.sort(key=lambda f: f.get("height") or 0, reverse=True)
-        return fallback_hls[0]["url"]
-
-    # 5) MP4 progressivo muxed (limitato qualitativamente, ma funziona)
-    mp4 = [
         f for f in formats
         if str(f.get("protocol", "")).startswith(("http", "https"))
         and ".m3u8" not in (f.get("url") or "")
         and f.get("vcodec") not in (None, "none")
         and f.get("acodec") not in (None, "none")
     ]
-    if mp4:
-        mp4.sort(key=lambda f: f.get("height") or 0, reverse=True)
-        return mp4[0]["url"]
+    if muxed:
+        muxed.sort(key=lambda f: f.get("height") or 0, reverse=True)
+        return muxed[0]["url"]
 
     return info.get("url")
-
 
 def video_ts(info):
     ts = info.get("release_timestamp") or info.get("timestamp")
