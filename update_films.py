@@ -26,7 +26,7 @@ TZ = ZoneInfo("Europe/Rome")
 UTC = timezone.utc
 
 # ---------------------------------------------------------------- impostazioni
-REFRESH_HOURS = 3
+REFRESH_HOURS = 5
 EXPIRE_MARGIN_MIN = 120
 RECHECK_UPLOAD_MIN = 90
 RETRY_MIN = 10
@@ -39,18 +39,19 @@ WORKER_URL = "https://tvshqip.ardit-asllanaj-2003.workers.dev/"
 
 OFFLINE_MESSAGE = "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
 
+# Aggiunto il parametro "mode" per differenziare caricati (upload) e premiere/live (live)
 FILMS = [
     {"id": "edhe-malet-flasin", "name": "Edhe malet flasin",
-     "channel": "@EdaFilms2", "day": 5, "time": "20:31", "window": 10,
+     "channel": "@EdaFilms2", "mode": "upload", "day": 5, "time": "20:31", "window": 10,
      "keywords": ["edhe malet flasin"], "exclude": ["promo"]},
     {"id": "rrugt-e-lirise", "name": "Rrugët e Lirisë",
-     "channel": "@ProduksioniDONJETA", "day": 4, "time": "20:00", "window": 10,
+     "channel": "@ProduksioniDONJETA", "mode": "upload", "day": 4, "time": "20:00", "window": 10,
      "keywords": ["rrugët e lirisë"], "exclude": ["promo"]},
     {"id": "bashkallajk", "name": "Bashkallajk",
-     "channel": "@teve1", "day": 4, "time": "20:45",
+     "channel": "@teve1", "mode": "live", "day": 4, "time": "20:45", "window": 120,
      "keywords": ["bashkallajk"], "exclude": ["promo"]},
     {"id": "nusja-me-shkolle", "name": "Nusja me shkollë",
-     "channel": "@DTVOff", "day": 5, "time": "20:30",
+     "channel": "@DTVOff", "mode": "live", "day": 5, "time": "20:30", "window": 120,
      "keywords": ["nusja me shkollë"], "exclude": ["promo"]},
 ]
 
@@ -165,8 +166,6 @@ def refresh_needed(item, now):
         return True
     if minutes_between(now, updated) >= REFRESH_HOURS * 60:
         return True
-    # L'expire è dentro l'URL originale di YouTube, non in quella del proxy.
-    # Lo teniamo per sicurezza se presente anche nell'URL proxato (non lo sarà di solito).
     exp = expire_of(item.get("url", ""))
     if exp and (exp - now.timestamp()) / 60 < EXPIRE_MARGIN_MIN:
         return True
@@ -178,20 +177,29 @@ def due_task(film, item, now):
     wk = sched.isoformat()
     since = minutes_between(now, sched)
     found = item.get("week") == wk
+    mode = film.get("mode", "upload")
 
-    if found:
-        return None
-
-    window = film.get("window", 120)
-    if since <= window:
-        return "search"
-
-    if film.get("window") == 10 and RECHECK_UPLOAD_MIN <= since <= RECHECK_UPLOAD_MIN + 10:
-        if item.get("recheck") != wk:
+    # 1. Se il film NON è ancora stato trovato questa settimana
+    if not found:
+        window = film.get("window", 120)
+        if since <= window:
+            return "search"
+        if since <= CATCHUP_MAX_MIN and not throttled(item, now, RETRY_MIN):
             return "search"
 
-    if since <= CATCHUP_MAX_MIN and not throttled(item, now, RETRY_MIN):
-        return "search"
+    # 2. Se il film è STATO trovato, gestiamo i ricontrolli post-pubblicazione
+    if found:
+        recheck_done = item.get("recheck") == wk
+        
+        # Per i film caricati: controllo forzato dopo 1 ora e 30 (90 min)
+        if mode == "upload" and not recheck_done:
+            if RECHECK_UPLOAD_MIN <= since <= RECHECK_UPLOAD_MIN + 30:
+                return "search"
+                
+        # Per le premiere/live: controllo forzato dopo 2 ore (120 min)
+        if mode == "live" and not recheck_done:
+            if 120 <= since <= 150:
+                return "search"
 
     return None
 
@@ -209,7 +217,7 @@ def base_opts():
         "js_runtimes": {"node": {}},
         "extractor_args": {
             "youtube": {
-                "player_client": ["web_safari", "web"],
+                "player_client": ["ios", "android", "web"],
             }
         },
     }
@@ -235,8 +243,6 @@ def list_channel(film, tab):
 
 def pick_stream(info):
     formats = info.get("formats") or []
-
-  
     
     print("FORMATI DISPONIBILI:")
     for f in formats:
@@ -249,7 +255,6 @@ def pick_stream(info):
             )
 
     print("MANIFEST:", info.get("manifest_url"))
-
 
     # 1. Preferisci un manifest HLS adattivo con più qualità.
     manifest = info.get("manifest_url")
@@ -280,7 +285,6 @@ def pick_stream(info):
         return best["url"]
 
     # 3. Se non esiste HLS, usa il miglior MP4 progressivo
-    # con audio e video, entro il limite di 1080p.
     muxed = [
         f for f in formats
         if str(f.get("protocol", "")).startswith(("http", "https"))
@@ -319,7 +323,6 @@ def video_ts(info):
 def search_video(film, min_ts):
     """
     Cerca il video della settimana sia in /videos che in /streams.
-    Per le premiere il video sta in /streams durante la messa in onda.
     """
     for tab in ("videos", "streams"):
         try:
@@ -384,6 +387,7 @@ def do_refresh(item, now):
 def run_task(film, item, task, now):
     sched = last_occurrence(film["day"], film["time"], now)
     wk = sched.isoformat()
+    since = minutes_between(now, sched)
 
     if task == "refresh":
         do_refresh(item, now)
@@ -399,14 +403,20 @@ def run_task(film, item, task, now):
     info, url = search_video(film, min_ts)
     if not info:
         print("  nessun video nuovo trovato")
-        if minutes_between(now, sched) >= RECHECK_UPLOAD_MIN:
+        target_min = RECHECK_UPLOAD_MIN if film.get("mode") == "upload" else 120
+        # Annulla il recheck se il video non esce per troppo tempo
+        if since >= target_min + 30:
             item["recheck"] = wk
         return
 
     set_link(item, info, url, now)
     item["week"] = wk
-    if minutes_between(now, sched) >= RECHECK_UPLOAD_MIN:
+    
+    # Registra il recheck solo se abbiamo superato i minuti obiettivo (90 o 120)
+    target_min = RECHECK_UPLOAD_MIN if film.get("mode") == "upload" else 120
+    if since >= target_min:
         item["recheck"] = wk
+        
     print(f"  video trovato: {info.get('title')} ({item['state']}, {MAX_HEIGHT}p max)")
 
 
