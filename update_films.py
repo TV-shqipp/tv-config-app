@@ -209,7 +209,7 @@ def base_opts():
         "js_runtimes": {"node": {}},
         "extractor_args": {
             "youtube": {
-                "player_client": ["ios", "mweb", "tv"],
+                "player_client": ["web_safari", "web"],
             }
         },
     }
