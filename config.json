@@ -188,10 +188,18 @@
     },
     {
       "id": "cinema",
-      "title": "Cinema",
-      "subtitle": "Film e Serie TV",
-      "icon": "",
-      "items": []
+      "title": "Cinema e Serie TV",
+      "subtitle": "Streaming Community",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/cinema.png",
+      "items": [
+        {
+          "id": "streaming-community",
+          "name": "Streaming Community",
+          "subtitle": "Cerca e guarda qualsiasi Film o Serie TV",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/cinema.png",
+          "type": "dynamic_hls",
+          "pageUrl": "https://streamingcommunityz.build/",
+          "forceWeb": true
+        }
+      ]
     }
-  ]
-}
