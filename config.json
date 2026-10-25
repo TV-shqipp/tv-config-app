@@ -163,7 +163,7 @@
     {
       "id": "sport",
       "title": "Sport",
-      "subtitle": "Partite attive in diretta (2)",
+      "subtitle": "Partite attive in diretta (3)",
       "icon": "",
       "items": [
         {
@@ -181,6 +181,15 @@
           "icon": "https://kosovari.online/wp-content/uploads/2026/02/250px-SC_Freiburg_logo.svg_.png",
           "type": "dynamic_hls",
           "pageUrl": "https://healthfirstin.com/albaplayer/how-daily-micro-habits-rebuild-your-immune-system/?serv=5",
+          "referer": "https://kosovari.online/",
+          "forceWeb": true
+        },
+        {
+          "id": "sport-lecce---juventus",
+          "name": "Lecce - Juventus",
+          "icon": "https://kosovari.online/wp-content/uploads/2026/02/US_Lecce_crest.svg_.png",
+          "type": "dynamic_hls",
+          "pageUrl": "https://healthfirstin.com/albaplayer/how-to-optimize-your-workouts-for-your-specific-goals/?serv=5",
           "referer": "https://kosovari.online/",
           "forceWeb": true
         }
