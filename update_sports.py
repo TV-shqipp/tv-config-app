@@ -21,12 +21,13 @@ def get_headers():
     }
 
 def get_matches():
-    req = urllib.request.Request('https://www.streamex.hn/api/live/matches/all', headers=get_headers())
+    # Chiediamo all'API SOLO le partite di calcio (football)
+    req = urllib.request.Request('https://www.streamex.hn/api/live/matches/football', headers=get_headers())
     try:
         resp = urllib.request.urlopen(req).read().decode('utf-8')
         return json.loads(resp)
     except Exception as e:
-        print(f"Errore recupero lista partite: {e}")
+        print(f"Errore recupero lista partite calcio: {e}")
         return []
 
 def get_stream_embed(source_id, source_type):
@@ -39,12 +40,12 @@ def get_stream_embed(source_id, source_type):
                 if s.get('hd') and s.get('embedUrl'):
                     return s['embedUrl']
             return streams[0].get('embedUrl')
-    except Exception as e:
+    except Exception:
         pass
     return None
 
 def main():
-    print("Scaricando le partite da streamex.hn...")
+    print("Scaricando le partite di calcio da streamex.hn...")
     matches = get_matches()
     
     new_items = []
@@ -69,16 +70,17 @@ def main():
                 "icon": poster,
                 "type": "dynamic_hls",
                 "pageUrl": embed_url,
-                "referer": "https://www.streamex.hn/"
+                "referer": "https://www.streamex.hn/",
+                "forceWeb": True  # <--- FONDAMENTALE! Dice alla tua app di usare il Web Player a tutto schermo.
             })
-            print(f"Aggiunto: {title}")
+            print(f"Aggiunto Calcio: {title}")
 
     data = load_config()
     
     sport_section = next((s for s in data.get('sections', []) if s.get('id') == 'sport'), None)
     if sport_section and new_items:
         sport_section['items'] = new_items
-        sport_section['subtitle'] = f"Oggi ({len(new_items)} eventi)"
+        sport_section['subtitle'] = f"Oggi ({len(new_items)} partite)"
         save_config(data)
         print("config.json aggiornato con successo.")
         
@@ -87,7 +89,7 @@ def main():
             with open(path, "a", encoding="utf-8") as f:
                 f.write("run=true\n")
     else:
-        print("Nessuna nuova partita trovata o sezione sport mancante.")
+        print("Nessuna nuova partita di calcio trovata o sezione sport mancante.")
 
 if __name__ == '__main__':
     main()
