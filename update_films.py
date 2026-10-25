@@ -38,6 +38,13 @@ RETRY_MIN = 10              # pausa minima tra due tentativi di ricontrollo
 
 MAX_HEIGHT = 1080
 
+# Come viene salvato il film nel config.json:
+#   "id"  -> solo il videoId (url vuoto): è l'app sulla TV a ottenere il flusso sul
+#            proprio IP. Nessuna estrazione dei formati da GitHub, quindi niente
+#            blocchi anti-bot e niente link che scadono.
+#   "hls" -> vecchio metodo: link HLS/MP4 estratto qui e passato dal Worker.
+LINK_MODE = "id"
+
 WORKER_URL = "https://tvshqip.ardit-asllanaj-2003.workers.dev/"
 
 OFFLINE_MESSAGE = "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
@@ -175,6 +182,9 @@ def refresh_needed(item, now):
     """Rinnova il link (stesso videoId) ogni REFRESH_HOURS ore."""
     if item.get("type") != "hls" or not item.get("videoId"):
         return False
+    if LINK_MODE == "id":
+        # Niente da rinnovare: serve solo ripulire un vecchio url rimasto nel config.
+        return bool(item.get("url"))
     updated = parse_iso(item.get("linkUpdated"))
     if updated is None:
         return True
@@ -225,17 +235,46 @@ def base_opts():
     }
 
 
-def extract(url, clients=None, cookies=True):
+class _Log:
+    """Raccoglie gli avvisi di yt-dlp: spiegano perché non ci sono formati."""
+
+    def __init__(self):
+        self.msgs = []
+
+    def debug(self, m):
+        pass
+
+    def info(self, m):
+        pass
+
+    def warning(self, m):
+        self.msgs.append(str(m))
+
+    def error(self, m):
+        self.msgs.append(str(m))
+
+
+def extract(url, clients=None, cookies=True, meta_only=False):
     """Estrae le info di un video. clients=None usa i client predefiniti di yt-dlp."""
     import yt_dlp
     opts = base_opts()
     opts["ignore_no_formats_error"] = True
+    log = _Log()
+    opts["logger"] = log
+    ea = {}
     if clients:
-        opts["extractor_args"] = {"youtube": {"player_client": clients}}
+        ea["player_client"] = clients
+    if meta_only:
+        ea["player_skip"] = ["js"]  # titolo/data/stato bastano: niente solver JS (lento)
+    if ea:
+        opts["extractor_args"] = {"youtube": ea}
     if not cookies:
         opts.pop("cookiefile", None)  # il client ios non supporta i cookie
     with yt_dlp.YoutubeDL(opts) as ydl:
-        return ydl.extract_info(url, download=False)
+        info = ydl.extract_info(url, download=False)
+    if isinstance(info, dict):
+        info["_msgs"] = log.msgs
+    return info
 
 
 # Client provati in ordine finché non esce un HLS video+audio.
@@ -262,6 +301,13 @@ def extract_best(url):
         fm = info.get("formats") or []
         n_hls = sum(1 for f in fm if _is_hls(f))
         print(f"  client {label}: {len(fm)} formati, {n_hls} HLS")
+        msgs = [m for m in (info.get("_msgs") or []) if m]
+        if not fm and msgs:
+            print(f"    motivo: {msgs[0][:300]}")
+            if any(k in " ".join(msgs) for k in ("not a bot", "Sign in", "cookies")):
+                print("  YouTube blocca la richiesta (cookie scaduti o IP bloccato): "
+                      "inutile provare altri client.")
+                return info
         if info.get("live_status") == "is_upcoming":
             return info
         if info.get("live_status") == "is_live" and info.get("manifest_url"):
@@ -387,7 +433,10 @@ def search_video(film, min_ts):
 
             watch = f"https://www.youtube.com/watch?v={entry['id']}"
             try:
-                info = extract(watch)  # estrazione veloce: serve solo a data e stato
+                try:
+                    info = extract(watch, meta_only=True)  # veloce: serve solo a data e stato
+                except Exception:
+                    info = extract(watch)
             except Exception as e:
                 print(f"  errore estrazione: {e}")
                 continue
@@ -397,8 +446,12 @@ def search_video(film, min_ts):
 
             ts = video_ts(info)
             if ts is not None and ts < min_ts:
-                print(f"  video vecchio saltato: {info.get('title')}")
-                continue
+                print(f"  video vecchio saltato: {info.get('title')} (mi fermo qui)")
+                break  # l'elenco è dal più recente: i successivi sono ancora più vecchi
+
+            if LINK_MODE == "id":
+                print(f"  salvo solo il videoId {info.get('id')}: {info.get('title')}")
+                return info, ""
 
             # Video giusto: ora cerca il flusso migliore provando più client.
             is_live = info.get("live_status") == "is_live" or info.get("is_live")
@@ -412,8 +465,8 @@ def search_video(film, min_ts):
 
             url = pick_stream(info)
             if not url:
-                print("  video trovato ma senza flusso utilizzabile")
-                continue
+                print("  video trovato ma senza flusso utilizzabile: mi fermo")
+                return None, None  # inutile insistere sugli altri episodi
 
             return info, url
 
@@ -433,6 +486,11 @@ def set_link(item, info, url, now):
 
 
 def do_refresh(item, now):
+    if LINK_MODE == "id":
+        item["url"] = ""  # l'app userà il videoId
+        item["linkUpdated"] = iso(now)
+        print("  url vecchio rimosso: l'app userà il videoId")
+        return
     info = extract_best(f"https://www.youtube.com/watch?v={item['videoId']}")
     url = pick_stream(info) if info else None
     if not url:
