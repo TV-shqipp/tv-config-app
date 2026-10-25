@@ -53,8 +53,7 @@
           "name": "Debat Plus",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/debat-plus.jpg",
           "type": "youtube_live",
-          "pageUrl": "https://www.youtube.com/@TVDukagjini/live",
-          "liveVideoId": ""
+          "pageUrl": "https://www.youtube.com/@RTVDukagjiniOfficial/live"
         },
         {
           "id": "rtk-group",
