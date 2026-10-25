@@ -1,9 +1,9 @@
 """Filma Shqip: tiene aggiornati nel config.json i link dei film presi da YouTube.
 
-Nessun download, nessun hosting: solo URL diretti.
+Usa un Cloudflare Worker come proxy per garantire stabilità e aggirare i limiti di IP.
 - VOD: preferisce itag 22 (720p muxed), poi itag 18 (360p muxed).
 - Live/Premiere: manifest HLS master.
-- Client: ios + mweb + tv (NO web_safari/web → 403).
+- Client yt-dlp: ios + mweb + tv (NO web_safari/web → 403).
 """
 
 import json
@@ -13,6 +13,7 @@ import sys
 import unicodedata
 import urllib.request
 from datetime import datetime, timedelta, timezone
+from urllib.parse import quote
 from zoneinfo import ZoneInfo
 
 CONFIG_FILE = "config.json"
@@ -20,11 +21,15 @@ GROUP_ID = "filma-shqip"
 TZ = ZoneInfo("Europe/Rome")
 UTC = timezone.utc
 
+# ---------------------------------------------------------------- impostazioni
 REFRESH_HOURS = 3
 EXPIRE_MARGIN_MIN = 120
 RECHECK_UPLOAD_MIN = 90
 RETRY_MIN = 10
 CATCHUP_MAX_MIN = 72 * 60
+
+# URL del tuo Cloudflare Worker
+WORKER_URL = "https://tvshqip.ardit-asllanaj-2003.workers.dev/"
 
 OFFLINE_MESSAGE = "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
 
@@ -94,6 +99,13 @@ def expire_of(url):
 def throttled(item, now, gap_min):
     last = parse_iso(item.get("lastTry"))
     return last is not None and minutes_between(now, last) < gap_min
+
+
+def proxy_url(url):
+    """Restituisce l'URL del proxy Cloudflare per un dato URL di YouTube."""
+    if not url:
+        return url
+    return f"{WORKER_URL}?url={quote(url, safe='')}"
 
 
 # --------------------------------------------------------------------- config
@@ -214,11 +226,6 @@ def list_channel(film, tab):
 
 
 def pick_stream(info):
-    """
-    URL singolo, senza download:
-    - Live: manifest HLS master (contiene già audio+video).
-    - VOD:  itag 22 (720p muxed) → itag 18 (360p muxed) → qualsiasi muxed MP4.
-    """
     formats = info.get("formats") or []
     live = info.get("live_status") == "is_live" or info.get("is_live")
 
@@ -230,13 +237,11 @@ def pick_stream(info):
                 return f["url"]
         return info.get("url")
 
-    # VOD: prova itag 22 (720p), poi itag 18 (360p)
     for itag in ("22", "18"):
         for f in formats:
             if f.get("format_id") == itag and f.get("url"):
                 return f["url"]
 
-    # Fallback: qualsiasi muxed MP4 progressivo
     muxed = [
         f for f in formats
         if str(f.get("protocol", "")).startswith(("http", "https"))
@@ -251,7 +256,6 @@ def pick_stream(info):
 
 
 def resolve_redirect(url):
-    """Segue i redirect di googlevideo per ottenere l'URL finale."""
     if not url or "cms_redirect=yes" not in url:
         return url
     try:
@@ -310,7 +314,8 @@ def search_video(film, min_ts):
 
 def set_link(item, info, url, now):
     item["type"] = "hls"
-    item["url"] = url
+    # Applica il proxy all'URL prima di salvarlo
+    item["url"] = proxy_url(url)
     item["videoId"] = info.get("id")
     item["videoTitle"] = info.get("title")
     live = info.get("live_status") == "is_live" or info.get("is_live")
