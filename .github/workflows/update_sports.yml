@@ -26,7 +26,7 @@ jobs:
           pip install requests beautifulsoup4
 
       - name: Esegui lo script
-        run: python update_sport.py
+        run: python update_sports.py
 
       - name: Salva il config su GitHub
         run: |
