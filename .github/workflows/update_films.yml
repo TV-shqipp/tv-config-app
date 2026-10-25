@@ -73,6 +73,15 @@ jobs:
             echo "Nessuna modifica da committare."
           else
             git commit -m "Aggiornati film Filma Shqip"
-            git pull --rebase origin main
-            git push
+            # Riallinea e riprova se il push viene rifiutato (altri workflow toccano lo stesso config.json)
+            for attempt in 1 2 3 4 5; do
+              if git pull --rebase origin main && git push; then
+                exit 0
+              fi
+              echo "Push non riuscito (tentativo $attempt/5), riprovo..."
+              git rebase --abort 2>/dev/null || true
+              sleep $((attempt * 5))
+            done
+            echo "Push fallito dopo 5 tentativi"
+            exit 1
           fi
