@@ -237,39 +237,56 @@ def list_channel(film, tab):
 def pick_stream(info):
     formats = info.get("formats") or []
 
-    # Seleziona solo formati HLS nativi con altezza <= 1080p
+    # 1. Preferisci un manifest HLS adattivo con più qualità.
+    manifest = info.get("manifest_url")
+    if manifest and ".m3u8" in manifest:
+        print("  HLS adattivo selezionato: manifest")
+        return manifest
+
+    # 2. In alternativa, cerca il formato HLS con risoluzione
+    # più alta disponibile, senza superare 1080p.
     hls_candidates = [
         f for f in formats
         if f.get("protocol") in ("m3u8_native", "m3u8")
         and f.get("height") is not None
-        and f.get("height") <= 1080
+        and f["height"] <= MAX_HEIGHT
         and f.get("url")
     ]
 
     if hls_candidates:
-        # Ordina per altezza decrescente: prendi il 1080p (o il più alto sotto)
-        hls_candidates.sort(key=lambda f: f["height"], reverse=True)
+        hls_candidates.sort(
+            key=lambda f: f.get("height") or 0,
+            reverse=True
+        )
         best = hls_candidates[0]
-        print(f"  HLS selezionato: {best.get('height')}p ({best.get('format_id')})")
+        print(
+            f"  HLS selezionato: {best.get('height')}p "
+            f"({best.get('format_id')})"
+        )
         return best["url"]
 
-    # Fallback: cerca un manifest generico (comportamento precedente)
-    if info.get("manifest_url"):
-        return info["manifest_url"]
-
-    # Fallback estremo: MP4 progressivo
+    # 3. Se non esiste HLS, usa il miglior MP4 progressivo
+    # con audio e video, entro il limite di 1080p.
     muxed = [
         f for f in formats
         if str(f.get("protocol", "")).startswith(("http", "https"))
         and ".m3u8" not in (f.get("url") or "")
         and f.get("vcodec") not in (None, "none")
         and f.get("acodec") not in (None, "none")
+        and (f.get("height") or 0) <= MAX_HEIGHT
     ]
+
     if muxed:
-        muxed.sort(key=lambda f: f.get("height") or 0, reverse=True)
-        return muxed[0]["url"]
+        muxed.sort(
+            key=lambda f: f.get("height") or 0,
+            reverse=True
+        )
+        best = muxed[0]
+        print(f"  MP4 selezionato: {best.get('height')}p")
+        return best["url"]
 
     return info.get("url")
+
 
 def video_ts(info):
     ts = info.get("release_timestamp") or info.get("timestamp")
