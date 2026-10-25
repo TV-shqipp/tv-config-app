@@ -225,12 +225,52 @@ def base_opts():
     }
 
 
-def extract(url):
+def extract(url, clients=None, cookies=True):
+    """Estrae le info di un video. clients=None usa i client predefiniti di yt-dlp."""
     import yt_dlp
     opts = base_opts()
     opts["ignore_no_formats_error"] = True
+    if clients:
+        opts["extractor_args"] = {"youtube": {"player_client": clients}}
+    if not cookies:
+        opts.pop("cookiefile", None)  # il client ios non supporta i cookie
     with yt_dlp.YoutubeDL(opts) as ydl:
         return ydl.extract_info(url, download=False)
+
+
+# Client provati in ordine finché non esce un HLS video+audio.
+# Dal runner GitHub (IP datacenter) i client predefiniti possono non dare formati.
+CLIENT_TRIES = [None, ["ios"], ["tv"], ["mweb"], ["web_safari", "web"]]
+
+
+def has_hls_pair(info):
+    fm = info.get("formats") or []
+    return (any(_is_hls(f) and _has_video(f) and not _has_audio(f) for f in fm)
+            and any(_is_hls(f) and _has_audio(f) and not _has_video(f) for f in fm))
+
+
+def extract_best(url):
+    """Prova i client uno dopo l'altro e restituisce le info migliori."""
+    best = None
+    for clients in CLIENT_TRIES:
+        label = ",".join(clients) if clients else "default"
+        try:
+            info = extract(url, clients, cookies=(clients != ["ios"]))
+        except Exception as e:
+            print(f"  client {label}: errore {str(e)[:150]}")
+            continue
+        fm = info.get("formats") or []
+        n_hls = sum(1 for f in fm if _is_hls(f))
+        print(f"  client {label}: {len(fm)} formati, {n_hls} HLS")
+        if info.get("live_status") == "is_upcoming":
+            return info
+        if info.get("live_status") == "is_live" and info.get("manifest_url"):
+            return info
+        if has_hls_pair(info):
+            return info
+        if best is None or len(fm) > len(best.get("formats") or []):
+            best = info
+    return best
 
 
 def list_channel(film, tab):
@@ -329,7 +369,8 @@ def video_ts(info):
 
 def search_video(film, min_ts):
     """Cerca il video della settimana in /videos e /streams."""
-    tabs = ("streams", "videos") if film["live"] else ("videos", "streams")
+    # I canali dei film caricati non hanno la tab /streams (errore inutile).
+    tabs = ("streams", "videos") if film["live"] else ("videos",)
     for tab in tabs:
         try:
             entries = list_channel(film, tab)
@@ -344,8 +385,9 @@ def search_video(film, min_ts):
                 print(f"  premiere programmata: {entry.get('title')} (salto)")
                 continue
 
+            watch = f"https://www.youtube.com/watch?v={entry['id']}"
             try:
-                info = extract(f"https://www.youtube.com/watch?v={entry['id']}")
+                info = extract(watch)  # estrazione veloce: serve solo a data e stato
             except Exception as e:
                 print(f"  errore estrazione: {e}")
                 continue
@@ -357,6 +399,16 @@ def search_video(film, min_ts):
             if ts is not None and ts < min_ts:
                 print(f"  video vecchio saltato: {info.get('title')}")
                 continue
+
+            # Video giusto: ora cerca il flusso migliore provando più client.
+            is_live = info.get("live_status") == "is_live" or info.get("is_live")
+            ok = has_hls_pair(info) or (is_live and info.get("manifest_url"))
+            if not ok:
+                try:
+                    info = extract_best(watch) or info
+                except Exception as e:
+                    print(f"  errore estrazione: {e}")
+                    continue
 
             url = pick_stream(info)
             if not url:
@@ -381,8 +433,8 @@ def set_link(item, info, url, now):
 
 
 def do_refresh(item, now):
-    info = extract(f"https://www.youtube.com/watch?v={item['videoId']}")
-    url = pick_stream(info)
+    info = extract_best(f"https://www.youtube.com/watch?v={item['videoId']}")
+    url = pick_stream(info) if info else None
     if not url:
         print("  rinnovo fallito: nessun flusso, tengo il link vecchio")
         return
