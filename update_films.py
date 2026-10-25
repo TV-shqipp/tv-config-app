@@ -237,6 +237,19 @@ def list_channel(film, tab):
 def pick_stream(info):
     formats = info.get("formats") or []
 
+  
+    print("FORMATO DISPONIBILI:")
+    for f in formats:
+    if f.get("height"):
+        print(
+            f"protocol={f.get('protocol')} "
+            f"height={f.get('height')} "
+            f"format_id={f.get('format_id')} "
+            f"url={f.get('url', '')[:100]}"
+        )
+
+    print("MANIFEST:", info.get("manifest_url"))
+
     # 1. Preferisci un manifest HLS adattivo con più qualità.
     manifest = info.get("manifest_url")
     if manifest and ".m3u8" in manifest:
