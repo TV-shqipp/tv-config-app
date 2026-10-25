@@ -2,13 +2,10 @@ name: Aggiorna Filma Shqip
 
 on:
   schedule:
-    # Finestre serali di venerdì e sabato (ore UTC: coprono sia ora legale sia solare)
-    # '*' = ogni minuto, per ridurre al minimo il ritardo sulle premiere.
-    # NB: GitHub può ritardare i cron ad alta frequenza (minimo consigliato 5 min);
-    #     in pratica con '*' spesso si riesce ad andare ogni 1-2 minuti.
-    - cron: '* 17-22 * * 5,6'
-    # Ogni ora: rinnovo dei link e controlli di recupero
-    - cron: '7 * * * *'
+    # Gio/ven/sab: polling ogni 5 min nelle fasce serali
+    - cron: '*/5 17-22 * * 4,5,6'
+    # Resto della settimana: ogni 15 min per refresh e recuperi
+    - cron: '*/15 * * * *'
   workflow_dispatch:
     inputs:
       force:
@@ -16,9 +13,8 @@ on:
         type: boolean
         default: false
 
-# Serializza gli aggiornamenti con Debat Plus: entrambi modificano config.json.
 concurrency:
-  group: update-debat
+  group: config-update
   cancel-in-progress: false
 
 permissions:
@@ -30,15 +26,12 @@ jobs:
     env:
       FORCE: ${{ inputs.force }}
     steps:
-      - name: Clona il repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Configura Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      # Controllo veloce senza rete: se non c'è niente da fare, il resto viene saltato
       - name: Decidi se c e qualcosa da fare
         id: gate
         run: python update_films.py --plan
@@ -48,6 +41,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24'
+
+      - name: Installa ffmpeg (utile a yt-dlp per HLS/DASH)
+        if: steps.gate.outputs.run == 'true'
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
       - name: Installa yt-dlp e il solver JS
         if: steps.gate.outputs.run == 'true'
@@ -63,6 +60,13 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         run: python update_films.py
 
+      - name: Log config (debug)
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          python -c "import json; d=json.load(open('config.json')); \
+          print(json.dumps([s for sec in d['sections'] if sec['id']=='tv' \
+          for s in sec['items'] if s['id']=='filma-shqip'][0], indent=2, ensure_ascii=False))"
+
       - name: Salva il config su GitHub
         if: steps.gate.outputs.run == 'true'
         run: |
@@ -73,6 +77,10 @@ jobs:
             echo "Nessuna modifica da committare."
           else
             git commit -m "Aggiornati film Filma Shqip"
-            git pull --rebase origin main
-            git push
+            for attempt in 1 2 3 4 5; do
+              if git pull --rebase origin main && git push; then exit 0; fi
+              git rebase --abort 2>/dev/null || true
+              sleep $((attempt * 5))
+            done
+            exit 1
           fi
