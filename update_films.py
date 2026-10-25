@@ -1,17 +1,22 @@
 """Filma Shqip: tiene aggiornati nel config.json i link dei film presi da YouTube.
 
-Strategia:
-- VOD (film caricati): MP4 progressivo diretto (audio+video insieme, nessun merge).
-- Live/Premiere: manifest HLS master (gestisce da solo audio+video).
+Strategia di massima qualità:
+- VOD: estrae il miglior video e il miglior audio separatamente, li unisce con ffmpeg
+       in un MP4 e carica il file su GitHub Releases. L'URL del file viene salvato
+       nel config.json.
+- Live/Premiere: usa il manifest HLS master, che contiene già audio+video.
 - Client yt-dlp: ios + mweb + tv (NO web_safari/web, che danno 403 sugli m3u8).
 """
 
 import json
 import os
 import re
+import subprocess
 import sys
+import tempfile
 import unicodedata
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 from zoneinfo import ZoneInfo
 
 CONFIG_FILE = "config.json"
@@ -20,10 +25,9 @@ TZ = ZoneInfo("Europe/Rome")
 UTC = timezone.utc
 
 # ---------------------------------------------------------------- impostazioni
-REFRESH_HOURS = 3          # link rinnovato ogni 3 ore (gli URL scadono prima di 5h)
+REFRESH_HOURS = 3          # link rinnovato ogni 3 ore
 EXPIRE_MARGIN_MIN = 120    # rinnovo anticipato se mancano < 120 min alla scadenza
 RECHECK_UPLOAD_MIN = 90    # secondo controllo fisso a 90 minuti dall'orario
-LIVE_POLL_MIN = 3          # polling live ogni 3 minuti
 RETRY_MIN = 10             # pausa minima tra due tentativi
 CATCHUP_MAX_MIN = 72 * 60  # smetto di cercare dopo 72 ore
 
@@ -182,26 +186,22 @@ def refresh_needed(item, now):
 
 
 def due_task(film, item, now):
-    """Restituisce 'search' se bisogna (ri)cercare il video della settimana."""
     sched = last_occurrence(film["day"], film["time"], now)
     wk = sched.isoformat()
     since = minutes_between(now, sched)
     found = item.get("week") == wk
 
     if found:
-        return None  # già trovato per questa settimana
+        return None
 
-    # Finestra iniziale (10 min per upload, 120 min per live/premiere)
     window = film.get("window", 120)
     if since <= window:
         return "search"
 
-    # Ricontrollo fisso a 90 min per gli upload (una volta sola)
     if film.get("window") == 10 and RECHECK_UPLOAD_MIN <= since <= RECHECK_UPLOAD_MIN + 10:
         if item.get("recheck") != wk:
             return "search"
 
-    # Recupero: se non trovato, continua con throttling fino a 72h
     if since <= CATCHUP_MAX_MIN and not throttled(item, now, RETRY_MIN):
         return "search"
 
@@ -215,6 +215,8 @@ def base_opts():
         "format": "best",
         "simulate": True,
         "quiet": True,
+        "noprogress": True,
+        "no_warnings": True,
         "cookiefile": "cookies.txt",
         "js_runtimes": {"node": {}},
         "extractor_args": {
@@ -235,7 +237,6 @@ def extract(url):
 
 
 def list_channel(film, tab):
-    """Legge un tab del canale: 'videos' o 'streams'."""
     import yt_dlp
     url = f"https://www.youtube.com/{film['channel']}/{tab}"
     opts = base_opts()
@@ -245,58 +246,50 @@ def list_channel(film, tab):
     return [e for e in ((info or {}).get("entries") or []) if e and e.get("id")]
 
 
-def pick_stream(info):
+def pick_streams(info):
     """
-    Sceglie il flusso migliore:
-    - VOD: MP4 progressivo (audio+video insieme, niente merge).
-    - Live/Premiere: manifest HLS master o m3u8 con audio+video.
+    Restituisce (video_url, audio_url) per la massima qualità.
+    Per le live, usa il manifest HLS che contiene già tutto.
     """
     formats = info.get("formats") or []
     live = info.get("live_status") == "is_live" or info.get("is_live")
 
     if live:
-        # 1) m3u8 con sia video che audio (formato "muxed")
-        muxed_hls = [
-            f for f in formats
-            if (str(f.get("protocol", "")).startswith("m3u8") or ".m3u8" in (f.get("url") or ""))
-            and f.get("vcodec") not in (None, "none")
-            and f.get("acodec") not in (None, "none")
-        ]
-        if muxed_hls:
-            return muxed_hls[-1]["url"]
+        hls_url = info.get("manifest_url")
+        if hls_url:
+            return hls_url, None
+        for f in reversed(formats):
+            if ".m3u8" in (f.get("url") or ""):
+                return f["url"], None
+        return info.get("url"), None
 
-        # 2) manifest HLS master (contiene già le varianti audio/video)
-        if info.get("manifest_url"):
-            return info["manifest_url"]
+    # VOD: seleziona il miglior video e il miglior audio separatamente
+    video_formats = [
+        f for f in formats
+        if f.get("vcodec") not in (None, "none")
+        and f.get("acodec") in (None, "none")
+        and f.get("url")
+    ]
+    audio_formats = [
+        f for f in formats
+        if f.get("acodec") not in (None, "none")
+        and f.get("vcodec") in (None, "none")
+        and f.get("url")
+    ]
 
-        # 3) qualsiasi m3u8 (al limite il player farà il merge)
-        any_hls = [
-            f for f in formats
-            if str(f.get("protocol", "")).startswith("m3u8") or ".m3u8" in (f.get("url") or "")
-        ]
-        if any_hls:
-            return any_hls[-1]["url"]
-    else:
-        # VOD: MP4 progressivo (http/https, NON m3u8)
-        mp4 = [
-            f for f in formats
-            if str(f.get("protocol", "")).startswith(("http", "https"))
-            and ".m3u8" not in (f.get("url") or "")
-            and f.get("ext") == "mp4"
-        ]
-        if mp4:
-            return mp4[-1]["url"]
+    video_formats.sort(key=lambda f: (f.get("height") or 0, f.get("tbr") or 0), reverse=True)
+    audio_formats.sort(key=lambda f: f.get("abr") or f.get("tbr") or 0, reverse=True)
 
-        # fallback: qualsiasi http progressivo
-        http_fmt = [
-            f for f in formats
-            if str(f.get("protocol", "")).startswith(("http", "https"))
-            and ".m3u8" not in (f.get("url") or "")
-        ]
-        if http_fmt:
-            return http_fmt[-1]["url"]
+    video_url = video_formats[0]["url"] if video_formats else None
+    audio_url = audio_formats[0]["url"] if audio_formats else None
 
-    return info.get("url")
+    # Fallback: se manca uno dei due, usa un formato muxed
+    if not video_url or not audio_url:
+        for f in reversed(formats):
+            if f.get("vcodec") not in (None, "none") and f.get("acodec") not in (None, "none"):
+                return f["url"], None
+
+    return video_url, audio_url
 
 
 def video_ts(info):
@@ -342,8 +335,9 @@ def search_video(film, min_ts):
                 continue
 
             ts = video_ts(info)
-            url = pick_stream(info)
-            if not url:
+            video_url, audio_url = pick_streams(info)
+
+            if not video_url:
                 print("  video trovato ma senza flusso utilizzabile")
                 continue
 
@@ -351,9 +345,70 @@ def search_video(film, min_ts):
                 print(f"  video vecchio saltato: {info.get('title')}")
                 continue
 
-            return info, url
+            return info, video_url, audio_url
 
-    return None, None
+    return None, None, None
+
+
+def merge_with_ffmpeg(video_url, audio_url, output_path):
+    """
+    Unisce video e audio con ffmpeg.
+    Restituisce True se il merge è riuscito, False altrimenti.
+    """
+    cmd = [
+        "ffmpeg",
+        "-y",                    # sovrascrivi
+        "-i", video_url,
+        "-i", audio_url,
+        "-c", "copy",            # nessuna ricodifica (veloce)
+        "-bsf:a", "aac_adtstoasc",  # fix per AAC in MP4
+        output_path,
+    ]
+    try:
+        subprocess.run(cmd, check=True, capture_output=True, timeout=300)
+        return True
+    except subprocess.CalledProcessError as e:
+        print(f"  ffmpeg errore: {e.stderr.decode()[:500]}")
+        return False
+    except FileNotFoundError:
+        print("  ffmpeg non trovato: installalo o aggiungilo al PATH")
+        return False
+
+
+def upload_file(local_path, remote_name):
+    """
+    Carica il file su GitHub Releases usando 'gh' CLI.
+    Richiede la variabile d'ambiente GITHUB_TOKEN con permessi 'contents: write'.
+    Restituisce l'URL pubblico del file, o None se fallisce.
+    """
+    repo = os.environ.get("GITHUB_REPOSITORY")  # es. "user/repo"
+    if not repo:
+        print("  GITHUB_REPOSITORY non impostato, salto upload")
+        return None
+
+    # Crea una release (se non esiste) e carica il file
+    tag = "films-media"
+    try:
+        # Assicurati che la release esista
+        subprocess.run(
+            ["gh", "release", "view", tag],
+            check=False, capture_output=True, timeout=30,
+        )
+        # Crea la release se non esiste
+        subprocess.run(
+            ["gh", "release", "create", tag, "--title", "Films media", "--notes", "Auto-generated"],
+            check=False, capture_output=True, timeout=30,
+        )
+        # Carica il file (sovrascrive se esiste)
+        subprocess.run(
+            ["gh", "release", "upload", tag, local_path, "--clobber"],
+            check=True, capture_output=True, timeout=300,
+        )
+        # Costruisci l'URL pubblico
+        return f"https://github.com/{repo}/releases/download/{tag}/{remote_name}"
+    except subprocess.CalledProcessError as e:
+        print(f"  upload fallito: {e.stderr.decode()[:300]}")
+        return None
 
 
 def set_link(item, info, url, now):
@@ -370,12 +425,27 @@ def set_link(item, info, url, now):
 
 def do_refresh(item, now):
     info = extract(f"https://www.youtube.com/watch?v={item['videoId']}")
-    url = pick_stream(info)
-    if not url:
+    video_url, audio_url = pick_streams(info)
+
+    if not video_url:
         print("  rinnovo fallito: nessun flusso, tengo il link vecchio")
         return
-    set_link(item, info, url, now)
-    print("  link rinnovato")
+
+    if audio_url:
+        # Merge con ffmpeg e upload
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output_path = os.path.join(tmpdir, f"{item['videoId']}.mp4")
+            if merge_with_ffmpeg(video_url, audio_url, output_path):
+                remote_name = f"{item['id']}-{item['videoId']}.mp4"
+                public_url = upload_file(output_path, remote_name)
+                if public_url:
+                    set_link(item, info, public_url, now)
+                    print(f"  link rinnovato (ffmpeg): {public_url}")
+                    return
+            print("  merge/upload fallito, uso fallback muxed")
+    # Fallback: usa direttamente l'URL video (muxed o meno)
+    set_link(item, info, video_url, now)
+    print("  link rinnovato (fallback)")
 
 
 def run_task(film, item, task, now):
@@ -393,19 +463,35 @@ def run_task(film, item, task, now):
     else:
         min_ts = (sched - timedelta(hours=3)).timestamp()
 
-    info, url = search_video(film, min_ts)
+    info, video_url, audio_url = search_video(film, min_ts)
     if not info:
         print("  nessun video nuovo trovato")
-        # segna comunque il recheck per non ripetere subito
         if minutes_between(now, sched) >= RECHECK_UPLOAD_MIN:
             item["recheck"] = wk
         return
 
-    set_link(item, info, url, now)
+    # Se abbiamo audio separato, fai merge + upload
+    if audio_url:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            output_path = os.path.join(tmpdir, f"{info['id']}.mp4")
+            if merge_with_ffmpeg(video_url, audio_url, output_path):
+                remote_name = f"{film['id']}-{info['id']}.mp4"
+                public_url = upload_file(output_path, remote_name)
+                if public_url:
+                    set_link(item, info, public_url, now)
+                    item["week"] = wk
+                    if minutes_between(now, sched) >= RECHECK_UPLOAD_MIN:
+                        item["recheck"] = wk
+                    print(f"  video trovato e mergiato: {info.get('title')} → {public_url}")
+                    return
+            print("  merge/upload fallito, uso fallback")
+
+    # Fallback: usa direttamente l'URL video
+    set_link(item, info, video_url, now)
     item["week"] = wk
     if minutes_between(now, sched) >= RECHECK_UPLOAD_MIN:
         item["recheck"] = wk
-    print(f"  video trovato: {info.get('title')} ({item['state']})")
+    print(f"  video trovato (fallback): {info.get('title')}")
 
 
 # ------------------------------------------------------------------------ main
@@ -472,7 +558,7 @@ def main():
         print("Nessuna modifica necessaria.")
 
     if work and errors == len(work):
-        print("Tutti i task sono falliti: controlla cookies/yt-dlp.")
+        print("Tutti i task sono falliti: controlla cookies/yt-dlp/ffmpeg.")
         sys.exit(1)
 
 
