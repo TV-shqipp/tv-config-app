@@ -163,96 +163,33 @@
     {
       "id": "sport",
       "title": "Sport",
-      "subtitle": "Partite di oggi (9)",
+      "subtitle": "Partite attive in diretta (3)",
       "icon": "",
       "items": [
         {
-          "id": "match-inter-fiorentina",
+          "id": "sport-inter-fiorentina",
           "name": "Inter Fiorentina",
           "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
-          "subtitle": "Partita di Calcio",
           "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/how-daily-micro-habits-rebuild-your-immune-system/",
+          "pageUrl": "https://healthfirstin.com/albaplayer/how-daily-micro-habits-rebuild-your-immune-system/?serv=5",
           "referer": "https://kosovari.online/",
           "forceWeb": true
         },
         {
-          "id": "match-liverpool-brighton",
+          "id": "sport-liverpool-brighton",
           "name": "Liverpool Brighton",
           "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
-          "subtitle": "Partita di Calcio",
           "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/exactly-what-to-eat-before-and-after-your-workout/",
+          "pageUrl": "https://healthfirstin.com/albaplayer/exactly-what-to-eat-before-and-after-your-workout/?serv=5",
           "referer": "https://kosovari.online/",
           "forceWeb": true
         },
         {
-          "id": "match-man-united-bournemouth",
+          "id": "sport-man-united-bournemouth",
           "name": "Man United Bournemouth",
           "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
-          "subtitle": "Partita di Calcio",
           "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/why-active-recovery-builds-muscle-faster-than-daily-training/",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
-        },
-        {
-          "id": "match-hoffenheim-leverkusen",
-          "name": "Hoffenheim Leverkusen",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
-          "subtitle": "Partita di Calcio",
-          "type": "dynamic_hls",
-          "pageUrl": "https://www.fitnessshapesstyle.net/2026/10/bayern-munchen-currently-have-14-points.html",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
-        },
-        {
-          "id": "match-freiburg-bayern-munich",
-          "name": "Freiburg Bayern Munich",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
-          "subtitle": "Partita di Calcio",
-          "type": "dynamic_hls",
-          "pageUrl": "https://www.fitnessshapesstyle.net/2026/10/bayern-munchen-currently-have-14-points.html",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
-        },
-        {
-          "id": "match-lecce-juventus",
-          "name": "Lecce Juventus",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
-          "subtitle": "Partita di Calcio",
-          "type": "dynamic_hls",
-          "pageUrl": "https://www.fitnessshapesstyle.net/2026/10/juventus-have-won-one-of-their-last.html",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
-        },
-        {
-          "id": "match-udinese-milan",
-          "name": "Udinese Milan",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
-          "subtitle": "Partita di Calcio",
-          "type": "dynamic_hls",
-          "pageUrl": "https://www.fitnessshapesstyle.net/2026/10/milan-have-won-three-of-their-last-five.html",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
-        },
-        {
-          "id": "match-united-states-grand-prix",
-          "name": "United States Grand Prix",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
-          "subtitle": "Partita di Calcio",
-          "type": "dynamic_hls",
-          "pageUrl": "https://www.fitnessshapesstyle.net/2026/10/kimi-antonelli-took-pole-position-for.html",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
-        },
-        {
-          "id": "match-barcelona-real-madrid",
-          "name": "Barcelona Real Madrid",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
-          "subtitle": "Partita di Calcio",
-          "type": "dynamic_hls",
-          "pageUrl": "https://www.fitnessshapesstyle.net/2026/10/both-teams-scored-in-56-of-barcelonas.html",
+          "pageUrl": "https://healthfirstin.com/albaplayer/why-active-recovery-builds-muscle-faster-than-daily-training/?serv=3",
           "referer": "https://kosovari.online/",
           "forceWeb": true
         }
