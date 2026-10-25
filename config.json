@@ -197,73 +197,73 @@
           "id": "match-inter---fiorentina",
           "name": "Inter - Fiorentina",
           "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyeryery.png",
+          "subtitle": "Partita di calcio",
           "type": "dynamic_hls",
-          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/inter-fiorentina",
-          "subtitle": "Partita di calcio"
+          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/inter-fiorentina"
         },
         {
           "id": "match-liverpool---brighton",
           "name": "Liverpool - Brighton",
           "icon": "https://kosovari.online/wp-content/uploads/2026/02/250px-Liverpool_FC.svg_.png",
+          "subtitle": "Partita di calcio",
           "type": "dynamic_hls",
-          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/liverpool-brighton",
-          "subtitle": "Partita di calcio"
+          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/liverpool-brighton"
         },
         {
           "id": "match-manchester-united---bournemouth",
           "name": "Manchester United - Bournemouth",
           "icon": "https://kosovari.online/wp-content/uploads/2026/02/Manchester_United_FC_crest.svg_.png",
+          "subtitle": "Partita di calcio",
           "type": "dynamic_hls",
-          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/man-united-bournemouth",
-          "subtitle": "Partita di calcio"
+          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/man-united-bournemouth"
         },
         {
           "id": "match-hoffenheim---bayer-leverkusen",
           "name": "Hoffenheim - Bayer Leverkusen",
           "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Logo_TSG_Hoffenheim.svg_.png",
+          "subtitle": "Partita di calcio",
           "type": "dynamic_hls",
-          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/hoffenheim-leverkusen",
-          "subtitle": "Partita di calcio"
+          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/hoffenheim-leverkusen"
         },
         {
           "id": "match-freiburg---bayern-munich",
           "name": "Freiburg - Bayern Munich",
           "icon": "https://kosovari.online/wp-content/uploads/2026/02/250px-SC_Freiburg_logo.svg_.png",
+          "subtitle": "Partita di calcio",
           "type": "dynamic_hls",
-          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/freiburg-bayern-munich",
-          "subtitle": "Partita di calcio"
+          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/freiburg-bayern-munich"
         },
         {
           "id": "match-lecce---juventus",
           "name": "Lecce - Juventus",
           "icon": "https://kosovari.online/wp-content/uploads/2026/02/US_Lecce_crest.svg_.png",
+          "subtitle": "Partita di calcio",
           "type": "dynamic_hls",
-          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/lecce-juventus",
-          "subtitle": "Partita di calcio"
+          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/lecce-juventus"
         },
         {
           "id": "match-udinese---milan",
           "name": "Udinese - Milan",
           "icon": "https://kosovari.online/wp-content/uploads/2026/03/Udinese_Calcio_logo.svg_.png",
+          "subtitle": "Partita di calcio",
           "type": "dynamic_hls",
-          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/udinese-milan",
-          "subtitle": "Partita di calcio"
+          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/udinese-milan"
         },
         {
           "id": "match-formula-1---formula-1",
           "name": "Formula 1 - Formula 1",
           "icon": "https://kosovari.online/wp-content/uploads/2026/03/formula-1-logo-png_seeklogo-330361.png",
+          "subtitle": "Partita di calcio",
           "type": "dynamic_hls",
-          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/united-states-grand-prix",
-          "subtitle": "Partita di calcio"
+          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/united-states-grand-prix"
         },
         {
           "id": "match-barcelona---real-madrid",
           "name": "Barcelona - Real Madrid",
           "icon": "https://kosovari.online/wp-content/uploads/2026/02/FC_Barcelona_crest.svg_.png",
+          "subtitle": "Partita di calcio",
           "type": "dynamic_hls",
-          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/barcelona-real-madrid",
-          "subtitle": "Partita di calcio"
+          "pageUrl": "https://sites.google.com/view/dailyroutineexercise/barcelona-real-madrid"
         }
       ]
     },
