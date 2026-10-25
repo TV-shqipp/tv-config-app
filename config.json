@@ -167,6 +167,42 @@
       "icon": "",
       "items": [
         {
+          "id": "sport-nec-nijmegen-vs-groningen-2489153",
+          "name": "NEC Nijmegen vs Groningen",
+          "icon": "https://www.streamex.hn/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rAAzB1IHVn5gkIbiD47c54zBBXjIAsCQU+w2fRRgVKLh-L09oryZaMA8xUQggA.webp",
+          "type": "dynamic_hls",
+          "pageUrl": "https://embed.st/embed/admin/ppv-nec-nijmegen-vs-fc-groningen/1",
+          "referer": "https://www.streamex.hn/",
+          "forceWeb": true
+        },
+        {
+          "id": "sport-psv-eindhoven-vs-feyenoord-2489152",
+          "name": "PSV Eindhoven vs Feyenoord",
+          "icon": "https://www.streamex.hn/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rUSBAxmgzdxB9NuY-phaQ+kAWBIKfYbPoowKlFxfl6WWW6a0wLmKiEEA.webp",
+          "type": "dynamic_hls",
+          "pageUrl": "https://embed.st/embed/admin/ppv-psv-eindhoven-vs-feyenoord-rotterdam/1",
+          "referer": "https://www.streamex.hn/",
+          "forceWeb": true
+        },
+        {
+          "id": "sport-athletic-bilbao-vs-getafe-2506261",
+          "name": "Athletic Bilbao vs Getafe",
+          "icon": "https://www.streamex.hn/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aEAJAaQKOiBghu2rRB36QpkiERSCwJBT7DZ9FGBW6278vSyzdTLRg7mKiEEA.webp",
+          "type": "dynamic_hls",
+          "pageUrl": "https://embed.st/embed/admin/ppv-athletic-club-vs-getafe/1",
+          "referer": "https://www.streamex.hn/",
+          "forceWeb": true
+        },
+        {
+          "id": "sport-gais-vs-ifk-g-teborg-2398945",
+          "name": "GAIS vs IFK Göteborg",
+          "icon": "https://www.streamex.hn/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aECgYgIIWoRghuIPiFM7EJY9uvwCwJBT7DZ9FGBWa278vSyzNTLRg7mKiEEA.webp",
+          "type": "dynamic_hls",
+          "pageUrl": "https://embed.st/embed/admin/ppv-gais-vs-ifk-g-teborg/1",
+          "referer": "https://www.streamex.hn/",
+          "forceWeb": true
+        },
+        {
           "id": "sport-hibernian-vs-celtic-2494464",
           "name": "Hibernian vs Celtic",
           "icon": "https://www.streamex.hn/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rFF3wgY-MCBDcQffbgMgUIRIhwwCwJBT7DZ9FGBUa278vSyyNTLRg7mKiEEA.webp",
@@ -190,42 +226,6 @@
           "icon": "https://www.streamex.hn/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aEFLACADMx5aQ3EHxCmcOIzBBWjfAsCQU7rEWJRgVKLh-L0ssryZaMA8xUQggA.webp",
           "type": "dynamic_hls",
           "pageUrl": "https://embed.st/embed/admin/ppv-fortuna-sittard-vs-excelsior/1",
-          "referer": "https://www.streamex.hn/",
-          "forceWeb": true
-        },
-        {
-          "id": "sport-athletic-bilbao-vs-getafe-2506261",
-          "name": "Athletic Bilbao vs Getafe",
-          "icon": "https://www.streamex.hn/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aEAJAaQKOiBghu2rRB36QpkiERSCwJBT7DZ9FGBW6278vSyzdTLRg7mKiEEA.webp",
-          "type": "dynamic_hls",
-          "pageUrl": "https://embed.st/embed/admin/ppv-athletic-club-vs-getafe/1",
-          "referer": "https://www.streamex.hn/",
-          "forceWeb": true
-        },
-        {
-          "id": "sport-gais-vs-ifk-g-teborg-2398945",
-          "name": "GAIS vs IFK Göteborg",
-          "icon": "https://www.streamex.hn/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aECgYgIIWoRghuIPiFM7EJY9uvwCwJBT7DZ9FGBWa278vSyzNTLRg7mKiEEA.webp",
-          "type": "dynamic_hls",
-          "pageUrl": "https://embed.st/embed/admin/ppv-gais-vs-ifk-g-teborg/1",
-          "referer": "https://www.streamex.hn/",
-          "forceWeb": true
-        },
-        {
-          "id": "sport-nec-nijmegen-vs-groningen-2489153",
-          "name": "NEC Nijmegen vs Groningen",
-          "icon": "https://www.streamex.hn/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rAAzB1IHVn5gkIbiD47c54zBBXjIAsCQU+w2fRRgVKLh-L09oryZaMA8xUQggA.webp",
-          "type": "dynamic_hls",
-          "pageUrl": "https://embed.st/embed/admin/ppv-nec-nijmegen-vs-fc-groningen/1",
-          "referer": "https://www.streamex.hn/",
-          "forceWeb": true
-        },
-        {
-          "id": "sport-psv-eindhoven-vs-feyenoord-2489152",
-          "name": "PSV Eindhoven vs Feyenoord",
-          "icon": "https://www.streamex.hn/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rUSBAxmgzdxB9NuY-phaQ+kAWBIKfYbPoowKlFxfl6WWW6a0wLmKiEEA.webp",
-          "type": "dynamic_hls",
-          "pageUrl": "https://embed.st/embed/admin/ppv-psv-eindhoven-vs-feyenoord-rotterdam/1",
           "referer": "https://www.streamex.hn/",
           "forceWeb": true
         },
