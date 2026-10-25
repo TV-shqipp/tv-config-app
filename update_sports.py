@@ -1,107 +1,101 @@
 import json
-import os
 import re
-import urllib.request
-import urllib.parse
+import sys
+import requests
+from bs4 import BeautifulSoup
+from datetime import datetime
 
 CONFIG_FILE = "config.json"
+SPORT_SECTION_ID = "sport"
+SOURCE_URL = "https://kosovari.online/"
 
-def get_html(url, referer=None):
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-    if referer:
-        headers['Referer'] = referer
-    req = urllib.request.Request(url, headers=headers)
-    try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            return resp.read().decode('utf-8', errors='ignore')
-    except Exception as e:
-        print(f"Errore lettura {url}: {e}")
-        return ""
+def load_config():
+    with open(CONFIG_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
 
-def resolve_player_url(google_sites_url):
-    html = get_html(google_sites_url)
-    match_google = re.search(r'https://www\.google\.com/url\?q=([^&"]+)', html)
-    if not match_google:
-        return None
-    blogger_url = urllib.parse.unquote(match_google.group(1))
+def save_config(data):
+    with open(CONFIG_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+def fetch_matches():
+    """Scarica la pagina e restituisce una lista di partite (nome, link, icona)."""
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    }
+    resp = requests.get(SOURCE_URL, headers=headers, timeout=15)
+    resp.raise_for_status()
     
-    html_blogger = get_html(blogger_url, referer=google_sites_url)
-    match_alba = re.search(r'<iframe.*?src=["\']([^"\']*albaplayer[^"\']*)["\']', html_blogger)
-    if not match_alba:
-        match_alba = re.search(r'<iframe.*?src=["\']([^"\']+)["\']', html_blogger)
-        if not match_alba:
-            return None
-    alba_url = match_alba.group(1)
-    if alba_url.startswith('//'):
-        alba_url = 'https:' + alba_url
-        
-    return alba_url
-
-def parse_kosovari_matches():
-    html = get_html('https://kosovari.online/')
-    if not html:
-        return []
-
+    soup = BeautifulSoup(resp.text, "html.parser")
     matches = []
-    blocks = re.findall(r'<div[^>]*class=["\'][^"\']*AF_Match[^"\']*["\'][^>]*>(.*?)</a>\s*</div>', html, re.DOTALL)
     
-    for b in blocks:
-        link_m = re.search(r'href=["\'](https://sites\.google\.com/[^"\']+)["\']', b)
-        if not link_m:
+    # Trova tutti i blocchi delle partite
+    for match_div in soup.find_all("div", class_="AF_Match"):
+        try:
+            # Estrai i nomi delle squadre
+            teams = match_div.find_all("div", class_="AF_TeamName")
+            if len(teams) < 2:
+                continue
+            team1 = teams[0].get_text(strip=True)
+            team2 = teams[1].get_text(strip=True)
+            match_name = f"{team1} - {team2}"
+            
+            # Estrai il link (l'elemento <a> con classe AF_EventMask)
+            link_tag = match_div.find("a", class_="AF_EventMask")
+            if not link_tag or not link_tag.get("href"):
+                continue
+            link = link_tag["href"]
+            
+            # Estrai l'icona della prima squadra (opzionale)
+            icon_tag = match_div.find("div", class_="AF_TeamLogo").find("img") if match_div.find("div", class_="AF_TeamLogo") else None
+            icon = icon_tag["src"] if icon_tag and icon_tag.get("src") else ""
+            
+            # Genera un ID univoco e pulito
+            match_id = "match-" + re.sub(r'[^a-z0-9]', '-', match_name.lower())
+            
+            matches.append({
+                "id": match_id,
+                "name": match_name,
+                "icon": icon,
+                "type": "dynamic_hls",
+                "pageUrl": link,
+                "subtitle": "Partita di calcio"
+            })
+        except Exception as e:
+            print(f"Errore parsing partita: {e}")
             continue
-        link = link_m.group(1)
-        slug = link.split('/')[-1].replace('-', ' ').title()
-        
-        matches.append({
-            "title": slug,
-            "link": link
-        })
-        
+            
     return matches
 
 def main():
-    print("Scaricando le partite da kosovari.online...")
-    raw_matches = parse_kosovari_matches()
-    print(f"Trovate {len(raw_matches)} partite su Kosovari Online.")
+    print(f"Inizio aggiornamento sport da {SOURCE_URL}...")
+    try:
+        new_matches = fetch_matches()
+    except Exception as e:
+        print(f"Errore durante il download: {e}")
+        sys.exit(1)
+        
+    print(f"Trovate {len(new_matches)} partite.")
     
-    new_items = []
-    for m in raw_matches:
-        title = m['title']
-        print(f"Estrazione stream per {title}...")
-        player_url = resolve_player_url(m['link'])
+    data = load_config()
+    sport_section = None
+    for section in data.get("sections", []):
+        if section.get("id") == SPORT_SECTION_ID:
+            sport_section = section
+            break
+            
+    if sport_section is None:
+        print("Sezione 'sport' non trovata nel config.json.")
+        sys.exit(1)
         
-        if player_url:
-            match_id = re.sub(r'[^a-zA-Z0-9-]', '', title.lower().replace(' ', '-'))
-            new_items.append({
-                "id": f"sport-{match_id}",
-                "name": title,
-                "icon": "https://kosovari.online/wp-content/uploads/2026/03/grok_image_tbtqj7-removebg-preview-1.png",
-                "type": "dynamic_hls",
-                "pageUrl": player_url,
-                "referer": "https://kosovari.online/",
-                "forceWeb": True
-            })
-            print(f"  -> OK: {player_url}")
+    # Mantieni gli elementi esistenti che NON sono partite (es. canali fissi)
+    # I nostri elementi dinamici hanno l'ID che inizia con "match-"
+    existing_fixed = [item for item in sport_section.get("items", []) if not item.get("id", "").startswith("match-")]
+    
+    # Unisci i canali fissi con le nuove partite
+    sport_section["items"] = existing_fixed + new_matches
+    
+    save_config(data)
+    print("config.json aggiornato con le nuove partite.")
 
-    if not new_items:
-        print("Nessuna partita trovata.")
-        return
-
-    with open(CONFIG_FILE, "r", encoding="utf-8") as f:
-        data = json.load(f)
-        
-    sport_section = next((s for s in data.get('sections', []) if s.get('id') == 'sport'), None)
-    if sport_section:
-        sport_section['items'] = new_items
-        sport_section['subtitle'] = f"Partite di oggi ({len(new_items)})"
-        with open(CONFIG_FILE, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
-        print("config.json aggiornato con successo!")
-        
-        path = os.environ.get("GITHUB_OUTPUT")
-        if path:
-            with open(path, "a", encoding="utf-8") as f:
-                f.write("run=true\n")
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
