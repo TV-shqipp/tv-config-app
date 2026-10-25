@@ -10,7 +10,7 @@ ITEM_ID = "debat-plus"
 
 TZ = ZoneInfo("Europe/Rome")
 WINDOW_START = (19, 30)  # inizio controlli (ora italiana)
-WINDOW_END = (21, 10)    # ultimo controllo utile (ora italiana)
+WINDOW_END = (23, 59)    # ultimo controllo utile (ora italiana): fino a mezzanotte
 OFFLINE_MESSAGE = "Ska debat sonte kap futja gjum se han rre"
 
 FORCE = "--force" in sys.argv  # per test manuali: ignora la fascia oraria
@@ -97,7 +97,7 @@ def update_config(result):
 
 if __name__ == "__main__":
     if not FORCE and not in_window():
-        print("Fuori dalla fascia 19:30-21:10, esco.")
+        print(f"Fuori dalla fascia {WINDOW_START[0]}:{WINDOW_START[1]:02d}-{WINDOW_END[0]}:{WINDOW_END[1]:02d}, esco.")
         sys.exit(0)
 
     result = check_live()
