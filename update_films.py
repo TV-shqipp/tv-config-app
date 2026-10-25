@@ -1,13 +1,19 @@
 """Filma Shqip: tiene aggiornati nel config.json i link dei film presi da YouTube.
 
-Strategia:
-- Tutti i flussi (VOD, live, premiere) usano HLS (m3u8), che contiene già le
-  varianti di qualità e permette al player di scegliere dinamicamente.
-- Limite massimo di altezza: 1080p, per evitare bitrate troppo alti che
-  causerebbero buffering sulla TV.
-- Tutti gli URL vengono passati attraverso un Cloudflare Worker che fa da proxy,
-  evitando i blocchi IP di YouTube.
-- Nessun download, nessun merge, nessun hosting: solo URL diretti.
+Regole:
+- Film CARICATI (Edhe malet flasin, Rrugët e Lirisë):
+  * cerca il video per 10 minuti dall'orario indicato, poi smette;
+  * dopo 1h30 fa UN ricontrollo e sostituisce il video con quello nuovo;
+  * poi rinnova il link ogni REFRESH_HOURS ore fino alla settimana dopo.
+- Film in DIRETTA (Bashkallajk, Nusja me shkollë):
+  * fino all'inizio della diretta resta il video vecchio;
+  * all'orario cerca la diretta e la mette dentro;
+  * dopo 2 ore cerca il video registrato e lo sostituisce (riprova finché la
+    diretta non è finita), poi rinnova il link ogni REFRESH_HOURS ore.
+- Qualità: HLS fino a 1080p. YouTube offre video e audio HLS separati, quindi
+  il link salvato punta al Cloudflare Worker, che costruisce il master
+  (?v=...&a=...). Per le dirette si usa il manifest adattivo di YouTube.
+- Nessun download, nessun merge, nessun hosting: solo URL.
 """
 
 import json
@@ -15,7 +21,6 @@ import os
 import re
 import sys
 import unicodedata
-import urllib.request
 from datetime import datetime, timedelta, timezone
 from urllib.parse import quote
 from zoneinfo import ZoneInfo
@@ -26,31 +31,35 @@ TZ = ZoneInfo("Europe/Rome")
 UTC = timezone.utc
 
 # ---------------------------------------------------------------- impostazioni
-REFRESH_HOURS = 3
-EXPIRE_MARGIN_MIN = 120
-RECHECK_UPLOAD_MIN = 90
-RETRY_MIN = 10
-CATCHUP_MAX_MIN = 72 * 60
+REFRESH_HOURS = 3           # i link YouTube durano ~6h: 3h lascia margine per un film intero
+RECHECK_SPAN_MIN = 30       # finestra in cui si può fare il ricontrollo programmato
+LIVE_RECHECK_MAX_MIN = 360  # le dirette: smetto di cercare il registrato dopo 6h
+RETRY_MIN = 10              # pausa minima tra due tentativi di ricontrollo
 
-MAX_HEIGHT = 1080  # tetto massimo di risoluzione per evitare buffering
+MAX_HEIGHT = 1080
 
-# URL del tuo Cloudflare Worker
 WORKER_URL = "https://tvshqip.ardit-asllanaj-2003.workers.dev/"
 
 OFFLINE_MESSAGE = "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
 
+# window: minuti di ricerca dopo l'orario (solo caricati)
+# recheck_after: minuti dopo l'orario per il ricontrollo che sostituisce il video
 FILMS = [
     {"id": "edhe-malet-flasin", "name": "Edhe malet flasin",
-     "channel": "@EdaFilms2", "day": 5, "time": "20:31", "window": 10,
+     "channel": "@EdaFilms2", "day": 5, "time": "20:31",
+     "live": False, "window": 10, "recheck_after": 90,
      "keywords": ["edhe malet flasin"], "exclude": ["promo"]},
     {"id": "rrugt-e-lirise", "name": "Rrugët e Lirisë",
-     "channel": "@ProduksioniDONJETA", "day": 4, "time": "20:00", "window": 10,
+     "channel": "@ProduksioniDONJETA", "day": 4, "time": "20:00",
+     "live": False, "window": 10, "recheck_after": 90,
      "keywords": ["rrugët e lirisë"], "exclude": ["promo"]},
     {"id": "bashkallajk", "name": "Bashkallajk",
      "channel": "@teve1", "day": 4, "time": "20:45",
+     "live": True, "recheck_after": 120,
      "keywords": ["bashkallajk"], "exclude": ["promo"]},
     {"id": "nusja-me-shkolle", "name": "Nusja me shkollë",
      "channel": "@DTVOff", "day": 5, "time": "20:30",
+     "live": True, "recheck_after": 120,
      "keywords": ["nusja me shkollë"], "exclude": ["promo"]},
 ]
 
@@ -97,21 +106,26 @@ def last_occurrence(day, hhmm, now):
     return cand
 
 
-def expire_of(url):
-    m = re.search(r"/expire/(\d+)", url or "") or re.search(r"[?&]expire=(\d+)", url or "")
-    return int(m.group(1)) if m else None
-
-
 def throttled(item, now, gap_min):
     last = parse_iso(item.get("lastTry"))
     return last is not None and minutes_between(now, last) < gap_min
 
 
 def proxy_url(url):
-    """Restituisce l'URL del proxy Cloudflare per un dato URL di YouTube."""
+    """URL del proxy Cloudflare per un singolo URL (manifest adattivo, fallback)."""
     if not url:
         return url
     return f"{WORKER_URL}?url={quote(url, safe='')}"
+
+
+def pair_url(video, audio):
+    """URL del Worker che unisce un HLS video-only e uno audio-only in un master."""
+    height = video.get("height") or 1080
+    width = video.get("width") or round(height * 16 / 9)
+    bw = int(((video.get("tbr") or 5000) + 160) * 1000)
+    return (f"{WORKER_URL}?v={quote(video['url'], safe='')}"
+            f"&a={quote(audio['url'], safe='')}"
+            f"&res={width}x{height}&bw={bw}")
 
 
 # --------------------------------------------------------------------- config
@@ -158,47 +172,48 @@ def find_item(data, item_id):
 
 # ------------------------------------------------------------ cosa c'è da fare
 def refresh_needed(item, now):
+    """Rinnova il link (stesso videoId) ogni REFRESH_HOURS ore."""
     if item.get("type") != "hls" or not item.get("videoId"):
         return False
     updated = parse_iso(item.get("linkUpdated"))
     if updated is None:
         return True
-    if minutes_between(now, updated) >= REFRESH_HOURS * 60:
-        return True
-    # L'expire è dentro l'URL originale di YouTube, non in quella del proxy.
-    # Lo teniamo per sicurezza se presente anche nell'URL proxato (non lo sarà di solito).
-    exp = expire_of(item.get("url", ""))
-    if exp and (exp - now.timestamp()) / 60 < EXPIRE_MARGIN_MIN:
-        return True
-    return False
+    return minutes_between(now, updated) >= REFRESH_HOURS * 60
 
 
 def due_task(film, item, now):
+    """Restituisce 'search', 'recheck' o None.
+
+    item['week']    = settimana (orario programmato) per cui c'è un video trovato
+    item['recheck'] = settimana per cui il ricontrollo programmato è già fatto
+    """
     sched = last_occurrence(film["day"], film["time"], now)
     wk = sched.isoformat()
     since = minutes_between(now, sched)
-    found = item.get("week") == wk
+    after = film["recheck_after"]
 
-    if found:
+    if film["live"]:
+        # Fase 1: attesa della diretta (fino al ricontrollo delle 2 ore)
+        if item.get("week") != wk and since < after:
+            return "search"
+        # Fase 2: dopo 2 ore il video registrato, si riprova finché la diretta non finisce
+        if (item.get("recheck") != wk and after <= since <= LIVE_RECHECK_MAX_MIN
+                and not throttled(item, now, RETRY_MIN)):
+            return "recheck"
         return None
 
-    window = film.get("window", 120)
-    if since <= window:
+    # Caricati: 10 minuti di ricerca, poi un solo ricontrollo a 1h30
+    if item.get("week") != wk and since <= film["window"]:
         return "search"
-
-    if film.get("window") == 10 and RECHECK_UPLOAD_MIN <= since <= RECHECK_UPLOAD_MIN + 10:
-        if item.get("recheck") != wk:
-            return "search"
-
-    if since <= CATCHUP_MAX_MIN and not throttled(item, now, RETRY_MIN):
-        return "search"
-
+    if item.get("recheck") != wk and after <= since <= after + RECHECK_SPAN_MIN:
+        return "recheck"
     return None
 
 
 # --------------------------------------------------------------------- YouTube
 def base_opts():
-    """Client ios+mweb+tv: ios funziona per m3u8, mweb/tv evitano 403 di web_safari."""
+    # Nessun override di player_client: stessi client del test `yt-dlp -F`,
+    # che restituisce gli HLS video-only (270) e audio-only (233/234).
     return {
         "format": "best",
         "simulate": True,
@@ -207,11 +222,6 @@ def base_opts():
         "no_warnings": True,
         "cookiefile": "cookies.txt",
         "js_runtimes": {"node": {}},
-        "extractor_args": {
-            "youtube": {
-                "player_client": ["web_safari", "web"],
-            }
-        },
     }
 
 
@@ -233,73 +243,74 @@ def list_channel(film, tab):
     return [e for e in ((info or {}).get("entries") or []) if e and e.get("id")]
 
 
+def _is_hls(f):
+    return f.get("protocol") in ("m3u8", "m3u8_native") and bool(f.get("url"))
+
+
+def _has_video(f):
+    return f.get("vcodec") not in (None, "none")
+
+
+def _has_audio(f):
+    return f.get("acodec") not in (None, "none")
+
+
+def _fid(f):
+    m = re.match(r"\d+", str(f.get("format_id", "")))
+    return int(m.group()) if m else 0
+
+
 def pick_stream(info):
+    """Restituisce l'URL da salvare nel config (già passato dal Worker)."""
     formats = info.get("formats") or []
+    live = info.get("live_status") == "is_live" or info.get("is_live")
+    heights = sorted({f.get("height") for f in formats if f.get("height")})
+    print(f"  altezze disponibili: {heights}")
 
-  
-    
-    print("FORMATI DISPONIBILI:")
-    for f in formats:
-        if f.get("height"):
-            print(
-                f"protocol={f.get('protocol')} "
-                f"height={f.get('height')} "
-                f"format_id={f.get('format_id')} "
-                f"url={f.get('url', '')[:100]}"
-            )
-
-    print("MANIFEST:", info.get("manifest_url"))
-
-
-    # 1. Preferisci un manifest HLS adattivo con più qualità.
+    # 1. Dirette: manifest adattivo di YouTube (video+audio, più qualità).
     manifest = info.get("manifest_url")
-    if manifest and ".m3u8" in manifest:
-        print("  HLS adattivo selezionato: manifest")
-        return manifest
+    if live and manifest and ".m3u8" in manifest:
+        print("  diretta: manifest HLS adattivo")
+        return proxy_url(manifest)
 
-    # 2. In alternativa, cerca il formato HLS con risoluzione
-    # più alta disponibile, senza superare 1080p.
-    hls_candidates = [
-        f for f in formats
-        if f.get("protocol") in ("m3u8_native", "m3u8")
-        and f.get("height") is not None
-        and f["height"] <= MAX_HEIGHT
-        and f.get("url")
-    ]
+    # 2. VOD: HLS video-only (migliore <= 1080p, meglio H.264) + HLS audio-only.
+    videos = [f for f in formats if _is_hls(f) and _has_video(f) and not _has_audio(f)
+              and (f.get("height") or 0) <= MAX_HEIGHT]
+    audios = [f for f in formats if _is_hls(f) and _has_audio(f) and not _has_video(f)]
+    if videos and audios:
+        videos.sort(key=lambda f: (f.get("height") or 0,
+                                   str(f.get("vcodec", "")).startswith("avc1"),
+                                   f.get("tbr") or 0), reverse=True)
 
-    if hls_candidates:
-        hls_candidates.sort(
-            key=lambda f: f.get("height") or 0,
-            reverse=True
-        )
-        best = hls_candidates[0]
-        print(
-            f"  HLS selezionato: {best.get('height')}p "
-            f"({best.get('format_id')})"
-        )
-        return best["url"]
+        def audio_rank(f):
+            note = str(f.get("format_note") or "").lower()
+            return ("high" in note, "medium" in note, f.get("abr") or f.get("tbr") or 0, _fid(f))
 
-    # 3. Se non esiste HLS, usa il miglior MP4 progressivo
-    # con audio e video, entro il limite di 1080p.
-    muxed = [
-        f for f in formats
-        if str(f.get("protocol", "")).startswith(("http", "https"))
-        and ".m3u8" not in (f.get("url") or "")
-        and f.get("vcodec") not in (None, "none")
-        and f.get("acodec") not in (None, "none")
-        and (f.get("height") or 0) <= MAX_HEIGHT
-    ]
+        audios.sort(key=audio_rank, reverse=True)
+        v, a = videos[0], audios[0]
+        print(f"  HLS video {v.get('height')}p ({v.get('format_id')}) "
+              f"+ audio ({a.get('format_id')})")
+        return pair_url(v, a)
 
+    # 3. HLS già muxato, se esiste.
+    muxed_hls = [f for f in formats if _is_hls(f) and _has_video(f) and _has_audio(f)
+                 and (f.get("height") or 0) <= MAX_HEIGHT]
+    if muxed_hls:
+        muxed_hls.sort(key=lambda f: f.get("height") or 0, reverse=True)
+        best = muxed_hls[0]
+        print(f"  HLS muxato {best.get('height')}p")
+        return proxy_url(best["url"])
+
+    # 4. Ultima spiaggia: MP4 progressivo (di solito 360p).
+    muxed = [f for f in formats if str(f.get("protocol", "")).startswith("http")
+             and _has_video(f) and _has_audio(f) and (f.get("height") or 0) <= MAX_HEIGHT]
     if muxed:
-        muxed.sort(
-            key=lambda f: f.get("height") or 0,
-            reverse=True
-        )
+        muxed.sort(key=lambda f: f.get("height") or 0, reverse=True)
         best = muxed[0]
-        print(f"  MP4 selezionato: {best.get('height')}p")
-        return best["url"]
+        print(f"  ATTENZIONE: solo MP4 progressivo {best.get('height')}p")
+        return proxy_url(best["url"])
 
-    return info.get("url")
+    return proxy_url(info.get("url"))
 
 
 def video_ts(info):
@@ -317,11 +328,9 @@ def video_ts(info):
 
 
 def search_video(film, min_ts):
-    """
-    Cerca il video della settimana sia in /videos che in /streams.
-    Per le premiere il video sta in /streams durante la messa in onda.
-    """
-    for tab in ("videos", "streams"):
+    """Cerca il video della settimana in /videos e /streams."""
+    tabs = ("streams", "videos") if film["live"] else ("videos", "streams")
+    for tab in tabs:
         try:
             entries = list_channel(film, tab)
         except Exception as e:
@@ -361,7 +370,7 @@ def search_video(film, min_ts):
 
 def set_link(item, info, url, now):
     item["type"] = "hls"
-    item["url"] = proxy_url(url)
+    item["url"] = url
     item["videoId"] = info.get("id")
     item["videoTitle"] = info.get("title")
     live = info.get("live_status") == "is_live" or info.get("is_live")
@@ -389,7 +398,6 @@ def run_task(film, item, task, now):
         do_refresh(item, now)
         return
 
-    # task == "search"
     item["lastTry"] = iso(now)
     if FORCE:
         min_ts = (now - timedelta(days=30)).timestamp()
@@ -397,17 +405,27 @@ def run_task(film, item, task, now):
         min_ts = (sched - timedelta(hours=3)).timestamp()
 
     info, url = search_video(film, min_ts)
-    if not info:
-        print("  nessun video nuovo trovato")
-        if minutes_between(now, sched) >= RECHECK_UPLOAD_MIN:
-            item["recheck"] = wk
+
+    if task == "search":
+        if not info:
+            print("  nessun video nuovo trovato")
+            return
+        set_link(item, info, url, now)
+        item["week"] = wk
+        print(f"  video trovato: {info.get('title')} ({item['state']})")
         return
 
+    # task == "recheck": sostituisce il video vecchio con quello nuovo
+    if not info:
+        print("  ricontrollo: nessun video trovato")
+        if not film["live"]:
+            item["recheck"] = wk  # un solo tentativo per i caricati
+        return
     set_link(item, info, url, now)
     item["week"] = wk
-    if minutes_between(now, sched) >= RECHECK_UPLOAD_MIN:
-        item["recheck"] = wk
-    print(f"  video trovato: {info.get('title')} ({item['state']}, {MAX_HEIGHT}p max)")
+    print(f"  ricontrollo: {info.get('title')} ({item['state']})")
+    if not (film["live"] and item["state"] == "live"):
+        item["recheck"] = wk  # per le dirette si riprova finché è ancora in onda
 
 
 # ------------------------------------------------------------------------ main
