@@ -163,9 +163,18 @@
     {
       "id": "sport",
       "title": "Sport",
-      "subtitle": "Oggi (36 partite)",
+      "subtitle": "Oggi (38 partite)",
       "icon": "",
       "items": [
+        {
+          "id": "sport-hibernian-vs-celtic-2494464",
+          "name": "Hibernian vs Celtic",
+          "icon": "https://www.streamex.hn/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rFF3wgY-MCBDcQffbgMgUIRIhwwCwJBT7DZ9FGBUa278vSyyNTLRg7mKiEEA.webp",
+          "type": "dynamic_hls",
+          "pageUrl": "https://embed.st/embed/admin/ppv-hibernian-vs-celtic/1",
+          "referer": "https://www.streamex.hn/",
+          "forceWeb": true
+        },
         {
           "id": "sport-inter-milan-vs-fiorentina-2482215",
           "name": "Inter Milan vs Fiorentina",
@@ -487,6 +496,15 @@
           "icon": "https://www.streamex.hn/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aECDEAGEANr4Q3XRpAQQKEDFMgSIRCgLAkFPsNn0UYFSi5fy9LFkfJlowLzFRCCA.webp",
           "type": "dynamic_hls",
           "pageUrl": "https://embed.st/embed/admin/ppv-sevilla-vs-osasuna/1",
+          "referer": "https://www.streamex.hn/",
+          "forceWeb": true
+        },
+        {
+          "id": "sport-ppv-altrincham-vs-kidderminster-harriers",
+          "name": "Altrincham vs. Kidderminster Harriers",
+          "icon": "https://www.streamex.hn/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE50IeKRABjYIhQgYwGohIKlILCC2bFqqlpDzEExBEMhh4reqwjp4lOQigwgkU2z0whYElxTHIVdWZ2FSegJZcldgZzIIIA.webp",
+          "type": "dynamic_hls",
+          "pageUrl": "https://embed.st/embed/admin/ppv-altrincham-vs-kidderminster-harriers/1",
           "referer": "https://www.streamex.hn/",
           "forceWeb": true
         }
