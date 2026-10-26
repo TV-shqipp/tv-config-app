@@ -195,7 +195,7 @@
     {
       "id": "sport",
       "title": "Sport",
-      "subtitle": "Eventi e partite in diretta",
+      "subtitle": "Eventi in diretta (aggiornati)",
       "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
       "items": [
         {
@@ -206,11 +206,29 @@
           "type": "group",
           "items": [
             {
-              "id": "sport-udinese---milan",
-              "name": "Udinese - Milan",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/03/Udinese_Calcio_logo.svg_.png",
+              "id": "sport-galatasaray---fenerbahce",
+              "name": "Galatasaray - Fenerbahce",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyeyryer.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/galatasaray-fenerbahce",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-psg---lyon",
+              "name": "PSG - Lyon",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Paris_Saint-Germain_F.svg_.png",
               "type": "dynamic_hls",
               "pageUrl": "https://healthfirstin.com/albaplayer/why-your-sleep-schedule-controls-your-lifespan/?serv=5",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-ballon-dor---ballon-dor",
+              "name": "Ballon d'Or - Ballon d'Or",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/10/pngtree-realistic-ballon-d-or-football-trophy-png-image_16548628.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/ballon-dor-2026",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             }
