@@ -16,7 +16,15 @@
           "type": "dynamic_hls",
           "pageUrl": "https://klankosova.tv/tv",
           "referer": "https://klankosova.tv/",
-          "nowPlaying": ""
+          "nowPlaying": "",
+          "epg": [
+            "08:00 - Programi i Mëngjesit",
+            "12:00 - Lajmet",
+            "15:00 - Pasdite",
+            "19:30 - Edicioni Qendror i Lajmeve",
+            "21:00 - Film / Emision Sportiv",
+            "23:30 - Lajmet e Natës"
+          ]
         },
         {
           "id": "rtk-sat",
@@ -24,7 +32,15 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtk-sat.png",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/rtk-sat/index.m3u8",
-          "referer": "https://video.gjirafa.com/"
+          "referer": "https://video.gjirafa.com/",
+          "epg": [
+            "08:00 - Programi i Mëngjesit",
+            "12:00 - Lajmet",
+            "15:00 - Pasdite",
+            "19:30 - Edicioni Qendror i Lajmeve",
+            "21:00 - Film / Emision Sportiv",
+            "23:30 - Lajmet e Natës"
+          ]
         },
         {
           "id": "atv",
@@ -32,7 +48,15 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/atv.png",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/0nj-g63-92x-few/index.m3u8",
-          "referer": "https://video.gjirafa.com/"
+          "referer": "https://video.gjirafa.com/",
+          "epg": [
+            "08:00 - Programi i Mëngjesit",
+            "12:00 - Lajmet",
+            "15:00 - Pasdite",
+            "19:30 - Edicioni Qendror i Lajmeve",
+            "21:00 - Film / Emision Sportiv",
+            "23:30 - Lajmet e Natës"
+          ]
         },
         {
           "id": "rtv-21",
@@ -40,7 +64,15 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtv-21.jpg",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/2cz-npl-jfn-9he/index.m3u8",
-          "referer": "https://video.gjirafa.com/"
+          "referer": "https://video.gjirafa.com/",
+          "epg": [
+            "08:00 - Programi i Mëngjesit",
+            "12:00 - Lajmet",
+            "15:00 - Pasdite",
+            "19:30 - Edicioni Qendror i Lajmeve",
+            "21:00 - Film / Emision Sportiv",
+            "23:30 - Lajmet e Natës"
+          ]
         },
         {
           "id": "ktv",
@@ -48,7 +80,15 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/ktv.jpg",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/lj9-pxm-o53-rp0/index.m3u8",
-          "referer": "https://video.gjirafa.com/"
+          "referer": "https://video.gjirafa.com/",
+          "epg": [
+            "08:00 - Programi i Mëngjesit",
+            "12:00 - Lajmet",
+            "15:00 - Pasdite",
+            "19:30 - Edicioni Qendror i Lajmeve",
+            "21:00 - Film / Emision Sportiv",
+            "23:30 - Lajmet e Natës"
+          ]
         },
         {
           "id": "debat-plus",
@@ -56,12 +96,7 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/debat-plus.jpg",
           "type": "youtube_live",
           "pageUrl": "https://www.youtube.com/channel/UCL3nrPOUK0MCcm5nFk800xQ/live",
-          "nowPlaying": "",
-          "epg": [
-            "18:00 - Edicioni i Lajmeve",
-            "20:30 - Debat Plus",
-            "23:00 - Film"
-          ]
+          "nowPlaying": ""
         },
         {
           "id": "rtk-group",
@@ -139,11 +174,7 @@
               "videoId": "EhQdZYUVVoQ",
               "videoTitle": "\"Anton milioneri\" - Bashkallajk - Episodi 177",
               "state": "vod",
-              "nowPlaying": "",
-              "epg": [
-                "19:00 - Lajmet",
-                "20:45 - Bashkallajk (E Premte)"
-              ]
+              "nowPlaying": ""
             },
             {
               "id": "nusja-me-shkolle",
@@ -155,11 +186,7 @@
               "videoId": "a2TGTST34-A",
               "videoTitle": "Nusja me shkollë - Episoda 81 (Tregim Popullor)",
               "state": "vod",
-              "nowPlaying": "",
-              "epg": [
-                "19:00 - Lajmet",
-                "20:30 - Nusja me Shkollë (E Shtunë)"
-              ]
+              "nowPlaying": ""
             }
           ]
         }
@@ -168,7 +195,7 @@
     {
       "id": "sport",
       "title": "Sport",
-      "subtitle": "Eventi in diretta (aggiornati)",
+      "subtitle": "Eventi e partite in diretta",
       "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
       "items": [
         {
@@ -179,29 +206,11 @@
           "type": "group",
           "items": [
             {
-              "id": "sport-galatasaray---fenerbahce",
-              "name": "Galatasaray - Fenerbahce",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyeyryer.png",
+              "id": "sport-udinese---milan",
+              "name": "Udinese - Milan",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/03/Udinese_Calcio_logo.svg_.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://healthfirstin.com/albaplayer/how-daily-micro-habits-rebuild-your-immune-system/?serv=5",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-psg---lyon",
-              "name": "PSG - Lyon",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Paris_Saint-Germain_F.svg_.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/psg-lyon",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-ballon-dor---ballon-dor",
-              "name": "Ballon d'Or - Ballon d'Or",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/10/pngtree-realistic-ballon-d-or-football-trophy-png-image_16548628.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/ballon-dor-2026",
+              "pageUrl": "https://healthfirstin.com/albaplayer/why-your-sleep-schedule-controls-your-lifespan/?serv=5",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             }
@@ -209,7 +218,7 @@
         },
         {
           "id": "sport-damitv",
-          "name": "DamiTV (Sport Live)",
+          "name": "DamiTV",
           "icon": "https://i.imgur.com/FetkA0F.png",
           "type": "dynamic_hls",
           "pageUrl": "https://ondemand.st/papi/api/streams"
