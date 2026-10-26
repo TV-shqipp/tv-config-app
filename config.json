@@ -162,13 +162,15 @@
     {
       "id": "sport",
       "title": "Sport",
-      "subtitle": "Partite attive in diretta (3)",
+      "subtitle": "Eventi e partite in diretta",
       "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
       "items": [
         {
-          "name": "Sport Kosovari",
-          "icon": "https://i.imgur.com/8Q5Q5Q5.png",
-          "pageUrl": "https://raw.githubusercontent.com/TUO_USERNAME/TUO_REPO/main/kosovari_sport.json"
+          "id": "sport-kosovari",
+          "title": "Sport Kosovari",
+          "subtitle": "AlbaPlayer / Server 1..7",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
+          "type": "group",
           "items": [
             {
               "id": "sport-udinese---milan",
@@ -197,11 +199,13 @@
               "referer": "https://kosovari.online/",
               "forceWeb": true
             }
-          ] 
+          ]
         },
         {
+          "id": "sport-damitv",
           "name": "DamiTV (Sport Live)",
           "icon": "https://i.imgur.com/FetkA0F.png",
+          "type": "dynamic_hls",
           "pageUrl": "https://ondemand.st/papi/api/streams"
         }
       ]
