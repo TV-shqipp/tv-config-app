@@ -1,0 +1,32 @@
+name: Aggiornamento Palinsesto TV
+
+on:
+  schedule:
+    # Esegue ogni 10 minuti tra le 18:00 e le 21:59 UTC (che sono le 19:00 - 23:59 in Kosovo)
+    - cron: '*/10 17-21 * * *'
+  workflow_dispatch: # Ti permette di avviarlo a mano da GitHub se vuoi testarlo!
+
+jobs:
+  update-config:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # MOLTO IMPORTANTE: Permette al bot di salvare le modifiche al config.json
+
+    steps:
+      - name: Scarica il repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Esegui lo script Python
+        run: python update_tv.py
+
+      - name: Salva le modifiche su GitHub
+        run: |
+          git config --global user.name "tv-bot"
+          git config --global user.email "tv-bot@github.com"
+          git add config.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-Update: Live Status e Palinsesto" && git push)
