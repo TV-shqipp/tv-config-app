@@ -163,7 +163,7 @@
       "id": "sport",
       "title": "Sport",
       "subtitle": "Partite attive in diretta (3)",
-      "icon": "",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
       "items": [
         {
           "id": "sport-udinese---milan",
