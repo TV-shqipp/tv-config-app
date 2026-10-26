@@ -166,31 +166,43 @@
       "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
       "items": [
         {
-          "id": "sport-udinese---milan",
-          "name": "Udinese - Milan",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/03/Udinese_Calcio_logo.svg_.png",
-          "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/why-your-sleep-schedule-controls-your-lifespan/?serv=5",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
+          "name": "Sport Kosovari",
+          "icon": "https://i.imgur.com/8Q5Q5Q5.png",
+          "pageUrl": "https://raw.githubusercontent.com/TUO_USERNAME/TUO_REPO/main/kosovari_sport.json"
+          "items": [
+            {
+              "id": "sport-udinese---milan",
+              "name": "Udinese - Milan",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/03/Udinese_Calcio_logo.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://healthfirstin.com/albaplayer/why-your-sleep-schedule-controls-your-lifespan/?serv=5",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-formula-1---formula-1",
+              "name": "Formula 1 - Formula 1",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/03/formula-1-logo-png_seeklogo-330361.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://healthfirstin.com/albaplayer/5-subtle-red-flags-your-body-is-sending-you/?serv=5",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-barcelona---real-madrid",
+              "name": "Barcelona - Real Madrid",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/FC_Barcelona_crest.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://healthfirstin.com/albaplayer/a-beginners-guide-to-balancing-carbs-protein-and-fats/?serv=5",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            }
+          ] 
         },
         {
-          "id": "sport-formula-1---formula-1",
-          "name": "Formula 1 - Formula 1",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/03/formula-1-logo-png_seeklogo-330361.png",
-          "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/5-subtle-red-flags-your-body-is-sending-you/?serv=5",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
-        },
-        {
-          "id": "sport-barcelona---real-madrid",
-          "name": "Barcelona - Real Madrid",
-          "icon": "https://kosovari.online/wp-content/uploads/2026/02/FC_Barcelona_crest.svg_.png",
-          "type": "dynamic_hls",
-          "pageUrl": "https://healthfirstin.com/albaplayer/a-beginners-guide-to-balancing-carbs-protein-and-fats/?serv=5",
-          "referer": "https://kosovari.online/",
-          "forceWeb": true
+          "name": "DamiTV (Sport Live)",
+          "icon": "https://i.imgur.com/FetkA0F.png",
+          "pageUrl": "https://ondemand.st/papi/api/streams"
         }
       ]
     }
