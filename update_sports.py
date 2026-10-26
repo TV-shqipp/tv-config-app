@@ -44,13 +44,22 @@ def resolve_player_url(source_url):
 
         # 2. Se non c'è, cerca il link Google Sites
         if not match_alba:
-            match_google = re.search(r'https://www\.google\.com/url\?q=([^&"]+)', html)
-            if match_google:
-                blogger_url = urllib.parse.unquote(match_google.group(1))
-                html_blogger = get_html(blogger_url, referer=source_url)
-                match_alba = re.search(r'<iframe.*?src=["\']([^"\']*albaplayer[^"\']*)["\']', html_blogger)
-                if not match_alba:
-                    match_alba = re.search(r'<iframe.*?src=["\']([^"\']+)["\']', html_blogger)
+            # Nuovo check per i bottoni azzurri (redirect interni del sito, come da screenshot)
+            match_button = re.search(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>\s*\d+\.\s*.*?(?:vs| - ).*?</a>', html)
+            if match_button:
+                redirect_url = match_button.group(1)
+                print(f"      -> Trovato bottone intermedio, seguo: {redirect_url}")
+                html_redirect = get_html(redirect_url, referer=source_url)
+                match_alba = re.search(r'<iframe.*?src=["\']([^"\']*albaplayer[^"\']*)["\']', html_redirect)
+
+            if not match_alba:
+                match_google = re.search(r'https://www\.google\.com/url\?q=([^&"]+)', html)
+                if match_google:
+                    blogger_url = urllib.parse.unquote(match_google.group(1))
+                    html_blogger = get_html(blogger_url, referer=source_url)
+                    match_alba = re.search(r'<iframe.*?src=["\']([^"\']*albaplayer[^"\']*)["\']', html_blogger)
+                    if not match_alba:
+                        match_alba = re.search(r'<iframe.*?src=["\']([^"\']+)["\']', html_blogger)
 
         if match_alba:
             alba_url = match_alba.group(1)
