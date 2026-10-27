@@ -206,29 +206,38 @@
           "type": "group",
           "items": [
             {
-              "id": "sport-galatasaray---fenerbahce",
-              "name": "Galatasaray - Fenerbahce",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyeyryer.png",
+              "id": "sport-sassuolo---lazio",
+              "name": "Sassuolo - Lazio",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-US_Sassuolo_Calcio_logo.s.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/galatasaray-fenerbahce",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/sassuolo-lazio",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             },
             {
-              "id": "sport-psg---lyon",
-              "name": "PSG - Lyon",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Paris_Saint-Germain_F.svg_.png",
+              "id": "sport-roma---cagliari",
+              "name": "Roma - Cagliari",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/960px-AS_Roma_logo_2017.svg_.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/psg-lyon",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/roma-cagliari",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             },
             {
-              "id": "sport-ballon-dor---ballon-dor",
-              "name": "Ballon d'Or - Ballon d'Or",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/10/pngtree-realistic-ballon-d-or-football-trophy-png-image_16548628.png",
+              "id": "sport-borussia-dortmund---werder-bremen",
+              "name": "Borussia Dortmund - Werder Bremen",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyreyery.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/ballon-dor-2026",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/dortmund-werder-bremen",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-fleetwood---arsenal",
+              "name": "Fleetwood - Arsenal",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/10/Fleetwood_Town_F.C._logo.svg_.webp",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/fleetwoord-arsenal",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             }
