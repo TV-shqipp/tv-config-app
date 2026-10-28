@@ -206,38 +206,56 @@
           "type": "group",
           "items": [
             {
-              "id": "sport-sassuolo---lazio",
-              "name": "Sassuolo - Lazio",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-US_Sassuolo_Calcio_logo.s.png",
+              "id": "sport-milan---bologna",
+              "name": "Milan - Bologna",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/eryreyeryy.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/sassuolo-lazio",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/milan-bologna",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             },
             {
-              "id": "sport-roma---cagliari",
-              "name": "Roma - Cagliari",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/960px-AS_Roma_logo_2017.svg_.png",
+              "id": "sport-venezia---inter",
+              "name": "Venezia - Inter",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/08/Venezia_FC_crest.svg_.webp",
               "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/roma-cagliari",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/venezia-inter",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             },
             {
-              "id": "sport-borussia-dortmund---werder-bremen",
-              "name": "Borussia Dortmund - Werder Bremen",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyreyery.png",
+              "id": "sport-genoa---juventus",
+              "name": "Genoa - Juventus",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/960px-Genoa_CFC_crest.svg_.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/dortmund-werder-bremen",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/genoa-juventus",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             },
             {
-              "id": "sport-fleetwood---arsenal",
-              "name": "Fleetwood - Arsenal",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/10/Fleetwood_Town_F.C._logo.svg_.webp",
+              "id": "sport-manchester-city---brighton",
+              "name": "Manchester City - Brighton",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Manchester_City_FC_badge.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://healthfirstin.com/albaplayer/how-to-optimize-your-workouts-for-your-specific-goals/?serv=5",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/man-city-brighton",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-bayern-munich---magdeburg",
+              "name": "Bayern Munich - Magdeburg",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyreryerye.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/bayern-munich-magdeburg",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-liverpool---chelsea",
+              "name": "Liverpool - Chelsea",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/250px-Liverpool_FC.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/liverpool-chelsea",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             }
