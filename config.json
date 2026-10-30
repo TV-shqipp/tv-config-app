@@ -194,13 +194,13 @@
           "id": "bbvk-group",
           "title": "Big Brother VIP Kosova",
           "subtitle": "BBVK Live 24/7",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.jpg",
           "type": "group",
           "items": [
             {
               "id": "bbvk-kanali-1",
               "name": "Kanali 1",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk1.png",
               "type": "dynamic_hls",
               "pageUrl": "https://s1.bbvipks.com/player1.php",
               "referer": "https://bbvipks.com/",
@@ -209,7 +209,7 @@
             {
               "id": "bbvk-kanali-1-hd",
               "name": "Kanali 1 HD",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk1hd.png",
               "type": "dynamic_hls",
               "pageUrl": "https://s1.bbvipks.com/kanali1.php",
               "referer": "https://bbvipks.com/",
@@ -218,7 +218,7 @@
             {
               "id": "bbvk-kanali-2",
               "name": "Kanali 2",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk2.png",
               "type": "dynamic_hls",
               "pageUrl": "https://s1.bbvipks.com/kanali2.php",
               "referer": "https://bbvipks.com/",
@@ -227,7 +227,7 @@
             {
               "id": "bbvk-kanali-2-hd",
               "name": "Kanali 2 HD",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk2hd.png",
               "type": "dynamic_hls",
               "pageUrl": "https://s1.bbvipks.com/player2.php",
               "referer": "https://bbvipks.com/",
