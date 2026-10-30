@@ -195,7 +195,7 @@
     {
       "id": "sport",
       "title": "Sport",
-      "subtitle": "Live events",
+      "subtitle": "Nessuna partita in diretta",
       "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
       "items": [
         {
@@ -204,62 +204,7 @@
           "subtitle": "AlbaPlayer / Server 1..7",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
           "type": "group",
-          "items": [
-            {
-              "id": "sport-milan---bologna",
-              "name": "Milan - Bologna",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/eryreyeryy.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/milan-bologna",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-venezia---inter",
-              "name": "Venezia - Inter",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/08/Venezia_FC_crest.svg_.webp",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/venezia-inter",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-genoa---juventus",
-              "name": "Genoa - Juventus",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/960px-Genoa_CFC_crest.svg_.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/genoa-juventus",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-manchester-city---brighton",
-              "name": "Manchester City - Brighton",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Manchester_City_FC_badge.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/man-city-brighton",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-bayern-munich---magdeburg",
-              "name": "Bayern Munich - Magdeburg",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyreryerye.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/bayern-munich-magdeburg",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-liverpool---chelsea",
-              "name": "Liverpool - Chelsea",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/250px-Liverpool_FC.svg_.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://healthfirstin.com/albaplayer/exactly-what-to-eat-before-and-after-your-workout/?serv=5",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            }
-          ]
+          "items": []
         },
         {
           "id": "sport-damitv",
