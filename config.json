@@ -238,6 +238,49 @@
               "pageUrl": "https://www.rtklive.com/sq/livestream/rtk4/"
             }
           ]
+        },
+        {
+          "id": "filma-shqip",
+          "title": "Filma Shqip",
+          "subtitle": "Filme shqiptare",
+          "icon": "",
+          "type": "group",
+          "items": [
+            {
+              "id": "edhe-malet-flasin",
+              "name": "Edhe malet flasin",
+              "icon": "",
+              "type": "offline",
+              "message": "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
+            },
+            {
+              "id": "rrugt-e-lirise",
+              "name": "Rrugët e Lirisë",
+              "icon": "",
+              "type": "offline",
+              "message": "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
+            },
+            {
+              "id": "bashkallajk",
+              "name": "Bashkallajk",
+              "icon": "",
+              "type": "hls",
+              "lastTry": "2026-10-30T19:56:02+00:00",
+              "url": "",
+              "videoId": "lMMUsJzTC68",
+              "videoTitle": "\"Antoni dhe Merita në hotel me 5 yje\"- Epsiodi 178- Bashkallajk",
+              "state": "vod",
+              "linkUpdated": "2026-10-30T19:56:02+00:00",
+              "week": "2026-10-30T20:45:00+01:00"
+            },
+            {
+              "id": "nusja-me-shkolle",
+              "name": "Nusja me shkollë",
+              "icon": "",
+              "type": "offline",
+              "message": "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
+            }
+          ]
         }
       ]
     },
