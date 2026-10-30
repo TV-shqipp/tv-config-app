@@ -195,12 +195,12 @@
     {
       "id": "sport",
       "title": "Sport",
-      "subtitle": "Eventi in diretta (aggiornati)",
+      "subtitle": "Live events",
       "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
       "items": [
         {
           "id": "sport-kosovari",
-          "title": "Sport Kosovari",
+          "title": "Best Sports",
           "subtitle": "AlbaPlayer / Server 1..7",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
           "type": "group",
@@ -263,7 +263,7 @@
         },
         {
           "id": "sport-damitv",
-          "name": "DamiTV",
+          "name": "All Sports",
           "icon": "https://i.imgur.com/FetkA0F.png",
           "type": "dynamic_hls",
           "pageUrl": "https://ondemand.st/papi/api/streams"
