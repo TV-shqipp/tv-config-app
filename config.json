@@ -202,7 +202,7 @@
               "name": "Kanali 1",
               "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://s1.bbvipks.com/k1.php",
+              "pageUrl": "https://s1.bbvipks.com/player1.php",
               "referer": "https://bbvipks.com/",
               "forceWeb": true
             },
@@ -211,7 +211,7 @@
               "name": "Kanali 1 HD",
               "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://s1.bbvipks.com/k1hd.php",
+              "pageUrl": "https://s1.bbvipks.com/kanali1.php",
               "referer": "https://bbvipks.com/",
               "forceWeb": true
             },
@@ -220,7 +220,7 @@
               "name": "Kanali 2",
               "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://s1.bbvipks.com/k2.php",
+              "pageUrl": "https://s1.bbvipks.com/kanali2.php",
               "referer": "https://bbvipks.com/",
               "forceWeb": true
             },
@@ -229,7 +229,7 @@
               "name": "Kanali 2 HD",
               "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://s1.bbvipks.com/k2hd.php",
+              "pageUrl": "https://s1.bbvipks.com/player2.php",
               "referer": "https://bbvipks.com/",
               "forceWeb": true
             }
