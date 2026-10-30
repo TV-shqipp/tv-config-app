@@ -98,7 +98,6 @@
           "pageUrl": "https://www.youtube.com/channel/UCL3nrPOUK0MCcm5nFk800xQ/live",
           "nowPlaying": ""
         },
-        
         {
           "id": "top-news",
           "name": "Top News",
@@ -203,7 +202,6 @@
           "url": "",
           "referer": "https://video.gjirafa.com/"
         },
-
         {
           "id": "rtk-group",
           "title": "Rtk-Group",
