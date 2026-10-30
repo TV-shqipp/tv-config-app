@@ -98,6 +98,112 @@
           "pageUrl": "https://www.youtube.com/channel/UCL3nrPOUK0MCcm5nFk800xQ/live",
           "nowPlaying": ""
         },
+        
+        {
+          "id": "top-news",
+          "name": "Top News",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/top-news.png",
+          "type": "hls",
+          "url": "",
+          "referer": "https://top-channel.tv/"
+        },
+        {
+          "id": "mcn-tv",
+          "name": "MCN TV",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/mcn-tv.png",
+          "type": "hls",
+          "url": "",
+          "referer": "https://mcntv.al/"
+        },
+        {
+          "id": "news-24",
+          "name": "News 24",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/news-24.png",
+          "type": "hls",
+          "url": "",
+          "referer": "https://livetvcentral.com/"
+        },
+        {
+          "id": "vizion-plus",
+          "name": "Vizion Plus",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/vizion-plus.png",
+          "type": "hls",
+          "url": "",
+          "referer": "https://www.vizionplus.tv/"
+        },
+        {
+          "id": "tv-prizreni",
+          "name": "TV Prizreni",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/tv-prizreni.png",
+          "type": "hls",
+          "url": "",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "rtv-besa",
+          "name": "RTV Besa",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtv-besa.png",
+          "type": "hls",
+          "url": "",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "zeri-2",
+          "name": "Zëri TV",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/zeri.png",
+          "type": "hls",
+          "url": "",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "zico-tv",
+          "name": "Zico TV",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/zico-tv.png",
+          "type": "hls",
+          "url": "",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "tv-news",
+          "name": "TV News",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/tv-news.png",
+          "type": "hls",
+          "url": "",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "arta-news",
+          "name": "Arta News",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/arta-news.png",
+          "type": "hls",
+          "url": "",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "a2-cnn",
+          "name": "A2 CNN",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/a2-cnn.png",
+          "type": "hls",
+          "url": "",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "euronews-albania",
+          "name": "Euronews Albania",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/euronews-albania.png",
+          "type": "hls",
+          "url": "",
+          "referer": "https://video.gjirafa.com/"
+        },
+        {
+          "id": "syri-vision",
+          "name": "Syri Vision",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/syri-vision.png",
+          "type": "hls",
+          "url": "",
+          "referer": "https://video.gjirafa.com/"
+        },
+
         {
           "id": "rtk-group",
           "title": "Rtk-Group",
