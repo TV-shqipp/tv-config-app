@@ -164,7 +164,6 @@ def main():
 
         # Aggiorniamo il sottotitolo generale
         count = len(new_items)
-        sport_section['subtitle'] = f"Partite attive in diretta ({count})" if count > 0 else "Nessuna partita in diretta"
 
         # Scriviamo il file config.json aggiornato su disco
         with open(CONFIG_FILE, "w", encoding="utf-8") as f:
