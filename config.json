@@ -99,38 +99,6 @@
           "nowPlaying": ""
         },
         {
-          "id": "top-news",
-          "name": "Top News",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/top-news.jpg",
-          "type": "dynamic_hls",
-          "url": "https://top-channel.tv/topnewslive/",
-          "referer": "https://top-channel.tv/"
-        },
-        {
-          "id": "mcn-tv",
-          "name": "MCN TV",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/mcn-tv.jpg",
-          "type": "dynamic_hls",
-          "url": "https://mcntv.al/articles/live",
-          "referer": "https://mcntv.al/"
-        },
-        {
-          "id": "news-24",
-          "name": "News 24",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/news-24.jpg",
-          "type": "dynamic_hls",
-          "url": "https://livetvcentral.com/tv/news-24-albania",
-          "referer": "https://livetvcentral.com/"
-        },
-        {
-          "id": "vizion-plus",
-          "name": "Vizion Plus",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/vizion-plus.jpg",
-          "type": "dynamic_hls",
-          "url": "https://www.vizionplus.tv/live/",
-          "referer": "https://www.vizionplus.tv/"
-        },
-        {
           "id": "tv-prizreni",
           "name": "TV Prizreni",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/tv-prizreni.png",
