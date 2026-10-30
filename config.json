@@ -401,7 +401,80 @@
           "subtitle": "AlbaPlayer / Server 1..7",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
           "type": "group",
-          "items": []
+          "items": [
+            {
+              "id": "sport-chelsea---manchester-united",
+              "name": "Chelsea - Manchester United",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Chelsea_FC.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/chelsea-man-united",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-levante---atletico-madrid",
+              "name": "Levante - Atletico Madrid",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Levante_Union_Deportiva.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/levante-atletico-madrid",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-manchester-city---brighton",
+              "name": "Manchester City - Brighton",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Manchester_City_FC_badge.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/man-city-brighton",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-bayern-munich---borussia-dortmund",
+              "name": "Bayern Munich - Borussia Dortmund",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyreryerye.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/bayern-munich-dortmund",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-udinese---roma",
+              "name": "Udinese - Roma",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/03/Udinese_Calcio_logo.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/udinese-roma",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-tottenham---crystal-palace",
+              "name": "Tottenham - Crystal Palace",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/250px-Tottenham_Hotspur.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/tottenham-crystal-palace",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-milan---inter",
+              "name": "Milan - Inter",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/eryreyeryy.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/milan-inter",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-barcelona---alaves",
+              "name": "Barcelona - Alaves",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/FC_Barcelona_crest.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://kosovari.online/matches/barcelona/",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            }
+          ]
         },
         {
           "id": "sport-damitv",
