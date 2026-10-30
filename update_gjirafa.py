@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Aggiorna in config.json i link .m3u8 dei canali GjirafaVideo.
+Aggiorna in config.json i link .m3u8 dei canali GjirafaVideo e altri.
 """
 import asyncio
 import json
@@ -15,12 +15,14 @@ CONFIG_PATH = Path(__file__).resolve().parent / "config.json"
 
 # Solo i canali senza blocco geografico per i server USA di GitHub
 PAGES = {
+    # Canali Gjirafa base
     "radio-dukagjini": "https://video.gjirafa.com/radio-dukagjini",
     "rtv-21": "https://video.gjirafa.com/rtv-21-live",
     "ktv": "https://video.gjirafa.com/ktv-live",
     "atv": "https://video.gjirafa.com/atv-live-tv",
-    "rtk-sat": "https://video.gjirafa.com/rtk-1-sat"
-     # Altri canali da Gjirafa
+    "rtk-sat": "https://video.gjirafa.com/rtk-1-sat",
+    
+    # Nuovi Canali Gjirafa
     "tv-prizreni": "https://video.gjirafa.com/tv-prizreni-live",
     "rtv-besa": "https://video.gjirafa.com/rtv-besa-live-2",
     "zeri-2": "https://video.gjirafa.com/zeri-2",
@@ -31,12 +33,8 @@ PAGES = {
     "euronews-albania": "https://video.gjirafa.com/euronews-albania-live",
     "syri-vision": "https://video.gjirafa.com/syrivision",
     
-    # Siti Esterni
-    "top-news": "https://top-channel.tv/topnewslive/",
-    "mcn-tv": "https://mcntv.al/articles/live",
-    "news-24": "https://livetvcentral.com/tv/news-24-albania",
-    "vizion-plus": "https://www.vizionplus.tv/live/"
-}
+    # Siti Esterni (Attenzione: Potrebbero bloccare il bot con Cloudflare)
+    "mcn-tv": "https://mcntv.al/articles/live"
 }
 
 UA = (
