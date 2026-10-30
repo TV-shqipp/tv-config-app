@@ -44,7 +44,7 @@ def resolve_player_url(source_url):
 
         # 2. Se non c'è, cerca il link Google Sites
         if not match_alba:
-            # Nuovo check per i bottoni azzurri (redirect interni del sito, come da screenshot)
+            # Check per i bottoni azzurri (redirect interni del sito)
             match_button = re.search(r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>\s*\d+\.\s*.*?(?:vs| - ).*?</a>', html)
             if match_button:
                 redirect_url = match_button.group(1)
@@ -83,7 +83,6 @@ def parse_kosovari_matches():
 
     matches = []
     try:
-        # Aggiungiamo un parsing manuale (regex) come fallback se bs4 fallisce
         from bs4 import BeautifulSoup
         soup = BeautifulSoup(html, "html.parser")
         for match_div in soup.find_all("div", class_="AF_Match"):
@@ -130,10 +129,6 @@ def main():
                 "forceWeb": True
             })
 
-    if not new_items:
-        print("Nessuna partita elaborata.")
-        return
-
     # Leggiamo il config.json
     try:
         with open(CONFIG_FILE, "r", encoding="utf-8") as f:
@@ -145,34 +140,37 @@ def main():
     # Troviamo la sezione Sport
     sport_section = next((s for s in data.get('sections', []) if s.get('id') == SPORT_SECTION_ID), None)
     if sport_section:
-        # INVECE di sovrascrivere l'intera sezione (che cancella DamiTV),
-        # andiamo a cercare SOLO il gruppo 'sport-kosovari'
         kosovari_group = next((i for i in sport_section.get('items', []) if i.get('id') == KOSOVARI_GROUP_ID), None)
 
         if kosovari_group:
-            # Aggiorniamo solo le partite dentro Kosovari
+            # Aggiorniamo le partite dentro Kosovari (se new_items è vuoto, svuota la lista [])
             kosovari_group['items'] = new_items
         else:
-            # Se il gruppo non c'è, lo creiamo (e lo aggiungiamo in cima, mantenendo gli altri tipo DamiTV)
-            kosovari_group = {
-                "id": KOSOVARI_GROUP_ID,
-                "title": "Sport Kosovari",
-                "subtitle": "AlbaPlayer / Server 1..7",
-                "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
-                "type": "group",
-                "items": new_items
-            }
-            # Uniamo il nuovo gruppo alla lista esistente (così DamiTV non viene cancellato)
-            sport_section['items'] = [kosovari_group] + [item for item in sport_section.get('items', []) if item.get('id') != KOSOVARI_GROUP_ID]
+            if new_items:
+                # Se il gruppo non c'è e ci sono partite, lo creiamo
+                kosovari_group = {
+                    "id": KOSOVARI_GROUP_ID,
+                    "title": "Sport Kosovari",
+                    "subtitle": "AlbaPlayer / Server 1..7",
+                    "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
+                    "type": "group",
+                    "items": new_items
+                }
+                sport_section['items'] = [kosovari_group] + [item for item in sport_section.get('items', []) if item.get('id') != KOSOVARI_GROUP_ID]
 
-        # Aggiorniamo un sottotitolo generale se serve
-        sport_section['subtitle'] = f"Eventi in diretta (aggiornati)"
+        # Se le partite erano salvate direttamente in sport_section senza il sottogruppo, puliamo anche quelle
+        if not kosovari_group:
+            sport_section['items'] = [i for i in sport_section.get('items', []) if i.get('referer') != "https://kosovari.online/"]
 
-        # Scriviamo il file
+        # Aggiorniamo il sottotitolo generale
+        count = len(new_items)
+        sport_section['subtitle'] = f"Partite attive in diretta ({count})" if count > 0 else "Nessuna partita in diretta"
+
+        # Scriviamo il file config.json aggiornato su disco
         with open(CONFIG_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
 
-        print("config.json aggiornato con successo! (DamiTV salvato!)")
+        print(f"config.json aggiornato con successo! (Partite kosovari attive: {count})")
 
         path = os.environ.get("GITHUB_OUTPUT")
         if path:
