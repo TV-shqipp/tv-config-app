@@ -20,6 +20,23 @@ PAGES = {
     "ktv": "https://video.gjirafa.com/ktv-live",
     "atv": "https://video.gjirafa.com/atv-live-tv",
     "rtk-sat": "https://video.gjirafa.com/rtk-1-sat"
+     # Altri canali da Gjirafa
+    "tv-prizreni": "https://video.gjirafa.com/tv-prizreni-live",
+    "rtv-besa": "https://video.gjirafa.com/rtv-besa-live-2",
+    "zeri-2": "https://video.gjirafa.com/zeri-2",
+    "zico-tv": "https://video.gjirafa.com/zico-tv-live",
+    "tv-news": "https://video.gjirafa.com/tv-news-live",
+    "arta-news": "https://video.gjirafa.com/arta-news",
+    "a2-cnn": "https://video.gjirafa.com/a2-cnn-live",
+    "euronews-albania": "https://video.gjirafa.com/euronews-albania-live",
+    "syri-vision": "https://video.gjirafa.com/syrivision",
+    
+    # Siti Esterni
+    "top-news": "https://top-channel.tv/topnewslive/",
+    "mcn-tv": "https://mcntv.al/articles/live",
+    "news-24": "https://livetvcentral.com/tv/news-24-albania",
+    "vizion-plus": "https://www.vizionplus.tv/live/"
+}
 }
 
 UA = (
