@@ -189,6 +189,51 @@
               "nowPlaying": ""
             }
           ]
+        },
+        {
+          "id": "bbvk-group",
+          "title": "Big Brother VIP Kosova",
+          "subtitle": "BBVK Live 24/7",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
+          "type": "group",
+          "items": [
+            {
+              "id": "bbvk-kanali-1",
+              "name": "Kanali 1",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://s1.bbvipks.com/k1.php",
+              "referer": "https://bbvipks.com/",
+              "forceWeb": true
+            },
+            {
+              "id": "bbvk-kanali-1-hd",
+              "name": "Kanali 1 HD",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://s1.bbvipks.com/k1hd.php",
+              "referer": "https://bbvipks.com/",
+              "forceWeb": true
+            },
+            {
+              "id": "bbvk-kanali-2",
+              "name": "Kanali 2",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://s1.bbvipks.com/k2.php",
+              "referer": "https://bbvipks.com/",
+              "forceWeb": true
+            },
+            {
+              "id": "bbvk-kanali-2-hd",
+              "name": "Kanali 2 HD",
+              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://s1.bbvipks.com/k2hd.php",
+              "referer": "https://bbvipks.com/",
+              "forceWeb": true
+            }
+          ]
         }
       ]
     },
