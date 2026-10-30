@@ -195,7 +195,7 @@
     {
       "id": "sport",
       "title": "Sport",
-      "subtitle": "Nessuna partita in diretta",
+      "subtitle": "Live events",
       "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
       "items": [
         {
