@@ -32,7 +32,15 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtk-sat.png",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/rtk-sat/index.m3u8",
-          "referer": "https://video.gjirafa.com/"
+          "referer": "https://video.gjirafa.com/",
+          "epg": [
+            "08:00 - Programi i Mëngjesit",
+            "12:00 - Lajmet",
+            "15:00 - Pasdite",
+            "19:30 - Edicioni Qendror i Lajmeve",
+            "21:00 - Film / Emision Sportiv",
+            "23:30 - Lajmet e Natës"
+          ]
         },
         {
           "id": "atv",
@@ -40,7 +48,15 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/atv.png",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/0nj-g63-92x-few/index.m3u8",
-          "referer": "https://video.gjirafa.com/"
+          "referer": "https://video.gjirafa.com/",
+          "epg": [
+            "08:00 - Programi i Mëngjesit",
+            "12:00 - Lajmet",
+            "15:00 - Pasdite",
+            "19:30 - Edicioni Qendror i Lajmeve",
+            "21:00 - Film / Emision Sportiv",
+            "23:30 - Lajmet e Natës"
+          ]
         },
         {
           "id": "rtv-21",
@@ -48,7 +64,15 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtv-21.jpg",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/2cz-npl-jfn-9he/index.m3u8",
-          "referer": "https://video.gjirafa.com/"
+          "referer": "https://video.gjirafa.com/",
+          "epg": [
+            "08:00 - Programi i Mëngjesit",
+            "12:00 - Lajmet",
+            "15:00 - Pasdite",
+            "19:30 - Edicioni Qendror i Lajmeve",
+            "21:00 - Film / Emision Sportiv",
+            "23:30 - Lajmet e Natës"
+          ]
         },
         {
           "id": "ktv",
@@ -56,7 +80,15 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/ktv.jpg",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/lj9-pxm-o53-rp0/index.m3u8",
-          "referer": "https://video.gjirafa.com/"
+          "referer": "https://video.gjirafa.com/",
+          "epg": [
+            "08:00 - Programi i Mëngjesit",
+            "12:00 - Lajmet",
+            "15:00 - Pasdite",
+            "19:30 - Edicioni Qendror i Lajmeve",
+            "21:00 - Film / Emision Sportiv",
+            "23:30 - Lajmet e Natës"
+          ]
         },
         {
           "id": "tv-dukagjini",
@@ -209,7 +241,6 @@
         }
       ]
     },
-    
     {
       "id": "filma-shqip",
       "title": "Filma Shqip",
@@ -264,11 +295,10 @@
         }
       ]
     },
-
     {
       "id": "bbvk-group",
-      "title": "Big Brother VIP",
-      "subtitle": "Kosova Live 24/7",
+      "title": "Big Brother VIP Kosova",
+      "subtitle": "BBVK Live 24/7",
       "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.jpg",
       "items": [
         {
@@ -309,7 +339,6 @@
         }
       ]
     },
-
     {
       "id": "sport",
       "title": "Sport",
@@ -333,7 +362,6 @@
         }
       ]
     },
-    
     {
       "id": "lojra",
       "title": "Lojra",
