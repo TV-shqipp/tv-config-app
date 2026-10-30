@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated": "2026-10-30T19:15:13Z",
+  "updated": "2026-10-26T12:00:00Z",
   "globalAlert": "",
   "sections": [
     {
@@ -32,15 +32,7 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtk-sat.png",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/rtk-sat/index.m3u8",
-          "referer": "https://video.gjirafa.com/",
-          "epg": [
-            "08:00 - Programi i Mëngjesit",
-            "12:00 - Lajmet",
-            "15:00 - Pasdite",
-            "19:30 - Edicioni Qendror i Lajmeve",
-            "21:00 - Film / Emision Sportiv",
-            "23:30 - Lajmet e Natës"
-          ]
+          "referer": "https://video.gjirafa.com/"
         },
         {
           "id": "atv",
@@ -48,15 +40,7 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/atv.png",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/0nj-g63-92x-few/index.m3u8",
-          "referer": "https://video.gjirafa.com/",
-          "epg": [
-            "08:00 - Programi i Mëngjesit",
-            "12:00 - Lajmet",
-            "15:00 - Pasdite",
-            "19:30 - Edicioni Qendror i Lajmeve",
-            "21:00 - Film / Emision Sportiv",
-            "23:30 - Lajmet e Natës"
-          ]
+          "referer": "https://video.gjirafa.com/"
         },
         {
           "id": "rtv-21",
@@ -64,15 +48,7 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtv-21.jpg",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/2cz-npl-jfn-9he/index.m3u8",
-          "referer": "https://video.gjirafa.com/",
-          "epg": [
-            "08:00 - Programi i Mëngjesit",
-            "12:00 - Lajmet",
-            "15:00 - Pasdite",
-            "19:30 - Edicioni Qendror i Lajmeve",
-            "21:00 - Film / Emision Sportiv",
-            "23:30 - Lajmet e Natës"
-          ]
+          "referer": "https://video.gjirafa.com/"
         },
         {
           "id": "ktv",
@@ -80,15 +56,7 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/ktv.jpg",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-livestream/lj9-pxm-o53-rp0/index.m3u8",
-          "referer": "https://video.gjirafa.com/",
-          "epg": [
-            "08:00 - Programi i Mëngjesit",
-            "12:00 - Lajmet",
-            "15:00 - Pasdite",
-            "19:30 - Edicioni Qendror i Lajmeve",
-            "21:00 - Film / Emision Sportiv",
-            "23:30 - Lajmet e Natës"
-          ]
+          "referer": "https://video.gjirafa.com/"
         },
         {
           "id": "tv-dukagjini",
@@ -99,35 +67,67 @@
           "nowPlaying": ""
         },
         {
+          "id": "top-news",
+          "name": "Top News",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/top-news.png",
+          "type": "dynamic_hls",
+          "pageUrl": "https://top-channel.tv/topnewslive/",
+          "referer": "https://top-channel.tv/"
+        },
+        {
+          "id": "mcn-tv",
+          "name": "MCN TV",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/mcn-tv.png",
+          "type": "dynamic_hls",
+          "pageUrl": "https://mcntv.al/articles/live",
+          "referer": "https://mcntv.al/"
+        },
+        {
+          "id": "news-24",
+          "name": "News 24",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/news-24.png",
+          "type": "dynamic_hls",
+          "pageUrl": "https://livetvcentral.com/tv/news-24-albania",
+          "referer": "https://livetvcentral.com/"
+        },
+        {
+          "id": "vizion-plus",
+          "name": "Vizion Plus",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/vizion-plus.png",
+          "type": "dynamic_hls",
+          "pageUrl": "https://www.vizionplus.tv/live/",
+          "referer": "https://www.vizionplus.tv/"
+        },
+        {
           "id": "tv-prizreni",
           "name": "TV Prizreni",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/tv-prizreni.png",
           "type": "hls",
-          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/5m0-cok-g5z-1xi/index.m3u8",
+          "url": "",
           "referer": "https://video.gjirafa.com/"
         },
         {
           "id": "rtv-besa",
           "name": "RTV Besa",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtv-besa.jpg",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtv-besa.png",
           "type": "hls",
-          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live-n1/ehn-g2o-v7w-nh4/index.m3u8",
+          "url": "",
           "referer": "https://video.gjirafa.com/"
         },
         {
           "id": "zeri-2",
           "name": "Zëri TV",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/zeri.jpg",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/zeri.png",
           "type": "hls",
-          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live-n1/jo8-76n-lmx-tv0/index.m3u8",
+          "url": "",
           "referer": "https://video.gjirafa.com/"
         },
         {
           "id": "zico-tv",
           "name": "Zico TV",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/zico-tv.jpg",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/zico-tv.png",
           "type": "hls",
-          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/j3a-n14-2pf-g3s/index.m3u8",
+          "url": "",
           "referer": "https://video.gjirafa.com/"
         },
         {
@@ -135,7 +135,7 @@
           "name": "TV News",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/tv-news.png",
           "type": "hls",
-          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live-n1/js0-h8f-ifx-29f/index.m3u8",
+          "url": "",
           "referer": "https://video.gjirafa.com/"
         },
         {
@@ -143,7 +143,7 @@
           "name": "Arta News",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/arta-news.png",
           "type": "hls",
-          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/mps-vgx-u9p-qv1/index.m3u8",
+          "url": "",
           "referer": "https://video.gjirafa.com/"
         },
         {
@@ -151,7 +151,7 @@
           "name": "A2 CNN",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/a2-cnn.png",
           "type": "hls",
-          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/2h7-5bc-xym-0k2/index.m3u8",
+          "url": "",
           "referer": "https://video.gjirafa.com/"
         },
         {
@@ -159,15 +159,15 @@
           "name": "Euronews Albania",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/euronews-albania.png",
           "type": "hls",
-          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/2dw-zuf-1c9-pxu/index.m3u8",
+          "url": "",
           "referer": "https://video.gjirafa.com/"
         },
         {
           "id": "syri-vision",
           "name": "Syri Vision",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/syri-vision.jpg",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/syri-vision.png",
           "type": "hls",
-          "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/xej-xnb-ba0-kup/index.m3u8",
+          "url": "",
           "referer": "https://video.gjirafa.com/"
         },
         {
@@ -206,109 +206,110 @@
               "pageUrl": "https://www.rtklive.com/sq/livestream/rtk4/"
             }
           ]
-        },
-        {
-          "id": "filma-shqip",
-          "title": "Filma Shqip",
-          "subtitle": "Filme shqiptare",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/filmashqip.jpg",
-          "type": "group",
-          "items": [
-            {
-              "id": "edhe-malet-flasin",
-              "name": "Edhe malet flasin",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/edhemalet.jpg",
-              "type": "hls",
-              "lastTry": "2026-10-25T22:55:41+00:00",
-              "url": "",
-              "videoId": "RVZIWCx_Xl8",
-              "videoTitle": "EDHE MALET FLASIN - Episodi 100 (Histori Shqiptare)",
-              "state": "vod"
-            },
-            {
-              "id": "rrugt-e-lirise",
-              "name": "Rrugët e Lirisë",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rrugeteliris.jpg",
-              "type": "hls",
-              "lastTry": "2026-10-25T22:55:41+00:00",
-              "url": "",
-              "videoId": "pWTYRxzGGvc",
-              "videoTitle": "Rrugët e Lirisë-Episodi 98(Tregime të Vjetra)",
-              "state": "vod"
-            },
-            {
-              "id": "bashkallajk",
-              "name": "Bashkallajk",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bashkallajk.jpg",
-              "type": "hls",
-              "lastTry": "2026-10-25T22:55:41+00:00",
-              "url": "",
-              "videoId": "EhQdZYUVVoQ",
-              "videoTitle": "\"Anton milioneri\" - Bashkallajk - Episodi 177",
-              "state": "vod",
-              "nowPlaying": ""
-            },
-            {
-              "id": "nusja-me-shkolle",
-              "name": "Nusja me shkollë",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/nusjameshkoll.jpg",
-              "type": "hls",
-              "lastTry": "2026-10-25T22:55:41+00:00",
-              "url": "",
-              "videoId": "a2TGTST34-A",
-              "videoTitle": "Nusja me shkollë - Episoda 81 (Tregim Popullor)",
-              "state": "vod",
-              "nowPlaying": ""
-            }
-          ]
-        },
-        {
-          "id": "bbvk-group",
-          "title": "Big Brother VIP Kosova",
-          "subtitle": "BBVK Live 24/7",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.jpg",
-          "type": "group",
-          "items": [
-            {
-              "id": "bbvk-kanali-1",
-              "name": "Kanali 1",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk1.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://s1.bbvipks.com/player1.php",
-              "referer": "https://bbvipks.com/",
-              "forceWeb": true
-            },
-            {
-              "id": "bbvk-kanali-1-hd",
-              "name": "Kanali 1 HD",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk1hd.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://s1.bbvipks.com/kanali1.php",
-              "referer": "https://bbvipks.com/",
-              "forceWeb": true
-            },
-            {
-              "id": "bbvk-kanali-2",
-              "name": "Kanali 2",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk2.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://s1.bbvipks.com/kanali2.php",
-              "referer": "https://bbvipks.com/",
-              "forceWeb": true
-            },
-            {
-              "id": "bbvk-kanali-2-hd",
-              "name": "Kanali 2 HD",
-              "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk2hd.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://s1.bbvipks.com/player2.php",
-              "referer": "https://bbvipks.com/",
-              "forceWeb": true
-            }
-          ]
         }
       ]
     },
+    
+    {
+      "id": "filma-shqip",
+      "title": "Filma Shqip",
+      "subtitle": "Filme shqiptare",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/filmashqip.jpg",
+      "items": [
+        {
+          "id": "edhe-malet-flasin",
+          "name": "Edhe malet flasin",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/edhemalet.jpg",
+          "type": "hls",
+          "lastTry": "2026-10-25T22:55:41+00:00",
+          "url": "",
+          "videoId": "RVZIWCx_Xl8",
+          "videoTitle": "EDHE MALET FLASIN - Episodi 100 (Histori Shqiptare)",
+          "state": "vod"
+        },
+        {
+          "id": "rrugt-e-lirise",
+          "name": "Rrugët e Lirisë",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rrugeteliris.jpg",
+          "type": "hls",
+          "lastTry": "2026-10-25T22:55:41+00:00",
+          "url": "",
+          "videoId": "pWTYRxzGGvc",
+          "videoTitle": "Rrugët e Lirisë-Episodi 98(Tregime të Vjetra)",
+          "state": "vod"
+        },
+        {
+          "id": "bashkallajk",
+          "name": "Bashkallajk",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bashkallajk.jpg",
+          "type": "hls",
+          "lastTry": "2026-10-25T22:55:41+00:00",
+          "url": "",
+          "videoId": "EhQdZYUVVoQ",
+          "videoTitle": "\"Anton milioneri\" - Bashkallajk - Episodi 177",
+          "state": "vod",
+          "nowPlaying": ""
+        },
+        {
+          "id": "nusja-me-shkolle",
+          "name": "Nusja me shkollë",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/nusjameshkoll.jpg",
+          "type": "hls",
+          "lastTry": "2026-10-25T22:55:41+00:00",
+          "url": "",
+          "videoId": "a2TGTST34-A",
+          "videoTitle": "Nusja me shkollë - Episoda 81 (Tregim Popullor)",
+          "state": "vod",
+          "nowPlaying": ""
+        }
+      ]
+    },
+
+    {
+      "id": "bbvk-group",
+      "title": "Big Brother VIP",
+      "subtitle": "Kosova Live 24/7",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk.jpg",
+      "items": [
+        {
+          "id": "bbvk-kanali-1",
+          "name": "Kanali 1",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk1.png",
+          "type": "dynamic_hls",
+          "pageUrl": "https://s1.bbvipks.com/player1.php",
+          "referer": "https://bbvipks.com/",
+          "forceWeb": true
+        },
+        {
+          "id": "bbvk-kanali-1-hd",
+          "name": "Kanali 1 HD",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk1hd.png",
+          "type": "dynamic_hls",
+          "pageUrl": "https://s1.bbvipks.com/kanali1.php",
+          "referer": "https://bbvipks.com/",
+          "forceWeb": true
+        },
+        {
+          "id": "bbvk-kanali-2",
+          "name": "Kanali 2",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk2.png",
+          "type": "dynamic_hls",
+          "pageUrl": "https://s1.bbvipks.com/kanali2.php",
+          "referer": "https://bbvipks.com/",
+          "forceWeb": true
+        },
+        {
+          "id": "bbvk-kanali-2-hd",
+          "name": "Kanali 2 HD",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bbvk2hd.png",
+          "type": "dynamic_hls",
+          "pageUrl": "https://s1.bbvipks.com/player2.php",
+          "referer": "https://bbvipks.com/",
+          "forceWeb": true
+        }
+      ]
+    },
+
     {
       "id": "sport",
       "title": "Sport",
@@ -332,6 +333,7 @@
         }
       ]
     },
+    
     {
       "id": "lojra",
       "title": "Lojra",
