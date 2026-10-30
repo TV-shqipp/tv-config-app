@@ -257,8 +257,15 @@
               "id": "rrugt-e-lirise",
               "name": "Rrugët e Lirisë",
               "icon": "",
-              "type": "offline",
-              "message": "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
+              "type": "hls",
+              "lastTry": "2026-10-30T20:32:10+00:00",
+              "url": "",
+              "videoId": "054BCoFn7-o",
+              "videoTitle": "Rrugët e Lirisë-Episodi 99(Tregime të Vjetra)",
+              "state": "vod",
+              "linkUpdated": "2026-10-30T20:32:10+00:00",
+              "week": "2026-10-30T20:00:00+01:00",
+              "recheck": "2026-10-30T20:00:00+01:00"
             },
             {
               "id": "bashkallajk",
