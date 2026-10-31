@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "updated": "2026-10-30T19:52:52Z",
   "globalAlert": "",
   "sections": [
@@ -238,57 +238,6 @@
               "pageUrl": "https://www.rtklive.com/sq/livestream/rtk4/"
             }
           ]
-        },
-        {
-          "id": "filma-shqip",
-          "title": "Filma Shqip",
-          "subtitle": "Filme shqiptare",
-          "icon": "",
-          "type": "group",
-          "items": [
-            {
-              "id": "edhe-malet-flasin",
-              "name": "Edhe malet flasin",
-              "icon": "",
-              "type": "offline",
-              "message": "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
-            },
-            {
-              "id": "rrugt-e-lirise",
-              "name": "Rrugët e Lirisë",
-              "icon": "",
-              "type": "hls",
-              "lastTry": "2026-10-30T20:32:10+00:00",
-              "url": "",
-              "videoId": "054BCoFn7-o",
-              "videoTitle": "Rrugët e Lirisë-Episodi 99(Tregime të Vjetra)",
-              "state": "vod",
-              "linkUpdated": "2026-10-30T20:32:10+00:00",
-              "week": "2026-10-30T20:00:00+01:00",
-              "recheck": "2026-10-30T20:00:00+01:00"
-            },
-            {
-              "id": "bashkallajk",
-              "name": "Bashkallajk",
-              "icon": "",
-              "type": "hls",
-              "lastTry": "2026-10-30T21:54:58+00:00",
-              "url": "",
-              "videoId": "lMMUsJzTC68",
-              "videoTitle": "\"Antoni dhe Merita në hotel me 5 yje\"- Epsiodi 178- Bashkallajk",
-              "state": "vod",
-              "linkUpdated": "2026-10-30T21:54:58+00:00",
-              "week": "2026-10-30T20:45:00+01:00",
-              "recheck": "2026-10-30T20:45:00+01:00"
-            },
-            {
-              "id": "nusja-me-shkolle",
-              "name": "Nusja me shkollë",
-              "icon": "",
-              "type": "offline",
-              "message": "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
-            }
-          ]
         }
       ]
     },
@@ -303,7 +252,7 @@
           "name": "Edhe malet flasin",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/edhemalet.jpg",
           "type": "hls",
-          "lastTry": "2026-10-25T22:55:41+00:00",
+          "lastTry": "2026-10-30T20:32:10+00:00",
           "url": "",
           "videoId": "RVZIWCx_Xl8",
           "videoTitle": "EDHE MALET FLASIN - Episodi 100 (Histori Shqiptare)",
@@ -314,23 +263,28 @@
           "name": "Rrugët e Lirisë",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rrugeteliris.jpg",
           "type": "hls",
-          "lastTry": "2026-10-25T22:55:41+00:00",
+          "lastTry": "2026-10-30T20:32:10+00:00",
           "url": "",
-          "videoId": "pWTYRxzGGvc",
-          "videoTitle": "Rrugët e Lirisë-Episodi 98(Tregime të Vjetra)",
-          "state": "vod"
+          "videoId": "054BCoFn7-o",
+          "videoTitle": "Rrugët e Lirisë-Episodi 99(Tregime të Vjetra)",
+          "state": "vod",
+          "linkUpdated": "2026-10-30T20:32:10+00:00",
+          "week": "2026-10-30T20:00:00+01:00",
+          "recheck": "2026-10-30T20:00:00+01:00"
         },
         {
           "id": "bashkallajk",
           "name": "Bashkallajk",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bashkallajk.jpg",
           "type": "hls",
-          "lastTry": "2026-10-25T22:55:41+00:00",
+          "lastTry": "2026-10-30T21:54:58+00:00",
           "url": "",
-          "videoId": "EhQdZYUVVoQ",
-          "videoTitle": "\"Anton milioneri\" - Bashkallajk - Episodi 177",
+          "videoId": "lMMUsJzTC68",
+          "videoTitle": "\"Antoni dhe Merita në hotel me 5 yje\"- Epsiodi 178- Bashkallajk",
           "state": "vod",
-          "nowPlaying": ""
+          "linkUpdated": "2026-10-30T21:54:58+00:00",
+          "week": "2026-10-30T20:45:00+01:00",
+          "recheck": "2026-10-30T20:45:00+01:00"
         },
         {
           "id": "nusja-me-shkolle",
@@ -341,8 +295,7 @@
           "url": "",
           "videoId": "a2TGTST34-A",
           "videoTitle": "Nusja me shkollë - Episoda 81 (Tregim Popullor)",
-          "state": "vod",
-          "nowPlaying": ""
+          "state": "vod"
         }
       ]
     },
