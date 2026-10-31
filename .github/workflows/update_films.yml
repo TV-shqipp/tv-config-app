@@ -60,8 +60,7 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         run: |
           python -c "import json; d=json.load(open('config.json')); \
-          print(json.dumps([s for sec in d['sections'] if sec['id']=='tv' \
-          for s in sec['items'] if s['id']=='filma-shqip'][0], indent=2, ensure_ascii=False))"
+          print(json.dumps([sec for sec in d['sections'] if sec['id']=='filma-shqip'][0], indent=2, ensure_ascii=False))"
 
       - name: Salva il config su GitHub
         if: steps.gate.outputs.run == 'true'
