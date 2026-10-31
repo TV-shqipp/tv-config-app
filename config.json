@@ -220,11 +220,14 @@
           "name": "Edhe malet flasin",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/edhemalet.jpg",
           "type": "hls",
-          "lastTry": "2026-10-30T20:32:10+00:00",
+          "lastTry": "2026-10-31T21:10:02+00:00",
           "url": "",
-          "videoId": "RVZIWCx_Xl8",
-          "videoTitle": "EDHE MALET FLASIN - Episodi 100 (Histori Shqiptare)",
-          "state": "vod"
+          "videoId": "VJhlqb5xFq4",
+          "videoTitle": "EDHE MALET FLASIN - Episodi 101 (Histori Shqiptare)",
+          "state": "vod",
+          "linkUpdated": "2026-10-31T21:10:02+00:00",
+          "week": "2026-10-31T20:31:00+01:00",
+          "recheck": "2026-10-31T20:31:00+01:00"
         },
         {
           "id": "rrugt-e-lirise",
