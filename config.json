@@ -500,6 +500,2070 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/milion.jpg"
         }
       ]
+    },
+    {
+      "id": "dokumentare",
+      "title": "Dokumentarë",
+      "subtitle": "Lufta e Kosovës (UÇK)",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/edhemalet.jpg",
+      "items": [
+        {
+          "id": "doc_fQHsI9_EoCM",
+          "name": "Dokumentari - ''Buka e Uçk - së\" - Histori, rrëfime e përjetime",
+          "icon": "https://i.ytimg.com/vi/fQHsI9_EoCM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD-89sAhpj2_F7blgllMrcku0MVPQ",
+          "type": "youtube",
+          "videoId": "fQHsI9_EoCM",
+          "description": "Ky është një dokumentar rreth: Dokumentari - ''Buka e Uçk - së\" - Histori, rrëfime e përjetime. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_khPtm7ec_oc",
+          "name": "Lufta per Liri 1999 UÇK",
+          "icon": "https://i.ytimg.com/vi/khPtm7ec_oc/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhlIGUoSDAP&rs=AOn4CLAnUuyT6wCAEUwMlOlcBiG4h-_J6w",
+          "type": "youtube",
+          "videoId": "khPtm7ec_oc",
+          "description": "Luftimet ne fshatin Lladrovc të Malishevës 1999."
+        },
+        {
+          "id": "doc_gNy48uPxZp8",
+          "name": "UÇK 3 DITË PARA FILLIMIT DOKUMENTAR",
+          "icon": "https://i.ytimg.com/vi/gNy48uPxZp8/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCYnyXc7wgduLwK4hIal_msD5tSuw",
+          "type": "youtube",
+          "videoId": "gNy48uPxZp8",
+          "description": "Ky është një dokumentar rreth: UÇK 3 DITË PARA FILLIMIT DOKUMENTAR. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_GBP8ZuYepEw",
+          "name": "Luanët e luftës çlirimtare kushtuar Njësitit LUANI të UÇK së në Rekë të keqe",
+          "icon": "https://i.ytimg.com/vi/GBP8ZuYepEw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCypp4oTFAjd0R6itiAsEubfI_CNQ",
+          "type": "youtube",
+          "videoId": "GBP8ZuYepEw",
+          "description": "Dokumentari Luanët e luftës çlirimtare kushtuar luftëtarëve të Njësitit LUANI të UÇK-së në Rekë të keqe. Autorë Nuhi Bytyçi dhe ..."
+        },
+        {
+          "id": "doc_5MgEaXMnkts",
+          "name": "Luftime të UCK-ës",
+          "icon": "https://i.ytimg.com/vi/5MgEaXMnkts/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhlIGMoUDAP&rs=AOn4CLDrWXOBBOJDgVaM0a1ehbJ5iddz4A",
+          "type": "youtube",
+          "videoId": "5MgEaXMnkts",
+          "description": "Ky është një dokumentar rreth: Luftime të UCK-ës. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_eCbVLMLREpk",
+          "name": "Dokumentari i ndaluar. Plani i Serbisë! – Gjurmë Shqiptare",
+          "icon": "https://i.ytimg.com/vi/eCbVLMLREpk/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAglqzxwwjJhbYUVedi6-qQqd4eIA",
+          "type": "youtube",
+          "videoId": "eCbVLMLREpk",
+          "description": "Nje projekt i erret, i ashper… qe synonte shqiptaret! Çfare ndodhi ne ato dite te ftohta janari? Cilat ishin synimet e Serbise?"
+        },
+        {
+          "id": "doc_Mvs06eY6sI4",
+          "name": "Ushtria Çlirimtare e Kosovës - Dokumentari që bëri jehonë të jashtëzakonshme, TVSH 18 korrik 1998",
+          "icon": "https://i.ytimg.com/vi/Mvs06eY6sI4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC7UZCgTGjAHJdrNst9PbGxrDr4vg",
+          "type": "youtube",
+          "videoId": "Mvs06eY6sI4",
+          "description": "Ky dokumentar bëri jehonë të jashtëzakonshme në opinionin e gjerë kombëtar dhe ndërkombëtar. Pas transmetimit të këtij ..."
+        },
+        {
+          "id": "doc_bmIAIauK4M0",
+          "name": "Të vërtetat e UÇK në Shqipëri - Gjurmë Shqiptare",
+          "icon": "https://i.ytimg.com/vi/bmIAIauK4M0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBeNZ9QdWnUT-QC7--2MZGn2GrELg",
+          "type": "youtube",
+          "videoId": "bmIAIauK4M0",
+          "description": "Te dhenat deshmojne se mese 5500 ushtare te UCK u sterviten ne territorin e Shqiperise para nisjes se luftes se Kosoves."
+        },
+        {
+          "id": "doc_B4zPhDYKyXM",
+          "name": "TRI DITE PARA FILLIMIT - Dokumentar, Pjesa 1",
+          "icon": "https://i.ytimg.com/vi/B4zPhDYKyXM/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhSIF8oZTAP&rs=AOn4CLC8Ppc8TrzNxhaQKF8nfElHT1H1jw",
+          "type": "youtube",
+          "videoId": "B4zPhDYKyXM",
+          "description": "Ky film dokumentar shpalos nje pjese te rendesishme te historise se luftes se UCK-se qe nise ne shtepine e Abedin ..."
+        },
+        {
+          "id": "doc_s5fJvyuSPPg",
+          "name": "Lufta në Kosovë 98-99, Dokumentar i Luftës në Kosovë",
+          "icon": "https://i.ytimg.com/vi/s5fJvyuSPPg/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhlIFMoYzAP&rs=AOn4CLAUvYTElqFFvT1jrmEVLyOQYmppQQ",
+          "type": "youtube",
+          "videoId": "s5fJvyuSPPg",
+          "description": "Dokumentar i Luftes ne Kosove."
+        },
+        {
+          "id": "doc_lneSNcR4cyI",
+          "name": "Aksioni i parë i UÇK-së kundër policisë serbe",
+          "icon": "https://i.ytimg.com/vi/lneSNcR4cyI/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCvYoeRKqSyQnzHl4tggqboD2XvTw",
+          "type": "youtube",
+          "videoId": "lneSNcR4cyI",
+          "description": "Në maj të vitit 1993, në zemër të Drenicës, ndodhi një aksion që për shumëkënd mbeti në hije, por që sot shihet si shkëndija e ..."
+        },
+        {
+          "id": "doc_vSMmyHidpOI",
+          "name": "‘UÇK - PROCESI I MONTUAR’ - \"Si u fabrikuan prova e dokumente fiktive nga Beogradi\" - Inside Story",
+          "icon": "https://i.ytimg.com/vi/vSMmyHidpOI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBAH92aLton_608G5oQjQwLGHSqRg",
+          "type": "youtube",
+          "videoId": "vSMmyHidpOI",
+          "description": "Ata, ishin viktima të gjenocidit serb, por gjykata e themeluar nga shteti i tyre i ngritur me gjak, po i trajton si kriminelë lufte, njëjtë si ..."
+        },
+        {
+          "id": "doc_Wcv17CA9-bs",
+          "name": "Epopeja e përjetësimit të Jasharëve - MAT - Klan Kosova - 05.03.2025",
+          "icon": "https://i.ytimg.com/vi/Wcv17CA9-bs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLATXotPR5XYAcFuAkJbraszr_uEiQ",
+          "type": "youtube",
+          "videoId": "Wcv17CA9-bs",
+          "description": "Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_s-iXo-FfYcs",
+          "name": "Arkivi - 27 vjet - Epopeja e UÇK-së   03.03.2025",
+          "icon": "https://i.ytimg.com/vi/s-iXo-FfYcs/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLARi_C7cX3o0zyr9c3E1Dd6Gkm91Q",
+          "type": "youtube",
+          "videoId": "s-iXo-FfYcs",
+          "description": "Follow RTK:#rtk Facebook: https://shorturl.at/vGHS8 WEB: rtklive.com Powered by OnAir.FM."
+        },
+        {
+          "id": "doc_5VelUVtRimw",
+          "name": "UÇK-ja sulmon armikun (02)",
+          "icon": "https://i.ytimg.com/vi/5VelUVtRimw/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgKAAvABigIMCAAQARhyIFYoPzAP&rs=AOn4CLDKU5CGwO6AEpDfb2L_0SwKL-dbhg",
+          "type": "youtube",
+          "videoId": "5VelUVtRimw",
+          "description": "Ky është një dokumentar rreth: UÇK-ja sulmon armikun (02). (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_OwxnYbjujOY",
+          "name": "Krimet e Miloshoviqit/ Film Dokumentar Shqip",
+          "icon": "https://i.ytimg.com/vi/OwxnYbjujOY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAAIm_sNDYy5WP3QszE8osNjMIsuw",
+          "type": "youtube",
+          "videoId": "OwxnYbjujOY",
+          "description": "Një seri krimesh u regjistruan gjatë Luftës në Kosovë (1998–1999). Forcat e regjimit të Sllobodan Millosheviçit përdorën ..."
+        },
+        {
+          "id": "doc_F0sy_tEFlGw",
+          "name": "Policia serbe në Kosove - Reqak, 19 janar 1999",
+          "icon": "https://i.ytimg.com/vi/F0sy_tEFlGw/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB3gOAAugCigIMCAAQARhlIGUoZTAP&rs=AOn4CLDYvxmnETtBiQje4Sv4rTqWDWKUaw",
+          "type": "youtube",
+          "videoId": "F0sy_tEFlGw",
+          "description": "Pamje eksluzive Lufta ne Kosov. 1999."
+        },
+        {
+          "id": "doc_629o9lLBKlM",
+          "name": "DOKUMENTAR - BETEJA E KOSHARES 09.04.2021",
+          "icon": "https://i.ytimg.com/vi/629o9lLBKlM/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIGIoWDAP&rs=AOn4CLCJYh5IlYrKDiAn9OlJg6TuC5WaNw",
+          "type": "youtube",
+          "videoId": "629o9lLBKlM",
+          "description": "Follow RTK:DOKUMENTAR - BETEJA E KOSHARES 09.04.2021 Facebook: http://smarturl.it/RTKfb WEB: http://smarturl.it/RTKweb ..."
+        },
+        {
+          "id": "doc_6vHJNAU4vRc",
+          "name": "Dokumenatari kushtuar Heroit të Kosovës - Luan Haradinajt",
+          "icon": "https://i.ytimg.com/vi/6vHJNAU4vRc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBkHuNGBfSIkjg0EghkmTTG48fTSw",
+          "type": "youtube",
+          "videoId": "6vHJNAU4vRc",
+          "description": "Ky film dokumentar përkujton sakrificën e jashtëzakonshme të Heroit të Kosovës Luan Haradinajt gjatë luftës për lirinë e Kosovës."
+        },
+        {
+          "id": "doc_Pr8Kp5FB6h4",
+          "name": "FILMI \"AZEMI\" - KOSOVAR SNIPER",
+          "icon": "https://i.ytimg.com/vi/Pr8Kp5FB6h4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDVcP2lVTiKIe3dmFOIBJuZkrOvKw",
+          "type": "youtube",
+          "videoId": "Pr8Kp5FB6h4",
+          "description": "(ALB) Kosovë 1999. Derisa vazhdonte lufta e Ushtrisë Çlirimtare të Kosovës kundër ushtrisë dhe forcave paramilitare serbe, ..."
+        },
+        {
+          "id": "doc_mr3Bv3sXeko",
+          "name": "Stërvitja në Shqipëri e grupeve të para ku mori jetë UÇK. 1991 - Gjurmë Shqiptare",
+          "icon": "https://i.ytimg.com/vi/mr3Bv3sXeko/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCvyR6hG_IOmEYw7FB9ehZkZaGRsA",
+          "type": "youtube",
+          "videoId": "mr3Bv3sXeko",
+          "description": "Programi \"Gjurmë Shqiptare\" përfshin një audience të të gjitha moshave. Përfshirja e temave historike, zbulimi i zonave të ..."
+        },
+        {
+          "id": "doc_YngqG883zos",
+          "name": "Filmi dokumentar kushtuar Gjeneralit dhe Heroit të Kosovës AGIM QELAJT (2009)",
+          "icon": "https://i.ytimg.com/vi/YngqG883zos/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBVKoCcqcGcIwCR1IyIEZ1SEeicIA",
+          "type": "youtube",
+          "videoId": "YngqG883zos",
+          "description": "Në ditët e korrikut, kur Ushtria Çlirimtare e Kosovës depërtonte hap pas hapi prej Malisheve deri në Rrasat e Rahavecit, detyrë të ..."
+        },
+        {
+          "id": "doc_4tzDL8iybT4",
+          "name": "HISTORI E PATREGUAR - Lufta e Ramush Haradinaj - 21.03.2026 | Klan Kosova",
+          "icon": "https://i.ytimg.com/vi/4tzDL8iybT4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAUhLAPtFoRrinLk66-hFLaauN9JA",
+          "type": "youtube",
+          "videoId": "4tzDL8iybT4",
+          "description": "Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_vc4bW6onkO0",
+          "name": "Çlirimi i Gjakovës 14.06.1999 - Nato - UCK - Ushtria Çlirimtare e Kosovës  - Reporter: David Charter",
+          "icon": "https://i.ytimg.com/vi/vc4bW6onkO0/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhlIFcoSjAP&rs=AOn4CLB4FCuIAcNudA5pXGzLrLSGOUQPQQ",
+          "type": "youtube",
+          "videoId": "vc4bW6onkO0",
+          "description": "Çlirimi i Gjakovës 14.06.1999 - Nato - UCK - Ushtria Çlirimtare e Kosovës - Reporter: David Charter Të drejtat ekslusive ..."
+        },
+        {
+          "id": "doc_pI2diXxkECc",
+          "name": "Arbnore Zogjani - Ushtria Çlirimtare (Official Cover-Live)",
+          "icon": "https://i.ytimg.com/vi/pI2diXxkECc/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgyIDgofzAP&rs=AOn4CLAccC8Finipb0mTywLI0E0bDli1dQ",
+          "type": "youtube",
+          "videoId": "pI2diXxkECc",
+          "description": "Muzika dhe Teksti: Arsim Bunjaku."
+        },
+        {
+          "id": "doc_q8cqnyinC_I",
+          "name": "Klasa 9 - Histori - Lufta e UÇK-së, ndërhyrja e NATO-s dhe çlirimi i Kosovës",
+          "icon": "https://i.ytimg.com/vi/q8cqnyinC_I/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC8F_0q0KUdImFIPHsLd5eI3iLwIw",
+          "type": "youtube",
+          "videoId": "q8cqnyinC_I",
+          "description": "Fatlum Ibrahimi."
+        },
+        {
+          "id": "doc_5LCwJwkhUKc",
+          "name": "Si e humbi Kosova autonominë? - 1989!",
+          "icon": "https://i.ytimg.com/vi/5LCwJwkhUKc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBs7Zy4wM3Mnh2N4eUdt19kcu3aFg",
+          "type": "youtube",
+          "videoId": "5LCwJwkhUKc",
+          "description": "Një histori e mbushur me përballje politike, protesta, rezistencë dhe ngjarje që ndryshuan përgjithmonë fatin e Kosovës dhe të ..."
+        },
+        {
+          "id": "doc_TMEUX4LGoLE",
+          "name": " Ushtria Çlirimtare e Kosovës-UÇK ushtrimi gjuajtje me snaiper dhe mortaj dore ",
+          "icon": "https://i.ytimg.com/vi/TMEUX4LGoLE/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB1geAAtAFigIMCAAQARhlIFYoSTAP&rs=AOn4CLDCXu8v09BEjAw23472CIA5Vn4cIw",
+          "type": "youtube",
+          "videoId": "TMEUX4LGoLE",
+          "description": "Ky është një dokumentar rreth:  Ushtria Çlirimtare e Kosovës-UÇK ushtrimi gjuajtje me snaiper dhe mortaj dore . (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_bXuNTx6EwgY",
+          "name": "HISTORIA E VËRTETË E CELULAVE TË UÇK-SË/ Rrëfimi i ish-shefit të Shërbimit Informativ Kombëtar(SHIK)",
+          "icon": "https://i.ytimg.com/vi/bXuNTx6EwgY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAgkR9zUaBZC43bc93BZMddyvoBlQ",
+          "type": "youtube",
+          "videoId": "bXuNTx6EwgY",
+          "description": "HISTORIA E VËRTETË E CELULAVE TË UÇK-SË/ Rrëfimi i ish-shefit të Shërbimit Informativ Kombëtar(SHIK)"
+        },
+        {
+          "id": "doc_h0emD1-tlz4",
+          "name": "Dëshmori i UÇK-së | Ushtria Çlirimtare e Kosovës LUAN HARADINAJ (dokumentar)",
+          "icon": "https://i.ytimg.com/vi/h0emD1-tlz4/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhgIGAoYDAP&rs=AOn4CLCYyc5TiQ9rdhuqSzzFc67_Qsmkew",
+          "type": "youtube",
+          "videoId": "h0emD1-tlz4",
+          "description": "LAVDI DESHMORVE TE KOMBIT TE TROJEVE SHQIPETARE."
+        },
+        {
+          "id": "doc_EDzipWMx3dk",
+          "name": "SHEFKET MUSLIU, 24 VITE larg ATDHEUT – Humbja e MOTRËS e dhimbja për BASHKËLUFTARËT e UÇPMB-së",
+          "icon": "https://i.ytimg.com/vi/EDzipWMx3dk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBWabpzhzB__vejSUhUsObOjOsTcw",
+          "type": "youtube",
+          "videoId": "EDzipWMx3dk",
+          "description": "Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_8I2uB4ugAiw",
+          "name": "9057 - Histori - Lufta e UÇK-së, ndërhyrja e NATO-s dhe çlirimi i Kosovës",
+          "icon": "https://i.ytimg.com/vi/8I2uB4ugAiw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD5svEH5VaWi00g3cw7R5TRgFRM_Q",
+          "type": "youtube",
+          "videoId": "8I2uB4ugAiw",
+          "description": "Psalmi de teren râu Angeles în SIM a cedat măsurăm softcat iubim luptau Ce caz doar Iuliana tort va cere mie E cos răchită liber ..."
+        },
+        {
+          "id": "doc_Bp6l1ynAnUo",
+          "name": "Ushtria Clirimtare e Kosoves, Kosova Feston Pavarsin",
+          "icon": "https://i.ytimg.com/vi/Bp6l1ynAnUo/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBi451IsdWEBJluxBqZ6PubJeHbBg",
+          "type": "youtube",
+          "videoId": "Bp6l1ynAnUo",
+          "description": "Albanian Pride."
+        },
+        {
+          "id": "doc_6oL7oIwgG44",
+          "name": "HISTORI E PATREGUAR - Armët e UÇK-së, dëshmi dhe fakte! - 18.04.2026 | Klan Kosova",
+          "icon": "https://i.ytimg.com/vi/6oL7oIwgG44/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg7IFAofzAP&rs=AOn4CLBu5ThhGrtHR-tU1V0JowTPO2RsBg",
+          "type": "youtube",
+          "videoId": "6oL7oIwgG44",
+          "description": "Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_d-FiY756xdo",
+          "name": "Histori Shqiptare - Junik, të bujtësh te luftëtarët e UÇK-së (26 Nëntor 2023)",
+          "icon": "https://i.ytimg.com/vi/d-FiY756xdo/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDU9cUMfcXsnAoWRHVK1pwFbqV_-w",
+          "type": "youtube",
+          "videoId": "d-FiY756xdo",
+          "description": "HistoriShqiptare #AlmaÇupi #TvKlan | Historitë vijnë nëpërmjet xhirimeve në terren, duke treguar në detaje gjithë punën e ..."
+        },
+        {
+          "id": "doc_fHsy38Q58ow",
+          "name": "UÇK 🇦🇱 Ushtria Çlirimtare e Kosovës 🇦🇱 KLA Kosovo Liberation Army 🇺🇸            Uçekapa 🇮🇹  UÇEKA 🇩🇪",
+          "icon": "https://i.ytimg.com/vi/fHsy38Q58ow/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB1AaAAuADigIMCAAQARhiIGIoYjAP&rs=AOn4CLAVCQF1jp8N6gFo9_feuxGEMJJKPw",
+          "type": "youtube",
+          "videoId": "fHsy38Q58ow",
+          "description": "Ky është një dokumentar rreth: UÇK 🇦🇱 Ushtria Çlirimtare e Kosovës 🇦🇱 KLA Kosovo Liberation Army 🇺🇸            Uçekapa 🇮🇹  UÇEKA 🇩🇪. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_bjW0Wvf8h34",
+          "name": "KOSHARJA, BETEJA E GJITHË SHQIPTARËVE",
+          "icon": "https://i.ytimg.com/vi/bjW0Wvf8h34/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLATD-x1LIhEsV0GJATQFabb9R18gw",
+          "type": "youtube",
+          "videoId": "bjW0Wvf8h34",
+          "description": "KOSHARJA, BETEJA E GJITHË SHQIPTARËVE ➖➖➖ Për më shumë na ndiqni në: Facebook ..."
+        },
+        {
+          "id": "doc_Iyi5763-bPA",
+          "name": "BETEJA E KOSHARES / SI NISI E SI U ORGANIZUA? KOMANDANTËT RRËFEHEN NË DEBAT PLUS",
+          "icon": "https://i.ytimg.com/vi/Iyi5763-bPA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLADsDwnwX8rn-6mv7EQ_MxnLQEDzg",
+          "type": "youtube",
+          "videoId": "Iyi5763-bPA",
+          "description": "BETEJA E KOSHARES / SI NISI E SI U ORGANIZUA? KOMANDANTËT RRËFEHEN NË DEBAT PLUS RRËFIMI I ..."
+        },
+        {
+          "id": "doc_HLXGwkDigm0",
+          "name": "Lufta ne Koshare - Prill 1999 (Exkluzive)",
+          "icon": "https://i.ytimg.com/vi/HLXGwkDigm0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLABfysiZU_e02KDwwQoI7PmHAimTA",
+          "type": "youtube",
+          "videoId": "HLXGwkDigm0",
+          "description": "Follow: https://www.facebook.com/BESFORTVIDEOM1/ Video exkluzive e Koshares Prill 1999 nga lajmet e tvsh Kur Milaim Zeka ..."
+        },
+        {
+          "id": "doc_efeL9IRuLgY",
+          "name": "Voyage - Koshare '99 - thyerja e kufirit që ndau shqiptarët 100 vjet!",
+          "icon": "https://i.ytimg.com/vi/efeL9IRuLgY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPNYoNpNOc59Vpi_ivaoCMsRbnEA",
+          "type": "youtube",
+          "videoId": "efeL9IRuLgY",
+          "description": "Follow RTK: #rtk #kosovo Voyage - Koshare '99 - thyerja e kufirit që ndau shqiptarët 100 vjet! 28.05.2023 Facebook: ..."
+        },
+        {
+          "id": "doc_vjYXaCJHf40",
+          "name": "Në përkujtim të rënies së strategut të luftës së Koshares, vlerësohet figura e heroit Agim Ramadani",
+          "icon": "https://i.ytimg.com/vi/vjYXaCJHf40/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhGIFsoZTAP&rs=AOn4CLDBzz-X4aefDvRGtBRi1-OavlFtjw",
+          "type": "youtube",
+          "videoId": "vjYXaCJHf40",
+          "description": "Follow RTK: Facebook: https://shorturl.at/vGHS8 WEB: rtklive.com Powered by OnAir.FM."
+        },
+        {
+          "id": "doc_EDuf6T2FK8M",
+          "name": "Dokumentari: Hej, legjenda e Koshares se UÇK së! 3 breza në luftë të familjes Jasiqi. Dy dëshmorë.",
+          "icon": "https://i.ytimg.com/vi/EDuf6T2FK8M/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA5nOdV5jtjB7Tt6qM06wdZBMIGPQ",
+          "type": "youtube",
+          "videoId": "EDuf6T2FK8M",
+          "description": "Ky është një dokumentar rreth: Dokumentari: Hej, legjenda e Koshares se UÇK së! 3 breza në luftë të familjes Jasiqi. Dy dëshmorë.. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_J8RJHf65BQo",
+          "name": "Të pathënat për luftën e Koshares.- Demë Maloku- RTI",
+          "icon": "https://i.ytimg.com/vi/J8RJHf65BQo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCRdd3B0SpdZHgju4VgNOLMzw5AbQ",
+          "type": "youtube",
+          "videoId": "J8RJHf65BQo",
+          "description": "Të pathënat për luftën e Koshares.- Demë Maloku- RTI Të gjitha të drejtat e rezervuara për RTI-në. Abonohu në kanalin zyrtar ..."
+        },
+        {
+          "id": "doc_MlcJBzpK9Og",
+          "name": "Vesel Aruqi “Rambo” n’Demos | Vrasja e kapitenit rus në Koshare, betejat në Drenicë",
+          "icon": "https://i.ytimg.com/vi/MlcJBzpK9Og/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDkDsQA1yMfpq8_Kt7N8jeiPyG5yg",
+          "type": "youtube",
+          "videoId": "MlcJBzpK9Og",
+          "description": "Na ndiqni në rrjetet tona sociale: Facebook: https://www.facebook.com/NeDemos TikTok: https://www.tiktok.com/@gazetademos ..."
+        },
+        {
+          "id": "doc_GnqtwjzA_I8",
+          "name": "Harun Beka dhe Rrahman Tafa- heronjtë e Koshares për të cilët u fol shumë pak- RTI",
+          "icon": "https://i.ytimg.com/vi/GnqtwjzA_I8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCT9YzZsYm5sP0ozZRPzgAbBT3mzQ",
+          "type": "youtube",
+          "videoId": "GnqtwjzA_I8",
+          "description": "Harun Beka dhe Rrahman Tafa- heronjtë e Koshares për të cilët u fol shumë pak- RTI Të gjitha të drejtat e rezervuara për RTI-në."
+        },
+        {
+          "id": "doc_Jire5wWua-c",
+          "name": "VOYAGE - Një film artistik për Betejën e Koshares 15.05.2022",
+          "icon": "https://i.ytimg.com/vi/Jire5wWua-c/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLByw0nGMiZpEH-7ApF79ge_8HIeCg",
+          "type": "youtube",
+          "videoId": "Jire5wWua-c",
+          "description": "Follow RTK: VOYAGE - Një film artistik për Betejën e Koshares 15.05.2022 Facebook: http://smarturl.it/RTKfb WEB: ..."
+        },
+        {
+          "id": "doc_lsgPNmPL1l8",
+          "name": "BETEJA E KOSHARES –RRËFIMI EMOCIONUES I ISH-KOMANDANTIT, MALOKU",
+          "icon": "https://i.ytimg.com/vi/lsgPNmPL1l8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgxIEUofzAP&rs=AOn4CLDrNKEO_QydifqWB6rk7E7ncNvILg",
+          "type": "youtube",
+          "videoId": "lsgPNmPL1l8",
+          "description": "Follow TËVË1 on... • YT: https://youtube.com/@teve1 • FB: https://facebook.com/teve1.official • IG: ..."
+        },
+        {
+          "id": "doc_SPPMPxuZJHg",
+          "name": "Top Channel/ Beteja e Koshares, më 9 Prill 1999 kur UÇK theu kufirin mes Shqipërisë e Kosovës",
+          "icon": "https://i.ytimg.com/vi/SPPMPxuZJHg/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhHIGEoZTAP&rs=AOn4CLA3mIunpy4FBcXOW94z9phcLNSTlw",
+          "type": "youtube",
+          "videoId": "SPPMPxuZJHg",
+          "description": "Beteja e Koshares mbetet një nga momentet më të rëndësishme dhe vendimtare të Luftës së Kosovës, e cilësuar si pika e kthesës ..."
+        },
+        {
+          "id": "doc_s2cNQpCJzbg",
+          "name": "Pamje të rralla të Koshares, armët dhe trupat e serbëve që mbetën pas! - 11.04.2026",
+          "icon": "https://i.ytimg.com/vi/s2cNQpCJzbg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAsaWyeXNiR5r0CpUKQ9B73KeOnpQ",
+          "type": "youtube",
+          "videoId": "s2cNQpCJzbg",
+          "description": "Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_u6yt3ndmDR8",
+          "name": "FILMI DOKUMENTAR   ADEM JASHARI",
+          "icon": "https://i.ytimg.com/vi/u6yt3ndmDR8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCc9_TK2-Y8C7gx3ctLHTSUoo4a1Q",
+          "type": "youtube",
+          "videoId": "u6yt3ndmDR8",
+          "description": "WEB: http://parrotlla.net/ Facebook:https://www.facebook.com/www.parrotlla.net."
+        },
+        {
+          "id": "doc_0nGmh5vfWsc",
+          "name": "The Immortal Saga of Adem Jashari - Part 1",
+          "icon": "https://i.ytimg.com/vi/0nGmh5vfWsc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAi2QTKodMaH1ZeErAQq2scMkxoVQ",
+          "type": "youtube",
+          "videoId": "0nGmh5vfWsc",
+          "description": "In this first episode, I will cover how Adem Jashari gradually develops a deep contempt for the Yugoslav regime that oppressed ..."
+        },
+        {
+          "id": "doc_OVDf8wt3ZwU",
+          "name": "Adem Jashari   Dokumentar special",
+          "icon": "https://i.ytimg.com/vi/OVDf8wt3ZwU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD63kdkyo6vC9Wn6ykwoCHdhjDgYQ",
+          "type": "youtube",
+          "videoId": "OVDf8wt3ZwU",
+          "description": "https://www.facebook.com/BESFORTVIDEOM1/ Adem Jashari Komandanti legjendar. Nje dokumentar exkluzive rreth ..."
+        },
+        {
+          "id": "doc_O48ddM8TZ_I",
+          "name": "Adem Jashari | The Albanian Fighter Who Changed Kosovo History",
+          "icon": "https://i.ytimg.com/vi/O48ddM8TZ_I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWIoRbhjQtigkB8uwoNLOlfG4eTA",
+          "type": "youtube",
+          "videoId": "O48ddM8TZ_I",
+          "description": "Adem Jashari | The Albanian Fighter Who Changed Kosovo History Become a \"Member\" By Clicking Here: ..."
+        },
+        {
+          "id": "doc_1EmU4wKiUcE",
+          "name": "Historia Adem Jasharit",
+          "icon": "https://i.ytimg.com/vi/1EmU4wKiUcE/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAugCigIMCAAQARhlIFooTjAP&rs=AOn4CLBpg69x-wpJpFi2P2Td8g7mcphyhA",
+          "type": "youtube",
+          "videoId": "1EmU4wKiUcE",
+          "description": "Ky është një dokumentar rreth: Historia Adem Jasharit. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_7AG-XTsaqyY",
+          "name": "The Immortal Saga of Adem Jashari - Part 2",
+          "icon": "https://i.ytimg.com/vi/7AG-XTsaqyY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA4pQMlpbypOlbGW_FzuHsCJZOLHg",
+          "type": "youtube",
+          "videoId": "7AG-XTsaqyY",
+          "description": "In this first episode, I will cover how Adem Jashari rose to become the commanding general of the Kosova Liberation Army (UÇK) ..."
+        },
+        {
+          "id": "doc_acHkisdpkKY",
+          "name": "Si i vranë serbët Adem Jasharin dhe familjen e tij! Esencë-Report Tv",
+          "icon": "https://i.ytimg.com/vi/acHkisdpkKY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAUXMFwfvvIGE6HWqFOFeDSnFFSKg",
+          "type": "youtube",
+          "videoId": "acHkisdpkKY",
+          "description": "Tvhttps://www.youtube.com/watch?v=n13q-EAm9yc #ademjashari #familjajashari #kosova Ne këtë sëzon të dytë rivjen në ..."
+        },
+        {
+          "id": "doc_1ZDFcGmnDoY",
+          "name": "Rrëfimi i rrallë i Bekim Jasharit, me emocione flet për 5, 6 dhe 7 marsin, si dhe çfarë ndodhi?",
+          "icon": "https://i.ytimg.com/vi/1ZDFcGmnDoY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA6ouBVZLRPtPNhX-kwGhpC935Y5w",
+          "type": "youtube",
+          "videoId": "1ZDFcGmnDoY",
+          "description": "Rrëfimi i rrallë i Bekim Jasharit, me emocione flet për 5, 6 dhe 7 marsin, si dhe çfarë ndodhi? - 05.03.2020 ➖➖➖ Për më shumë ..."
+        },
+        {
+          "id": "doc__WYZAoCMbaM",
+          "name": "Flet legjendari - Sa zë të bukur kishte Adem Jashari? - 19.10.2023 - Klan Kosova",
+          "icon": "https://i.ytimg.com/vi/_WYZAoCMbaM/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIEIoQTAP&rs=AOn4CLAwI7kjgfle9yxkNqmJkl3ZrvpkGA",
+          "type": "youtube",
+          "videoId": "_WYZAoCMbaM",
+          "description": "Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_xrFQbHyRX_Y",
+          "name": "Dokumentari - VITET E KTHESËS SË MADHE, Pjesa e parë",
+          "icon": "https://i.ytimg.com/vi/xrFQbHyRX_Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDtmwv7xcLw4Kblv2goxU51or2XZQ",
+          "type": "youtube",
+          "videoId": "xrFQbHyRX_Y",
+          "description": "Në këtë dokumentar paraqiten ngjarjet që i paraprinë fillimit të luftës frontale në Kosovë, rezistencën e familjes Jashari, rënien ..."
+        },
+        {
+          "id": "doc_tS-zCwUv45g",
+          "name": "Adem Jashari dhe e vërteta e varrimit",
+          "icon": "https://i.ytimg.com/vi/tS-zCwUv45g/hqdefault.jpg?sqp=-oaymwEiCOADEI4CSFXyq4qpAxQIARUAAIhCGAFwAcABBu0BmZkZQg==&rs=AOn4CLBNKOWazjGUbByEPFOcJajqX7sFbg",
+          "type": "youtube",
+          "videoId": "tS-zCwUv45g",
+          "description": "Ky është një dokumentar rreth: Adem Jashari dhe e vërteta e varrimit. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_iyp5QMeRhDc",
+          "name": "Beteja e familjes Jashari, 7 Mars 1998",
+          "icon": "https://i.ytimg.com/vi/iyp5QMeRhDc/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB-AeAAtAFigIMCAAQARhlIE0oQzAP&rs=AOn4CLDRVgC3PGsonpVeob7ZN1YJbiUa9g",
+          "type": "youtube",
+          "videoId": "iyp5QMeRhDc",
+          "description": "Të drejtat autoriale janë të Esat Shales."
+        },
+        {
+          "id": "doc_NiRFmt6Xbuw",
+          "name": "Profil, simbol i lirisë Adem Jashari",
+          "icon": "https://i.ytimg.com/vi/NiRFmt6Xbuw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAhbOwanTFtYr4zOEzuUNgiBgs6Qw",
+          "type": "youtube",
+          "videoId": "NiRFmt6Xbuw",
+          "description": "Did you subscribe to ATV's Official channel? ▻ http://smarturl.it/Subscribe https://www.youtube.com/c/ATVofficialchannel ..."
+        },
+        {
+          "id": "doc_9RbjPhK3kz8",
+          "name": "PaRrotlla - Rifat Jashari",
+          "icon": "https://i.ytimg.com/vi/9RbjPhK3kz8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDMmyxOf5yslxzlwm2Mt-YBueeYEg",
+          "type": "youtube",
+          "videoId": "9RbjPhK3kz8",
+          "description": "WEB: http://parrotlla.net/ Facebook:https://www.facebook.com/www.parrotlla.net."
+        },
+        {
+          "id": "doc_-AjTRXHSxuk",
+          "name": "ADEM JASHARI - INTERVISTË",
+          "icon": "https://i.ytimg.com/vi/-AjTRXHSxuk/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC9697Sk9Gusk2Hb0b3KM71BjNLbQ",
+          "type": "youtube",
+          "videoId": "-AjTRXHSxuk",
+          "description": "Adem Jashari 28.11.1955 - 07.03.1998."
+        },
+        {
+          "id": "doc_dOy3yeEQr-M",
+          "name": "Pasdite ne Top CHighlights, 14/06/2016 - 18 vite pas luftës, Besarta, e mbijetuara e Jasharëve",
+          "icon": "https://i.ytimg.com/vi/dOy3yeEQr-M/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIFAoNzAP&rs=AOn4CLChaDajh54xettAHrsX8D1MDN1T-A",
+          "type": "youtube",
+          "videoId": "dOy3yeEQr-M",
+          "description": "Sytë e saj panë shumë. Ishin sytë e një 10-vjeçareje e cila mbajti mbi supe peshën e rëndë të një lufte plotë ideale."
+        },
+        {
+          "id": "doc_I32fCWxWVTE",
+          "name": "Rrefimi i Besarta Hamëz Jasharit në 23 vjetorin e Çlirimit",
+          "icon": "https://i.ytimg.com/vi/I32fCWxWVTE/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLCZSfuzGLhZ0ue-bhXQ5dpNqrRk4A",
+          "type": "youtube",
+          "videoId": "I32fCWxWVTE",
+          "description": "Follow RTK: Facebook: http://smarturl.it/RTKfb WEB: http://smarturl.it/RTKweb Powered by OnAir.FM."
+        },
+        {
+          "id": "doc_F-22tBCAin0",
+          "name": "BBC documentary of Besarta Jasharin",
+          "icon": "https://i.ytimg.com/vi/F-22tBCAin0/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAugCigIMCAAQARhyIEkoLzAP&rs=AOn4CLDsueqsaxBCUpBbL6OI4xbq3gtWLQ",
+          "type": "youtube",
+          "videoId": "F-22tBCAin0",
+          "description": "Ky është një dokumentar rreth: BBC documentary of Besarta Jasharin. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_dZU_TSt8-xU",
+          "name": "Lufta në Kosovë 1999 - Pjesa 1 , video e pa publikuar më herët!",
+          "icon": "https://i.ytimg.com/vi/dZU_TSt8-xU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDlHJJ2YDXEnYOtHpoIEO-S5-5oqg",
+          "type": "youtube",
+          "videoId": "dZU_TSt8-xU",
+          "description": "Pamje te marra nga Televizioni Francez 1 (TF1),pamjet jan kryesisht ne regjionin e Dukagjinit!"
+        },
+        {
+          "id": "doc_sx81e0ujKKY",
+          "name": "Kosova - Si erdhi deri te lufta - Die Geschichte des Kosovo Konflikts (TV gjerman ARD mars 1999)",
+          "icon": "https://i.ytimg.com/vi/sx81e0ujKKY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC9QHaUvvmWpJCwGRHmj5SNBMxtEQ",
+          "type": "youtube",
+          "videoId": "sx81e0ujKKY",
+          "description": "https://www.facebook.com/BESFORTVIDEOM1/ Dokumentar gjerman rreth luftes ne Kosove 1999 Kosovo - Von der Krise zum ..."
+        },
+        {
+          "id": "doc_7xmzxlKhkaQ",
+          "name": "Si erdhi vendimi që NATO të sulmojë Serbinë më 24 Mars 1999 - Top Channel Albania - News - Lajme",
+          "icon": "https://i.ytimg.com/vi/7xmzxlKhkaQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFooRTAP&rs=AOn4CLBNxN52lpjPWI8_K2rHfSgQA-SboQ",
+          "type": "youtube",
+          "videoId": "7xmzxlKhkaQ",
+          "description": "Për më shumë vizitoni: http://top-channel.tv/ Subscribe to \"Top Channel\" on YouTube Channel for NEWS and TV Shows HERE: ..."
+        },
+        {
+          "id": "doc_7XRfRzqpdDM",
+          "name": "Film Dokumentar/DËSHMI E NJË DHIMBJEJE KOMBËTARE",
+          "icon": "https://i.ytimg.com/vi/7XRfRzqpdDM/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhhIGUoUzAP&rs=AOn4CLC6Fd3qHf7BW88OU2Kocihff-9baA",
+          "type": "youtube",
+          "videoId": "7XRfRzqpdDM",
+          "description": "shqip #kosovainfo #dokumentari #film #kosova #shqiperi."
+        },
+        {
+          "id": "doc_CnOwfEeMs4k",
+          "name": "\"U luta të mi mbysin vajzat paramilitarët serbë\", trauma e gruas nga Kosova që u përdhunua në sy...",
+          "icon": "https://i.ytimg.com/vi/CnOwfEeMs4k/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARheIF4oXjAP&rs=AOn4CLADaFRZzEVEzvnx-VMeL_EDJdFjQw",
+          "type": "youtube",
+          "videoId": "CnOwfEeMs4k",
+          "description": "Pjesë nga dokumentari “Jehona e dhimbjes”, i realizuar nga gazetari i Euroneës Albania Andrea Danglli, ku trajtohet dhuna ..."
+        },
+        {
+          "id": "doc_be4eAyuMNxI",
+          "name": "Ekzodi Kosovar 1999 - Refugjatet Mars - Prill 99 Exkluzive - Albanian refugees in the Kosovo war",
+          "icon": "https://i.ytimg.com/vi/be4eAyuMNxI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCmy0HGErCm2QkaxZXbRd-esiFXDg",
+          "type": "youtube",
+          "videoId": "be4eAyuMNxI",
+          "description": "Follow: https://www.facebook.com/BESFORTVIDEOM1/ Refugjatet shqiptar nga Kosova gjate luftes ne Kosove 1999 Nje ..."
+        },
+        {
+          "id": "doc_ZWdJgyObjY8",
+          "name": "Dokumentar Vrasjet e Serbeve ne Kosove (SHQIP)",
+          "icon": "https://i.ytimg.com/vi/ZWdJgyObjY8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIGMoPzAP&rs=AOn4CLCnZ7VjZpyz2oKM6bgmYtUFT7nHSQ",
+          "type": "youtube",
+          "videoId": "ZWdJgyObjY8",
+          "description": "Dokumentar rreth vrasjeve te serbeve ne KOSOVE 2013 (C) ALL RIGHTS RESERVED !!!"
+        },
+        {
+          "id": "doc_yY6Meip_Lrg",
+          "name": "Hyrja e UÇK-s dhe NATO-s ne Prizren (12.06.1999)",
+          "icon": "https://i.ytimg.com/vi/yY6Meip_Lrg/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB6gOAAugCigIMCAAQARhSIGUoPjAP&rs=AOn4CLCeZNtkneAjtwrmnbPVM01KflHuTA",
+          "type": "youtube",
+          "videoId": "yY6Meip_Lrg",
+          "description": "Ky është një dokumentar rreth: Hyrja e UÇK-s dhe NATO-s ne Prizren (12.06.1999). (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_bp1puThxv-Q",
+          "name": "Lajme, Lufta në Kosovë Televizioni Shqiptar TVSH Mars 1999",
+          "icon": "https://i.ytimg.com/vi/bp1puThxv-Q/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_AmAAtAFigIMCAAQARhIIFEocjAP&rs=AOn4CLCYwk44m-X9pAy8LY6YXy4yxdIkTw",
+          "type": "youtube",
+          "videoId": "bp1puThxv-Q",
+          "description": "Arkiva historike – Lufta e Kosovës 1998–1999 Ky material përmban pamje autentike arkivore nga Lufta e Kosovës. Qëllimi i ..."
+        },
+        {
+          "id": "doc_pLQjpSwKGrg",
+          "name": "UDHËVE - PËRDHUNIMET E  LUFTËS 1998-1999 NË KOSOVË 17.05.2019",
+          "icon": "https://i.ytimg.com/vi/pLQjpSwKGrg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDorUTcYLYTO6OM09E31BUuka2ijg",
+          "type": "youtube",
+          "videoId": "pLQjpSwKGrg",
+          "description": "Radio Television of Kosovo is the public service broadcaster in Kosovo. RTK operates five TV channels and two radio stations ..."
+        },
+        {
+          "id": "doc_k-jn-UYVDCQ",
+          "name": "Lufta në Kosovë - Bllacë Maqedoni Refugjatët nga Kosova - 27 mars 1999",
+          "icon": "https://i.ytimg.com/vi/k-jn-UYVDCQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_AmAAtAFigIMCAAQARhlIFgoUDAP&rs=AOn4CLApBa2CV3Ge_6ivGnilNelRKMKHmQ",
+          "type": "youtube",
+          "videoId": "k-jn-UYVDCQ",
+          "description": "Arkiva historike – Lufta e Kosovës 1998–1999 Ky material përmban pamje autentike arkivore nga Lufta e Kosovës. Qëllimi i ..."
+        },
+        {
+          "id": "doc_TDxIPTjteqk",
+          "name": "NATO ne Kosove 1999 (No Comment) - Thank You NATO - Thank You USA - Free Kosovo",
+          "icon": "https://i.ytimg.com/vi/TDxIPTjteqk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDMSX3hyunzZQ_WRpsHznh_mXJAmw",
+          "type": "youtube",
+          "videoId": "TDxIPTjteqk",
+          "description": "https://www.facebook.com/BESFORTVIDEOM1/ NATO ne Kosove (No Comment) Qershor 1999 Momentet gezimi per qytetaret e ..."
+        },
+        {
+          "id": "doc_FJNg9eKwfv4",
+          "name": "Rrëfimi i Davidit të UÇK-së | Daut Haradinaj me lot në sy flet për rënien e Shkëlzenit e shokëve tij",
+          "icon": "https://i.ytimg.com/vi/FJNg9eKwfv4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBY0wGci0FTZwXWA3-chzNWsPFelA",
+          "type": "youtube",
+          "videoId": "FJNg9eKwfv4",
+          "description": "Na ndiqni në rrjetet tona sociale: Facebook: https://www.facebook.com/NeDemos TikTok: https://www.tiktok.com/@gazetademos ..."
+        },
+        {
+          "id": "doc_6OwqubWK7ZI",
+          "name": "Dokumentar për komandantin e UÇK-së, Sali Çekaj",
+          "icon": "https://i.ytimg.com/vi/6OwqubWK7ZI/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB3gOAAugCigIMCAAQARhfIGUoTzAP&rs=AOn4CLCvOvAP2Ugp50AWQ2SDvSf48Eykhg",
+          "type": "youtube",
+          "videoId": "6OwqubWK7ZI",
+          "description": "Ky është një dokumentar për komandantin e ndjerë të UÇK-së, Sali Çekaj. Këtu do të merrni një vështrim të thellë në rolin e tij në ..."
+        },
+        {
+          "id": "doc_IzKKbqylb1c",
+          "name": "Italiani i UÇK-së…Tronditëse - Gjurmë Shqiptare",
+          "icon": "https://i.ytimg.com/vi/IzKKbqylb1c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAZhWbk9lR5JiYPzqNzbpfDeasq5A",
+          "type": "youtube",
+          "videoId": "IzKKbqylb1c",
+          "description": "Cila eshte historia e italianit të UÇK siç u njoh gjeresisht? Kush ishte Francesco Bider dhe si u perfshi ne lufte? Te dhenat dhe ..."
+        },
+        {
+          "id": "doc_-SAQwxDOILA",
+          "name": "Historia e vërtetë e ZAHIR PAJAZITIT… - Gjurmë Shqiptare",
+          "icon": "https://i.ytimg.com/vi/-SAQwxDOILA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDe3YXTA8lr-202gKQZk0dZa4PFpg",
+          "type": "youtube",
+          "videoId": "-SAQwxDOILA",
+          "description": "Jeta e Zahir Pajazitit…Stervitja ne Shqiperi, organizimet, aksionet e shumta per lirine e Kosoves… Te dhena, deshmi dhe ..."
+        },
+        {
+          "id": "doc_AXfdU7Nf52c",
+          "name": "#ZonaExpress: \"Gjahu në UÇK\" (Pjesa e parë)",
+          "icon": "https://i.ytimg.com/vi/AXfdU7Nf52c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA6EJkeDP9-ByCakCmydsMynwVHUA",
+          "type": "youtube",
+          "videoId": "AXfdU7Nf52c",
+          "description": "Ky është një dokumentar rreth: #ZonaExpress: \"Gjahu në UÇK\" (Pjesa e parë). (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_cR9N-U7d1GI",
+          "name": "Kosovo: The Haradinaj Generals - UÇK",
+          "icon": "https://i.ytimg.com/vi/cR9N-U7d1GI/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgKAAvABigIMCAAQARhTIGUoSTAP&rs=AOn4CLD4F97phKm_2UyDnoiCBme6yWrVew",
+          "type": "youtube",
+          "videoId": "cR9N-U7d1GI",
+          "description": "The Haradinaj Generals - Kosovo Liberation Army - KLA / Gjeneralët e Haradinajve - Ushtria Çlirimtare e Kosovës - UÇK."
+        },
+        {
+          "id": "doc_s-ZQ_M4okis",
+          "name": "MAT - BRIGADA 111 “ADEM JASHARI” – TIGRAT E ZI",
+          "icon": "https://i.ytimg.com/vi/s-ZQ_M4okis/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB4bx7qb4K0sgGlO8rwMKJkW3WVWw",
+          "type": "youtube",
+          "videoId": "s-ZQ_M4okis",
+          "description": "Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_iADWGzpQnKM",
+          "name": "Masakra e Reçakut: 21 kriminelët pa maska - 28.01.2025 - MAT - Klan Kosova",
+          "icon": "https://i.ytimg.com/vi/iADWGzpQnKM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAIjrYP4hKdxadOsxiSNdpZpCHcNQ",
+          "type": "youtube",
+          "videoId": "iADWGzpQnKM",
+          "description": "KlanKosova #360media Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_0snmFjl0Ku4",
+          "name": "Masakra e Rezallës (05 prill 1999) - xhirime exkluzive ne Qershor 1999",
+          "icon": "https://i.ytimg.com/vi/0snmFjl0Ku4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBw-jyudFu2t0w0itNqrBCWKkh3tg",
+          "type": "youtube",
+          "videoId": "0snmFjl0Ku4",
+          "description": "Follow: https://www.facebook.com/BESFORTVIDEOM1/ Masakra e Rezallës - 05 prill 1999 Video Exkluzive nga vendi ku jane ..."
+        },
+        {
+          "id": "doc_Ul-DLwX5p3I",
+          "name": "U vranë e masakruan mijëra shqiptarë, masakrat më të mëdha të luftës së fundit në Kosovë",
+          "icon": "https://i.ytimg.com/vi/Ul-DLwX5p3I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDIfMSLWQfLP5QPqT1bdvGvxPvNZw",
+          "type": "youtube",
+          "videoId": "Ul-DLwX5p3I",
+          "description": "Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_3wBB2sgoPzM",
+          "name": "Masakra SERBE mbi fëmijët SHQIPTARË. SERBIAN massacres of Albanian children - Gjurmë Shqiptare",
+          "icon": "https://i.ytimg.com/vi/3wBB2sgoPzM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBm9OYLW2lzGmY_cUuE9FCoL5P8cw",
+          "type": "youtube",
+          "videoId": "3wBB2sgoPzM",
+          "description": "Si u masakruan mbi 1380 fëmijë shqiptarë nga serbët? Cili është fati i fëmijëve të zhdukur? Dëshmi tronditëse... Një dokumentar ..."
+        },
+        {
+          "id": "doc_KeW2dRGT9LE",
+          "name": "Rrëfime për masakrat në Lipjan dhe si nuk është dënuar askush - Seria e dokumentarëve NË KËRKIM",
+          "icon": "https://i.ytimg.com/vi/KeW2dRGT9LE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAwwstbOubzREawIYix1oLLREeyaQ",
+          "type": "youtube",
+          "videoId": "KeW2dRGT9LE",
+          "description": "Rrëfime për masakrat në Lipjan dhe si nuk është dënuar askush - Seria e dokumentarëve NË KËRKIM Onair Media ..."
+        },
+        {
+          "id": "doc_Omuw00MHWa8",
+          "name": "KOSOVO: INVESTIGATION INTO RACAK KILLINGS",
+          "icon": "https://i.ytimg.com/vi/Omuw00MHWa8/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAugCigIMCAAQARhlIFcoRDAP&rs=AOn4CLBS1FA-9Dtg8goUooO0CRytuD2e7w",
+          "type": "youtube",
+          "videoId": "Omuw00MHWa8",
+          "description": "(17 Mar 1999) English/Nat A forensic team investigating the killing of dozens of Kosovo Albanians in Racak earlier this year, have ..."
+        },
+        {
+          "id": "doc_t1z1rYm_IQk",
+          "name": "Masakra e Recakut: Për çfarë akuzohen 21 serbët?",
+          "icon": "https://i.ytimg.com/vi/t1z1rYm_IQk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6UVoQJp7dC8GzJHLP5OUphtZMDw",
+          "type": "youtube",
+          "videoId": "t1z1rYm_IQk",
+          "description": "KlanKosova #360media Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_wnnAMO5pqns",
+          "name": "Rrëfime nga masakra e 7 majit 1999 në Gjakovë.",
+          "icon": "https://i.ytimg.com/vi/wnnAMO5pqns/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC42PetE1Tbt15zcIJof4uaC3uXFA",
+          "type": "youtube",
+          "videoId": "wnnAMO5pqns",
+          "description": "Dosja Historike - 15.11.2020 \"26 burra i ndalen tek Ura e Taliqit, i ndan në grupe dhe i ekzekutuan\". Rrëfime nga masakra e 7 ..."
+        },
+        {
+          "id": "doc_U-tJ5iz9f9M",
+          "name": "Masakrat në Kosovë (17 Qershor 1999)",
+          "icon": "https://i.ytimg.com/vi/U-tJ5iz9f9M/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAJvo6IGD2dqj2bLZGGizMSNJ0SaA",
+          "type": "youtube",
+          "videoId": "U-tJ5iz9f9M",
+          "description": "Arkiva - Tv Klan 1998-2012; Pamje të një pusi. Pamje të ushtarëve të KFOR-it, ndërtesa të djegura, pamje të varreve masive në ..."
+        },
+        {
+          "id": "doc_IwFEEfj6xJ4",
+          "name": "Račak | Dosije Kosovo - dokumentarni film",
+          "icon": "https://i.ytimg.com/vi/IwFEEfj6xJ4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAwvn2o8igZeb5LWteRTT7WSEEHAg",
+          "type": "youtube",
+          "videoId": "IwFEEfj6xJ4",
+          "description": "(English, Russian subtitles, Albanian) Ko je u Račku stradao 15. januara 1999. godine? Da li je to bila legitimna antiteroristička ..."
+        },
+        {
+          "id": "doc_a3t91ZM3Zas",
+          "name": "Masakrat serbe që bota duhet të njohë! - Gjurmë Shqiptare",
+          "icon": "https://i.ytimg.com/vi/a3t91ZM3Zas/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCSZvJTJ8xVRSMy7MVwLqbIyovCsw",
+          "type": "youtube",
+          "videoId": "a3t91ZM3Zas",
+          "description": "Programi \"Gjurmë Shqiptare\" përfshin një audience të të gjitha moshave. Përfshirja e temave historike, zbulimi i zonave të ..."
+        },
+        {
+          "id": "doc_rAfaPxzlkas",
+          "name": "Deshmia e kosovarit per masakrat ne Kosove - (28 Prill 1999)",
+          "icon": "https://i.ytimg.com/vi/rAfaPxzlkas/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCDVqDm1X0AF4iDolB3eJj9Reb-ww",
+          "type": "youtube",
+          "videoId": "rAfaPxzlkas",
+          "description": "Arkiva Lajme - Tv Klan 1999 Refugjatët kosovarë në Librazhd tregojnë për vrasjet dhe masakrat në Kosovë. 147 janë vrarë ne ..."
+        },
+        {
+          "id": "doc_VtqXCxJwinw",
+          "name": "Masakra e Reçakut, tmerri që u përjetua mëngjesin e 15 janarit 1999",
+          "icon": "https://i.ytimg.com/vi/VtqXCxJwinw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeYDrfMnwP9V6bze8Lp-Y1trO6aQ",
+          "type": "youtube",
+          "videoId": "VtqXCxJwinw",
+          "description": "ONIMA - http://smarturl.it/ONIMA Video nga portali arbresh.info."
+        },
+        {
+          "id": "doc_qnw4icMKCb4",
+          "name": "Lufta në Kosovë Zona Operative e Llapit Janar 1999 (KeL)",
+          "icon": "https://i.ytimg.com/vi/qnw4icMKCb4/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhlIE8oPjAP&rs=AOn4CLBdVdUYeJof-u9_Qj3pGbKYlSFtjg",
+          "type": "youtube",
+          "videoId": "qnw4icMKCb4",
+          "description": "Lufta në Kosovë në Zonën Operative të Llapit në Janar 1999."
+        },
+        {
+          "id": "doc_ldclSDyrkGA",
+          "name": "SPECIALE - MASAKRA E REÇAKUT 25.07.2020",
+          "icon": "https://i.ytimg.com/vi/ldclSDyrkGA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDFCyWoQCPb4YXtjOrVLjDXiml3Hw",
+          "type": "youtube",
+          "videoId": "ldclSDyrkGA",
+          "description": "Follow RTK: SPECIALE - MASAKRA E REÇAKUT 25.07.2020 Facebook: http://smarturl.it/RTKfb WEB: http://smarturl.it/RTKweb ..."
+        },
+        {
+          "id": "doc_6dHlB8todAY",
+          "name": "Dëshmitë e heshtura - Masakra e Krushes së Madhe 15.08.2020",
+          "icon": "https://i.ytimg.com/vi/6dHlB8todAY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBRbv4S1YuPJEilJkUFuowPR2dMdg",
+          "type": "youtube",
+          "videoId": "6dHlB8todAY",
+          "description": "Follow RTK:Dëshmitë e heshtura - Masakra e Krushes së Madhe 15.08.2020 DOKUMENTAR - Dëshmitë e heshtura 15.08.2020 ..."
+        },
+        {
+          "id": "doc_2pI6Qjfzi4A",
+          "name": "Aziz Beqiri që shpëtoi nga masakra e Reçakut  S’mund të presim nga Vuçiqi i Sheshelit e Daçiqi i Mil",
+          "icon": "https://i.ytimg.com/vi/2pI6Qjfzi4A/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBtgiAAoAPigIMCAAQARhlIFgoTzAP&rs=AOn4CLDdFJkgVuPju8A--lYp8HYeoGDdWA",
+          "type": "youtube",
+          "videoId": "2pI6Qjfzi4A",
+          "description": "Subscribe për video të reja/Subscribe for new videos: https://www.youtube.com/channel/UC6wfA06E1QHIHAYda1QDRkg Web: ..."
+        },
+        {
+          "id": "doc_H89ndayTLHw",
+          "name": "Film Dokumentar/ Masakra që ndryshoi historinë e shqiptarëve",
+          "icon": "https://i.ytimg.com/vi/H89ndayTLHw/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAugCigIMCAAQARhfIGUoUDAP&rs=AOn4CLCIBAMrKKY5y2auOJNzNgy2KnTdMA",
+          "type": "youtube",
+          "videoId": "H89ndayTLHw",
+          "description": "Ky është një dokumentar rreth: Film Dokumentar/ Masakra që ndryshoi historinë e shqiptarëve. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_vglsqUoZZbc",
+          "name": "Voyage - Historia e luginës së vdekjes në Reçak   15.01.2023",
+          "icon": "https://i.ytimg.com/vi/vglsqUoZZbc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC7YISA87b1oVu0rNmywM3WAHWiUQ",
+          "type": "youtube",
+          "videoId": "vglsqUoZZbc",
+          "description": "Follow RTK:#rtk #kosovo #reçak Voyage - Historia e luginës së vdekjes në Reçak 15.01.2023 Facebook: http://smarturl.it/RTKfb ..."
+        },
+        {
+          "id": "doc_mkDFugJZUb4",
+          "name": "Saga e Recakut - dokumentar per Masakren e Recakut",
+          "icon": "https://i.ytimg.com/vi/mkDFugJZUb4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIEcoLjAP&rs=AOn4CLC4rG-iJXa_Rm_jZpJhaoIeRAHBEQ",
+          "type": "youtube",
+          "videoId": "mkDFugJZUb4",
+          "description": "Saga e Reçakut - dëshmi për gjenocidin serb mi shqiptarët në Reçak. Realizimi i këtij dokumentari u ndihmua nga Komuna e ..."
+        },
+        {
+          "id": "doc_qV-3F4XFha8",
+          "name": "Top News- 27 vite nga masakra e Reçakut/ Ende asnjë i dënuar për 45 civilët e vrarë nga forcat serbe",
+          "icon": "https://i.ytimg.com/vi/qV-3F4XFha8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCiFRW4oCRyU99OYrpwx3CDlIzamw",
+          "type": "youtube",
+          "videoId": "qV-3F4XFha8",
+          "description": "Masakra e Reçakut, ku mbetën të vrarë 45 civilë shqiptarë nga forcat policore dhe ushtarake serbe, shënon këtë të enjte ..."
+        },
+        {
+          "id": "doc_ok1Sl1IntKQ",
+          "name": "Pamje të rënda nga masakra serbe: Shqiptarët u vranë me sëpatë, u prenë me motosharrë...",
+          "icon": "https://i.ytimg.com/vi/ok1Sl1IntKQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAnDedtRah_GbpQIxo2IX0n3Tp_dA",
+          "type": "youtube",
+          "videoId": "ok1Sl1IntKQ",
+          "description": "Opinion nga Blendi Fevziu, emisioni politik më i ndjekur dhe më i preferuar në ekranet shqiptare. Arena e politikës shqiptare që ..."
+        },
+        {
+          "id": "doc_YKo8wOdl0uM",
+          "name": "I mbijetuari i Masakrës së Reçakut, tregon forcat serbe ia kishin hequr sytë me mjete te ftohta",
+          "icon": "https://i.ytimg.com/vi/YKo8wOdl0uM/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhWIFgoZTAP&rs=AOn4CLBEI-z2QViarHgH7lvZ1zAYQu_gvQ",
+          "type": "youtube",
+          "videoId": "YKo8wOdl0uM",
+          "description": "Follow TËVË1 on... • FB: https://www.facebook.com/teve1.official/ • YT: https://www.youtube.com/@teve1 • IG: ..."
+        },
+        {
+          "id": "doc_ruiU4hKd90A",
+          "name": "Të Pa Thënat e Masakrës së Reçakut – Flasin të Mbijetuarit | DOKUMENTAR",
+          "icon": "https://i.ytimg.com/vi/ruiU4hKd90A/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDTE-eGWcc3QBIWpWxiKOWld9LG5w",
+          "type": "youtube",
+          "videoId": "ruiU4hKd90A",
+          "description": "Follow #NTeren on Facebook ▻ https://www.facebook.com/nterenvideo Follow #GENESISPublishing on: Facebook ..."
+        },
+        {
+          "id": "doc_n26lKNTz3Ng",
+          "name": "Dokumentar - Gjenocidi mbi Reçakun, historia që ende e pret drejtësinë!",
+          "icon": "https://i.ytimg.com/vi/n26lKNTz3Ng/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLBbQdDLb_uVzHwTEj2lZYGKbXv_9Q",
+          "type": "youtube",
+          "videoId": "n26lKNTz3Ng",
+          "description": "tvmalisheva #tvm Dokumentar - Gjenocidi mbi Reçakun, historia që ende e pret drejtësinë!"
+        },
+        {
+          "id": "doc_UDsRRvWoCV8",
+          "name": "DOKUMENTAR: Masakra në Abri të Epërme – Krim i pandëshkuar! -26.09.2021",
+          "icon": "https://i.ytimg.com/vi/UDsRRvWoCV8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB1AaAAuADigIMCAAQARhaIGUoRDAP&rs=AOn4CLCYk54KUv7ivWHsbT39kV2GuF_9Gw",
+          "type": "youtube",
+          "videoId": "UDsRRvWoCV8",
+          "description": "tvmalisheva #tvm DOKUMENTAR: Masakra në Abri të Epërme – Krim i pandëshkuar! -26.09.2021."
+        },
+        {
+          "id": "doc_-ocG2U2XoZI",
+          "name": "Rrëfimi i dhimbshëm i Albert Imerit, i mbijetuar nga masakra e Reçakut",
+          "icon": "https://i.ytimg.com/vi/-ocG2U2XoZI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAn3LbvJlYzrSuXhIMBjHSwvww0eg",
+          "type": "youtube",
+          "videoId": "-ocG2U2XoZI",
+          "description": "Rrëfimi i dhimbshëm i Albert Imerit, i mbijetuar nga masakra e Reçakut."
+        },
+        {
+          "id": "doc_drZO2NWEK0o",
+          "name": "Masakra e Tivarit 1945",
+          "icon": "https://i.ytimg.com/vi/drZO2NWEK0o/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAugCigIMCAAQARhlIFQoVTAP&rs=AOn4CLCmnqWh0cZfDgmh3fjqluqnjlDysw",
+          "type": "youtube",
+          "videoId": "drZO2NWEK0o",
+          "description": "Dardania Sacra ka shtuar një video të re. Dokumentar për masakrën e Tivarit, ku tregon se si u vranë pa mëshirë nga forcat ..."
+        },
+        {
+          "id": "doc_iec1tar81cc",
+          "name": "Masakra e Reçakut Kosovë",
+          "icon": "https://i.ytimg.com/vi/iec1tar81cc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDVQ_OqAmRdGYmHKIRL4cxLc2aLiQ",
+          "type": "youtube",
+          "videoId": "iec1tar81cc",
+          "description": "\"DINAMITI\""
+        },
+        {
+          "id": "doc_JFOVA1XBemM",
+          "name": "Njëzet vjet nga masakra e Reçakut",
+          "icon": "https://i.ytimg.com/vi/JFOVA1XBemM/hq720.jpg?sqp=-oaymwEiCNAFEJQDSFXyq4qpAxQIARUAAIhCGAFwAcABBu0BZmZmQg==&rs=AOn4CLDL8zib9Vqx_vPuz1kHRn1zWcvoyA",
+          "type": "youtube",
+          "videoId": "JFOVA1XBemM",
+          "description": "Më 15 janar 1999, forcat policore dhe ushtarake serbe vranë 45 civilë shqiptarë në fshatin Reçak të komunës së Shtimes. Tani ..."
+        },
+        {
+          "id": "doc_yYPVZlYErWw",
+          "name": "6 Korrik 1998 pjesë e filmit dokumentar Beteja e Loxhës Forcat e Armatosura të Republikës së Kosovës",
+          "icon": "https://i.ytimg.com/vi/yYPVZlYErWw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB_yEcPX2augx6qfzcB9qNSB_hgNw",
+          "type": "youtube",
+          "videoId": "yYPVZlYErWw",
+          "description": "Beteja e Loxhës një ndër betejat e para frontale dhe e vetmja që nga fillimi i luftës e udhëhequr nga kuadri profesional ushtarak të ..."
+        },
+        {
+          "id": "doc_xV6I4alS6i0",
+          "name": "Lufta e Loxhës - Dokumentarë #xhelal #tetaj",
+          "icon": "https://i.ytimg.com/vi/xV6I4alS6i0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC519Xr6n2fCR2M2GMsJQm8A07Mdw",
+          "type": "youtube",
+          "videoId": "xV6I4alS6i0",
+          "description": "01:57 Shpend Shala 07:27 Bardhyl Rexhepaj 09:01 Jeton Morina 09:32 Haki Shala 09:57 Shaban Shala 10:10 Rexhë Shala ..."
+        },
+        {
+          "id": "doc_TWSgmeplmTM",
+          "name": "23 Vite nga beteja e Loxhës",
+          "icon": "https://i.ytimg.com/vi/TWSgmeplmTM/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB1AaAAuADigIMCAAQARhRIGUoNTAP&rs=AOn4CLDBvsji8oZWsBrnCh87WBWIWZ3xVA",
+          "type": "youtube",
+          "videoId": "TWSgmeplmTM",
+          "description": "Te gjitha te drejtat mbrohen nga RTV Fontana All rights reserved by RTV Fontana https://www.facebook.com/Radiofontana​​ ..."
+        },
+        {
+          "id": "doc_QZLv4WW_ACE",
+          "name": "Loxhë, ankesa për dokumentarin - 13.07.2018 - Klan Kosova",
+          "icon": "https://i.ytimg.com/vi/QZLv4WW_ACE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDhEYhAa68CSD5au6nXcuFe-Wfa0w",
+          "type": "youtube",
+          "videoId": "QZLv4WW_ACE",
+          "description": "Ky është një dokumentar rreth: Loxhë, ankesa për dokumentarin - 13.07.2018 - Klan Kosova. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_5Cyqvk4rgGE",
+          "name": "FARK apo UÇK / Prapaskenat, çka ndodhi në betejën e Loxhës?",
+          "icon": "https://i.ytimg.com/vi/5Cyqvk4rgGE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAtnDc7XPZkC1VH5mJWXHFlVfj_Vg",
+          "type": "youtube",
+          "videoId": "5Cyqvk4rgGE",
+          "description": "klankosova #kosovatoday #lajme Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: ..."
+        },
+        {
+          "id": "doc_TEew3d4N07U",
+          "name": "“I jep ultimatum 5 minutësh” – Hadërgjonaj ndan detaje nga Beteja e Loxhës kundër forcave serbe",
+          "icon": "https://i.ytimg.com/vi/TEew3d4N07U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDJ46Nk97-zHFFGuGbunwsxW31zvg",
+          "type": "youtube",
+          "videoId": "TEew3d4N07U",
+          "description": "Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_IyREf4Kt2Bg",
+          "name": "Bashkim Shala flet për Betejën e Loxhës: Kur u ardh Tahir Zemaj nuk ka pasur më Iuftë frontale",
+          "icon": "https://i.ytimg.com/vi/IyREf4Kt2Bg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDBMvSF2Yw3tfzMFIgza6GVpQ8jGQ",
+          "type": "youtube",
+          "videoId": "IyREf4Kt2Bg",
+          "description": "Na ndiqni në rrjetet tona sociale: Facebook: https://www.facebook.com/NeDemos TikTok: https://www.tiktok.com/@gazetademos ..."
+        },
+        {
+          "id": "doc_dXfmtOGuuCM",
+          "name": "25 vjetori i betejës së Loxhës, zbulohet shtatorja e heroit, kolonel Tahir Zemaj 06.07.2023",
+          "icon": "https://i.ytimg.com/vi/dXfmtOGuuCM/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLBwJ4id0tNy0TpOJq_WD3HUFoMHGQ",
+          "type": "youtube",
+          "videoId": "dXfmtOGuuCM",
+          "description": "Follow RTK: 25 vjetori i betejës së Loxhës, zbulohet shtatorja e heroit, kolonel Tahir Zemaj Facebook: ..."
+        },
+        {
+          "id": "doc_bbO7K-ex0GI",
+          "name": "RIFAT BERISHA - TRIMAT E LOXHES ( beteja e Loxhes )",
+          "icon": "https://i.ytimg.com/vi/bbO7K-ex0GI/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhlIFYoSDAP&rs=AOn4CLDP2I20_T8pEVe8LEejOImiMKnh3A",
+          "type": "youtube",
+          "videoId": "bbO7K-ex0GI",
+          "description": "RIFAT BERISHA - TRIMAT E LOXHES ( beteja e Loxhes )"
+        },
+        {
+          "id": "doc_sLqBFWQelAU",
+          "name": "STALINGRAD PA CENZURË | Dita Kur Ushtria E Hitlerit Ra | Dokumentar Në NGJYRË TË PASTRË",
+          "icon": "https://i.ytimg.com/vi/sLqBFWQelAU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC5rts1zEzy1AJ2rgsEAiFGXv3LSw",
+          "type": "youtube",
+          "videoId": "sLqBFWQelAU",
+          "description": "STALINGRAD PA CENZURË | Dita Kur Ushtria E Hitlerit Ra | Dokumentar Në NGJYRË TË PASTRË Në verën e vitit 1942, ushtria ..."
+        },
+        {
+          "id": "doc_HYjZr-DqKug",
+          "name": "Rrëfime ekskluzive nga lufta - Beteja e Zhegocit",
+          "icon": "https://i.ytimg.com/vi/HYjZr-DqKug/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD4t7-0rfj-2LVQ8egGhiXHYjgtkw",
+          "type": "youtube",
+          "videoId": "HYjZr-DqKug",
+          "description": "plustelevizion #smartmedia #lajme #ahmetisufi #florimramaj #përparimmuja #afrimnuhiu #komunaegjilanit #komunaevitisë ..."
+        },
+        {
+          "id": "doc_fZW-sFBxFCo",
+          "name": "BETEJA E GRYKËS SË LLAPUSHNIKUT - AORTA E TERRITOREVE TË LIRA",
+          "icon": "https://i.ytimg.com/vi/fZW-sFBxFCo/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDrH86DNX1U2FjeSNINDcdAdR7yyQ",
+          "type": "youtube",
+          "videoId": "fZW-sFBxFCo",
+          "description": "Ky është një dokumentar rreth: BETEJA E GRYKËS SË LLAPUSHNIKUT - AORTA E TERRITOREVE TË LIRA. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_C3uBYc_Fr7M",
+          "name": "Dokumentar - Dëshmorët dhe luftëtarët e Shkozës së Llapushës",
+          "icon": "https://i.ytimg.com/vi/C3uBYc_Fr7M/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDg1pnZRiAp64Kqn85chUeHMB8GLQ",
+          "type": "youtube",
+          "videoId": "C3uBYc_Fr7M",
+          "description": "Follow RTK: Autor: Nuhi Bytyqi Dokumentar - Dëshmorët dhe luftëtarët e Shkozës së Llapushës Facebook: http://smarturl.it/RTKfb ..."
+        },
+        {
+          "id": "doc_Z7IeVate6ek",
+          "name": "kol.Tahir Zemaj:  Forca e Armatosu e Republikes se Kosoves",
+          "icon": "https://i.ytimg.com/vi/Z7IeVate6ek/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB3gOAAugCigIMCAAQARhfIGUoUzAP&rs=AOn4CLCUIgOkzUWJNdpL7A0w8H0wVDp4cQ",
+          "type": "youtube",
+          "videoId": "Z7IeVate6ek",
+          "description": "https://www.facebook.com/RugovaNaMungon Në kete video mund të shini shumë luftetar të UÇK-s disa prei tyrve u vranë Pas ..."
+        },
+        {
+          "id": "doc_X72FiNBW_ME",
+          "name": "Rrëfime nga Beteja e Koshares | PRESSING | T7",
+          "icon": "https://i.ytimg.com/vi/X72FiNBW_ME/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD6Hh_L4AQY1sXPWn1nwwRPqb-jGA",
+          "type": "youtube",
+          "videoId": "X72FiNBW_ME",
+          "description": "Rrëfime nga Beteja e Koshares | PRESSING | T7."
+        },
+        {
+          "id": "doc_cLkuKJq65Ss",
+          "name": "Film dokumentar “FLAKADANI I UÇK-së”",
+          "icon": "https://i.ytimg.com/vi/cLkuKJq65Ss/hqdefault.jpg?sqp=-oaymwEiCOADEI4CSFXyq4qpAxQIARUAAIhCGAFwAcABBu0BmZkZQg==&rs=AOn4CLDQcobAT1XyIVn5XNbkRDbJdZP0Fw",
+          "type": "youtube",
+          "videoId": "cLkuKJq65Ss",
+          "description": "FLAKADANI I UÇK-së”, titullohet filmi dokumentar kushtuar, inxhinierit të diplomuar të elektroteknikës, (me mesataren e notës 9.9) ..."
+        },
+        {
+          "id": "doc_R6YotN5WMMs",
+          "name": "Dokumentar: Gjakova në betejat e Dukagjinit",
+          "icon": "https://i.ytimg.com/vi/R6YotN5WMMs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDasFuSA1xUx8aGMmbGn1jUbx4hHw",
+          "type": "youtube",
+          "videoId": "R6YotN5WMMs",
+          "description": "Rrëfime personale nga eksperienca e luftëtarëve të Gjakovës në betejat e Dukagjinit."
+        },
+        {
+          "id": "doc_5A4Zcxxi8Z0",
+          "name": "Kolonel Tahir Zemaj në 4 Vjetorin e Betejes se Loxhës",
+          "icon": "https://i.ytimg.com/vi/5A4Zcxxi8Z0/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDKnKBiNr2j47mzP40dQffKVuuYEg",
+          "type": "youtube",
+          "videoId": "5A4Zcxxi8Z0",
+          "description": "Forcave të Armatosura të UÇK-së nën organizimin e Ministrisë së Mbrojtjës të Rep. së Kosovës - Beteja Loxhes."
+        },
+        {
+          "id": "doc_hCpwJvNFIt0",
+          "name": "Dokumentar: Kush ishte Agim Ramadani? Komandant Katana qe hoqi kufirin mes Kosoves dhe Shqiperise.",
+          "icon": "https://i.ytimg.com/vi/hCpwJvNFIt0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDRT5AnqZ-ysRLCR7aaG-oOT6C94A",
+          "type": "youtube",
+          "videoId": "hCpwJvNFIt0",
+          "description": "Publisher: Four Media - https://bio.to/fourmedia Follow Elvis Naçi on... • FB: https://smarturl.it/FBElvis • IG: https://smarturl.it/IGElvis ..."
+        },
+        {
+          "id": "doc_c4D4Z7N0g3Q",
+          "name": "Agim Ramadani \"Katana\" - Dokumentar",
+          "icon": "https://i.ytimg.com/vi/c4D4Z7N0g3Q/hq720.jpg?sqp=-oaymwEiCNAFEJQDSFXyq4qpAxQIARUAAIhCGAFwAcABBu0BZmZmQg==&rs=AOn4CLCfBkzw9UoDKCisKzKtXld49CagMg",
+          "type": "youtube",
+          "videoId": "c4D4Z7N0g3Q",
+          "description": "https://www.facebook.com/BESFORTVIDEOM1/ Agim Ramadani Katana - Dokumentar Brigada 138 ne Koshare - Beteja e ..."
+        },
+        {
+          "id": "doc_gpy-ZhQK2uU",
+          "name": "Jeta dhe vepra e heroit kombëtar Agim Ramadani, flet bashkëshortja Shukrije Ramadani",
+          "icon": "https://i.ytimg.com/vi/gpy-ZhQK2uU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLArpAiWxPKOGQhbdi39kKG_7bLqVg",
+          "type": "youtube",
+          "videoId": "gpy-ZhQK2uU",
+          "description": "Jeta dhe vepra e heroit kombëtar Agim Ramadani, flet bashkëshortja Shukrije Ramadani ➖➖➖ Për më shumë na ndiqni në: ..."
+        },
+        {
+          "id": "doc_Fs6E7qamC0E",
+          "name": "Dokumentar për dëshmorin Agim Ramadani 25.09.2023",
+          "icon": "https://i.ytimg.com/vi/Fs6E7qamC0E/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhyIE0oOjAP&rs=AOn4CLC1AdS51jCC73SEhqlw-2cw36eFdQ",
+          "type": "youtube",
+          "videoId": "Fs6E7qamC0E",
+          "description": "Follow RTK: Dokumentar për dëshmorin Agim Ramadani 25.09.2023 Facebook: https://shorturl.at/vGHS8 WEB: ..."
+        },
+        {
+          "id": "doc_UMXP--IbE4c",
+          "name": "RRËFIMI PËR AGIM RAMADANIN - Debat Plus me Ermal Pandurin",
+          "icon": "https://i.ytimg.com/vi/UMXP--IbE4c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBgdW0ScfTemWHAwNti1wYIBuInkw",
+          "type": "youtube",
+          "videoId": "UMXP--IbE4c",
+          "description": "RRËFIMI PËR AGIM RAMADANIN - Debat Plus me Ermal Pandurin Shukrije Ramadani - Gruaja e Agim Ramadanit."
+        },
+        {
+          "id": "doc_feD9MTQVOYA",
+          "name": "Shokon Komandant Kobra zbulon faktet si u vra Agim Ramadani. Isha me te ja si ra heroikisht ai",
+          "icon": "https://i.ytimg.com/vi/feD9MTQVOYA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAundn1jT-OIh9bgf_ChTRMVhZ3Pw",
+          "type": "youtube",
+          "videoId": "feD9MTQVOYA",
+          "description": "https://www.youtube.com/@kojshiashow Publisher : Kojshia Show Follow KOJSHIA SHOW on : Facebook: ..."
+        },
+        {
+          "id": "doc_ZCDg9kf6Zgs",
+          "name": "AGIM RAMADANI “KATANA” | NGA ZHEGRA NË KOSHARE | DOKUMENTAR PËR LUFTËN E KOSOVËS",
+          "icon": "https://i.ytimg.com/vi/ZCDg9kf6Zgs/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIF8oMDAP&rs=AOn4CLC3ofzO29RWE9u0QzV511pGfUrnfw",
+          "type": "youtube",
+          "videoId": "ZCDg9kf6Zgs",
+          "description": "AGIM RAMADANI – “KATANA” Nga Zhegra në Koshare – një jetë e lidhur me atdheun, luftën dhe historinë e Kosovës. Ky është ..."
+        },
+        {
+          "id": "doc_wTy40VDSxQ4",
+          "name": "VIDEO E RRALLË: Agim Ramadani duke folur 1998",
+          "icon": "https://i.ytimg.com/vi/wTy40VDSxQ4/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB1AaAAuADigIMCAAQARhhIGEoYTAP&rs=AOn4CLC2eI-myWoNeB-Ary8ZeiYPRRq8Rg",
+          "type": "youtube",
+          "videoId": "wTy40VDSxQ4",
+          "description": "shqip #kosova #uçk #agimramadani."
+        },
+        {
+          "id": "doc__jpW7nh4uxY",
+          "name": "KATANA – Ai që nuk erdhi të jetojë, por të vdesë me qëllim (Agim Ramadani)",
+          "icon": "https://i.ytimg.com/vi/_jpW7nh4uxY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBpDVrp3sDh3a_xG2h41wMJT5jiBg",
+          "type": "youtube",
+          "videoId": "_jpW7nh4uxY",
+          "description": "Autor: Burhan Bekteshi Interpretoi: Ermir Hoxha Muzika: Labinot Shishani Realizoj: BB PRODUCTION Të Interesuarit për ..."
+        },
+        {
+          "id": "doc_FDNekDHOT5s",
+          "name": "E dhimbshme: Kujtim Vranovci zbulon si u Vra AGIM RAMADANI në luft. Shokohet Anton Quni",
+          "icon": "https://i.ytimg.com/vi/FDNekDHOT5s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDwTdvXBH_6XbgHDkrVQANoHB8ZMg",
+          "type": "youtube",
+          "videoId": "FDNekDHOT5s",
+          "description": "https://www.youtube.com/@kojshiashow Publisher : Kojshia Show Follow KOJSHIA SHOW on : Facebook: ..."
+        },
+        {
+          "id": "doc_Nv-9wJ-JbTI",
+          "name": "PAMJE TË PA PUBLIKUARA MË PARË: Agim Ramadani i thotë gruas së tij: \"Fisnike, luftën do ta fitojmë\"",
+          "icon": "https://i.ytimg.com/vi/Nv-9wJ-JbTI/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhkIGQoZDAP&rs=AOn4CLDzIy5q1aP3FR7z1f4d4J3_tbatMg",
+          "type": "youtube",
+          "videoId": "Nv-9wJ-JbTI",
+          "description": "Facebook: https://www.facebook.com/nacionalecom Instagram: https://www.instagram.com/nacionaleks Twitter: ..."
+        },
+        {
+          "id": "doc_DPzSJGw0bVE",
+          "name": "Agim Ramadani",
+          "icon": "https://i.ytimg.com/vi/DPzSJGw0bVE/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBvgKAAu4BigIMCAAQARhlIF4oKDAP&rs=AOn4CLBeYOPvuNMAB-uNeHtQNx_N094ctQ",
+          "type": "youtube",
+          "videoId": "DPzSJGw0bVE",
+          "description": "Koshare Thyerja e Kufirit Shqiptaro Shqiptar Agim Ramadani."
+        },
+        {
+          "id": "doc_uQns0I7EERc",
+          "name": "Si u vra komandanti legjendar i UÇK Agim Ramadani",
+          "icon": "https://i.ytimg.com/vi/uQns0I7EERc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAlrULuIQfG3ctbExA6btuF-xbzdA",
+          "type": "youtube",
+          "videoId": "uQns0I7EERc",
+          "description": "War Zone trajton çështjet e konflikteve ushtarake në botë dhe marrëdhëniet ndërkombëtare mes vendeve. Në emision bëhet një ..."
+        },
+        {
+          "id": "doc_6a-qSuVK4Yw",
+          "name": "UÇK Brigada 138 Agim Ramadani 1998 Dukagjin Kosovë Koshare Kosovo War Lufta ne Koshare",
+          "icon": "https://i.ytimg.com/vi/6a-qSuVK4Yw/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAkXUhRrM-96UJb7joUPCPf8HKFhg",
+          "type": "youtube",
+          "videoId": "6a-qSuVK4Yw",
+          "description": "kosova #uçk #war #soldier #combat #fpv #serbianterrorists #albania #army #military."
+        },
+        {
+          "id": "doc_9396euvk6WQ",
+          "name": "Debat Plus me Ermal Pandurin - RRËFIMI PËR AGIM RAMADANIN",
+          "icon": "https://i.ytimg.com/vi/9396euvk6WQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBQNBOTeY649AbBWXGlLGAiXxadRQ",
+          "type": "youtube",
+          "videoId": "9396euvk6WQ",
+          "description": "Debat Plus me Ermal Pandurin - RRËFIMI PËR AGIM RAMADANIN Shukrije Ramadani-Bashkëshortja e Agim Ramadanit ..."
+        },
+        {
+          "id": "doc_DqXWo_YUOgo",
+          "name": "Kosharja, rënia e Agim Ramadanit, takimi me Fatmir Haklajn, rrëfimi i Anton Qunit #Muhabet 64",
+          "icon": "https://i.ytimg.com/vi/DqXWo_YUOgo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCPJxekG1E890BivPEgKZaJZznafQ",
+          "type": "youtube",
+          "videoId": "DqXWo_YUOgo",
+          "description": "I ftuar: Anton Quni, ish-komandant në UÇK #MuhabetmeArditin #podcastshqip Follow Foldrejt on… YouTube ..."
+        },
+        {
+          "id": "doc_VkXGMn28ZAw",
+          "name": "‘Me thanë u vra Agimi’/ emocionohet shoku i komandant Katanes - kujton momentin kur ai u vra",
+          "icon": "https://i.ytimg.com/vi/VkXGMn28ZAw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBA_numBM0-iuN6CeW9EgLfB-ciOw",
+          "type": "youtube",
+          "videoId": "VkXGMn28ZAw",
+          "description": "'Me thanë u vra Agimi'/ emocionohet shoku i komandant Katanes - kujton momentin kur ai u vra."
+        },
+        {
+          "id": "doc__czi4sjbrI8",
+          "name": "DOKUMENTAR  -  ZAHIR PAJAZITI  31.01.2019",
+          "icon": "https://i.ytimg.com/vi/_czi4sjbrI8/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCMHLXBYW_icGadhrSun_PT28i_iQ",
+          "type": "youtube",
+          "videoId": "_czi4sjbrI8",
+          "description": "Radio Television of Kosovo is the public service broadcaster in Kosovo. RTK operates five TV channels and two radio stations ..."
+        },
+        {
+          "id": "doc_gaAqCUuh3_g",
+          "name": "ZAHIR PAJAZITI nga KAPSAMUNI i shtëpisë te PUSHKA E MADHE E LIRISË – RRËFIM PËR LEGJENDËN E HESHTUR",
+          "icon": "https://i.ytimg.com/vi/gaAqCUuh3_g/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLABmPZHijGZcsgdlQkwVZ3RzxepHw",
+          "type": "youtube",
+          "videoId": "gaAqCUuh3_g",
+          "description": "Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_0FfEB-Y8XCw",
+          "name": "DOKUMENTARI KUSHTUAR HERONJVE ZAHIR PAJAZITI, HAKIF ZEJNULLAHU DHE EDMOND HOXHA",
+          "icon": "https://i.ytimg.com/vi/0FfEB-Y8XCw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBY5dj5lCCNE171MIVjcOoixDmNew",
+          "type": "youtube",
+          "videoId": "0FfEB-Y8XCw",
+          "description": "Dokumentari Lajmëtarët e lirisë iu kushtohet tri figurave qendrore të luftës së Ushtrisë Çlirimtare të Kosovës Hakif Zejnullahut, ..."
+        },
+        {
+          "id": "doc_gfAuhkOfmUs",
+          "name": "Rrugëve të ZAHIR PAJAZITIT dhe shokëve të lirisë, nga PLAKU i SHISHMANIT e deri te KULLA e Lubizhdës",
+          "icon": "https://i.ytimg.com/vi/gfAuhkOfmUs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLARsATyDuLYUNfVWBCs-2dMAPUiqQ",
+          "type": "youtube",
+          "videoId": "gfAuhkOfmUs",
+          "description": "KlanKosova #360media ZahirPajaziti #HakifZejnullahu #EdmondHoxha #UCK #UÇK #UshtriaClirimtareKosoves #LuftaClirimtare ..."
+        },
+        {
+          "id": "doc_x-X52Q9XZs8",
+          "name": "Zahir Pajaziti Dokumentar - Trokitje 2012 KOMPLET",
+          "icon": "https://i.ytimg.com/vi/x-X52Q9XZs8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA9fUwd5XO4vbZaiiNCg2vFNYkwfw",
+          "type": "youtube",
+          "videoId": "x-X52Q9XZs8",
+          "description": "Zahir Pajaziti Dokumentar - Trokitje 2012 - Shikojeni Te Verteten Populli im !"
+        },
+        {
+          "id": "doc_KR5UsW2bU-s",
+          "name": "Ja si mori hak UÇK-ja për Zahir Pajazitin, duke e vrarë policin famëkeq serb",
+          "icon": "https://i.ytimg.com/vi/KR5UsW2bU-s/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDMfNeYGKcGvnH2UkZELTuqndM3Mg",
+          "type": "youtube",
+          "videoId": "KR5UsW2bU-s",
+          "description": "Ja si e mori hakun UÇK-ja për Zahir Pajazitin, duke e vrarë policin famëkeq serb."
+        },
+        {
+          "id": "doc_IvgwwajGV3I",
+          "name": "Kush ishte ‘Cipiripi’ famëkeq dhe si i shpëtoi plumbave të Zahir Pajazitit",
+          "icon": "https://i.ytimg.com/vi/IvgwwajGV3I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLALdtaR0iHgjsxwMzDEEjjTDDEM0g",
+          "type": "youtube",
+          "videoId": "IvgwwajGV3I",
+          "description": "Përmes një rrëfimi ekskluziv shoku dhe krahu i djathtë i Zahir Pajazitit, Avni Ajeti tregon për aksionet e para guerile që realizoi ..."
+        },
+        {
+          "id": "doc_GexkWBKtj8Y",
+          "name": "VRASJA E ZAHIR PAJAZITIT",
+          "icon": "https://i.ytimg.com/vi/GexkWBKtj8Y/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB8gWAAuADigIMCAAQARg2IGUoPjAP&rs=AOn4CLCeTKe0dGXO8HLnE5v4hJcdBaJRsg",
+          "type": "youtube",
+          "videoId": "GexkWBKtj8Y",
+          "description": "Zahir Pajaziti 01.11.1962 - 31.01.1997."
+        },
+        {
+          "id": "doc_YfcoTXfZhbE",
+          "name": "Zahir Pajaziti ne Vitet 95-96 Video Pregaditur Faqja  \"Kompleksi Zahir Pajaziti\"",
+          "icon": "https://i.ytimg.com/vi/YfcoTXfZhbE/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB1AaAAtYDigIMCAAQARhqIGooajAP&rs=AOn4CLAfiPK5Ym7elMPWolpUdeaOg0UodA",
+          "type": "youtube",
+          "videoId": "YfcoTXfZhbE",
+          "description": "Video Ekskluzive nga Faqja \"Kompleksi Zahir Pajaziti\""
+        },
+        {
+          "id": "doc_K95bGaC2Eu0",
+          "name": "A është tradhëtuar Zahir Pajaziti?",
+          "icon": "https://i.ytimg.com/vi/K95bGaC2Eu0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3RvLYeCFEoBuH8zBci-p0jZaCag",
+          "type": "youtube",
+          "videoId": "K95bGaC2Eu0",
+          "description": "Për më shumë na ndiqni në: Facebook https://bit.ly/3zysasi Instagram https://bit.ly/32SjIIG GjirafaVideo ..."
+        },
+        {
+          "id": "doc_AafYYluTA_k",
+          "name": "Videot e rralla në odë të Zahir Pajazitit - Gjurmë Shqiptare",
+          "icon": "https://i.ytimg.com/vi/AafYYluTA_k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDa5sfJ2sO2OfnHPCPlDcNLBaA_dA",
+          "type": "youtube",
+          "videoId": "AafYYluTA_k",
+          "description": "Programi \"Gjurmë Shqiptare\" përfshin një audience të të gjitha moshave. Përfshirja e temave historike, zbulimi i zonave të ..."
+        },
+        {
+          "id": "doc_cX7APvxCnoA",
+          "name": "Heroi Zahir Pajaziti - Dokumentari qe duhet degjuar!",
+          "icon": "https://i.ytimg.com/vi/cX7APvxCnoA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDrCodqHP1unDxjuL22jCdr3wMF3w",
+          "type": "youtube",
+          "videoId": "cX7APvxCnoA",
+          "description": "Ky është një dokumentar rreth: Heroi Zahir Pajaziti - Dokumentari qe duhet degjuar!. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_ZmvDsvJ4QUI",
+          "name": "Vëllai i Zahir Pajazitit tregon detaje të padëgjuara dhe ende ruhet vetura ku u vranë tre dëshmorët",
+          "icon": "https://i.ytimg.com/vi/ZmvDsvJ4QUI/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD3O1Y59s_yuQjwZ5PDDvS2CYJdZQ",
+          "type": "youtube",
+          "videoId": "ZmvDsvJ4QUI",
+          "description": "tregimengakatuni Ende ruhet si e shenjtë vetura ku u vranë tre dëshmorët e UÇK-së, vëllai i Zahir Pajazitit tregon detaje të ..."
+        },
+        {
+          "id": "doc_z6YgtDouZf0",
+          "name": "Roli sekret i Zahir Pajazitit në formimin e UÇK-së",
+          "icon": "https://i.ytimg.com/vi/z6YgtDouZf0/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB8ht0_6zSigbipXiqtD6tJTGO4Jg",
+          "type": "youtube",
+          "videoId": "z6YgtDouZf0",
+          "description": "Njëri prej tyre ishte Zahir Pajaziti – një nga figurat kyçe të celulave të para të UÇK-së dhe një nga organizatorët më të hershëm të ..."
+        },
+        {
+          "id": "doc_195QUp6wGeQ",
+          "name": "Plumbi i fundit i heroit Zahir Pajaziti - N’Demos - Avni Ajeti 27.01.2024",
+          "icon": "https://i.ytimg.com/vi/195QUp6wGeQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBiOAwyxAYQT7XCUuu-VV6qsLjEbQ",
+          "type": "youtube",
+          "videoId": "195QUp6wGeQ",
+          "description": "Na ndiqni në rrjetet tona socale: Facebook: https://www.facebook.com/NeDemos TikTok: https://www.tiktok.com/@gazetademos ..."
+        },
+        {
+          "id": "doc_rpNT2M9fCxI",
+          "name": "🔴EKSKLUZIVE: Detaje tronditëse për rënien e Zahir Pajazitit - N'Demos - Ismet Abdullahu 06.01.2024",
+          "icon": "https://i.ytimg.com/vi/rpNT2M9fCxI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCp8VwTdvuXpS5PMueqtyrHoadS7g",
+          "type": "youtube",
+          "videoId": "rpNT2M9fCxI",
+          "description": "Zahir Pajaziti, Rekrutimi, rënia dhe e vërteta për të - N'Demos - Ismet Abdullahu 06.01.2024 ✔️ Did you subscribe to ..."
+        },
+        {
+          "id": "doc_MTvqJ94a0NY",
+          "name": "Dokumentari për Zahir Pajaziti, Hakif Zejnullahu e Edmond Hoxha",
+          "icon": "https://i.ytimg.com/vi/MTvqJ94a0NY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCCIRHiYYG0ioeKWA4gWjuQhbAoLA",
+          "type": "youtube",
+          "videoId": "MTvqJ94a0NY",
+          "description": "Dokumentari për Zahir Pajaziti, Hakif Zejnullahu e Edmond Hoxha Follow TV Malisheva on: FB: https://www.fb.com/malisheva.tv/ ..."
+        },
+        {
+          "id": "doc_HPT5T4ymyxI",
+          "name": "Dëshmi mbi rënien e Zahir Pajazitit me bashkëluftëtarët",
+          "icon": "https://i.ytimg.com/vi/HPT5T4ymyxI/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhWIGUoQDAP&rs=AOn4CLDxL0ePCb_oDHTIdbvLManzDXN1Kw",
+          "type": "youtube",
+          "videoId": "HPT5T4ymyxI",
+          "description": "Të gjitha të drejtat e rezervuara për RTI-në. Abonohu në kanalin zyrtar këtu: YouTube ▶️ https://www.youtube.com/@rtishqip ..."
+        },
+        {
+          "id": "doc_g3yGjSyrtMo",
+          "name": "Bisedat, takimet dhe vrasja e Zahir Pajazitit: Rrëfimi EKSKLUZIV i Ismet Abdullahut #Muhabet 83",
+          "icon": "https://i.ytimg.com/vi/g3yGjSyrtMo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA3SAs68A7wbwJ33LHG3DDRBdZohw",
+          "type": "youtube",
+          "videoId": "g3yGjSyrtMo",
+          "description": "Follow Foldrejt on… YouTube ▶️ https://www.youtube.com/@foldrejt Facebook ▶️ https://www.facebook.com/gazetafoldrejt ..."
+        },
+        {
+          "id": "doc_SQ0-jbZ5bP4",
+          "name": "Kush ishte \"ABEJA\", strategu më i madh i UÇK-së?",
+          "icon": "https://i.ytimg.com/vi/SQ0-jbZ5bP4/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDEgh5krpVXP-J_-iFg_wVzi6aoJA",
+          "type": "youtube",
+          "videoId": "SQ0-jbZ5bP4",
+          "description": "Në këtë video të Histori Epike tregojmë historinë e një prej figurave më të jashtëzakonshme të luftërave ballkanike të viteve '90 ..."
+        },
+        {
+          "id": "doc_q58Oujsu-Ds",
+          "name": "PA RROTLLA DALJA PËR HERË TË PARË E UÇK së ME MASKA",
+          "icon": "https://i.ytimg.com/vi/q58Oujsu-Ds/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB6gOAAugCigIMCAAQARhlIFwoQjAP&rs=AOn4CLC5zoJRzqcM4xprUiJcUNCEQVLyXg",
+          "type": "youtube",
+          "videoId": "q58Oujsu-Ds",
+          "description": "PA RROTLLA - DALJA PËR HERË TË PARË E UÇK-së ME MASKA Facebook: Ky film dokumentar shpalos nje pjese te ..."
+        },
+        {
+          "id": "doc_12RvxK671TQ",
+          "name": "RTK Prime - Operacioni \"Shigjeta\" i UÇK-së",
+          "icon": "https://i.ytimg.com/vi/12RvxK671TQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLChbpQDi0WvEg3UMnTszWz-_dxUEg",
+          "type": "youtube",
+          "videoId": "12RvxK671TQ",
+          "description": "RTK Prime - Operacioni \"Shigjeta\" i UÇK-së."
+        },
+        {
+          "id": "doc_oEles3EGQns",
+          "name": "Rrëfime ekskluzive nga ish-ushtarët e UÇK-së për ditën e 5 marsit në Prekaz",
+          "icon": "https://i.ytimg.com/vi/oEles3EGQns/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIGEoUDAP&rs=AOn4CLBjB3_xiA_VeRninedQUmHEYt7D7w",
+          "type": "youtube",
+          "videoId": "oEles3EGQns",
+          "description": "Më 5 mars të vitit 1998 në Prekaz të Drenicës filloi lufta e Ushtrisë Çlirimtare të Kosovës, e udhëhequr nga komandanti legjendar ..."
+        },
+        {
+          "id": "doc_W4u5Coc8Flo",
+          "name": "Ushtarit të Uçk-së vetem sa nuk i bie të fiktë kur spjegon Plagët e luftës në emision. Ja cka ndodh!",
+          "icon": "https://i.ytimg.com/vi/W4u5Coc8Flo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCNqU14imJwrueyF8IhpnjWkPgiyA",
+          "type": "youtube",
+          "videoId": "W4u5Coc8Flo",
+          "description": "https://www.youtube.com/@kojshiashow Publisher : Kojshia Show Follow KOJSHIA SHOW on : Facebook: ..."
+        },
+        {
+          "id": "doc_TCnKKiAeyI4",
+          "name": "Rrëfimi i Daut Haradinajt, ish- gjeneral i UÇK-së, në 26-vjetorin e Epopesë së Dukagjinit 24.03.2024",
+          "icon": "https://i.ytimg.com/vi/TCnKKiAeyI4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIGIoWDAP&rs=AOn4CLBwzpDYm1yK09nOLiqLU47x9GES7Q",
+          "type": "youtube",
+          "videoId": "TCnKKiAeyI4",
+          "description": "Follow RTK: Facebook: https://shorturl.at/vGHS8 WEB: rtklive.com Powered by OnAir.FM."
+        },
+        {
+          "id": "doc_vUnF9kxyl_0",
+          "name": "Samidin Xhezairi – Një nga luftëtarët më të rrezikshëm të UÇK-së",
+          "icon": "https://i.ytimg.com/vi/vUnF9kxyl_0/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC0KfYRYCytOzaVpGkElPakBakuLw",
+          "type": "youtube",
+          "videoId": "vUnF9kxyl_0",
+          "description": "Samidin Xhezairi, i njohur ndryshe si Komandant Hoxha, mbetet një nga figurat më enigmatike të historisë së fundit shqiptare."
+        },
+        {
+          "id": "doc_TP5Vesbt-WA",
+          "name": "Dokumentar \"Çelësi i lirisë\"  - Deshmori i kombit Beat Coli - 2019",
+          "icon": "https://i.ytimg.com/vi/TP5Vesbt-WA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAiWGRm3xYMc2nmsAyGWu613jC40g",
+          "type": "youtube",
+          "videoId": "TP5Vesbt-WA",
+          "description": "Dokumentari versioni i ri i riperpunuar me protagoniste te rinj si dhe komandanti i Z.O.D Ramush Haradinaj. Kushtuar deshmorit ..."
+        },
+        {
+          "id": "doc_59Spq3rd6e0",
+          "name": "Dëshmorët e UÇK",
+          "icon": "https://i.ytimg.com/vi/59Spq3rd6e0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD1GM8cATN_eUmcIuF8N1vzK46c9g",
+          "type": "youtube",
+          "videoId": "59Spq3rd6e0",
+          "description": "Ky është një dokumentar rreth: Dëshmorët e UÇK. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_TKfWyKs_sXE",
+          "name": "Dokumentar - \"Trimat e Kralanit - Dhimbja e krenaria\" 2020",
+          "icon": "https://i.ytimg.com/vi/TKfWyKs_sXE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACbRNleC57kYQF2iDo8jJ8Sq7kLQ",
+          "type": "youtube",
+          "videoId": "TKfWyKs_sXE",
+          "description": "Dokumentar i metrazhit te gjate, kushtuar fshatit Kralan dhe deshmoreve te ketij fshati. Fshati Kralan ne luften e fundit ne Kosove, ..."
+        },
+        {
+          "id": "doc_QRjhqGrDLco",
+          "name": "Dokumentar - 5 Dëshmorët e Familjes Musa",
+          "icon": "https://i.ytimg.com/vi/QRjhqGrDLco/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDet55zaQkZ0EYyYxYK0FRZsIFHfg",
+          "type": "youtube",
+          "videoId": "QRjhqGrDLco",
+          "description": "Nderime vepres , dhe luftës së dëshmorve të rën për liri."
+        },
+        {
+          "id": "doc_4BMvjDgwORk",
+          "name": "Gjurmë Shqiptare - Kush nuk e donte në Shqipëri UÇK-në ...?!",
+          "icon": "https://i.ytimg.com/vi/4BMvjDgwORk/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD7Z-yhCpEH3iddRoFCKXCjWdRH5A",
+          "type": "youtube",
+          "videoId": "4BMvjDgwORk",
+          "description": "Kush i dekonspiroi nga Shqiperia shume nga luftetaret e pare te UÇK ? Si u firmos marrveshja ne vitin 1991 ? A ka dore Sherbimi ..."
+        },
+        {
+          "id": "doc_4-FcfyYV4Tg",
+          "name": "ZENEL ZEKOLLI n'DEMOS - Rrëfen aksionet e UÇK'së në Suharekë, emocionohet kur flet për dëshmorët",
+          "icon": "https://i.ytimg.com/vi/4-FcfyYV4Tg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCSHOO_4adOUz5RUBF9qcOFVkQZ9g",
+          "type": "youtube",
+          "videoId": "4-FcfyYV4Tg",
+          "description": "Na ndiqni në rrjetet tona sociale: Facebook: https://www.facebook.com/NeDemos TikTok: https://www.tiktok.com/@gazetademos ..."
+        },
+        {
+          "id": "doc_MGJy3Jt7xwQ",
+          "name": "Voyage - Gjenocidi i Serbisë në Kosovë - aspekte historike, politike dhe juridike  04.06.2023",
+          "icon": "https://i.ytimg.com/vi/MGJy3Jt7xwQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDWhsMUxBoJmG5vOFIyp-UvQC8rPQ",
+          "type": "youtube",
+          "videoId": "MGJy3Jt7xwQ",
+          "description": "Follow RTK: Facebook: http://smarturl.it/RTKfb WEB: http://smarturl.it/RTKweb Voyage - Gjenocidi i Serbisë në Kosovë - aspekte ..."
+        },
+        {
+          "id": "doc_6IxSuP-f4L4",
+          "name": "Promo - Voyage - Gjenocidi i Serbisë në Kosovë - aspekte historike, politike dhe juridike",
+          "icon": "https://i.ytimg.com/vi/6IxSuP-f4L4/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIEkoPjAP&rs=AOn4CLCpsZAdLFuD3-gwvBj1ZW_Eh4rpQg",
+          "type": "youtube",
+          "videoId": "6IxSuP-f4L4",
+          "description": "Follow RTK: #rtk #kosovo Promo - Voyage - Gjenocidi i Serbisë në Kosovë - aspekte historike, politike dhe juridike 31.05.2023 ..."
+        },
+        {
+          "id": "doc_kvXPthe_akk",
+          "name": "Voyage - Plani serb “Patkoi”, anatomia e një gjenocidi 13.04.2025",
+          "icon": "https://i.ytimg.com/vi/kvXPthe_akk/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBz4sOyycyz51mUZb6KOfXT5g6hag",
+          "type": "youtube",
+          "videoId": "kvXPthe_akk",
+          "description": "Follow RTK: Voyage - Plani serb “Patkoi”, anatomia e një gjenocidi 13.04.2025 Facebook: ..."
+        },
+        {
+          "id": "doc_NckPYKM-tnE",
+          "name": "GJENOCIDI SERB NË KOSOVË: 53 persona të masakruar në një ditë.Dëshmi e të mbijetuarës Teuta Elshani.",
+          "icon": "https://i.ytimg.com/vi/NckPYKM-tnE/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIF0oUTAP&rs=AOn4CLDO-S6GQWBo32XK_HfjcpKpcQTvVw",
+          "type": "youtube",
+          "videoId": "NckPYKM-tnE",
+          "description": "Inxhinjere Teuta Elshani - Gjenocidi Serb në Kosovë - Si u masakrua shkrimtari Ymer Elshani bashkë me familjen dhe 53 ..."
+        },
+        {
+          "id": "doc_rlG-KVXGtyQ",
+          "name": "AShAK mban konferencën shkencore “Gjenocidi dhe masakrat e Serbisë në Kosovë 1998-1999”  28.04.2023",
+          "icon": "https://i.ytimg.com/vi/rlG-KVXGtyQ/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhkIGQoZDAP&rs=AOn4CLBPyAnCSSA-wxtMw-ryoNvm14q0cQ",
+          "type": "youtube",
+          "videoId": "rlG-KVXGtyQ",
+          "description": "Follow RTK:#AShAK mban konferencën shkencore “Gjenocidi dhe masakrat e Serbisë në Kosovë 1998-1999” 28.04.2023 AShAK ..."
+        },
+        {
+          "id": "doc_45nOg2syuBw",
+          "name": "“Përdhunimet e serbëve” - Rrëfime të llahtarshme, nga ngjarjet e luftës në Kosovë - Top Story",
+          "icon": "https://i.ytimg.com/vi/45nOg2syuBw/hq720.jpg?sqp=-oaymwEiCNAFEJQDSFXyq4qpAxQIARUAAIhCGAFwAcABBu0BZmZmQg==&rs=AOn4CLB-P5CfMA9XqhOP8KF3mDVXVyBrCA",
+          "type": "youtube",
+          "videoId": "45nOg2syuBw",
+          "description": "Qytetet dhe fshatërat në Kosovë, rënkojnë nga plagët e luftës! Serbët nuk kanë kryer vetëm vrasje. Makineria e tyre e luftës ..."
+        },
+        {
+          "id": "doc_11hY-qskcPA",
+          "name": "Në Kosovë vazhdojnë luftimet serbe (04 Gusht 1998)",
+          "icon": "https://i.ytimg.com/vi/11hY-qskcPA/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAlkJrbfNcgb7s5IXxLCwzNEWlhJQ",
+          "type": "youtube",
+          "videoId": "11hY-qskcPA",
+          "description": "Arkiva - Tv Klan 1998-2012; Pamje nga bombardimet serbe ne fshatrat e Kosoves. Sot trupat serbe e shkatëëruan Lekovecin dhe ..."
+        },
+        {
+          "id": "doc_aUrpF2LF9Ss",
+          "name": "+18/Mizoria serbe në Kosovë, flasin te perdhunuarit nga ushtarët e Millosheviçit (Jehona e dhimbjes)",
+          "icon": "https://i.ytimg.com/vi/aUrpF2LF9Ss/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD24_2KPzOzVEnWmd-flenPRWL_dA",
+          "type": "youtube",
+          "videoId": "aUrpF2LF9Ss",
+          "description": "Jehona e dhimbjes”, është dokumentari i radhës, realizuar nga gazetari Andrea Danglli në Euronews Albania, ku trajtohet dhuna ..."
+        },
+        {
+          "id": "doc_As4BpsY6WCM",
+          "name": "Kosova në luftë me kohën për dokumentimin e krimeve serbe",
+          "icon": "https://i.ytimg.com/vi/As4BpsY6WCM/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFEoQjAP&rs=AOn4CLBcwbkNOn1BfNqN18QkzQnuzyvATQ",
+          "type": "youtube",
+          "videoId": "As4BpsY6WCM",
+          "description": "KosovaPress #KosovaPressLive Kosova po synon themelimin e një instituti përmes së cilit do të dokumentohen krimet e kryera ..."
+        },
+        {
+          "id": "doc_AZTXjKzFMlM",
+          "name": "Historia tronditëse e gruas nga Kosova: Barbaria e përdhunimeve në grup nga ushtarët serbë ...",
+          "icon": "https://i.ytimg.com/vi/AZTXjKzFMlM/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhaIFooWjAP&rs=AOn4CLDiKA3kDep_0oFzWYhE1M8nGTTeTw",
+          "type": "youtube",
+          "videoId": "AZTXjKzFMlM",
+          "description": "Pjesë nga dokumentari “Jehona e dhimbjes”, i realizuar nga gazetari i Euroneës Albania Andrea Danglli, ku trajtohet dhuna ..."
+        },
+        {
+          "id": "doc_fbhj34F-3_4",
+          "name": "Thaçi: Serbia ka kryer gjenocid dhe spastrim etnik në Kosovë",
+          "icon": "https://i.ytimg.com/vi/fbhj34F-3_4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDUuAW4n7MU2zcI0uQl3kMVJYiizg",
+          "type": "youtube",
+          "videoId": "fbhj34F-3_4",
+          "description": "Follow RTK:Thaçi: Serbia ka kryer gjenocid dhe spastrim etnik në Kosovë Facebook: http://smarturl.it/RTKfb WEB: ..."
+        },
+        {
+          "id": "doc_EZAaOyoAcjs",
+          "name": "“Mos harro”, ekspozita që dëshmon krimet serbe në Kosovë | ABC News Albania",
+          "icon": "https://i.ytimg.com/vi/EZAaOyoAcjs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCR-Zw3Bjs3h7IKlUPAPj5pMUlesg",
+          "type": "youtube",
+          "videoId": "EZAaOyoAcjs",
+          "description": "Per informacionet me te fundit klikoni: Web: http://abcnews.al/ Facebook: https://www.facebook.com/abcnews.al/ Instagram: ..."
+        },
+        {
+          "id": "doc_Y9XMFMEneDA",
+          "name": "Masakra e Srebrenicës - 28 vjet nga gjenocidi serb",
+          "icon": "https://i.ytimg.com/vi/Y9XMFMEneDA/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIEwoRTAP&rs=AOn4CLBV5iLFZA6OMHIqWzYtSNqxG--grA",
+          "type": "youtube",
+          "videoId": "Y9XMFMEneDA",
+          "description": "Ky është një dokumentar rreth: Masakra e Srebrenicës - 28 vjet nga gjenocidi serb. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_8ICSNdTHBpc",
+          "name": "Kujtimet e luftës - 25 vjet nga urdhri britanik për policin serb - 11.06.2024 - Klan Kosova",
+          "icon": "https://i.ytimg.com/vi/8ICSNdTHBpc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDLY9SYQUcpKfN0eofmcCHmO7N4OA",
+          "type": "youtube",
+          "videoId": "8ICSNdTHBpc",
+          "description": "Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_P4BNUIwtOuY",
+          "name": "Thotë se gjenocidi dhe krimet e Serbisë s'mund të fshihen",
+          "icon": "https://i.ytimg.com/vi/P4BNUIwtOuY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBONU79zlD-d5WMhnjLZt-VliNqvw",
+          "type": "youtube",
+          "videoId": "P4BNUIwtOuY",
+          "description": "Follow RTK: Thotë se gjenocidi dhe krimet e Serbisë s'mund të fshihen Facebook: http://smarturl.it/RTKfb WEB: ..."
+        },
+        {
+          "id": "doc_tj4J1GnVpGs",
+          "name": "Promo - Udhëve - Gjenocidi",
+          "icon": "https://i.ytimg.com/vi/tj4J1GnVpGs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCulsNX3v3aE89iy6FN7DPKjfpxRQ",
+          "type": "youtube",
+          "videoId": "tj4J1GnVpGs",
+          "description": "Follow RTK: Gjenocidi - Promo Udheve Facebook: http://smarturl.it/RTKfb WEB: http://smarturl.it/RTKweb Powered by OnAir.FM."
+        },
+        {
+          "id": "doc_Mrlcj7QQT6g",
+          "name": "Kosovë, hetohet genocidi serb - News, Lajme - Vizion Plus",
+          "icon": "https://i.ytimg.com/vi/Mrlcj7QQT6g/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDUSFb8JwDHS3EzYcNvGw2qnoSnRg",
+          "type": "youtube",
+          "videoId": "Mrlcj7QQT6g",
+          "description": "http://www.vizionplus.tv https://facebook.com/VizionPlusTV https://twitter.com/VizionPlusTV Pas plot 20 vitesh nga lufta e Kosovës, ..."
+        },
+        {
+          "id": "doc_NPYHR7V4-fI",
+          "name": "Krimet e luftës në Kosovë pasqyrohen në tri monografi - 30.05.2017",
+          "icon": "https://i.ytimg.com/vi/NPYHR7V4-fI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLATCN-EYaH3xUHCFsgIywuCcgcDrw",
+          "type": "youtube",
+          "videoId": "NPYHR7V4-fI",
+          "description": "Ky është një dokumentar rreth: Krimet e luftës në Kosovë pasqyrohen në tri monografi - 30.05.2017. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_9S6K98ZNgMw",
+          "name": "Beteja e Pashtrikut, Stërvitja e UÇK-së në Shqipëri dhe Rënia e Mujë Krasniqit | Pjesa 2",
+          "icon": "https://i.ytimg.com/vi/9S6K98ZNgMw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDPY-epulabLfMeDuKs-PB_bksx5Q",
+          "type": "youtube",
+          "videoId": "9S6K98ZNgMw",
+          "description": "Dokumentari sjell më pranë organizimin, sakrificën dhe rrugëtimin e ushtarëve të UÇK-së gjatë atyre viteve. Beteja e Pashtrikut zë ..."
+        },
+        {
+          "id": "doc_Wh9BW7eeykk",
+          "name": "BETEJA E PËRGJAKSHME E PASHTRIKUT / DITARI I LUFTËTARIT TË UÇK",
+          "icon": "https://i.ytimg.com/vi/Wh9BW7eeykk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBrqin8l05prBySKH0wMAWfN01-Ug",
+          "type": "youtube",
+          "videoId": "Wh9BW7eeykk",
+          "description": "Kosova #Albania #UÇK #War #1999 Faleminderit që më ndoqët! Mos harroni të beni subscribe për më shumë video të tjera!"
+        },
+        {
+          "id": "doc_VbL0lBL3Uqw",
+          "name": "Operacioni “Shigjeta”, krejt ÇKA ndodhi në Pashtrik 26 vite më parë– Ora 7",
+          "icon": "https://i.ytimg.com/vi/VbL0lBL3Uqw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC10zTieCUST61HWO3aEm1Y1tjedA",
+          "type": "youtube",
+          "videoId": "VbL0lBL3Uqw",
+          "description": "Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_nM-aZlRwrNc",
+          "name": "Beteja e Lëkursit, Shkurt 1878 - Lidhja e Prizrenit Pjesa I",
+          "icon": "https://i.ytimg.com/vi/nM-aZlRwrNc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBIsspX1cyda2xMPU26pyVasxG-Vg",
+          "type": "youtube",
+          "videoId": "nM-aZlRwrNc",
+          "description": "Një perandori arkaike lufton për mbijetesë. Një popull i lashtë zgjohet nga gjumi shekullor. Grabitqarë të vjetër e të rinj i sillen ..."
+        },
+        {
+          "id": "doc_U0oVQfW-JgE",
+          "name": "Beteja e Pashtrikut ose Operacioni Shigjeta ishte betejë e ashpër ndërmjet UÇK-së dhe forcave serbe",
+          "icon": "https://i.ytimg.com/vi/U0oVQfW-JgE/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhhIGUoUzAP&rs=AOn4CLDkpe3z9bTXINa-pROgPmuHzA5yIQ",
+          "type": "youtube",
+          "videoId": "U0oVQfW-JgE",
+          "description": "Ky është një dokumentar rreth: Beteja e Pashtrikut ose Operacioni Shigjeta ishte betejë e ashpër ndërmjet UÇK-së dhe forcave serbe. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_PJRwOxNOOyY",
+          "name": "Mujë Krasniqi, Pashtrik 13.12.1998",
+          "icon": "https://i.ytimg.com/vi/PJRwOxNOOyY/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhZIFUoZTAP&rs=AOn4CLBfrJgyUc1rWidwfMyBJKx4pfHR1w",
+          "type": "youtube",
+          "videoId": "PJRwOxNOOyY",
+          "description": "Ditën e 13 dhjetorit të dimrit të acartë të vitit 1998, Mujë Krasniqi kishte ndarë mendjen për të çarë kufirin dhe për t`u futur në ..."
+        },
+        {
+          "id": "doc_kGcY1ty0ehY",
+          "name": "Dokumentari  kushtuar Heroit të Kosovës Mujë Krasniqit",
+          "icon": "https://i.ytimg.com/vi/kGcY1ty0ehY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA2dQ_ZpNbefqZMFuoWDXQzT-k65A",
+          "type": "youtube",
+          "videoId": "kGcY1ty0ehY",
+          "description": "Ky dokumentar i kushtzohet njërës prej figurave qendrore të luftës së UÇK-së Komandant Mujë Krasnqit-Kapuçit. Mujë Krasniqi ..."
+        },
+        {
+          "id": "doc_Mo2kpBbNtDs",
+          "name": "A e vuri “Drini” në pritë Mujë Krasniqin? - 27.11.2024 - Klan Kosova",
+          "icon": "https://i.ytimg.com/vi/Mo2kpBbNtDs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDCBK8nUAmbBsYky9PYvTb-eER35g",
+          "type": "youtube",
+          "videoId": "Mo2kpBbNtDs",
+          "description": "Follow Klan Kosova on... • FB: https://smarturl.it/KlanKosovaFb • IG: https://smarturl.it/KlanKosovaIG • YT: ..."
+        },
+        {
+          "id": "doc_UDZz8mh_2GQ",
+          "name": "20 vjet nga Beteja e Pashtrikut - 27.05.2019 - Klan Kosova",
+          "icon": "https://i.ytimg.com/vi/UDZz8mh_2GQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBtMiW3g3RsF9Nib0hdGfl6rK63Sg",
+          "type": "youtube",
+          "videoId": "UDZz8mh_2GQ",
+          "description": "Ky është një dokumentar rreth: 20 vjet nga Beteja e Pashtrikut - 27.05.2019 - Klan Kosova. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_DNE74fRXxjg",
+          "name": "Rrëfimi i tre protagonistëve për betejën e lavdishme ku ra heroikisht Mujë Krasniqi",
+          "icon": "https://i.ytimg.com/vi/DNE74fRXxjg/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB4sDxrLwziomLT_l7ka889J29PDQ",
+          "type": "youtube",
+          "videoId": "DNE74fRXxjg",
+          "description": "Rrëfimi i tre protagonistëve për betejën e lavdishme ku ra heroikisht Mujë Krasniqi Gazetar: Endrit Dragaj Kameraman/Montazher: ..."
+        },
+        {
+          "id": "doc_mT5RLWyR5PQ",
+          "name": "Kthesa e Lavdisë - Dokumentar për Betejen e Kaqandollit",
+          "icon": "https://i.ytimg.com/vi/mT5RLWyR5PQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDL5v0CEoKe01DcdRvOQ-oQKZ3cpQ",
+          "type": "youtube",
+          "videoId": "mT5RLWyR5PQ",
+          "description": "Beteja e Lavdisë - Dokumentar për Betejen e Kaqandollit ✔️ Njoftohu me Video të reja nga TV LLAPI Abonohu duke klikuar ..."
+        },
+        {
+          "id": "doc_NpicnxIedj8",
+          "name": "Prekaz 8 Mars 1998",
+          "icon": "https://i.ytimg.com/vi/NpicnxIedj8/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBW1oenuiWpI8SZu5rFEGJnK-Ti_w",
+          "type": "youtube",
+          "videoId": "NpicnxIedj8",
+          "description": "Ky është një dokumentar rreth: Prekaz 8 Mars 1998. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_4huLOcww3Lk",
+          "name": "🔴 SULMI NË PREKAZ/ “MË PLAGOSËN, NËNA MË THA ‘ÇU'”-HISTORIA E PADËGJUAR E RIAD JASHARIT SI 16-VJEÇAR",
+          "icon": "https://i.ytimg.com/vi/4huLOcww3Lk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDK0wcH0MjCIR2_KiY13J0uYmXiEg",
+          "type": "youtube",
+          "videoId": "4huLOcww3Lk",
+          "description": "SULMI NË PREKAZ/ “MË PLAGOSËN, NËNA MË THA 'ÇU'”- HISTORIA E PADËGJUAR E RIAD JASHARIT SI 16-VJEÇAR ..."
+        },
+        {
+          "id": "doc_k2pBk4_vPgU",
+          "name": "DOKUMENTAR 06.03.2021",
+          "icon": "https://i.ytimg.com/vi/k2pBk4_vPgU/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB1AaAAuADigIMCAAQARhCIFkocjAP&rs=AOn4CLC9YyQmQ0tjwrBsMu9z-CqVhbR6uA",
+          "type": "youtube",
+          "videoId": "k2pBk4_vPgU",
+          "description": "Follow RTK:DOKUMENTAR 06.03.2021 Facebook: http://smarturl.it/RTKfb WEB: http://smarturl.it/RTKweb Powered by OnAir.FM."
+        },
+        {
+          "id": "doc_7BbWvEIHRQs",
+          "name": "Ish-polici dëshmon për masakrën e Prekazit - 16.02.2021 - Klan Kosova",
+          "icon": "https://i.ytimg.com/vi/7BbWvEIHRQs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD9UiFWzsDv2caDWgciaIup19e9ig",
+          "type": "youtube",
+          "videoId": "7BbWvEIHRQs",
+          "description": "Teksti: Besnik Tahiri Pamjet: Unia.info Montazhi: Kushtrim Ferizi Onair Media - https://smarturl.it/Onair.Media Follow Klan Kosova ..."
+        },
+        {
+          "id": "doc_73-gkR4n9bc",
+          "name": "Dëshmitari i masakrës së Prekazit: Jasharajt luftuan 3 ditë me 5000 trupa serbe",
+          "icon": "https://i.ytimg.com/vi/73-gkR4n9bc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDgGoXsoUNc5b2vsLIkj8zFycXYvA",
+          "type": "youtube",
+          "videoId": "73-gkR4n9bc",
+          "description": "Ndiqni faqen tonë zyrtare të internetit https://euronews.al/al për t'u informuar mbi lajmet kryesore nga vendi, rajoni dhe bota."
+        },
+        {
+          "id": "doc_dwUiV6sr3M4",
+          "name": "Rrëfimi ekskluziv i Besarta Jasharit - Si ndodhën rrethimet e kullave të Jasharajve?",
+          "icon": "https://i.ytimg.com/vi/dwUiV6sr3M4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLALwyMThzDWFFZNQzfPJC36fPxFKA",
+          "type": "youtube",
+          "videoId": "dwUiV6sr3M4",
+          "description": "Rrëfimi ekskluziv i Besarta Jasharit - Si ndodhën rrethimet e kullave të Jasharajve? - 25.01.2019 ➖➖➖ Për më shumë na ndiqni ..."
+        },
+        {
+          "id": "doc_00AJ5fXDm_I",
+          "name": "Rrëfimi i Besarta Jasharit për qëndresën e familjes Jashari me 5,6 dhe 7 Mars 1998",
+          "icon": "https://i.ytimg.com/vi/00AJ5fXDm_I/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLBafWtPZtLWICa_nhzmDRSSGBWxPw",
+          "type": "youtube",
+          "videoId": "00AJ5fXDm_I",
+          "description": "Për qëndresën e familjes Jashari më 5, 6 e 7 mars 1998. Fragment nga filmi dokumentar Mbijetesa."
+        },
+        {
+          "id": "doc_wDFUoWozHjo",
+          "name": "N'Demos - Valdet Jashari - i mbijetuari i luftës në Prekaz 11.03.2023",
+          "icon": "https://i.ytimg.com/vi/wDFUoWozHjo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBNHFhx4mrakpBrCIfWBEKuzauJYw",
+          "type": "youtube",
+          "videoId": "wDFUoWozHjo",
+          "description": "N'Demos - Valdet Jashari - i mbijetuari i luftës në Prekaz 11.03.2023 ✔️ Did you subscribe to GazetDemos Official channel?"
+        },
+        {
+          "id": "doc_jV3xLqtIhV0",
+          "name": "PREKAZ 1998: Nje reportazh nga Televizioni Finlandez per vrasjen e familjes Jashari ne mars 1998.",
+          "icon": "https://i.ytimg.com/vi/jV3xLqtIhV0/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlUa6gFT60k-GzYFrmGKNhjlm_bQ",
+          "type": "youtube",
+          "videoId": "jV3xLqtIhV0",
+          "description": "Ky është një dokumentar rreth: PREKAZ 1998: Nje reportazh nga Televizioni Finlandez per vrasjen e familjes Jashari ne mars 1998.. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_qETPTKSQsEA",
+          "name": "Dokumentar \"Serish Drenica\" Prekazi e Likoshani 1998",
+          "icon": "https://i.ytimg.com/vi/qETPTKSQsEA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACbSI6lpQ8sKvYCnNxd_wqVTyYqg",
+          "type": "youtube",
+          "videoId": "qETPTKSQsEA",
+          "description": "https://www.facebook.com/BESFORTVIDEOM1/ Dokumentar nga Nuhi Bytyqi \"Serish Drenica\" rreth Prekazit dhe Likoshanit ne ..."
+        },
+        {
+          "id": "doc_uXvoep-gtps",
+          "name": "UÇK në Zonën  operative të Llapit, Dhjetor 1998",
+          "icon": "https://i.ytimg.com/vi/uXvoep-gtps/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAmK7ipGD3iomhjiwXyetZ2zeqqaQ",
+          "type": "youtube",
+          "videoId": "uXvoep-gtps",
+          "description": "Ky është një dokumentar rreth: UÇK në Zonën  operative të Llapit, Dhjetor 1998. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_zRWMf6jhfqQ",
+          "name": "UÇK në Zonën e Llapit, dhjetor 1998",
+          "icon": "https://i.ytimg.com/vi/zRWMf6jhfqQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC3BnascboXRpmope2jB5X6dUviVQ",
+          "type": "youtube",
+          "videoId": "zRWMf6jhfqQ",
+          "description": "Ky është një dokumentar rreth: UÇK në Zonën e Llapit, dhjetor 1998. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_a2Qt8i341h0",
+          "name": "Luftëtar të UÇK-së Zona Operative e Llapit",
+          "icon": "https://i.ytimg.com/vi/a2Qt8i341h0/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhiIGUoTzAP&rs=AOn4CLB7iQtbmerN7b2-P-PCbwsvIOkXhg",
+          "type": "youtube",
+          "videoId": "a2Qt8i341h0",
+          "description": "Luftëtarë të UÇK-së në Llapashticë janar 1999."
+        },
+        {
+          "id": "doc_joJChfifL0k",
+          "name": "UÇK Zona Operative e Llapit 1998-1999!",
+          "icon": "https://i.ytimg.com/vi/joJChfifL0k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA-r17HTl85pg4TOFUsMfHRbSwllA",
+          "type": "youtube",
+          "videoId": "joJChfifL0k",
+          "description": "UÇK Zona Operative e Llapit!"
+        },
+        {
+          "id": "doc_UKdUBZnjnUw",
+          "name": "Beteja e Llapashticës",
+          "icon": "https://i.ytimg.com/vi/UKdUBZnjnUw/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBwgeAAtAFigIMCAAQARhlIGUoTDAP&rs=AOn4CLAMObHRu9y_g0RrTJMlgEvPtdSF2w",
+          "type": "youtube",
+          "videoId": "UKdUBZnjnUw",
+          "description": "Beteja e Llapashticës."
+        },
+        {
+          "id": "doc_s9q-e557LRk",
+          "name": "Si e mbrojti UÇK-ja Llapashticën nga serbët, më 27 janar 1999",
+          "icon": "https://i.ytimg.com/vi/s9q-e557LRk/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIEkoWTAP&rs=AOn4CLAn43BXfQ7pZgOP0aOzOxcV4yivoA",
+          "type": "youtube",
+          "videoId": "s9q-e557LRk",
+          "description": "KosovaPress iu ofron shërbimin e përditshëm të lajmeve (7 ditë në javë) nga Kosova, rajoni e bota, në fusha të ndryshme të ..."
+        },
+        {
+          "id": "doc_52pjclMyucQ",
+          "name": "Kush ishte snajperisti i UÇK-së në Llap?",
+          "icon": "https://i.ytimg.com/vi/52pjclMyucQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBjCC4pfR1MaqWZX9DX0Fv0de7NwQ",
+          "type": "youtube",
+          "videoId": "52pjclMyucQ",
+          "description": "Follow TËVË1 on... • FB: https://www.facebook.com/teve1.official/ • YT: https://www.youtube.com/@teve1 • IG: ..."
+        },
+        {
+          "id": "doc_gH-WyOt9PP8",
+          "name": "Dokumentar - Ali Ajeti, \"Çeta e Llapit\" në kërkim 19.06.2024",
+          "icon": "https://i.ytimg.com/vi/gH-WyOt9PP8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFYoTTAP&rs=AOn4CLC7PNlG5zr8j_A2us9W50VoDEDBlw",
+          "type": "youtube",
+          "videoId": "gH-WyOt9PP8",
+          "description": "Follow RTK: Dokumentar - Ali Ajeti, \"Çeta e Llapit\" në kërkim 19.06.2024 Facebook: https://shorturl.at/vGHS8 ..."
+        },
+        {
+          "id": "doc_5cmEMYEiu1o",
+          "name": "Zona e Llapit UÇK ku t'na lypni do na gjeni",
+          "icon": "https://i.ytimg.com/vi/5cmEMYEiu1o/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB3gOAAugCigIMCAAQARhlIFgoSDAP&rs=AOn4CLCa3-ODI-LSFUWVuutmdIFVMO2DVg",
+          "type": "youtube",
+          "videoId": "5cmEMYEiu1o",
+          "description": "Ky është një dokumentar rreth: Zona e Llapit UÇK ku t'na lypni do na gjeni. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_a9j6R3DGBW4",
+          "name": "Ja si ushqeheshin ushtarët e UÇK-së në Llap gjatë luftës në vitin 1998",
+          "icon": "https://i.ytimg.com/vi/a9j6R3DGBW4/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA5lhnRMmq7gNm5wofai6t7U_ejsw",
+          "type": "youtube",
+          "videoId": "a9j6R3DGBW4",
+          "description": "Në disa video të cilat janë publikuar nga agjensia amerikane e lajmeve Associated Press në të cilat tregohet për luftën në Kosovë."
+        },
+        {
+          "id": "doc_-SZlEiAm6Lo",
+          "name": "Zona Operative e LLapit",
+          "icon": "https://i.ytimg.com/vi/-SZlEiAm6Lo/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAgvVUNS4DgnXpMMAWl2KaC3oYTZw",
+          "type": "youtube",
+          "videoId": "-SZlEiAm6Lo",
+          "description": "Betimi i Ushtareve te LLapit."
+        },
+        {
+          "id": "doc_CSHQCPcQG10",
+          "name": "Lufta e UÇK-së ZOLL - Janar 1999 -rënja e Dëshmorit Driton Azemi",
+          "icon": "https://i.ytimg.com/vi/CSHQCPcQG10/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhlIFcoVDAP&rs=AOn4CLA0g8XLA-xhkvTTb6ZD3uqLwCnatw",
+          "type": "youtube",
+          "videoId": "CSHQCPcQG10",
+          "description": "Raport nga lufta e UÇK-së ZOLL - Janar 1999 -rnja e Dëshmorit Driton Azemi Created with Video Easy RYVT Edition."
+        },
+        {
+          "id": "doc_rFY5X1NGKPo",
+          "name": "GRUPI I LLAPIT-GJYKATA E EULEX DENON ME BURGIM ISH LUFTETARET E UÇK LAJM",
+          "icon": "https://i.ytimg.com/vi/rFY5X1NGKPo/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAAgXl7iwT56yLrI_o8V4Jxdb3FhA",
+          "type": "youtube",
+          "videoId": "rFY5X1NGKPo",
+          "description": "7NEWS - kanal informativ Shqiptar - Tring TV https://www.7news.tring.tv https://www.facebook.com/Tringnews7 ..."
+        },
+        {
+          "id": "doc_ZtCEMr3YIr4",
+          "name": "PËRURIMI I KOMPLEKSIT TË VARREZAVE TË DËSHMORËVE TË LLAPIT , UÇK-së, ZONA OPERATIVE E LLAPIT! 5 maj",
+          "icon": "https://i.ytimg.com/vi/ZtCEMr3YIr4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAnLQKD66N2KhyNmTgPy0EdigqPdQ",
+          "type": "youtube",
+          "videoId": "ZtCEMr3YIr4",
+          "description": "PËRURIMI I KOMPLEKSIT TË VARREZAVE TË DËSHMORËVE TË LLAPIT , UÇK-së, ZONA OPERATIVE E LLAPIT! 5 maj 2018 ..."
+        },
+        {
+          "id": "doc_iCsjobJNbck",
+          "name": "Afrim (Zeqir) Retkoceri, veteran i UÇK-së, Zona Operative e Llapit",
+          "icon": "https://i.ytimg.com/vi/iCsjobJNbck/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAHJV7lD20YM2tZbQNAfcOl8ZFmHA",
+          "type": "youtube",
+          "videoId": "iCsjobJNbck",
+          "description": "Follow RTK: Afrim (Zeqir) Retkoceri, veteran i UÇK-së, Zona Operative e Llapit Facebook: http://smarturl.it/RTKfb WEB: ..."
+        },
+        {
+          "id": "doc_xOsQFqUgphc",
+          "name": "LIRIA KA EMËR - PËRPARIM CURRI - Brigada \"Shaban Shala\"/ Zona Operative e Llapit",
+          "icon": "https://i.ytimg.com/vi/xOsQFqUgphc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBrMiPxrCLs-ToLd-fYVbcQjWs24g",
+          "type": "youtube",
+          "videoId": "xOsQFqUgphc",
+          "description": "Follow RTK: Facebook: http://smarturl.it/RTKfb WEB: http://smarturl.it/RTKweb LIRIA KA EMËR - PËRPARIM CURRI - Brigada ..."
+        },
+        {
+          "id": "doc_MRtUWs30Kt4",
+          "name": "Zënja rob e 8 ushtarve serb nga UÇK-ja ZO e Shalës , janar 1999",
+          "icon": "https://i.ytimg.com/vi/MRtUWs30Kt4/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhlIGAoVTAP&rs=AOn4CLB6uMCMZ0MVa4TWXPnn_osowXF1NA",
+          "type": "youtube",
+          "videoId": "MRtUWs30Kt4",
+          "description": "Zënja rob e 8 ushtarve serb nga UÇK-së ZO e Shalës , janar 1999 Created with Video Easy RYVT Edition."
+        },
+        {
+          "id": "doc_uG2Ojdpc38o",
+          "name": "A pati korrektësi në listat e veteranëve në Llap",
+          "icon": "https://i.ytimg.com/vi/uG2Ojdpc38o/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAMAgVuejQBx0Pq6RUA9c68RXbgFQ",
+          "type": "youtube",
+          "videoId": "uG2Ojdpc38o",
+          "description": "Në listat e veteranëve të UCK-së po del të ketë edhe persona që në kohën e luftës ishin fëmijë. Kjo po bënë që ish luftëtarë të ..."
+        },
+        {
+          "id": "doc_g_dNLr7oDgA",
+          "name": "LIRIA KA EMËR - SHAQIR BUNJAKU - Njësiti D109/ Zona Operative e Llapit 11.12.2020",
+          "icon": "https://i.ytimg.com/vi/g_dNLr7oDgA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC-rRdSHxltVESEB0kkwv5zs5b94A",
+          "type": "youtube",
+          "videoId": "g_dNLr7oDgA",
+          "description": "Follow RTK: Facebook: http://smarturl.it/RTKfb WEB: http://smarturl.it/RTKweb Powered by OnAir.FM."
+        },
+        {
+          "id": "doc_0qk32FMhxZs",
+          "name": "Pika e kontrollit e UÇK në Z O  e Drenicës, Baicë 1998",
+          "icon": "https://i.ytimg.com/vi/0qk32FMhxZs/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7svmiaR4OpcfHsq_RiQ8swkTqNQ",
+          "type": "youtube",
+          "videoId": "0qk32FMhxZs",
+          "description": "Post blloku i UÇK-së, në Baicë. 1998."
+        },
+        {
+          "id": "doc_oL0ZqbmUJ0k",
+          "name": "Fadil Hyseni n'DEMOS | Rrëfimi i invalidit të UÇK-së për luftën dhe mbijetesën",
+          "icon": "https://i.ytimg.com/vi/oL0ZqbmUJ0k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD84wPIcE5AGG15UmEguvsz6qrAcA",
+          "type": "youtube",
+          "videoId": "oL0ZqbmUJ0k",
+          "description": "Na ndiqni në rrjetet tona sociale: Facebook: https://www.facebook.com/NeDemos TikTok: https://www.tiktok.com/@gazetademos ..."
+        },
+        {
+          "id": "doc_FpTndzYIIzw",
+          "name": "GRUPI I DRENICES EULEX NGRE AKTAKUZEN PER 15 ISH LUFTETARE TE UÇK LAJM",
+          "icon": "https://i.ytimg.com/vi/FpTndzYIIzw/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB0A4WItOyN6d2NVcTl9jXJaU9-4g",
+          "type": "youtube",
+          "videoId": "FpTndzYIIzw",
+          "description": "7NEWS - kanal informativ Shqiptar - Tring TV https://www.7news.tring.tv https://www.facebook.com/Tringnews7 ..."
+        },
+        {
+          "id": "doc_OMt2UtkrF8w",
+          "name": "Ushtarët e UÇK-së në Bjeshkët e Pashtrikut",
+          "icon": "https://i.ytimg.com/vi/OMt2UtkrF8w/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFsoVDAP&rs=AOn4CLBJAlRaA0FrFkuqbEnGnre8BWrTBg",
+          "type": "youtube",
+          "videoId": "OMt2UtkrF8w",
+          "description": "Arkivues : Esat Shala."
+        },
+        {
+          "id": "doc_JfE3I3gA2hc",
+          "name": "Kamion i forcave terroriste serbe i shkatrruar teresishte ne  Terdevc 11  04  1999",
+          "icon": "https://i.ytimg.com/vi/JfE3I3gA2hc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDHeTxn54SjHknY7AdOKr9catSxlg",
+          "type": "youtube",
+          "videoId": "JfE3I3gA2hc",
+          "description": "Ne kete sulm mbeten te vrare 18 terroriste serb, armatimi i tyre fatkeqesishte ishte i teri i shaktrruar nga eksplodimi! -Ngjarja ka ..."
+        },
+        {
+          "id": "doc_1U5lUUxy_N8",
+          "name": "Dëshmorët e Kombit - Ushtria Çlirimtare e Kosovës (UÇK) (Pjesa I)",
+          "icon": "https://i.ytimg.com/vi/1U5lUUxy_N8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARg3IE8ofzAP&rs=AOn4CLCdnfs7rvBnEPuf5me8BQv3HR-22g",
+          "type": "youtube",
+          "videoId": "1U5lUUxy_N8",
+          "description": "Dëshmorët e Kombit, të rënë gjatë luftës çlirimtare të Ushtrisë Çlirimtare të Kosovës."
+        },
+        {
+          "id": "doc_A_X1dUcsC-A",
+          "name": "Guri i Llapushnikut 2",
+          "icon": "https://i.ytimg.com/vi/A_X1dUcsC-A/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARheIF4oXjAP&rs=AOn4CLAFPy3FgMBIujI7O1HnVwoChplDxA",
+          "type": "youtube",
+          "videoId": "A_X1dUcsC-A",
+          "description": "Koha gjate ndrrimeve te ushtareve nga pozicionet e luftes rreth maleve te Berishes mbi Llapushnik 1999."
+        },
+        {
+          "id": "doc_SFbve_wLoXk",
+          "name": "Ushtart e zones operative te nerodimes",
+          "icon": "https://i.ytimg.com/vi/SFbve_wLoXk/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBG3Xva2W4Oibr7Q-4mU5VHVz4oww",
+          "type": "youtube",
+          "videoId": "SFbve_wLoXk",
+          "description": "02 10 2018."
+        },
+        {
+          "id": "doc_EnXsAUYE1Oo",
+          "name": "UÇK ne akcion 1999",
+          "icon": "https://i.ytimg.com/vi/EnXsAUYE1Oo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCSxlqk5z6LWXrV0Ii-i4VPBfD5Wg",
+          "type": "youtube",
+          "videoId": "EnXsAUYE1Oo",
+          "description": "Facebook: https://www.facebook.com/OVLFaqjaZyrtare Të gjitha të drejtat e rezervuara © 2018 OVL (Organizatës së Veteranëve ..."
+        },
+        {
+          "id": "doc_Fh634HIAFNI",
+          "name": "Perballja UÇK së me forcat serrbe 1998",
+          "icon": "https://i.ytimg.com/vi/Fh634HIAFNI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC4De1YVfGgWkHBb7FZCsC-kzVjSQ",
+          "type": "youtube",
+          "videoId": "Fh634HIAFNI",
+          "description": "Facebook: https://www.facebook.com/OVLFaqjaZyrtare Të gjitha të drejtat e rezervuara © 2018 OVL (Organizatës së Veteranëve ..."
+        },
+        {
+          "id": "doc_bYU-oMgJ1Nc",
+          "name": "Drenic 15 Maj 1998",
+          "icon": "https://i.ytimg.com/vi/bYU-oMgJ1Nc/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgBrgOAAsQCigIMCAAQARhlIFwoPjAP&rs=AOn4CLAczDAiJ-ZDriqo9Ry401frnUT-sw",
+          "type": "youtube",
+          "videoId": "bYU-oMgJ1Nc",
+          "description": "Ky është një dokumentar rreth: Drenic 15 Maj 1998. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_ckMyNvGAc3Q",
+          "name": "Guri i Llapushnikut 1999",
+          "icon": "https://i.ytimg.com/vi/ckMyNvGAc3Q/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAfB74qXWUxVmMl3qvpG8GeaaAe5w",
+          "type": "youtube",
+          "videoId": "ckMyNvGAc3Q",
+          "description": "Luftime ne Gryken e Llapushnikut, biseda me radiolidhje UCK-Forcat serbe."
+        },
+        {
+          "id": "doc_qRcMmPtMlZA",
+          "name": "Lufta e UÇK-së ZOLL, janar 1999",
+          "icon": "https://i.ytimg.com/vi/qRcMmPtMlZA/hqdefault.jpg?sqp=-oaymwE2COADEI4CSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gSAAuADigIMCAAQARhlIFUoUDAP&rs=AOn4CLAoRYwk-yZ3cLyfgL01JuyKzfIh0w",
+          "type": "youtube",
+          "videoId": "qRcMmPtMlZA",
+          "description": "Lufta e UÇK-së ZOLL, janar 1999 Created with Video Easy RYVT Edition."
+        },
+        {
+          "id": "doc_XGoh7E7koKE",
+          "name": "uçk pashtrik op.shigjeta d.t.2.brigada e fekenit",
+          "icon": "https://i.ytimg.com/vi/XGoh7E7koKE/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAecG4C_k0WUhiZbaHVlO300LCDrw",
+          "type": "youtube",
+          "videoId": "XGoh7E7koKE",
+          "description": "Ky është një dokumentar rreth: uçk pashtrik op.shigjeta d.t.2.brigada e fekenit. (Përshkrimi i plotë nuk është i disponueshëm në YouTube, por ofron pamje dhe dëshmi nga ngjarjet)."
+        },
+        {
+          "id": "doc_FblTwMBnagU",
+          "name": "LIRIA KA EMËR, rrëfimi i jashtëzakonshëm i Hamide Xhemajli, një prej ushtareve të para të UÇK-së",
+          "icon": "https://i.ytimg.com/vi/FblTwMBnagU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD8SEwTev85zJ4DVmeg0j2OvVsVgw",
+          "type": "youtube",
+          "videoId": "FblTwMBnagU",
+          "description": "KosovaPress #KosovaPressLive Hamide Xhemajli-Ferizi, nga Drenica, kishte qenë vetëm 19-vjeçare kur i ishte bashkuar ..."
+        },
+        {
+          "id": "doc_qXyYHPfMuDk",
+          "name": "UÇK shkatërron tankun serb",
+          "icon": "https://i.ytimg.com/vi/qXyYHPfMuDk/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDYTASI85fTtQ7vOvGBQPNPPGnw-g",
+          "type": "youtube",
+          "videoId": "qXyYHPfMuDk",
+          "description": "Batalioni i parë Brigada 142 ZO e Shalës."
+        }
+      ]
     }
   ]
 }
