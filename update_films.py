@@ -146,34 +146,67 @@ def save_config(data):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
+FILM_ICONS = {
+    "edhe-malet-flasin": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/edhemalet.jpg",
+    "rrugt-e-lirise": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rrugeteliris.jpg",
+    "bashkallajk": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bashkallajk.jpg",
+    "nusja-me-shkolle": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/nusjameshkoll.jpg",
+}
+
+SECTION_ICON = "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/filmashqip.jpg"
+
+
 def ensure_group(data):
-    tv = next((s for s in data.get("sections", []) if s.get("id") == "tv"), None)
-    if tv is None:
-        return False
     changed = False
-    items = tv.setdefault("items", [])
-    group = next((i for i in items if i.get("id") == GROUP_ID), None)
-    if group is None:
-        group = {"id": GROUP_ID, "title": "Filma Shqip", "subtitle": "Filme shqiptare",
-                 "icon": "", "type": "group", "items": []}
-        items.append(group)
-        changed = True
-    sub = group.setdefault("items", [])
-    for film in FILMS:
-        if not any(i.get("id") == film["id"] for i in sub):
-            sub.append({"id": film["id"], "name": film["name"], "icon": "",
-                        "type": "offline", "message": OFFLINE_MESSAGE})
+    sections = data.setdefault("sections", [])
+
+    # 1. Se filma-shqip è stato inserito dentro 'tv' per errore, lo rimuoviamo
+    tv = next((s for s in sections if s.get("id") == "tv"), None)
+    if tv and "items" in tv:
+        old_len = len(tv["items"])
+        tv["items"] = [i for i in tv["items"] if i.get("id") != GROUP_ID]
+        if len(tv["items"]) != old_len:
             changed = True
+
+    # 2. Cerca o crea la sezione principale 'filma-shqip' tra i grandi gruppi esterni
+    section = next((s for s in sections if s.get("id") == GROUP_ID), None)
+    if section is None:
+        section = {
+            "id": GROUP_ID,
+            "title": "Filma Shqip",
+            "subtitle": "Filme shqiptare",
+            "icon": SECTION_ICON,
+            "items": []
+        }
+        sections.append(section)
+        changed = True
+
+    sub = section.setdefault("items", [])
+    for film in FILMS:
+        item = next((i for i in sub if i.get("id") == film["id"]), None)
+        icon = FILM_ICONS.get(film["id"], "")
+        if item is None:
+            sub.append({
+                "id": film["id"],
+                "name": film["name"],
+                "icon": icon,
+                "type": "offline",
+                "message": OFFLINE_MESSAGE
+            })
+            changed = True
+        elif not item.get("icon") and icon:
+            item["icon"] = icon
+            changed = True
+
     return changed
 
 
 def find_item(data, item_id):
     for section in data.get("sections", []):
-        for item in section.get("items", []):
-            if item.get("id") == GROUP_ID:
-                for sub in item.get("items", []):
-                    if sub.get("id") == item_id:
-                        return sub
+        if section.get("id") == GROUP_ID:
+            for item in section.get("items", []):
+                if item.get("id") == item_id:
+                    return item
     return None
 
 
@@ -531,6 +564,8 @@ def set_link(item, info, url, now):
     item["linkUpdated"] = iso(now)
     item.pop("message", None)
     item.pop("pageUrl", None)
+    if not item.get("icon") and item.get("id") in FILM_ICONS:
+        item["icon"] = FILM_ICONS[item["id"]]
 
 
 def do_refresh(item, now):
