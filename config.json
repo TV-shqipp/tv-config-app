@@ -259,11 +259,13 @@
           "name": "Nusja me shkollë",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/nusjameshkoll.jpg",
           "type": "hls",
-          "lastTry": "2026-10-25T22:55:41+00:00",
+          "lastTry": "2026-10-31T19:42:10+00:00",
           "url": "",
-          "videoId": "a2TGTST34-A",
-          "videoTitle": "Nusja me shkollë - Episoda 81 (Tregim Popullor)",
-          "state": "vod"
+          "videoId": "aHpah5N_dJk",
+          "videoTitle": "Nusja me shkollë - Episoda 82 (Tregim Popullor)",
+          "state": "vod",
+          "linkUpdated": "2026-10-31T19:42:10+00:00",
+          "week": "2026-10-31T20:30:00+01:00"
         }
       ]
     },
