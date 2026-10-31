@@ -238,43 +238,6 @@
               "pageUrl": "https://www.rtklive.com/sq/livestream/rtk4/"
             }
           ]
-        },
-        {
-          "id": "filma-shqip",
-          "title": "Filma Shqip",
-          "subtitle": "Filme shqiptare",
-          "icon": "",
-          "type": "group",
-          "items": [
-            {
-              "id": "edhe-malet-flasin",
-              "name": "Edhe malet flasin",
-              "icon": "",
-              "type": "offline",
-              "message": "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
-            },
-            {
-              "id": "rrugt-e-lirise",
-              "name": "Rrugët e Lirisë",
-              "icon": "",
-              "type": "offline",
-              "message": "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
-            },
-            {
-              "id": "bashkallajk",
-              "name": "Bashkallajk",
-              "icon": "",
-              "type": "offline",
-              "message": "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
-            },
-            {
-              "id": "nusja-me-shkolle",
-              "name": "Nusja me shkollë",
-              "icon": "",
-              "type": "offline",
-              "message": "Il film di questa settimana non è ancora disponibile.\nRiprova più tardi."
-            }
-          ]
         }
       ]
     },
@@ -398,7 +361,7 @@
               "name": "Chelsea - Manchester United",
               "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Chelsea_FC.svg_.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://healthfirstin.com/albaplayer/exactly-what-to-eat-before-and-after-your-workout/?serv=5",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/chelsea-man-united",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             },
@@ -407,7 +370,7 @@
               "name": "Levante - Atletico Madrid",
               "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Levante_Union_Deportiva.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://healthfirstin.com/albaplayer/5-subtle-red-flags-your-body-is-sending-you/?serv=5",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/levante-atletico-madrid",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             },
@@ -461,7 +424,7 @@
               "name": "Barcelona - Alaves",
               "icon": "https://kosovari.online/wp-content/uploads/2026/02/FC_Barcelona_crest.svg_.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/barcelona-alaves",
+              "pageUrl": "https://kosovari.online/matches/barcelona/",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             }
