@@ -101,7 +101,7 @@
         {
           "id": "top-news",
           "name": "Top News",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/top-news.png",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/top-news.jpg",
           "type": "dynamic_hls",
           "pageUrl": "https://top-channel.tv/topnewslive/",
           "referer": "https://top-channel.tv/"
@@ -109,7 +109,7 @@
         {
           "id": "mcn-tv",
           "name": "MCN TV",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/mcn-tv.png",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/mcn-tv.jpg",
           "type": "dynamic_hls",
           "pageUrl": "https://mcntv.al/articles/live",
           "referer": "https://mcntv.al/"
@@ -117,7 +117,7 @@
         {
           "id": "news-24",
           "name": "News 24",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/news-24.png",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/news-24.jpg",
           "type": "dynamic_hls",
           "pageUrl": "https://livetvcentral.com/tv/news-24-albania",
           "referer": "https://livetvcentral.com/"
@@ -125,7 +125,7 @@
         {
           "id": "vizion-plus",
           "name": "Vizion Plus",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/vizion-plus.png",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/vizion-plus.jpg",
           "type": "dynamic_hls",
           "pageUrl": "https://www.vizionplus.tv/live/",
           "referer": "https://www.vizionplus.tv/"
@@ -141,7 +141,7 @@
         {
           "id": "rtv-besa",
           "name": "RTV Besa",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtv-besa.png",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rtv-besa.jpg",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live-n1/ehn-g2o-v7w-nh4/index.m3u8",
           "referer": "https://video.gjirafa.com/"
@@ -149,7 +149,7 @@
         {
           "id": "zeri-2",
           "name": "Zëri TV",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/zeri.png",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/zeri.jpg",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live-n1/jo8-76n-lmx-tv0/index.m3u8",
           "referer": "https://video.gjirafa.com/"
@@ -157,7 +157,7 @@
         {
           "id": "zico-tv",
           "name": "Zico TV",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/zico-tv.png",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/zico-tv.jpg",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/j3a-n14-2pf-g3s/index.m3u8",
           "referer": "https://video.gjirafa.com/"
@@ -197,7 +197,7 @@
         {
           "id": "syri-vision",
           "name": "Syri Vision",
-          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/syri-vision.png",
+          "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/syri-vision.jpg",
           "type": "hls",
           "url": "https://gjirafa-video-live.gjirafa.net/gjvideo-live/xej-xnb-ba0-kup/index.m3u8",
           "referer": "https://video.gjirafa.com/"
@@ -471,7 +471,7 @@
               "name": "Barcelona - Alaves",
               "icon": "https://kosovari.online/wp-content/uploads/2026/02/FC_Barcelona_crest.svg_.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/barcelona-alaves",
+              "pageUrl": "https://kosovari.online/matches/barcelona/",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             }
