@@ -401,6 +401,15 @@
               "pageUrl": "https://sites.google.com/view/dailyroutineexercise/juventus-napoli",
               "referer": "https://kosovari.online/",
               "forceWeb": true
+            },
+            {
+              "id": "sport-formula-1---formula-1",
+              "name": "Formula 1 - Formula 1",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/03/formula-1-logo-png_seeklogo-330361.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/mexico-grand-prix",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
             }
           ]
         },
