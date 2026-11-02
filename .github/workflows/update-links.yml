@@ -5,9 +5,9 @@ on:
     - cron: "0 */3 * * *"
   workflow_dispatch:
 
-# Evita che due esecuzioni di questo workflow si sovrappongano
+# Tutti i workflow che scrivono config.json usano lo stesso gruppo
 concurrency:
-  group: update-links
+  group: config-update
   cancel-in-progress: false
 
 permissions:
