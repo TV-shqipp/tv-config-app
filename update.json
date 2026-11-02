@@ -1,6 +1,6 @@
 {
-  "versionCode": 9,
-  "versionName": "2.7",
+  "versionCode": 10,
+  "versionName": "2.8",
   "apkUrl": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/app-release.apk",
   "releaseNotes": "Fixed bugs."
 }
