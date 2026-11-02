@@ -68,6 +68,10 @@ FILMS = [
      "channel": "@DTVOff", "day": 5, "time": "20:30",
      "live": True, "recheck_after": 120,
      "keywords": ["nusja me shkollë"], "exclude": ["promo"]},
+    {"id": "logjikonomia", "name": "Logjikonomia",
+     "channel": "@teve1", "day": 6, "time": "20:45",
+     "live": True, "recheck_after": 120,
+     "keywords": ["logjikonomia"], "exclude": ["promo"]},
 ]
 
 FORCE = os.environ.get("FORCE", "").lower() == "true" or "--force" in sys.argv
@@ -151,6 +155,7 @@ FILM_ICONS = {
     "rrugt-e-lirise": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rrugeteliris.jpg",
     "bashkallajk": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/bashkallajk.jpg",
     "nusja-me-shkolle": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/nusjameshkoll.jpg",
+    "logjikonomia": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/logjikonomia.jpg",
 }
 
 SECTION_ICON = "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/filmashqip.jpg"
