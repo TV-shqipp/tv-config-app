@@ -1,0 +1,81 @@
+name: Aggiorna canali KosovaTV
+
+on:
+  schedule:
+    - cron: '17 */6 * * *' # Ogni 6 ore, UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  # Condivide il gruppo già usato dal workflow update_films.yml.
+  group: config-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      REPORT: ${{ runner.temp }}/kosovatv-result.json
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Verifica strumenti
+        shell: bash
+        run: |
+          if ! command -v ffprobe >/dev/null || ! command -v curl >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg curl
+          fi
+
+      - name: Risolvi e verifica gli 11 canali
+        run: python update_kosovatv.py --resolve "$REPORT"
+
+      - name: Aggiorna solo config.json e pubblica
+        shell: bash
+        run: |
+          # Il report resta in RUNNER_TEMP anche quando riallineiamo il checkout.
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            # Solo il checkout temporaneo del runner. Gli altri workflow possono
+            # avere pubblicato film/sport: riapplichiamo il report all'ultimo config.
+            git reset --hard origin/main
+            status=0
+            python update_kosovatv.py --config config.json --apply "$REPORT" || status=$?
+            if [[ "$status" -gt 1 ]]; then exit "$status"; fi
+            if git diff --quiet -- config.json; then
+              echo "Nessuna modifica al config"
+              exit 0
+            fi
+            git add -- config.json
+            git commit -m "Aggiorna canali KosovaTV"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((attempt * 3))
+          done
+          echo "Push non riuscito dopo 5 tentativi"
+          exit 1
+
+      - name: Segnala canali non verificati
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, os
+          from update_kosovatv import TARGETS
+          with open(os.environ['REPORT'], encoding='utf-8') as f:
+              results = json.load(f)['results']
+          failed = [name for key, name, *_ in TARGETS if 'url' not in results.get(key, {})]
+          if failed:
+              raise SystemExit('Controlli falliti (valori precedenti conservati): ' + ', '.join(failed))
+          print('Tutti gli 11 canali verificati')
+          PY
