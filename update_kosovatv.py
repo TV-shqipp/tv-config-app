@@ -24,10 +24,10 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0.
 ICON_BASE = "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/"
 # key, nome, alias sul sito, ID locali, contenitore, icona di riserva
 TARGETS = [
-    ("rtk1", "RTK 1", ("rtk1",), ("rtk1",), "rtk-group", "rtk-1.png"),
-    ("rtk2", "RTK 2", ("rtk2",), ("rtk2",), "rtk-group", "rtk-2.png"),
-    ("rtk3", "RTK 3", ("rtk3",), ("rtk3",), "rtk-group", "rtk-3.png"),
-    ("rtk4", "RTK 4", ("rtk4",), ("rtk4",), "rtk-group", "rtk-4.png"),
+    ("rtk1", "RTK 1", ("rtk1",), ("rtk1",), "tv", "rtk-1.png"),
+    ("rtk2", "RTK 2", ("rtk2",), ("rtk2",), "tv", "rtk-2.png"),
+    ("rtk3", "RTK 3", ("rtk3",), ("rtk3",), "tv", "rtk-3.png"),
+    ("rtk4", "RTK 4", ("rtk4",), ("rtk4",), "tv", "rtk-4.png"),
     ("dukagjini", "TV Dukagjini", ("dukagjini", "tvdukagjini"), ("tv-dukagjini",), "tv", "dukagjini.jpg"),
     ("teve1", "Tëvë 1", ("teve1",), ("teve1", "teve-1", "teve"), "tv", ""),
     ("top-channel", "Top Channel", ("topchannel",), ("top-channel",), "tv", ""),
@@ -173,6 +173,33 @@ def walk(nodes):
         yield from walk(node.get("items", []))
 
 
+def order_tv_items(items):
+    """RTK nella lista principale; i canali locali richiesti restano in fondo."""
+    flat = []
+    for item in items:
+        if item.get("id") == "rtk-group":
+            flat.extend(item.get("items", []))
+        else:
+            flat.append(item)
+    rtk_ids = ("rtk1", "rtk2", "rtk3", "rtk4")
+    added_ids = ("teve1", "teve-1", "teve", "top-channel", "klan-tv", "klan-plus")
+    tail_ids = ("tv-prizreni", "rtv-besa", "zeri-2", "zico-tv", "tv-news",
+                "arta-news", "a2-cnn", "euronews-albania", "syri-vision")
+    moved_ids = set(rtk_ids + added_ids + tail_ids)
+    main = [item for item in flat if item.get("id") not in moved_ids]
+    rtk = sorted((item for item in flat if item.get("id") in rtk_ids),
+                 key=lambda item: rtk_ids.index(item["id"]))
+    # RTK Sat resta già visibile; RTK 1-4 vengono subito dopo.
+    position = next((i + 1 for i, item in enumerate(main)
+                     if item.get("id") == "rtk-sat"), len(main))
+    main[position:position] = rtk
+    added = sorted((item for item in flat if item.get("id") in added_ids),
+                   key=lambda item: added_ids.index(item["id"]))
+    tail = sorted((item for item in flat if item.get("id") in tail_ids),
+                  key=lambda item: tail_ids.index(item["id"]))
+    return main + added + tail
+
+
 def merge(config, report):
     """Applica solo gli esiti validi; mantiene gruppi, ID, icone ed altri contenuti."""
     out = copy.deepcopy(config)
@@ -195,12 +222,8 @@ def merge(config, report):
         if not items:
             parent = next((n for n in nodes if n.get("id") == parent_id), None)
             if parent is None:
-                if parent_id == "rtk-group":
-                    parent = {"id": parent_id, "title": "Rtk-Group", "type": "group", "items": []}
-                    tv["items"].append(parent)
-                else:
-                    parent = {"id": parent_id, "title": "Big Brother VIP Kosova", "items": []}
-                    out["sections"].append(parent)
+                parent = {"id": parent_id, "title": "Big Brother VIP Kosova", "items": []}
+                out["sections"].append(parent)
                 nodes.append(parent)
             item = {"id": ids[0], "name": name,
                     "icon": ICON_BASE + icon if icon else result.get("logo", "")}
@@ -213,6 +236,7 @@ def merge(config, report):
             for field in ("pageUrl", "forceWeb", "externalBrowser", "videoId", "liveVideoId", "userAgent"):
                 item.pop(field, None)
             item.update(type="hls", url=url, referer=BASE, userAgent=UA)
+    tv["items"] = order_tv_items(tv["items"])
     if out != config:
         version = config.get("version", 0)
         if type(version) is not int:
