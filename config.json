@@ -379,62 +379,7 @@
           "subtitle": "AlbaPlayer / Server 1..7",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
           "type": "group",
-          "items": [
-            {
-              "id": "sport-galatasaray---stuttgart",
-              "name": "Galatasaray - Stuttgart",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyeyryer.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/galatasaray-stuttgart",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-atletico-madrid---bayern-munich",
-              "name": "Atletico Madrid - Bayern Munich",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reryery.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/atletico-madrid-bayern-munich",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-barcelona---aston-villa",
-              "name": "Barcelona - Aston Villa",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/FC_Barcelona_crest.svg_.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://healthfirstin.com/albaplayer/exactly-what-to-eat-before-and-after-your-workout/?serv=5",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-feyenoord---inter",
-              "name": "Feyenoord - Inter",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/09/Feyenoord_logo_since_2024.svg_.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/feyenoord-inter",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-manchester-united---roma",
-              "name": "Manchester United - Roma",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/Manchester_United_FC_crest.svg_.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/man-united-roma",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-villarreal---psg",
-              "name": "Villarreal - PSG",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Villarreal_CF_logo-en.svg_.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/villarreal-psg",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            }
-          ]
+          "items": []
         },
         {
           "id": "sport-damitv",
