@@ -397,6 +397,42 @@
               "pageUrl": "https://sites.google.com/view/dailyroutineexercise/fenerbahce-liverpool",
               "referer": "https://kosovari.online/",
               "forceWeb": true
+            },
+            {
+              "id": "sport-borussia-dortmund---betis",
+              "name": "Borussia Dortmund - Betis",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyreyery.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/dortmund-betis",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-porto---napoli",
+              "name": "Porto - Napoli",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/03/fc-porto-logo-vector-free-11574119503etmyqqlj6g.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/porto-napoli",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-leipzig---manchester-city",
+              "name": "Leipzig - Manchester City",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/RB_Leipzig_2014_logo.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/leipzig-man-city",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-slavia---arsenal",
+              "name": "Slavia - Arsenal",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/10/SK_Slavia_Praha_full_logo.svg_.webp",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/slavia-prague-arsenal",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
             }
           ]
         },
