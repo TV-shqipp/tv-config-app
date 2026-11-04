@@ -379,7 +379,26 @@
           "subtitle": "AlbaPlayer / Server 1..7",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
           "type": "group",
-          "items": []
+          "items": [
+            {
+              "id": "sport-aek---real-madrid",
+              "name": "AEK - Real Madrid",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/10/AEK_Athens_FC_logo.svg_.webp",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/aek-real-madrid",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-fenerbahce---liverpool",
+              "name": "Fenerbahce - Liverpool",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Fenerbahce.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/fenerbahce-liverpool",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            }
+          ]
         },
         {
           "id": "sport-damitv",
