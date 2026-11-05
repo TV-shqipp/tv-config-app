@@ -379,7 +379,35 @@
           "subtitle": "AlbaPlayer / Server 1..7",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
           "type": "group",
-          "items": []
+          "items": [
+            {
+              "id": "sport-milan---ferencvaros",
+              "name": "Milan - Ferencvaros",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/eryreyeryy.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/milan-ferencvaros",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-crystal-palace---hoffenheim",
+              "name": "Crystal Palace - Hoffenheim",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Crystal_Palace_FC_logo_20.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/crystal-palace-hoffenheim",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-az-alkmaar---juventus",
+              "name": "AZ Alkmaar - Juventus",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/11/AZ_Alkmaar.svg_.webp",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/az-alkmaar-juventus",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            }
+          ]
         },
         {
           "id": "sport-damitv",
