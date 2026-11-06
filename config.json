@@ -271,14 +271,14 @@
           "name": "Rrugët e Lirisë",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/rrugeteliris.jpg",
           "type": "hls",
-          "lastTry": "2026-11-02T21:24:52+00:00",
+          "lastTry": "2026-11-06T20:50:05+00:00",
           "url": "",
-          "videoId": "054BCoFn7-o",
-          "videoTitle": "Rrugët e Lirisë-Episodi 99(Tregime të Vjetra)",
+          "videoId": "9_9FQH2CeAA",
+          "videoTitle": "Rrugët e Lirisë-Episodi 100(Tregime të Vjetra)",
           "state": "vod",
-          "linkUpdated": "2026-11-02T21:24:52+00:00",
-          "week": "2026-10-30T20:00:00+01:00",
-          "recheck": "2026-10-30T20:00:00+01:00"
+          "linkUpdated": "2026-11-06T20:50:05+00:00",
+          "week": "2026-11-06T20:00:00+01:00",
+          "recheck": "2026-11-06T20:00:00+01:00"
         },
         {
           "id": "bashkallajk",
