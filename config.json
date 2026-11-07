@@ -381,29 +381,83 @@
           "type": "group",
           "items": [
             {
-              "id": "sport-milan---ferencvaros",
-              "name": "Milan - Ferencvaros",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/eryreyeryy.png",
+              "id": "sport-leeds-united---tottenham",
+              "name": "Leeds United - Tottenham",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Leeds_United_F._logo.svg_.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/milan-ferencvaros",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/leeds-tottenham",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             },
             {
-              "id": "sport-crystal-palace---hoffenheim",
-              "name": "Crystal Palace - Hoffenheim",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Crystal_Palace_FC_logo_20.png",
+              "id": "sport-borussia-dortmund---elversberg",
+              "name": "Borussia Dortmund - Elversberg",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyreyery.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/crystal-palace-hoffenheim",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/dortmund-elversberg",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             },
             {
-              "id": "sport-az-alkmaar---juventus",
-              "name": "AZ Alkmaar - Juventus",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/11/AZ_Alkmaar.svg_.webp",
+              "id": "sport-mainz---bayern-munich",
+              "name": "Mainz - Bayern Munich",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/yryryreery.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/az-alkmaar-juventus",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/mainz-bayern-munich",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-arsenal---hull-city",
+              "name": "Arsenal - Hull City",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/egewtwtew.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/arsenal-hull-city",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-galatasaray---amed-sportif",
+              "name": "Galatasaray - Amed Sportif",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyeyryer.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/galatasaray-amed-sportif",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-nottingham-forest---manchester-city",
+              "name": "Nottingham Forest - Manchester City",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/960px-Nottingham_Forest_F._logo.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/nottingham-man-city",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-roma---sassuolo",
+              "name": "Roma - Sassuolo",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/960px-AS_Roma_logo_2017.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/roma-sassuolo",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-valencia---real-madrid",
+              "name": "Valencia - Real Madrid",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/960px-Valenciacf.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/valencia-real-madrid",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-psg---troyes",
+              "name": "PSG - Troyes",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Paris_Saint-Germain_F.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/psg-troyes",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             }
