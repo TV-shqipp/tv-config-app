@@ -1,6 +1,6 @@
 {
-  "version": 9,
-  "updated": "2026-11-07T13:00:33Z",
+  "version": 10,
+  "updated": "2026-11-07T18:55:02Z",
   "globalAlert": "",
   "sections": [
     {
@@ -132,7 +132,7 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/dukagjini.jpg",
           "type": "hls",
           "nowPlaying": "",
-          "url": "https://kosovatv.live/api/hls.php?id=13&source=1",
+          "url": "https://kosovatv.live/api/hls.php?id=14&source=1",
           "referer": "https://kosovatv.live/",
           "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0.0.0 Safari/537.36"
         },
