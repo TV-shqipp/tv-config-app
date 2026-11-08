@@ -381,15 +381,6 @@
           "type": "group",
           "items": [
             {
-              "id": "sport-napoli---lazio",
-              "name": "Napoli - Lazio",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-SSC_Napoli_2025_white_and.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/napoli-lazio",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
               "id": "sport-crystal-palace---liverpool",
               "name": "Crystal Palace - Liverpool",
               "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Crystal_Palace_FC_logo_20.png",
@@ -413,6 +404,15 @@
               "icon": "https://kosovari.online/wp-content/uploads/2026/02/960px-Genoa_CFC_crest.svg_.png",
               "type": "dynamic_hls",
               "pageUrl": "https://healthfirstin.com/albaplayer/how-to-optimize-your-workouts-for-your-specific-goals/?serv=5",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-koln---bayer-leverkusen",
+              "name": "Koln - Bayer Leverkusen",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-1._FC_Koeln_Logo_2014–.sv_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://kosovari.online/matches/leverkusen/",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             },
@@ -458,6 +458,15 @@
               "icon": "https://kosovari.online/wp-content/uploads/2026/02/reryery.png",
               "type": "dynamic_hls",
               "pageUrl": "https://sites.google.com/view/dailyroutineexercise/atletico-madrid-barcelona",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-napoli---lazio",
+              "name": "Napoli - Lazio",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-SSC_Napoli_2025_white_and.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/napoli-lazio",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             }
