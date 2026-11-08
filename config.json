@@ -388,6 +388,78 @@
               "pageUrl": "https://sites.google.com/view/dailyroutineexercise/napoli-lazio",
               "referer": "https://kosovari.online/",
               "forceWeb": true
+            },
+            {
+              "id": "sport-crystal-palace---liverpool",
+              "name": "Crystal Palace - Liverpool",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/1280px-Crystal_Palace_FC_logo_20.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/crystal-palace-liverpool",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-sunderland---chelsea",
+              "name": "Sunderland - Chelsea",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/Logo_Sunderland.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/sunderland-chelsea",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-genoa---milan",
+              "name": "Genoa - Milan",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/960px-Genoa_CFC_crest.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/genoa-milan",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-manchester-united---aston-villa",
+              "name": "Manchester United - Aston Villa",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/Manchester_United_FC_crest.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/man-united-aston-villa",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-formula-1---formula-1",
+              "name": "Formula 1 - Formula 1",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/03/formula-1-logo-png_seeklogo-330361.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/brazil-grand-prix",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-inter---como",
+              "name": "Inter - Como",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reyeryery.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/inter-como",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-fiorentina---juventus",
+              "name": "Fiorentina - Juventus",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/500px-ACF_Fiorentina.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/fiorentina-juventus",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-atletico-madrid---barcelona",
+              "name": "Atletico Madrid - Barcelona",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reryery.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/atletico-madrid-barcelona",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
             }
           ]
         },
