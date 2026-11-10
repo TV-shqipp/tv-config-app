@@ -1,6 +1,6 @@
 {
-  "version": 12,
-  "updated": "2026-11-10T07:22:06Z",
+  "version": 13,
+  "updated": "2026-11-10T13:14:48Z",
   "globalAlert": "",
   "sections": [
     {
@@ -132,7 +132,7 @@
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/dukagjini.jpg",
           "type": "hls",
           "nowPlaying": "",
-          "url": "https://kosovatv.live/api/hls.php?id=14&source=1",
+          "url": "https://kosovatv.live/api/hls.php?id=13&source=1",
           "referer": "https://kosovatv.live/",
           "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0.0.0 Safari/537.36"
         },
@@ -141,7 +141,7 @@
           "name": "Tëvë 1",
           "icon": "https://i.ibb.co/Kc4Mp74D/TEVE-1-HD.png",
           "type": "hls",
-          "url": "https://kosovatv.live/api/hls.php?id=22&source=1",
+          "url": "https://kosovatv.live/api/hls.php?id=21&source=1",
           "referer": "https://kosovatv.live/",
           "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0.0.0 Safari/537.36"
         },
