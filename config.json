@@ -380,26 +380,7 @@
           "subtitle": "AlbaPlayer / Server 1..7",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
           "type": "group",
-          "items": [
-            {
-              "id": "sport-fiorentina---juventus",
-              "name": "Fiorentina - Juventus",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/500px-ACF_Fiorentina.svg_.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/fiorentina-juventus",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-atletico-madrid---barcelona",
-              "name": "Atletico Madrid - Barcelona",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/02/reryery.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/atletico-madrid-barcelona",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            }
-          ]
+          "items": []
         },
         {
           "id": "sport-damitv",
