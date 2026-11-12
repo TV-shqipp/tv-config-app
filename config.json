@@ -380,53 +380,7 @@
           "subtitle": "AlbaPlayer / Server 1..7",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
           "type": "group",
-          "items": [
-            {
-              "id": "sport-turkey---belgium",
-              "name": "Turkey - Belgium",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/03/b13c0265-a06f-4543-8f89-cf1c696d75f5.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/turkey-belgium",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-albania---finland",
-              "name": "Albania - Finland",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/03/Flag_of_Albania.svg_-scaled.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/albania-finland",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-czechia---spain",
-              "name": "Czechia - Spain",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/05/czech-republic-flag.jpg",
-              "type": "dynamic_hls",
-              "pageUrl": "https://healthfirstin.com/albaplayer/why-your-sleep-schedule-controls-your-lifespan/?serv=5",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-england---croatia",
-              "name": "England - Croatia",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/03/Flag_of_England.svg_.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://healthfirstin.com/albaplayer/how-to-optimize-your-workouts-for-your-specific-goals/?serv=5",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-italy---france",
-              "name": "Italy - France",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/03/Italy-1.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://healthfirstin.com/albaplayer/why-active-recovery-builds-muscle-faster-than-daily-training/?serv=5",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            }
-          ]
+          "items": []
         },
         {
           "id": "sport-damitv",
