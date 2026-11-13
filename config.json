@@ -380,44 +380,7 @@
           "subtitle": "AlbaPlayer / Server 1..7",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
           "type": "group",
-          "items": [
-            {
-              "id": "sport-netherlands---greece",
-              "name": "Netherlands - Greece",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/03/Flag_of_the_Netherlands.svg_-scaled.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/netherlands-greece",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-serbia---germany",
-              "name": "Serbia - Germany",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/03/Flag_of_Serbia.svg_.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/serbia-vs-germany",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-slovenia---switzerland",
-              "name": "Slovenia - Switzerland",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/06/i06-07-2026_01_37_PM.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/slovenia-switzerland",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            },
-            {
-              "id": "sport-scotland---north-macedonia",
-              "name": "Scotland - North Macedonia",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/06/457u800-06-14-2026_12_49_AM.png",
-              "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/scotland-north-macedonia",
-              "referer": "https://kosovari.online/",
-              "forceWeb": true
-            }
-          ]
+          "items": []
         },
         {
           "id": "sport-damitv",
