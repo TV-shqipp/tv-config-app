@@ -380,7 +380,17 @@
           "subtitle": "AlbaPlayer / Server 1..7",
           "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/sport.jpg",
           "type": "group",
-          "items": []
+          "items": [
+            {
+              "id": "sport-kosovo---israel",
+              "name": "Kosovo - Israel",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/03/Flag_of_Kosovo.svg_-scaled.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/kosovo-israel",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            }
+          ]
         },
         {
           "id": "sport-damitv",
