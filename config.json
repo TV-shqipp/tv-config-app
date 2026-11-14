@@ -389,6 +389,24 @@
               "pageUrl": "https://sites.google.com/view/dailyroutineexercise/kosovo-israel",
               "referer": "https://kosovari.online/",
               "forceWeb": true
+            },
+            {
+              "id": "sport-portugal---denmark",
+              "name": "Portugal - Denmark",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/03/Flag_of_Portugal.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/portugal-denmark",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
+            },
+            {
+              "id": "sport-austria---ireland",
+              "name": "Austria - Ireland",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/06/Flag_of_Austria.svg_.png",
+              "type": "dynamic_hls",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/austria-ireland",
+              "referer": "https://kosovari.online/",
+              "forceWeb": true
             }
           ]
         },
