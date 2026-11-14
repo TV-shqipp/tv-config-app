@@ -382,11 +382,11 @@
           "type": "group",
           "items": [
             {
-              "id": "sport-kosovo---israel",
-              "name": "Kosovo - Israel",
-              "icon": "https://kosovari.online/wp-content/uploads/2026/03/Flag_of_Kosovo.svg_-scaled.png",
+              "id": "sport-norway---wales",
+              "name": "Norway - Wales",
+              "icon": "https://kosovari.online/wp-content/uploads/2026/03/Flag_of_Norway.svg_-scaled.png",
               "type": "dynamic_hls",
-              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/kosovo-israel",
+              "pageUrl": "https://sites.google.com/view/dailyroutineexercise/norway-wales",
               "referer": "https://kosovari.online/",
               "forceWeb": true
             },
