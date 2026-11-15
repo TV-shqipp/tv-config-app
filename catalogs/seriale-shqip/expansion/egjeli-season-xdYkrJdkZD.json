@@ -1,0 +1,522 @@
+{
+  "season": {
+    "id": "xdYkrJdkZD",
+    "name": "Sezoni 1",
+    "order": 1,
+    "metrics": {
+      "totalEpisodes": 30
+    }
+  },
+  "items": [
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "ra6lPxG6gL",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 1",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Seriali Egjeli eshte nje nga serialet me te shikuara nga shqiptaret ane e mbane botes. Ky eshte episodi i pare, dhe ju presin shume episoda tjere. Shpresojme qe ju pelqen ky episod, dhe te pritni te tjerat. Me dashuri, Stupcat.\"}]}",
+      "shortDescription": "Seriali Egjeli eshte nje nga serialet me te shikuara nga shqiptaret ane e mbane botes. Ky eshte episodi i pare, dhe ju presin shume episoda tjere. Shpresojme qe ju pelqen ky episod, dhe te pritni te tjerat. Me dashuri, Stupcat.",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrih/thumbnails/retina.jpg",
+      "duration": 2896,
+      "publishedAt": "2017-03-31T22:41:13",
+      "handle": "seriali-egjeli-episodi-1",
+      "videoExternalId": "vjsodrih",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "Vwkv7zEpnJ",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 2",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Jeton K\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Jeton K\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrif/thumbnails/retina.jpg",
+      "duration": 1940,
+      "publishedAt": "2017-04-09T17:00:54",
+      "handle": "stupcat-egjeli-2017-episodi-2",
+      "videoExternalId": "vjsodrif",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "aMjqW20p5W",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 3",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Jeton K\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": "Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Jeton K\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrid/thumbnails/retina.jpg",
+      "duration": 1940,
+      "publishedAt": "2017-04-16T20:50:00",
+      "handle": "stupcat-egjeli-2017-episodi-3",
+      "videoExternalId": "vjsodrid",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "lPj2KglkE8",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 4",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodria/thumbnails/retina.jpg",
+      "duration": 2023,
+      "publishedAt": "2017-04-23T20:54:00",
+      "handle": "stupcat-egjeli-2017-episodi-4",
+      "videoExternalId": "vjsodria",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "ra6lP2L6gL",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 5",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrhy/thumbnails/retina.jpg",
+      "duration": 2103,
+      "publishedAt": "2017-04-30T21:00:02",
+      "handle": "stupcat-egjeli-2017-episodi-5",
+      "videoExternalId": "vjsodrhy",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "aNk7wl9k2Q",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 6",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrhw/thumbnails/retina.jpg",
+      "duration": 2476,
+      "publishedAt": "2017-05-07T21:05:00",
+      "handle": "stupcat-egjeli-2017-episodi-6",
+      "videoExternalId": "vjsodrhw",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "Qz6orQ3pqx",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 7",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrhu/thumbnails/retina.jpg",
+      "duration": 2485,
+      "publishedAt": "2017-05-14T20:55:00",
+      "handle": "stupcat-egjeli-2017-episodi-7",
+      "videoExternalId": "vjsodrhu",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "9bkAYAwkgM",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 8",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrhs/thumbnails/retina.jpg",
+      "duration": 2326,
+      "publishedAt": "2017-05-21T21:02:00",
+      "handle": "stupcat-egjeli-2017-episodi-8",
+      "videoExternalId": "vjsodrhs",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "eM61G4NkmB",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 9",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrhq/thumbnails/retina.jpg",
+      "duration": 2257,
+      "publishedAt": "2017-05-28T21:05:00",
+      "handle": "stupcat-egjeli-2017-episodi-9",
+      "videoExternalId": "vjsodrhq",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "Pap89RA6mW",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 10",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrhn/thumbnails/retina.jpg",
+      "duration": 2240,
+      "publishedAt": "2017-06-18T21:00:00",
+      "handle": "stupcat-egjeli-episodi-10",
+      "videoExternalId": "vjsodrhn",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "D5jWX0WkMZ",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 11",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrhl/thumbnails/retina.jpg",
+      "duration": 2127,
+      "publishedAt": "2017-06-25T21:40:00",
+      "handle": "stupcat-egjeli-2017-episodi-11",
+      "videoExternalId": "vjsodrhl",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "n1kyZDop90",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 12",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrhi/thumbnails/retina.jpg",
+      "duration": 1767,
+      "publishedAt": "2017-07-02T23:10:00",
+      "handle": "stupcat-egjeli-2017-episodi-12",
+      "videoExternalId": "vjsodrhi",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "ObpXGmDk7V",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 13",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrhg/thumbnails/retina.jpg",
+      "duration": 2033,
+      "publishedAt": "2017-07-09T21:00:00",
+      "handle": "stupcat-egjeli-2017-episodi-13",
+      "videoExternalId": "vjsodrhg",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "94pe0YEkga",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 14",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrhd/thumbnails/retina.jpg",
+      "duration": 1808,
+      "publishedAt": "2017-07-16T21:00:00",
+      "handle": "stupcat-egjeli-2017-episodi-14",
+      "videoExternalId": "vjsodrhd",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "Vwkv7lLpnJ",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 15",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrha/thumbnails/retina.jpg",
+      "duration": 1998,
+      "publishedAt": "2017-07-23T21:00:00",
+      "handle": "stupcat-egjeli-2017-episodi-15",
+      "videoExternalId": "vjsodrha",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "q06ZAY4pvZ",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 16",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrgy/thumbnails/retina.jpg",
+      "duration": 2122,
+      "publishedAt": "2017-07-30T21:00:00",
+      "handle": "stupcat-egjeli-2017-episodi-16",
+      "videoExternalId": "vjsodrgy",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "yo69Yzy6Ae",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 17",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu Regjia: Valter Lucaj Skenari: Milot Hoxha Producentë: Stupcat Group\"}]}",
+      "shortDescription": "<p>N&euml; rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu Regjia: Valter Lucaj Skenari: Milot Hoxha Producent&euml;: Stupcat Group</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrgw/thumbnails/retina.jpg",
+      "duration": 2300,
+      "publishedAt": "2017-08-06T23:59:00",
+      "handle": "stupcat-egjeli-2017-episodi-17",
+      "videoExternalId": "vjsodrgw",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "q06ZABApvZ",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 18",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrgt/thumbnails/retina.jpg",
+      "duration": 1895,
+      "publishedAt": "2017-08-13T23:30:00",
+      "handle": "stupcat-egjeli-episodi-18",
+      "videoExternalId": "vjsodrgt",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "Ze6OJYbpDl",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 19",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrgr/thumbnails/retina.jpg",
+      "duration": 2175,
+      "publishedAt": "2017-08-20T21:15:00",
+      "handle": "stupcat-egjeli-episodi-19",
+      "videoExternalId": "vjsodrgr",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "VwkvO0DpnJ",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 20",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrgp/thumbnails/retina.jpg",
+      "duration": 1932,
+      "publishedAt": "2017-08-27T21:15:00",
+      "handle": "stupcat-egjeli-episodi-20",
+      "videoExternalId": "vjsodrgp",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "q5pGV7JknR",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 21",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrgn/thumbnails/retina.jpg",
+      "duration": 1826,
+      "publishedAt": "2017-09-03T23:40:00",
+      "handle": "stupcat-egjeli-episodi-21",
+      "videoExternalId": "vjsodrgn",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "9bkAreJpgM",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 22",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrgl/thumbnails/retina.jpg",
+      "duration": 1804,
+      "publishedAt": "2017-09-10T21:10:00",
+      "handle": "stupcat-egjeli-episodi-22",
+      "videoExternalId": "vjsodrgl",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "ra6l8dM6gL",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 23",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrgj/thumbnails/retina.jpg",
+      "duration": 1912,
+      "publishedAt": "2017-09-17T21:10:00",
+      "handle": "stupcat-egjeli-2017-episodi-23",
+      "videoExternalId": "vjsodrgj",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "bN6LRKmkGg",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 24",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrgh/thumbnails/retina.jpg",
+      "duration": 2288,
+      "publishedAt": "2017-09-24T21:05:00",
+      "handle": "stupcat-egjeli-2017-episodi-24",
+      "videoExternalId": "vjsodrgh",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "D5jW429kMZ",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 25",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrgf/thumbnails/retina.jpg",
+      "duration": 2099,
+      "publishedAt": "2017-10-01T22:10:00",
+      "handle": "stupcat-egjeli-2017-episodi-25",
+      "videoExternalId": "vjsodrgf",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "Qz6oV13pqx",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 26",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrgd/thumbnails/retina.jpg",
+      "duration": 1832,
+      "publishedAt": "2017-10-08T21:05:00",
+      "handle": "stupcat-egjeli-2017-episodi-26",
+      "videoExternalId": "vjsodrgd",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "vG63ngXpg0",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 27",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrgb/thumbnails/retina.jpg",
+      "duration": 1821,
+      "publishedAt": "2017-10-15T21:05:00",
+      "handle": "stupcat-egjeli-2017-episodi-27",
+      "videoExternalId": "vjsodrgb",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "156VaeVpYq",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 28",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrfy/thumbnails/retina.jpg",
+      "duration": 2055,
+      "publishedAt": "2017-10-29T21:05:00",
+      "handle": "stupcat-egjeli-2017-episodi-28",
+      "videoExternalId": "vjsodrfy",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "QAkdlZykd8",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 29",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrfw/thumbnails/retina.jpg",
+      "duration": 1745,
+      "publishedAt": "2017-11-05T21:05:00",
+      "handle": "stupcat-egjeli-2017-episodi-29",
+      "videoExternalId": "vjsodrfw",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xdYkrJdkZD",
+      "videoId": "dYkrlXO6ZD",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Episodi 30",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\\n\\nRegjia: Valter Lucaj\\n\\nSkenari: Milot Hoxha\\n\\nProducentë: Stupcat Group\"}]}",
+      "shortDescription": " Në rolet kryesore: Vedat Bajrami, Osman Azemi, Mensur Safqiu\n\nRegjia: Valter Lucaj\n\nSkenari: Milot Hoxha\n\nProducentë: Stupcat Group",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrfu/thumbnails/retina.jpg",
+      "duration": 1842,
+      "publishedAt": "2017-11-12T21:05:00",
+      "handle": "stupcat-egjeli-2017-episodi-30",
+      "videoExternalId": "vjsodrfu",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    }
+  ]
+}

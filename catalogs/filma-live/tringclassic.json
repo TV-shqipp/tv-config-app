@@ -1,0 +1,17 @@
+{
+  "name": "Tring Classic",
+  "variants": [
+    {
+      "id": "3656419422",
+      "name": "TRING CLASSIC (7)",
+      "pageUrl": "https://oha.to/live/play/3656419422",
+      "resolveHttp": 200,
+      "manifestHttp": 200,
+      "hls": true,
+      "segmentHttp": 200,
+      "segmentAccessible": true
+    }
+  ],
+  "checkedAt": "2026-11-15",
+  "available": true
+}

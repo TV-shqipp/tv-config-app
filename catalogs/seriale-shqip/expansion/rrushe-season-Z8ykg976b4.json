@@ -1,0 +1,505 @@
+{
+  "season": {
+    "id": "Z8ykg976b4",
+    "name": "Bonus",
+    "order": 2,
+    "metrics": {
+      "totalEpisodes": 29
+    }
+  },
+  "items": [
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "D5jW5ZWWpM",
+      "type": 1,
+      "name": "Rrushe \"Në brendësi\" - Intervista të thelluara me aktorët e serialit",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Kasta e aktorëve të serialit \\\"Rrushe\\\" ndajnë në këto intervista intime përvojën e tyre në serial, rrëfejnë emocionet pas skenave, shpjegojnë procesin krijues të rolit dhe zbulojnë të panjohura rreth \\\"Rrushe\\\"-s.\\n\\nNjë rrugëtim thuajse një vjeçar i përmbledhur në një dokumentar një orësh të mbushur me të qeshura, lot, nostalgji dhe dashuri.\"}]}",
+      "shortDescription": "<p>Kasta e aktor&euml;ve t&euml; serialit &quot;Rrushe&quot; ndajn&euml; n&euml; k&euml;to intervista intime p&euml;rvoj&euml;n e tyre n&euml; serial, rr&euml;fejn&euml; emocionet pas skenave, shpjegojn&euml; procesin krijues t&euml; rolit dhe zbulojn&euml; t&euml; panjohura rreth &quot;Rrushe&quot;-s.&nbsp;</p>\r\n\r\n<p>Nj&euml; rrug&euml;tim thuajse nj&euml; vje&ccedil;ar i p&euml;rmbledhur n&euml; nj&euml; dokumentar nj&euml; or&euml;sh t&euml; mbushur me t&euml; qeshura, lot, nostalgji dhe dashuri.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodghi/thumbnails/retina.jpg",
+      "duration": 3741,
+      "publishedAt": "2021-12-30T20:57:00",
+      "handle": "rrushe-ne-brendesi-intervista-te-thelluara-me-aktoret-e-serialit",
+      "videoExternalId": "vjsodghi",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "eM61w21Kkm",
+      "type": 1,
+      "name": "Adrian Morinen do ta shihni në rolin e Samir Hotit",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në serialin \\\"Rrushe\\\" do ta shihni edhe aktorin Adrian Morina, në rolin e Samir Hotit.\"}]}",
+      "shortDescription": "<p>N&euml; serialin &quot;Rrushe&quot; do ta shihni edhe aktorin Adrian Morina, n&euml; rolin e Samir Hotit.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodglu/thumbnails/retina.jpg",
+      "duration": 19,
+      "publishedAt": "2021-04-30T17:43:00",
+      "handle": "adrian-morinen-do-ta-shihni-ne-rolin-e-samir-hotit",
+      "videoExternalId": "vjsodglu",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "dYkrBmdgkZ",
+      "type": 1,
+      "name": "Adriana Matoshi luan Besa Zenelin",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Adriana Matoshi, aktorja e mirënjohur luan Besa Zenelin.\"}]}",
+      "shortDescription": "<p>Adriana Matoshi, aktorja e mir&euml;njohur luan Besa Zenelin.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodglt/thumbnails/retina.jpg",
+      "duration": 24,
+      "publishedAt": "2021-04-28T17:44:00",
+      "handle": "adriana-matoshi-luan-besa-zenelin",
+      "videoExternalId": "vjsodglt",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "n1kyVmJZp9",
+      "type": 1,
+      "name": "Personazhin e Bashkim Pirullit e luan Afrim Muçaj",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Personazhin e Bashkim Pirullit e luan Afrim Muçaj.\"}]}",
+      "shortDescription": "<p>Personazhin e Bashkim Pirullit e luan Afrim Mu&ccedil;aj.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgls/thumbnails/retina.jpg",
+      "duration": 19,
+      "publishedAt": "2021-05-01T17:43:00",
+      "handle": "personazhin-e-bashkim-pirullit-e-luan-afrim-mucaj",
+      "videoExternalId": "vjsodgls",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "D5jW5EK4pM",
+      "type": 1,
+      "name": "Aktori Agron Shala paraqitet në rolin e Fatmirit",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktori i dashur Agron Shala në \\\"Rrushe\\\" paraqitet në rolin e Fatmirit.\"}]}",
+      "shortDescription": "<p>Aktori i dashur Agron Shala n&euml; &quot;Rrushe&quot; paraqitet n&euml; rolin e Fatmirit.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodglr/thumbnails/retina.jpg",
+      "duration": 22,
+      "publishedAt": "2021-04-28T12:45:00",
+      "handle": "aktori-agron-shala-paraqitet-ne-rolin-e-fatmirit",
+      "videoExternalId": "vjsodglr",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "Pap8G2Erkm",
+      "type": 1,
+      "name": "Aktori Allmir Suhodolli në rolin e Trimit të rritur",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktori i talentuar Allmir Suhodolli në \\\"Rrushe\\\" paraqitet në rolin e Trimit të rritur\"}]}",
+      "shortDescription": "<p>Aktori i talentuar Allmir Suhodolli n&euml; &quot;Rrushe&quot; paraqitet n&euml; rolin e Trimit t&euml; rritur</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodglq/thumbnails/retina.jpg",
+      "duration": 19,
+      "publishedAt": "2021-04-29T17:48:00",
+      "handle": "aktori-allmir-suhodolli-ne-rolin-e-trimit-te-rritur",
+      "videoExternalId": "vjsodglq",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "aZjMMZO4jV",
+      "type": 1,
+      "name": "Andi Bajgora na sjellë rolin e Armend Pirullit",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Andi Bajgora, me shumë dashuri, na sjellë rolin e Armend Pirullit në \\\"Rrushe\\\".\"}]}",
+      "shortDescription": "<p>Andi Bajgora, me shum&euml; dashuri, na sjell&euml; rolin e Armend Pirullit n&euml; &quot;Rrushe&quot;.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodglp/thumbnails/retina.jpg",
+      "duration": 18,
+      "publishedAt": "2021-04-27T17:46:54",
+      "handle": "andi-bajgora-na-sjelle-rolin-e-armend-pirullit",
+      "videoExternalId": "vjsodglp",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "Qz6odmPojq",
+      "type": 1,
+      "name": "Armend Smajli në rol të Berat Hotit",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktori i njohur Armend Smajli në \\\"Rrushe\\\" luan rolin e Berat Hotit.\"}]}",
+      "shortDescription": "<p>Aktori i njohur Armend Smajli n&euml; &quot;Rrushe&quot; luan rolin e Berat Hotit.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodglo/thumbnails/retina.jpg",
+      "duration": 20,
+      "publishedAt": "2021-04-29T17:47:00",
+      "handle": "armend-smajli-ne-rol-te-berat-hotit",
+      "videoExternalId": "vjsodglo",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "156VZgDO6Y",
+      "type": 1,
+      "name": "Arta Muçaj në \"Rrushe\" luan Inspektor Temaj",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Arta Muçaj, aktorja e mirënjohur në \\\"Rrushe\\\" luan Inspektor Temaj.\"}]}",
+      "shortDescription": "<p>Arta Mu&ccedil;aj, aktorja e mir&euml;njohur n&euml; &quot;Rrushe&quot; luan Inspektor Temaj.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgln/thumbnails/retina.jpg",
+      "duration": 22,
+      "publishedAt": "2021-04-29T17:48:00",
+      "handle": "arta-mucaj-ne-rrushe-luan-inspektor-temaj",
+      "videoExternalId": "vjsodgln",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "aNk7o3Wok2",
+      "type": 1,
+      "name": "Aktorja Aurita Agushi luan rolin e Merita Pirullit",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktorja e mirënjohur Aurita Agushi, në \\\"Rrushe\\\", luan Merita Pirullin.\"}]}",
+      "shortDescription": "<p>Aktorja e mir&euml;njohur Aurita Agushi, n&euml; &quot;Rrushe&quot;, luan Merita Pirullin.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgll/thumbnails/retina.jpg",
+      "duration": 20,
+      "publishedAt": "2021-04-27T17:49:17",
+      "handle": "aktorja-aurita-agushi-luan-rolin-e-merita-pirullit",
+      "videoExternalId": "vjsodgll",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "bN6LxQbJ6G",
+      "type": 1,
+      "name": "Aktori i njohur Basri Lushtaku luan Faruk Pirullin e ri",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktori i njohur Basri Lushtaku luan Faruk Pirullin e ri.\"}]}",
+      "shortDescription": "<p>Aktori i njohur Basri Lushtaku luan Faruk Pirullin e ri.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodglk/thumbnails/retina.jpg",
+      "duration": 23,
+      "publishedAt": "2021-05-01T18:00:00",
+      "handle": "aktori-i-njohur-basri-lushtaku-luan-faruk-pirullin-e-ri",
+      "videoExternalId": "vjsodglk",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "X7kQLJOOjx",
+      "type": 1,
+      "name": "Aktori Bislim Muçaj në rolin e Sadik Hotit",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktori legjendar Blislim Muçaj luan Sadik Hotin.\"}]}",
+      "shortDescription": "<p>Aktori legjendar Blislim Mu&ccedil;aj luan Sadik Hotin.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodglj/thumbnails/retina.jpg",
+      "duration": 24,
+      "publishedAt": "2021-04-28T17:51:00",
+      "handle": "aktori-blislim-mucaj-ne-rolin-e-sadik-hotit",
+      "videoExternalId": "vjsodglj",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "q06ZXlJBkv",
+      "type": 1,
+      "name": "Bujar Ahmeti vjen në rolin e Rexhep Berishës",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Bujar Ahmeti në \\\"Rrushe\\\" vjen në rolin e Rexhep Berishës.\"}]}",
+      "shortDescription": "<p>Bujar Ahmeti n&euml; &quot;Rrushe&quot; vjen n&euml; rolin e Rexhep Berish&euml;s.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgli/thumbnails/retina.jpg",
+      "duration": 20,
+      "publishedAt": "2021-05-01T17:51:00",
+      "handle": "bujar-ahmeti-vjen-ne-rolin-e-rexhep-berishes",
+      "videoExternalId": "vjsodgli",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "KJjRYXeD6d",
+      "type": 1,
+      "name": "Doresa Rexha në \"Rrushe\" është Vesa Pirulli",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktorja e dashur, Doresa Rexha, në \\\"Rrushe\\\" është Vesa Pirulli.\"}]}",
+      "shortDescription": "<p>Aktorja e dashur, Doresa Rexha, n&euml; &quot;Rrushe&quot; &euml;sht&euml; Vesa Pirulli.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodglh/thumbnails/retina.jpg",
+      "duration": 22,
+      "publishedAt": "2021-04-27T17:52:33",
+      "handle": "doresa-rexha-ne-rrushe-eshte-vesa-pirulli",
+      "videoExternalId": "vjsodglh",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "7Kj580On6a",
+      "type": 1,
+      "name": "Eden Kastrati luan Berat Hotin femijë",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktori i ri Eden Kastrati luan Berat Hotin femijë\"}]}",
+      "shortDescription": "<p>Aktori i ri Eden Kastrati luan Berat Hotin femij&euml;</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodglg/thumbnails/retina.jpg",
+      "duration": 17,
+      "publishedAt": "2021-04-30T17:52:00",
+      "handle": "eden-kastrati-luan-berat-hotin-femije",
+      "videoExternalId": "vjsodglg",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "Ze6OD5qVjD",
+      "type": 1,
+      "name": "Blerta Pirulli luhet nga Ema Koxha",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Ema Koxha ju njofton me vajzen e vogël të familjes Pirulli në serialin \\\"Rrushe\\\".\"}]}",
+      "shortDescription": "<p>Ema Koxha ju njofton me vajzen e vog&euml;l t&euml; familjes Pirulli n&euml; serialin &quot;Rrushe&quot;.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodglf/thumbnails/retina.jpg",
+      "duration": 19,
+      "publishedAt": "2021-04-27T17:53:10",
+      "handle": "blerta-pirulli-luhet-nga-ema-koxha",
+      "videoExternalId": "vjsodglf",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "4l6JE7Ozpr",
+      "type": 1,
+      "name": "Enver Petrovci në rolin e Hilmi Tukës",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktori Enver Petrovci në ''Rrushe\\\" vjen me rolin e Hilmi Tukës.\"}]}",
+      "shortDescription": "<p>Aktori Enver Petrovci n&euml; &#39;&#39;Rrushe&quot; vjen me rolin e Hilmi Tuk&euml;s.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgle/thumbnails/retina.jpg",
+      "duration": 22,
+      "publishedAt": "2021-04-27T17:53:17",
+      "handle": "enver-petrovci-ne-rolin-e-hilmi-tukes",
+      "videoExternalId": "vjsodgle",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "ObpXeEXN67",
+      "type": 1,
+      "name": "Aktori Ermal Sadiku është Musë Lahu",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktori i talentuar Ermal Sadiku është Musë Lahu.\"}]}",
+      "shortDescription": "<p>Aktori i talentuar Ermal Sadiku &euml;sht&euml; Mus&euml; Lahu.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgld/thumbnails/retina.jpg",
+      "duration": 19,
+      "publishedAt": "2021-04-30T18:00:00",
+      "handle": "aktori-ermal-sadiku-eshte-muse-lahu",
+      "videoExternalId": "vjsodgld",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "q5pG2Md7kn",
+      "type": 1,
+      "name": "Aktori Ernest Malazogu luan rolin e kondukter Bajramit ",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktori legjendar Ernest Malazogu luan rolin e kondukter Bajramit.\"}]}",
+      "shortDescription": "<p>Aktori legjendar Ernest Malazogu luan rolin e kondukter Bajramit.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodglc/thumbnails/retina.jpg",
+      "duration": 19,
+      "publishedAt": "2021-04-29T17:55:00",
+      "handle": "aktori-ernest-malazogu-luan-rolin-e-kondukter-bajramit",
+      "videoExternalId": "vjsodglc",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "W46KRLb7pb",
+      "type": 1,
+      "name": "Në rolin e Dianës do të jetë Erta Leci, kurse Artiola Hamdia në rolin e Venerës",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Në rolin e Dianës do të jetë Erta Leci, kurse Artiola Hamdia në rolin e Venerës\"}]}",
+      "shortDescription": "<p>N&euml; rolin e Dian&euml;s do t&euml; jet&euml; Erta Leci, kurse Artiola Hamdia n&euml; rolin e Vener&euml;s&nbsp;</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodglb/thumbnails/retina.jpg",
+      "duration": 21,
+      "publishedAt": "2021-05-01T17:55:00",
+      "handle": "ne-rolin-e-dianes-do-te-jete-erta-leci-kurse-artiola-hamdia-ne-rolin-e-veneres",
+      "videoExternalId": "vjsodglb",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "94penaWD6g",
+      "type": 1,
+      "name": "Eshref Durmishi është gjithashtu pjesë e serialit",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktori i njohur Eshref Durmishi është gjithashtu pjesë e serialit \\\"Rrushe\\\".\"}]}",
+      "shortDescription": "<p>Aktori i njohur&nbsp;Eshref Durmishi&nbsp;&euml;sht&euml; gjithashtu pjes&euml; e serialit &quot;Rrushe&quot;.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgla/thumbnails/retina.jpg",
+      "duration": 26,
+      "publishedAt": "2021-04-27T18:00:00",
+      "handle": "eshref-durmishi-eshte-gjithashtu-pjese-e-serialit",
+      "videoExternalId": "vjsodgla",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "8ykgOEQ7kb",
+      "type": 1,
+      "name": "Labinot Raci në \"Rrushe\" vjen si Dini",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktori i njohur Labinot Raci në \\\"Rrushe\\\" me shumë energji pozitive, luan rolin e Dinit.\"}]}",
+      "shortDescription": "<p>Aktori i njohur Labinot Raci n&euml; &quot;Rrushe&quot; me shum&euml; energji pozitive, luan rolin e Dinit.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgkz/thumbnails/retina.jpg",
+      "duration": 20,
+      "publishedAt": "2021-04-28T12:58:00",
+      "handle": "labinot-raci-ne-rrushe-vjen-si-dini",
+      "videoExternalId": "vjsodgkz",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "aMjqPmVB65",
+      "type": 1,
+      "name": "Aktori i ri Lurni A Krasniqi luan rolin e Trimit femijë",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktori i ri e i talentuar Lurni A Krasniqi në \\\"Rrushe\\\" është Trimi i vogël.\"}]}",
+      "shortDescription": "<p>Aktori i ri e i talentuar Lurni A Krasniqi n&euml; &quot;Rrushe&quot; &euml;sht&euml; Trimi i vog&euml;l.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgky/thumbnails/retina.jpg",
+      "duration": 19,
+      "publishedAt": "2021-04-29T17:58:00",
+      "handle": "aktori-i-ri-lurni-a-krasniqi-luan-rolin-e-trimit-femije",
+      "videoExternalId": "vjsodgky",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "qBkE2We4pR",
+      "type": 1,
+      "name": "Lum Veseli, në 'Rrushe' si Arsim Zeneli",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Lum Veseli, me plot energji, luan Arsim Zenelin në serialin \\\"Rrushe\\\".\"}]}",
+      "shortDescription": "<p>Lum Veseli, me plot energji, luan Arsim Zenelin n&euml; serialin &quot;Rrushe&quot;.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgkx/thumbnails/retina.jpg",
+      "duration": 17,
+      "publishedAt": "2021-04-27T17:58:32",
+      "handle": "lum-veseli-ne-rrushe-si-arsim-zeneli",
+      "videoExternalId": "vjsodgkx",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "wDk4WBZojE",
+      "type": 1,
+      "name": "Mikel Markaj është në rol si Arben Rama",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Mikel Markaj në \\\"Rrushe\\\" është Arben Rama.\"}]}",
+      "shortDescription": "<p>Mikel Markaj n&euml; &quot;Rrushe&quot; &euml;sht&euml; Arben Rama.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgkw/thumbnails/retina.jpg",
+      "duration": 20,
+      "publishedAt": "2021-05-01T17:59:00",
+      "handle": "mikel-markaj-eshte-ne-rol-si-arben-rama",
+      "videoExternalId": "vjsodgkw",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "yo69V2MRjA",
+      "type": 1,
+      "name": "Qendresa Jashari është Dinora Bejta",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktorja e talentuar Qendresa Jashari në \\\"Rrushe\\\" është Dinora Bejta.\"}]}",
+      "shortDescription": "<p>Aktorja e talentuar Qendresa Jashari n&euml; &quot;Rrushe&quot; &euml;sht&euml; Dinora Bejta.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgkv/thumbnails/retina.jpg",
+      "duration": 17,
+      "publishedAt": "2021-04-28T17:59:00",
+      "handle": "qendresa-jashari-eshte-dinora-bejta",
+      "videoExternalId": "vjsodgkv",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "Vwkv8moL6n",
+      "type": 1,
+      "name": "I mrekullueshmi Çun Lajçi është Zekë Jaha",
+      "description": "{\"blocks\": [{\"contentHTML\": \"I mrekullueshmi Çun Lajçi do të jetë pjesë e \\\"Rrushe\\\" në rolin e Zekë Jahës.\"}]}",
+      "shortDescription": "<p>I mrekullueshmi &Ccedil;un Laj&ccedil;i do t&euml; jet&euml; pjes&euml; e &quot;Rrushe&quot; n&euml; rolin e Zek&euml; Jah&euml;s.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgku/thumbnails/retina.jpg",
+      "duration": 22,
+      "publishedAt": "2021-04-30T18:00:00",
+      "handle": "i-mrekullueshmi-cun-lajci-eshte-zeke-jaha",
+      "videoExternalId": "vjsodgku",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "9bkA5dgDkg",
+      "type": 1,
+      "name": "Semira Latifi luan rolin e Besa Zenelit",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Semira Latifi, luan mrekullisht Besa Zenelin.\"}]}",
+      "shortDescription": "<p>Semira Latifi, luan mrekullisht Besa Zenelin.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgkt/thumbnails/retina.jpg",
+      "duration": 20,
+      "publishedAt": "2021-04-30T18:01:00",
+      "handle": "semira-latifi-luan-rolin-e-besa-zenelit",
+      "videoExternalId": "vjsodgkt",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "Z8ykg976b4",
+      "videoId": "y46nGmnxjw",
+      "type": 1,
+      "name": "Mentor Pirulli në serial luan rolin e Shkumbin Istrefit?!",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Aktori i dashur Shkumbin Istrefi do të jetë pjesë e serialit \\\"Rrushe\\\" në rolin e Mentor Pirullit.\"}]}",
+      "shortDescription": "<p>Aktori i dashur Shkumbin Istrefi do t&euml; jet&euml; pjes&euml; e serialit &quot;Rrushe&quot; n&euml; rolin e Mentor Pirullit.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgks/thumbnails/retina.jpg",
+      "duration": 25,
+      "publishedAt": "2021-04-27T18:01:55",
+      "handle": "mentor-pirulli-ne-serial-luan-rolin-e-shkumbin-istrefit",
+      "videoExternalId": "vjsodgks",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    }
+  ]
+}

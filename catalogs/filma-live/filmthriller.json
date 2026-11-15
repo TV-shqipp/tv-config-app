@@ -1,0 +1,32 @@
+{
+  "name": "Film Thriller",
+  "variants": [
+    {
+      "id": "779163990",
+      "name": "FILM THRILLER (1)",
+      "pageUrl": "https://oha.to/live/play/779163990",
+      "resolveHttp": 200,
+      "manifestHttp": 502,
+      "hls": false
+    },
+    {
+      "id": "696506922",
+      "name": "FILM THRILLER (6)",
+      "pageUrl": "https://oha.to/live/play/696506922",
+      "resolveHttp": 200,
+      "error": "ReadTimeout"
+    },
+    {
+      "id": "43666676",
+      "name": "FILM THRILLER (7)",
+      "pageUrl": "https://oha.to/live/play/43666676",
+      "resolveHttp": 200,
+      "manifestHttp": 200,
+      "hls": true,
+      "segmentHttp": 200,
+      "segmentAccessible": true
+    }
+  ],
+  "checkedAt": "2026-11-15",
+  "available": true
+}

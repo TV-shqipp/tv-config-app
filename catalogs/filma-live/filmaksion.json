@@ -1,0 +1,33 @@
+{
+  "name": "Film Aksion",
+  "variants": [
+    {
+      "id": "2239435112",
+      "name": "FILM AKSION (6)",
+      "pageUrl": "https://oha.to/live/play/2239435112",
+      "resolveHttp": 200,
+      "manifestHttp": 200,
+      "hls": true,
+      "segmentHttp": 200,
+      "segmentAccessible": true
+    },
+    {
+      "id": "933551170",
+      "name": "FILM AKSION (7)",
+      "pageUrl": "https://oha.to/live/play/933551170",
+      "resolveHttp": 200,
+      "manifestHttp": 200,
+      "hls": true
+    },
+    {
+      "id": "892299779",
+      "name": "FILM AKSION HD (1)",
+      "pageUrl": "https://oha.to/live/play/892299779",
+      "resolveHttp": 200,
+      "manifestHttp": 502,
+      "hls": false
+    }
+  ],
+  "checkedAt": "2026-11-15",
+  "available": true
+}

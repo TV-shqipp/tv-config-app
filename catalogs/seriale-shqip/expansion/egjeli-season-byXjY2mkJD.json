@@ -1,0 +1,63 @@
+{
+  "season": {
+    "id": "byXjY2mkJD",
+    "name": "Best of",
+    "order": 5,
+    "metrics": {
+      "totalEpisodes": 3
+    }
+  },
+  "items": [
+    {
+      "contentId": "byXjY2mkJD",
+      "videoId": "JzpDDw1pNQ",
+      "type": 1,
+      "name": "Teta Gjyli - Momentet me qesharake Egjeli 2017",
+      "description": "{}",
+      "shortDescription": "",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrhf/thumbnails/retina.jpg",
+      "duration": 191,
+      "publishedAt": "2017-07-10T21:12:46",
+      "handle": "teta-gjyli-momentet-me-qesharake-egjeli-2017",
+      "videoExternalId": "vjsodrhf",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "byXjY2mkJD",
+      "videoId": "bN6LMewjGg",
+      "type": 1,
+      "name": "Momentet me Qesharake - Stupcat 2017",
+      "description": "{}",
+      "shortDescription": "",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrhj/thumbnails/retina.jpg",
+      "duration": 150,
+      "publishedAt": "2017-06-28T17:34:28",
+      "handle": "momentet-me-qesharake-stupcat-2017",
+      "videoExternalId": "vjsodrhj",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "byXjY2mkJD",
+      "videoId": "Pap8G8nAkm",
+      "type": 1,
+      "name": "Momente nga sezoni i dytë - Stupcat Egjeli 2018",
+      "description": "{}",
+      "shortDescription": "",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiws/thumbnails/retina.jpg",
+      "duration": 426,
+      "publishedAt": "2018-04-11T19:00:00",
+      "handle": "momente-nga-sezoni-i-dyte-stupcat-egjeli-2018",
+      "videoExternalId": "vjsodiws",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    }
+  ]
+}

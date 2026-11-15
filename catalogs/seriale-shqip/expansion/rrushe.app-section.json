@@ -1,0 +1,237 @@
+{
+  "id": "rrushe",
+  "name": "Rrushe",
+  "type": "group",
+  "subtitle": "Krejt epizodat",
+  "items": [
+    {
+      "id": "rrushe-g0",
+      "name": "Sezoni 1",
+      "type": "group",
+      "subtitle": "20 episode",
+      "items": [
+        {
+          "id": "rrushe-g0-e1",
+          "name": "Episodi 1",
+          "episodeNumber": 1,
+          "videoTitle": "Rrushe - Episodi 1",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 40 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-1",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgko/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e2",
+          "name": "Episodi 2",
+          "episodeNumber": 2,
+          "videoTitle": "Rrushe - Episodi 2",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 46 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-2",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgkm/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e3",
+          "name": "Episodi 3",
+          "episodeNumber": 3,
+          "videoTitle": "Rrushe - Episodi 3",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 40 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-3",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgkk/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e4",
+          "name": "Episodi 4",
+          "episodeNumber": 4,
+          "videoTitle": "Rrushe - Episodi 4",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 45 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-4",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgki/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e5",
+          "name": "Episodi 5",
+          "episodeNumber": 5,
+          "videoTitle": "Rrushe - Episodi 5",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 55 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-5",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgkg/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e6",
+          "name": "Episodi 6",
+          "episodeNumber": 6,
+          "videoTitle": "Rrushe - Episodi 6",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 47 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-6",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgke/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e7",
+          "name": "Episodi 7",
+          "episodeNumber": 7,
+          "videoTitle": "Rrushe - Episodi 7",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 51 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-7",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgkc/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e8",
+          "name": "Episodi 8",
+          "episodeNumber": 8,
+          "videoTitle": "Rrushe - Episodi 8",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 57 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-8",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgjq/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e9",
+          "name": "Episodi 9",
+          "episodeNumber": 9,
+          "videoTitle": "Rrushe - Episodi 9",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 50 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-9",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgjo/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e10",
+          "name": "Episodi 10",
+          "episodeNumber": 10,
+          "videoTitle": "Rrushe - Episodi 10",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 50 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-10",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgjl/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e11",
+          "name": "Episodi 11",
+          "episodeNumber": 11,
+          "videoTitle": "Rrushe - Episodi 11",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 65 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-11",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgjj/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e12",
+          "name": "Episodi 12",
+          "episodeNumber": 12,
+          "videoTitle": "Rrushe - Episodi 12",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 49 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-12",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgjg/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e13",
+          "name": "Episodi 13",
+          "episodeNumber": 13,
+          "videoTitle": "Rrushe - Episodi 13",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 45 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-13",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgjd/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e14",
+          "name": "Episodi 14",
+          "episodeNumber": 14,
+          "videoTitle": "Rrushe - Episodi 14",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 49 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-14",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgja/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e15",
+          "name": "Episodi 15",
+          "episodeNumber": 15,
+          "videoTitle": "Rrushe - Episodi 15",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 47 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-15",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgiy/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e16",
+          "name": "Episodi 16",
+          "episodeNumber": 16,
+          "videoTitle": "Rrushe - Episodi 16",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 41 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-16",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgiv/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e17",
+          "name": "Episodi 17",
+          "episodeNumber": 17,
+          "videoTitle": "Rrushe - Episodi 17",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 42 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-17",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgip/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e18",
+          "name": "Episodi 18",
+          "episodeNumber": 18,
+          "videoTitle": "Rrushe - Episodi 18",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 47 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-18",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgig/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e19",
+          "name": "Episodi 19",
+          "episodeNumber": 19,
+          "videoTitle": "Rrushe - Episodi 19",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 53 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-19",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgic/thumbnails/retina.jpg"
+        },
+        {
+          "id": "rrushe-g0-e20",
+          "name": "Episodi 20",
+          "episodeNumber": 20,
+          "videoTitle": "Rrushe - Episodi 20",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 44 min",
+          "pageUrl": "https://video.gjirafa.com/rrushe-episodi-20",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodghw/thumbnails/retina.jpg"
+        }
+      ]
+    }
+  ],
+  "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodgko/thumbnails/retina.jpg"
+}

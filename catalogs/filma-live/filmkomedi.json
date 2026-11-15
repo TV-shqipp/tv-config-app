@@ -1,0 +1,25 @@
+{
+  "name": "Film Komedi",
+  "variants": [
+    {
+      "id": "1308852885",
+      "name": "FILM KOMEDI (1)",
+      "pageUrl": "https://oha.to/live/play/1308852885",
+      "resolveHttp": 200,
+      "manifestHttp": 200,
+      "hls": true,
+      "segmentHttp": 200,
+      "segmentAccessible": true
+    },
+    {
+      "id": "186415161",
+      "name": "FILM KOMEDI (7)",
+      "pageUrl": "https://oha.to/live/play/186415161",
+      "resolveHttp": 200,
+      "manifestHttp": 200,
+      "hls": true
+    }
+  ],
+  "checkedAt": "2026-11-15",
+  "available": true
+}

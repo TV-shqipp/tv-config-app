@@ -1,0 +1,26 @@
+[
+  {
+    "id": "M94pe4Ekga",
+    "name": "Sezoni 1",
+    "order": 0,
+    "metrics": {
+      "totalEpisodes": 18
+    }
+  },
+  {
+    "id": "2D5jWybpMZ",
+    "name": "Sezoni 2",
+    "order": 1,
+    "metrics": {
+      "totalEpisodes": 26
+    }
+  },
+  {
+    "id": "xaZjMBvkVL",
+    "name": "Sezoni 3",
+    "order": 2,
+    "metrics": {
+      "totalEpisodes": 17
+    }
+  }
+]

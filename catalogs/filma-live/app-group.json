@@ -1,0 +1,199 @@
+{
+  "id": "filma-live",
+  "name": "Filma Live",
+  "type": "group",
+  "subtitle": "Kujdes: Këto kanale mund të mos funksionojnë ose mund të shfaqin kanale të ndryshme nga ato të kërkuara.",
+  "items": [
+    {
+      "id": "oha-filmaksion",
+      "name": "Film Aksion",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/2239435112",
+      "state": "live",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-filmaksion.png",
+      "country": "AL"
+    },
+    {
+      "id": "oha-filmkomedi",
+      "name": "Film Komedi",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/1308852885",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-filmkomedi.png"
+    },
+    {
+      "id": "oha-filmthriller",
+      "name": "Film Thriller",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/43666676",
+      "state": "live",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-filmthriller.png",
+      "country": "AL"
+    },
+    {
+      "id": "oha-filmhits",
+      "name": "Film Hits",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/3164620488",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-filmhits.png"
+    },
+    {
+      "id": "oha-tringaction",
+      "name": "Tring Action",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/3554686365",
+      "state": "live",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-tringaction.png",
+      "country": "AL"
+    },
+    {
+      "id": "oha-tringcomedy",
+      "name": "Tring Comedy",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/762506641",
+      "state": "live",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-tringcomedy.png",
+      "country": "AL"
+    },
+    {
+      "id": "oha-tringfantasy",
+      "name": "Tring Fantasy",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/4034480733",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-tringfantasy.png"
+    },
+    {
+      "id": "oha-tringclassic",
+      "name": "Tring Classic",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/3656419422",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-tringclassic.png"
+    },
+    {
+      "id": "oha-tringshqip",
+      "name": "Tring Shqip",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/3032526152",
+      "state": "live",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-tringshqip.png",
+      "country": "AL"
+    },
+    {
+      "id": "oha-filmautor",
+      "name": "Film Autor",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/2136444486",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-filmautor.png"
+    },
+    {
+      "id": "oha-filmdrame",
+      "name": "Film Drame",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/2515246048",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-filmdrame.png"
+    },
+    {
+      "id": "oha-eurofilm",
+      "name": "Euro Film",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/3348497268",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-eurofilm.png"
+    },
+    {
+      "id": "oha-filmgold",
+      "name": "Film Gold",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/957480230",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-filmgold.png"
+    },
+    {
+      "id": "oha-rtshfilm",
+      "name": "RTSH Film",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/2790617572",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-rtshfilm.png"
+    },
+    {
+      "id": "oha-filmdy",
+      "name": "Film Dy HD",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/3499733874",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-filmdy.png"
+    },
+    {
+      "id": "oha-kinemaagimi",
+      "name": "Kinema Agimi",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/3319655785",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-kinemaagimi.png"
+    },
+    {
+      "id": "oha-kinemaaksion",
+      "name": "Kinema Aksion",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/2916044888",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-kinemaaksion.png"
+    },
+    {
+      "id": "oha-kinemamilenium1",
+      "name": "Kinema Milenium 1",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/628920838",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-kinemamilenium1.png"
+    },
+    {
+      "id": "oha-cinema2",
+      "name": "Cinema 2",
+      "type": "oha_live",
+      "subtitle": "Drejtpërdrejt",
+      "pageUrl": "https://oha.to/live/play/1321922926",
+      "state": "live",
+      "country": "AL",
+      "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/oha-cinema2.png"
+    }
+  ],
+  "icon": "https://raw.githubusercontent.com/TV-shqipp/tv-config-app/main/icon/filma-live.png"
+}

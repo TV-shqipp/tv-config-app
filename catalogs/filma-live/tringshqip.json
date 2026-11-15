@@ -1,0 +1,24 @@
+{
+  "name": "Tring Shqip",
+  "variants": [
+    {
+      "id": "4057946084",
+      "name": "TRING SHQIP (1)",
+      "pageUrl": "https://oha.to/live/play/4057946084",
+      "resolveHttp": 200,
+      "error": "ReadTimeout"
+    },
+    {
+      "id": "3032526152",
+      "name": "TRING SHQIP (7)",
+      "pageUrl": "https://oha.to/live/play/3032526152",
+      "resolveHttp": 200,
+      "manifestHttp": 200,
+      "hls": true,
+      "segmentHttp": 200,
+      "segmentAccessible": true
+    }
+  ],
+  "checkedAt": "2026-11-15",
+  "available": true
+}

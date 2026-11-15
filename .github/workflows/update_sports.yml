@@ -1,0 +1,46 @@
+name: Aggiorna Sport (Calcio)
+
+on:
+  schedule:
+    # Esegui ogni 30 minuti (puoi cambiarlo se vuoi)
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: config-update
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update-sport:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clona il repository
+        uses: actions/checkout@v4
+
+      - name: Configura Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Installa le dipendenze
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Esegui lo script
+        run: python update_sports.py
+
+      - name: Salva il config su GitHub
+        run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "action@github.com"
+          git add config.json
+          if git diff --staged --quiet; then
+            echo "Nessuna modifica da committare."
+          else
+            git commit -m "Aggiornate partite di calcio (Sport)"
+            git pull --rebase origin main
+            git push
+          fi

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "xdYkrJdkZD",
+    "name": "Sezoni 1",
+    "order": 1,
+    "metrics": {
+      "totalEpisodes": 30
+    }
+  },
+  {
+    "id": "YPap8aK6mW",
+    "name": "Sezoni 2",
+    "order": 2,
+    "metrics": {
+      "totalEpisodes": 30
+    }
+  },
+  {
+    "id": "xaZjMdx6VL",
+    "name": "Sezoni 3",
+    "order": 3,
+    "metrics": {
+      "totalEpisodes": 20
+    }
+  },
+  {
+    "id": "1gr6bd3kXz",
+    "name": "Pa Pengesa",
+    "order": 4,
+    "metrics": {
+      "totalEpisodes": 4
+    }
+  },
+  {
+    "id": "byXjY2mkJD",
+    "name": "Best of",
+    "order": 5,
+    "metrics": {
+      "totalEpisodes": 3
+    }
+  }
+]

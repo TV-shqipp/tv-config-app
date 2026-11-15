@@ -1,0 +1,25 @@
+{
+  "name": "Tring Action",
+  "variants": [
+    {
+      "id": "3554686365",
+      "name": "TRING ACTION (7)",
+      "pageUrl": "https://oha.to/live/play/3554686365",
+      "resolveHttp": 200,
+      "manifestHttp": 200,
+      "hls": true,
+      "segmentHttp": 200,
+      "segmentAccessible": true
+    },
+    {
+      "id": "3553986754",
+      "name": "TRING ACTION HD (1)",
+      "pageUrl": "https://oha.to/live/play/3553986754",
+      "resolveHttp": 200,
+      "manifestHttp": 502,
+      "hls": false
+    }
+  ],
+  "checkedAt": "2026-11-15",
+  "available": true
+}

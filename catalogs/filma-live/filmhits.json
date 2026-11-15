@@ -1,0 +1,25 @@
+{
+  "name": "Film Hits",
+  "variants": [
+    {
+      "id": "3164620488",
+      "name": "FILM HITS (7)",
+      "pageUrl": "https://oha.to/live/play/3164620488",
+      "resolveHttp": 200,
+      "manifestHttp": 200,
+      "hls": true,
+      "segmentHttp": 200,
+      "segmentAccessible": true
+    },
+    {
+      "id": "2996800511",
+      "name": "FILM HITS HD (1)",
+      "pageUrl": "https://oha.to/live/play/2996800511",
+      "resolveHttp": 200,
+      "manifestHttp": 200,
+      "hls": true
+    }
+  ],
+  "checkedAt": "2026-11-15",
+  "available": true
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Tring Fantasy",
+  "variants": [
+    {
+      "id": "3700563967",
+      "name": "TRING FANTASY (1)",
+      "pageUrl": "https://oha.to/live/play/3700563967",
+      "resolveHttp": 200,
+      "manifestHttp": 502,
+      "hls": false
+    },
+    {
+      "id": "4034480733",
+      "name": "TRING FANTASY (7)",
+      "pageUrl": "https://oha.to/live/play/4034480733",
+      "resolveHttp": 200,
+      "manifestHttp": 200,
+      "hls": true,
+      "segmentHttp": 200,
+      "segmentAccessible": true
+    }
+  ],
+  "checkedAt": "2026-11-15",
+  "available": true
+}

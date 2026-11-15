@@ -1,0 +1,80 @@
+{
+  "season": {
+    "id": "1gr6bd3kXz",
+    "name": "Pa Pengesa",
+    "order": 4,
+    "metrics": {
+      "totalEpisodes": 4
+    }
+  },
+  "items": [
+    {
+      "contentId": "1gr6bd3kXz",
+      "videoId": "D5jW4YbkMZ",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Pa pengesa",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Stupcat Egjeli 2017 - Pa pengesa\"}]}",
+      "shortDescription": "Stupcat Egjeli 2017 - Pa pengesa",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrga/thumbnails/retina.jpg",
+      "duration": 357,
+      "publishedAt": "2017-10-22T20:00:00",
+      "handle": "stupcat-egjeli-2017-pa-pengesa",
+      "videoExternalId": "vjsodrga",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "1gr6bd3kXz",
+      "videoId": "qBkEPa3jR4",
+      "type": 1,
+      "name": "Stupcat Egjeli 2017 - Prapaskenat PREMIERË",
+      "description": "{}",
+      "shortDescription": "",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodrhp/thumbnails/retina.jpg",
+      "duration": 515,
+      "publishedAt": "2017-06-04T21:10:00",
+      "handle": "stupcat-egjeli-2017-prapa-skenat",
+      "videoExternalId": "vjsodrhp",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "1gr6bd3kXz",
+      "videoId": "yo69VNKdjA",
+      "type": 1,
+      "name": "Stupcat Egjeli - \"Pa Pengesa\"",
+      "description": "{}",
+      "shortDescription": "",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiwv/thumbnails/retina.jpg",
+      "duration": 662,
+      "publishedAt": "2018-04-06T19:59:00",
+      "handle": "stupcat-egjeli-pa-pengesa",
+      "videoExternalId": "vjsodiwv",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "1gr6bd3kXz",
+      "videoId": "aZjMMYdmjV",
+      "type": 1,
+      "name": "Stupcat Egjeli 2018 - Prapaskenat Episodi 61-72",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Prapaskenat dhe bloopers të sezonit të 3-të, Episodi 61 deri 72.\"}]}",
+      "shortDescription": "<p>Prapaskenat dhe bloopers t&euml; sezonit t&euml; 3-t&euml;, Episodi 61 deri 72.</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsoditj/thumbnails/retina.jpg",
+      "duration": 177,
+      "publishedAt": "2019-01-01T02:45:00",
+      "handle": "stupcat-egjeli-2018-prapaskenat-episodi-61-72",
+      "videoExternalId": "vjsoditj",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    }
+  ]
+}

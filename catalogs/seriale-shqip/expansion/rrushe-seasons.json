@@ -1,0 +1,18 @@
+[
+  {
+    "id": "QObpXKYk7V",
+    "name": "Sezoni 1",
+    "order": 1,
+    "metrics": {
+      "totalEpisodes": 20
+    }
+  },
+  {
+    "id": "Z8ykg976b4",
+    "name": "Bonus",
+    "order": 2,
+    "metrics": {
+      "totalEpisodes": 29
+    }
+  }
+]

@@ -1,0 +1,671 @@
+{
+  "id": "schengen-visa",
+  "name": "Schengen Visa",
+  "type": "group",
+  "subtitle": "Krejt epizodat",
+  "items": [
+    {
+      "id": "schengen-visa-g0",
+      "name": "Sezoni 1",
+      "type": "group",
+      "subtitle": "17 episode",
+      "items": [
+        {
+          "id": "schengen-visa-g0-e1",
+          "name": "Episodi 1",
+          "episodeNumber": 1,
+          "videoTitle": "Schengen Visa - 1. Xhejmsi thërret ",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 25 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-1-xhejmsi-therret",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodirg/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e2",
+          "name": "Episodi 2",
+          "episodeNumber": 2,
+          "videoTitle": "Schengen Visa - 2. Tu pa, tu bo",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 27 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-2-tu-pa-tu-bo",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodirb/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e3",
+          "name": "Episodi 3",
+          "episodeNumber": 3,
+          "videoTitle": "Schengen Visa - 3. Parja shkon te parja",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 31 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-3-parja-shkon-te-parja",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiqw/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e4",
+          "name": "Episodi 4",
+          "episodeNumber": 4,
+          "videoTitle": "Schengen Visa - 4. Kur t'don baballaki",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 28 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-4-kur-tdon-baballaki",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiqs/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e5",
+          "name": "Episodi 5",
+          "episodeNumber": 5,
+          "videoTitle": "Schengen Visa - 5. Sha ndodh n'kodet, met n'kodet",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 27 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-5-sha-ndodh-n-kodet-met-n-kodet",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiqo/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e6",
+          "name": "Episodi 6",
+          "episodeNumber": 6,
+          "videoTitle": "Schengen Visa - 6. Welkome to Ambasadë",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 31 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-6-welkome-to-ambasade",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiqk/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e7",
+          "name": "Episodi 7",
+          "episodeNumber": 7,
+          "videoTitle": "Schengen Visa - 7. Nana e Xhemajlit",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 36 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-7-nana-e-xhemajlit",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiqh/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e8",
+          "name": "Episodi 8",
+          "episodeNumber": 8,
+          "videoTitle": "Schengen Visa - 8. Të gjithë për një, njo për tu tanë",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 33 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-8-te-gjithe-per-nje-njo-per-tu-tane",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiqd/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e9",
+          "name": "Episodi 9",
+          "episodeNumber": 9,
+          "videoTitle": "Schengen Visa - 9. Turqi e dashni (Episod special)",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 43 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-9-turqi-e-dashni-episod-special",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodipz/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e10",
+          "name": "Episodi 10",
+          "episodeNumber": 10,
+          "videoTitle": "Schengen Visa - 10. Kërkohet një mash-kull",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 30 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-10-kerkohet-nje-mash-kull",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodipt/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e11",
+          "name": "Episodi 11",
+          "episodeNumber": 11,
+          "videoTitle": "Schengen Visa - 11. Kodeti GSI",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 34 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-11-kodeti-gsi",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodipn/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e12",
+          "name": "Episodi 12",
+          "episodeNumber": 12,
+          "videoTitle": "Schengen Visa - 12. High medet me MC Kresha",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 31 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-12-high-medet-me-mc-kresha",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodipi/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e13",
+          "name": "Episodi 13",
+          "episodeNumber": 13,
+          "videoTitle": "Schengen Visa - 13. Nëntori me femën",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 35 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-13-nentori-me-femen",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsoipxn/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e14",
+          "name": "Episodi 14",
+          "episodeNumber": 14,
+          "videoTitle": "Schengen Visa - 14. Kodi XXX",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 32 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-14-kodi-xxx",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodipb/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e15",
+          "name": "Episodi 15",
+          "episodeNumber": 15,
+          "videoTitle": "Schengen Visa - 15. Çohu Toli i nanës o",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 29 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-15-cohu-toli-i-nanes-o",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiox/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e16",
+          "name": "Episodi 16",
+          "episodeNumber": 16,
+          "videoTitle": "Schengen Visa - 16. Mençuria s'ka t'pagume",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 31 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-16-mencuria-ska-tpagume",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiot/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g0-e17",
+          "name": "Episodi 17",
+          "episodeNumber": 17,
+          "videoTitle": "Schengen Visa - 17. Parja çon ujin përpjetë",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 34 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-17-parja-con-ujin-perpjete",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodion/thumbnails/retina.jpg"
+        }
+      ]
+    },
+    {
+      "id": "schengen-visa-g1",
+      "name": "Sezoni 2",
+      "type": "group",
+      "subtitle": "26 episode",
+      "items": [
+        {
+          "id": "schengen-visa-g1-e18",
+          "name": "Episodi 18",
+          "episodeNumber": 18,
+          "videoTitle": "Schengen Visa - 18. Mo me motër mos luj",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 32 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-18-mo-me-moter-mos-luj",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodioj/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e19",
+          "name": "Episodi 19",
+          "episodeNumber": 19,
+          "videoTitle": "Schengen Visa - 19. Investimet e Tolit",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 30 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-19-investimet-e-tolit",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiof/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e20",
+          "name": "Episodi 20",
+          "episodeNumber": 20,
+          "videoTitle": "Schengen Visa - 20. The Great War",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 33 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-20-the-great-war",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiob/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e21",
+          "name": "Episodi 21",
+          "episodeNumber": 21,
+          "videoTitle": "Schengen Visa - 21. Kliçkas, guxhas, pitpitak ",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 33 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-21-klickas-guxhas-pitpitak",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodinx/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e22",
+          "name": "Episodi 22",
+          "episodeNumber": 22,
+          "videoTitle": "Schengen Visa - 22. Scary B",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 36 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-22-scary-b",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodino/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e23",
+          "name": "Episodi 23",
+          "episodeNumber": 23,
+          "videoTitle": "Schengen Visa - 23. Kërkohet sekretareshë",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 28 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-23-kerkohet-sekretareshe",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodink/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e24",
+          "name": "Episodi 24",
+          "episodeNumber": 24,
+          "videoTitle": "Schengen Visa - 24. Komploti",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 29 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-24-komploti",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsoding/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e25",
+          "name": "Episodi 25",
+          "episodeNumber": 25,
+          "videoTitle": "Schengen Visa - 25. Diki i vogël",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 29 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-25-diki-i-vogel",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodkbb/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e26",
+          "name": "Episodi 26",
+          "episodeNumber": 26,
+          "videoTitle": "Schengen Visa - 26. Fifty-Fifty",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 33 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-26-fifty-fifty",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodinb/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e27",
+          "name": "Episodi 27",
+          "episodeNumber": 27,
+          "videoTitle": "Schengen Visa - 27. Kutia e ankesave",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 32 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-27-kutia-e-ankesave",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodimx/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e28",
+          "name": "Episodi 28",
+          "episodeNumber": 28,
+          "videoTitle": "Schengen Visa - 28. Pozita e re",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 31 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-28-pozita-e-re",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodimt/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e29",
+          "name": "Episodi 29",
+          "episodeNumber": 29,
+          "videoTitle": "Schengen Visa - 29. Shantazhi",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 29 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-29-shantazhi",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodimp/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e30",
+          "name": "Episodi 30",
+          "episodeNumber": 30,
+          "videoTitle": "Schengen Visa - 30. Cili Basri?",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 32 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-30-cili-basri",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodmvt/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e31",
+          "name": "Episodi 31",
+          "episodeNumber": 31,
+          "videoTitle": "Schengen Visa - 31. Me la, me ly",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 31 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-31-me-la-me-ly",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodmvx/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e32",
+          "name": "Episodi 32",
+          "episodeNumber": 32,
+          "videoTitle": "Schengen Visa - 32. Ide biznesi",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 37 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-32-ide-biznesi",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodmwc/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e33",
+          "name": "Episodi 33",
+          "episodeNumber": 33,
+          "videoTitle": "Schengen Visa - 33. Kopi-Past",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 33 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-33-kopi-past",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodmwh/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e34",
+          "name": "Episodi 34",
+          "episodeNumber": 34,
+          "videoTitle": "Schengen Visa - 34. Ditari i Nëntorit",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 32 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-34-ditari-i-nentorit",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodimm/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e35",
+          "name": "Episodi 35",
+          "episodeNumber": 35,
+          "videoTitle": "Schengen Visa - 35. Ka ra puna",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 37 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-35-ka-ra-puna",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodimc/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e36",
+          "name": "Episodi 36",
+          "episodeNumber": 36,
+          "videoTitle": "Schengen Visa - 36. Lulemall",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 36 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-36-lulemall",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsoimra/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e37",
+          "name": "Episodi 37",
+          "episodeNumber": 37,
+          "videoTitle": "Schengen Visa - 37. Simpatia e re",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 27 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-37-simpatia-e-re",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodilr/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e38",
+          "name": "Episodi 38",
+          "episodeNumber": 38,
+          "videoTitle": "Schengen Visa - 38. Rrogat nesër",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 32 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-38-rrogat-neser",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodilh/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e39",
+          "name": "Episodi 39",
+          "episodeNumber": 39,
+          "videoTitle": "Schengen Visa - 39. A je ti?",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 34 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-39-a-je-ti",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodilb/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e40",
+          "name": "Episodi 40",
+          "episodeNumber": 40,
+          "videoTitle": "Schengen Visa - 40. Greva",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 33 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-40-greva",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodikr/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e41",
+          "name": "Episodi 41",
+          "episodeNumber": 41,
+          "videoTitle": "Schengen Visa - 41. Provim me shkrim",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 32 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-41-provim-me-shkrim",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodikh/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e42",
+          "name": "Episodi 42",
+          "episodeNumber": 42,
+          "videoTitle": "Schengen Visa - 42. Surpriza",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 32 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-42-surpriza",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodijy/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g1-e43",
+          "name": "Episodi 43",
+          "episodeNumber": 43,
+          "videoTitle": "Schengen Visa - 43. Afërdita",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 27 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-43-aferdita",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodigu/thumbnails/retina.jpg"
+        }
+      ]
+    },
+    {
+      "id": "schengen-visa-g2",
+      "name": "Sezoni 3",
+      "type": "group",
+      "subtitle": "15 episode",
+      "items": [
+        {
+          "id": "schengen-visa-g2-e44",
+          "name": "Episodi 44",
+          "episodeNumber": 44,
+          "videoTitle": "Schengen Visa - 44. Futja kepën",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 35 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-44-futja-kepen",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodicq/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e45",
+          "name": "Episodi 45",
+          "episodeNumber": 45,
+          "videoTitle": "Schengen Visa - 45. Ndalohen t'shamet",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 35 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-45-ndalohen-t-shamet",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodica/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e46",
+          "name": "Episodi 46",
+          "episodeNumber": 46,
+          "videoTitle": "Schengen Visa - 46. Seanca",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 41 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-46-seanca",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodibs/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e47",
+          "name": "Episodi 47",
+          "episodeNumber": 47,
+          "videoTitle": "Schengen Visa - 47. Bukla",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 33 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-47-bukla",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodibi/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e48",
+          "name": "Episodi 48",
+          "episodeNumber": 48,
+          "videoTitle": "Schengen Visa - 48. Anger management",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 36 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-48-anger-management",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiao/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e49",
+          "name": "Episodi 49",
+          "episodeNumber": 49,
+          "videoTitle": "Schengen Visa - 49. Rri n'shpi",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 26 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-49-rri-n-shpi",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiab/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e50",
+          "name": "Episodi 50",
+          "episodeNumber": 50,
+          "videoTitle": "Schengen Visa - 50. Schengentina",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 28 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-50-schengentina",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhzb/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e51",
+          "name": "Episodi 51",
+          "episodeNumber": 51,
+          "videoTitle": "Schengen Visa - 51. Pasojat",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 34 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-51-pasojat",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhys/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e52",
+          "name": "Episodi 52",
+          "episodeNumber": 52,
+          "videoTitle": "Schengen Visa - 52. Schengen Pizza",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 35 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-52-schengen-pizza",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhyd/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e53",
+          "name": "Episodi 53",
+          "episodeNumber": 53,
+          "videoTitle": "Schengen Visa - 53. Zërat",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 32 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-53-zerat-2",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhxe/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e54",
+          "name": "Episodi 54",
+          "episodeNumber": 54,
+          "videoTitle": "Schengen Visa - 54. Xhejmsi apo Genci?",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 36 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-54-xhejmsi-apo-genci",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhwn/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e55",
+          "name": "Episodi 55",
+          "episodeNumber": 55,
+          "videoTitle": "Schengen Visa - 55. Zanati i vjetër",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 33 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-55-zanati-i-vjeter",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhvy/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e56",
+          "name": "Episodi 56",
+          "episodeNumber": 56,
+          "videoTitle": "Schengen Visa - 56. Eksperimenti",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 30 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-56-eksperimenti",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhve/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e57",
+          "name": "Episodi 57",
+          "episodeNumber": 57,
+          "videoTitle": "Schengen Visa - 57. What happens in Schengen, stays in Schengen",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 30 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-57-what-happens-in-schengen-stays-in-schengen",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhum/thumbnails/retina.jpg"
+        },
+        {
+          "id": "schengen-visa-g2-e58",
+          "name": "Episodi 58",
+          "episodeNumber": 58,
+          "videoTitle": "Schengen Visa - 58. Happy End",
+          "state": "vod",
+          "subtitle": "Gjirafa Studios · 30 min",
+          "pageUrl": "https://video.gjirafa.com/schengen-visa-58-happy-end",
+          "type": "gjirafa_episode",
+          "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhue/thumbnails/retina.jpg"
+        }
+      ]
+    }
+  ],
+  "icon": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodirg/thumbnails/retina.jpg"
+}

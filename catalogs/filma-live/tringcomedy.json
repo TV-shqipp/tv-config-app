@@ -1,0 +1,17 @@
+{
+  "name": "Tring Comedy",
+  "variants": [
+    {
+      "id": "762506641",
+      "name": "TRING COMEDY (7)",
+      "pageUrl": "https://oha.to/live/play/762506641",
+      "resolveHttp": 200,
+      "manifestHttp": 200,
+      "hls": true,
+      "segmentHttp": 200,
+      "segmentAccessible": true
+    }
+  ],
+  "checkedAt": "2026-11-15",
+  "available": true
+}

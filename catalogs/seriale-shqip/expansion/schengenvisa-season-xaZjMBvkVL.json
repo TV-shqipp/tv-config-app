@@ -1,0 +1,301 @@
+{
+  "season": {
+    "id": "xaZjMBvkVL",
+    "name": "Sezoni 3",
+    "order": 2,
+    "metrics": {
+      "totalEpisodes": 17
+    }
+  },
+  "items": [
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "D5jW5VEwpM",
+      "type": 1,
+      "name": "Schengen Visa - 44. Futja kepën",
+      "description": "{\"blocks\": [{\"contentHTML\": \"schengeProdhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>schengeProdhim i GjirafaStudios&nbsp;</p>\r\n\r\n<p><br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.</p>\r\n\r\n<p><br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodicq/thumbnails/retina.jpg",
+      "duration": 2114,
+      "publishedAt": "2020-02-23T19:55:00",
+      "handle": "schengen-visa-44-futja-kepen",
+      "videoExternalId": "vjsodicq",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "ra6lJbYOkg",
+      "type": 1,
+      "name": "Schengen Visa - 45. Ndalohen t'shamet",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Prodhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>Prodhim i GjirafaStudios&nbsp;</p>\r\n\r\n<p><br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.</p>\r\n\r\n<p><br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodica/thumbnails/retina.jpg",
+      "duration": 2123,
+      "publishedAt": "2020-03-01T19:55:00",
+      "handle": "schengen-visa-45-ndalohen-t-shamet",
+      "videoExternalId": "vjsodica",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "94penD8B6g",
+      "type": 1,
+      "name": "Schengen Visa - 46. Seanca",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Prodhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>Prodhim i GjirafaStudios&nbsp;</p>\r\n\r\n<p><br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodibs/thumbnails/retina.jpg",
+      "duration": 2442,
+      "publishedAt": "2020-03-08T19:55:00",
+      "handle": "schengen-visa-46-seanca",
+      "videoExternalId": "vjsodibs",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "QAkd3O8Xjd",
+      "type": 1,
+      "name": "Schengen Visa - 47. Bukla",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Prodhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>Prodhim i GjirafaStudios&nbsp;</p>\r\n\r\n<p><br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodibi/thumbnails/retina.jpg",
+      "duration": 2006,
+      "publishedAt": "2020-03-15T19:55:00",
+      "handle": "schengen-visa-47-bukla",
+      "videoExternalId": "vjsodibi",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "Pap8Gg4Gkm",
+      "type": 1,
+      "name": "Schengen Visa - 48. Anger management",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Prodhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>Prodhim i GjirafaStudios&nbsp;</p>\r\n\r\n<p><br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiao/thumbnails/retina.jpg",
+      "duration": 2148,
+      "publishedAt": "2020-03-22T19:55:00",
+      "handle": "schengen-visa-48-anger-management",
+      "videoExternalId": "vjsodiao",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "WPkzV395kY",
+      "type": 1,
+      "name": "Schengen Visa - 49. Rri n'shpi",
+      "description": "{\"blocks\": [{\"contentHTML\": \"*Ky episod është xhiruar nga shtëpitë për shkak të situatës së pandemisë.\\n\\nRri në shtëpi, ruajeni shëndetin!\\n\\nProdhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>*Ky episod &euml;sht&euml; xhiruar nga sht&euml;pit&euml; p&euml;r shkak&nbsp;t&euml; situat&euml;s s&euml; pandemis&euml;.<br />\r\nRri n&euml; sht&euml;pi, ruajeni sh&euml;ndetin!<br />\r\n<br />\r\nProdhim i GjirafaStudios&nbsp;<br />\r\n<br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodiab/thumbnails/retina.jpg",
+      "duration": 1556,
+      "publishedAt": "2020-03-29T19:55:00",
+      "handle": "schengen-visa-49-rri-n-shpi",
+      "videoExternalId": "vjsodiab",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "qBkE21KKpR",
+      "type": 1,
+      "name": "Schengen Visa - 50. Schengentina",
+      "description": "{\"blocks\": [{\"contentHTML\": \"*Ky episod është xhiruar nga shtëpitë për shkak të situatës së pandemisë.\\n\\nRri në shtëpi, ruajeni shëndetin!\\n\\nProdhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>*Ky episod &euml;sht&euml; xhiruar nga sht&euml;pit&euml; p&euml;r shkak&nbsp;t&euml; situat&euml;s s&euml; pandemis&euml;.<br />\r\nRri n&euml; sht&euml;pi, ruajeni sh&euml;ndetin!<br />\r\n<br />\r\nProdhim i GjirafaStudios&nbsp;<br />\r\n<br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhzb/thumbnails/retina.jpg",
+      "duration": 1667,
+      "publishedAt": "2020-04-05T19:55:00",
+      "handle": "schengen-visa-50-schengentina",
+      "videoExternalId": "vjsodhzb",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "7Kj58KEX6a",
+      "type": 1,
+      "name": "Schengen Visa - 51. Pasojat",
+      "description": "{\"blocks\": [{\"contentHTML\": \"*Ky episod është xhiruar nga shtëpitë për shkak të situatës së pandemisë.\\n\\nRri në shtëpi, ruajeni shëndetin!\\n\\nProdhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>*Ky episod &euml;sht&euml; xhiruar nga sht&euml;pit&euml; p&euml;r shkak&nbsp;t&euml; situat&euml;s s&euml; pandemis&euml;.<br />\r\nRri n&euml; sht&euml;pi, ruajeni sh&euml;ndetin!<br />\r\n<br />\r\nProdhim i GjirafaStudios&nbsp;<br />\r\n<br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhys/thumbnails/retina.jpg",
+      "duration": 2012,
+      "publishedAt": "2020-04-12T19:55:00",
+      "handle": "schengen-visa-51-pasojat",
+      "videoExternalId": "vjsodhys",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "X7kQLVEejx",
+      "type": 1,
+      "name": "Schengen Visa - 52. Schengen Pizza",
+      "description": "{\"blocks\": [{\"contentHTML\": \"*Ky episod është xhiruar nga shtëpitë për shkak të situatës së pandemisë.\\n\\nRri në shtëpi, ruajeni shëndetin!\\n\\nProdhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>*Ky episod &euml;sht&euml; xhiruar nga sht&euml;pit&euml; p&euml;r shkak&nbsp;t&euml; situat&euml;s s&euml; pandemis&euml;.<br />\r\nRri n&euml; sht&euml;pi, ruajeni sh&euml;ndetin!<br />\r\n<br />\r\nProdhim i GjirafaStudios&nbsp;<br />\r\n<br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhyd/thumbnails/retina.jpg",
+      "duration": 2093,
+      "publishedAt": "2020-04-19T19:55:00",
+      "handle": "schengen-visa-52-schengen-pizza",
+      "videoExternalId": "vjsodhyd",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "X7kQLVrQjx",
+      "type": 1,
+      "name": "Schengen Visa - 53. Zërat",
+      "description": "{\"blocks\": [{\"contentHTML\": \"*Ky episod është xhiruar nga shtëpitë për shkak të situatës së pandemisë.\\n\\nRri në shtëpi, ruajeni shëndetin!\\n\\nAbonuesit e Premium kanë mundesinë të e shohin episodin e ri që nga e premtja, ora 20:00\\n\\nProdhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>*Ky episod &euml;sht&euml; xhiruar nga sht&euml;pit&euml; p&euml;r shkak&nbsp;t&euml; situat&euml;s s&euml; pandemis&euml;.<br />\r\nRri n&euml; sht&euml;pi, ruajeni sh&euml;ndetin!<br />\r\nAbonuesit e Premium kan&euml; mundesin&euml; t&euml; e shohin episodin e ri q&euml; nga e premtja, ora 20:00<br />\r\n<br />\r\nProdhim i GjirafaStudios&nbsp;</p>\r\n\r\n<p><br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhxe/thumbnails/retina.jpg",
+      "duration": 1940,
+      "publishedAt": "2020-04-26T19:55:00",
+      "handle": "schengen-visa-53-zerat-2",
+      "videoExternalId": "vjsodhxe",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "vG63dm2Ljg",
+      "type": 1,
+      "name": "Schengen Visa - 54. Xhejmsi apo Genci?",
+      "description": "{\"blocks\": [{\"contentHTML\": \"*Ky episod është xhiruar nga shtëpitë për shkak të situatës së pandemisë.\\n\\nRri në shtëpi, ruajeni shëndetin!\\n\\nAbonuesit e Premium kanë mundesinë të e shohin episodin e ri që nga e premtja, ora 20:00\\n\\nProdhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>*Ky episod &euml;sht&euml; xhiruar nga sht&euml;pit&euml; p&euml;r shkak&nbsp;t&euml; situat&euml;s s&euml; pandemis&euml;.<br />\r\nRri n&euml; sht&euml;pi, ruajeni sh&euml;ndetin!<br />\r\n<em>Abonuesit e Premium kan&euml; mundesin&euml; t&euml; e shohin episodin e ri q&euml; nga e premtja, ora 20:00</em><br />\r\n<br />\r\nProdhim i GjirafaStudios&nbsp;</p>\r\n\r\n<p><br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhwn/thumbnails/retina.jpg",
+      "duration": 2152,
+      "publishedAt": "2020-05-03T19:55:00",
+      "handle": "schengen-visa-54-xhejmsi-apo-genci",
+      "videoExternalId": "vjsodhwn",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "Qz6od4Zojq",
+      "type": 1,
+      "name": "Schengen Visa - 55. Zanati i vjetër",
+      "description": "{\"blocks\": [{\"contentHTML\": \"*Ky episod është xhiruar nga shtëpitë për shkak të situatës së pandemisë.\\n\\nRri në shtëpi, ruajeni shëndetin!\\n\\nAbonuesit e Premium kanë mundesinë të e shohin episodin e ri që nga e premtja, ora 20:00\\n\\nProdhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>*Ky episod &euml;sht&euml; xhiruar nga sht&euml;pit&euml; p&euml;r shkak&nbsp;t&euml; situat&euml;s s&euml; pandemis&euml;.<br />\r\nRri n&euml; sht&euml;pi, ruajeni sh&euml;ndetin!<br />\r\n<em>Abonuesit e Premium kan&euml; mundesin&euml; t&euml; e shohin episodin e ri q&euml; nga e premtja, ora 20:00</em><br />\r\n<br />\r\nProdhim i GjirafaStudios&nbsp;</p>\r\n\r\n<p><br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhvy/thumbnails/retina.jpg",
+      "duration": 1971,
+      "publishedAt": "2020-05-10T19:55:00",
+      "handle": "schengen-visa-55-zanati-i-vjeter",
+      "videoExternalId": "vjsodhvy",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "QAkd3a82jd",
+      "type": 1,
+      "name": "Schengen Visa - 56. Eksperimenti",
+      "description": "{\"blocks\": [{\"contentHTML\": \"*Ky episod është xhiruar nga shtëpitë për shkak të situatës së pandemisë.\\n\\nRri në shtëpi, ruajeni shëndetin!\\n\\nAbonuesit e Premium kanë mundesinë të e shohin episodin e ri që nga e premtja, ora 20:00\\n\\nProdhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>*Ky episod &euml;sht&euml; xhiruar nga sht&euml;pit&euml; p&euml;r shkak&nbsp;t&euml; situat&euml;s s&euml; pandemis&euml;.<br />\r\nRri n&euml; sht&euml;pi, ruajeni sh&euml;ndetin!<br />\r\n<em>Abonuesit e Premium kan&euml; mundesin&euml; t&euml; e shohin episodin e ri q&euml; nga e premtja, ora 20:00</em><br />\r\n<br />\r\nProdhim i GjirafaStudios&nbsp;</p>\r\n\r\n<p><br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhve/thumbnails/retina.jpg",
+      "duration": 1813,
+      "publishedAt": "2020-05-17T19:55:00",
+      "handle": "schengen-visa-56-eksperimenti",
+      "videoExternalId": "vjsodhve",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "aZjMM1QvjV",
+      "type": 1,
+      "name": "Schengen Visa - 57. What happens in Schengen, stays in Schengen",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Ky episod është xhiruar duke respektuar masat mbrojtëse kundër COVID-19\\n\\nRri në shtëpi, ruajeni shëndetin!\\n\\nAbonuesit e Premium kanë mundesinë të e shohin episodin e ri që nga e premtja, ora 20:00\\n\\nProdhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>Ky episod &euml;sht&euml; xhiruar duke respektuar masat mbrojt&euml;se kund&euml;r COVID-19<br />\r\nRri n&euml; sht&euml;pi, ruajeni sh&euml;ndetin!<br />\r\n<em>Abonuesit e Premium kan&euml; mundesin&euml; t&euml; e shohin episodin e ri q&euml; nga e premtja, ora 20:00</em><br />\r\n<br />\r\nProdhim i GjirafaStudios&nbsp;</p>\r\n\r\n<p><br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhum/thumbnails/retina.jpg",
+      "duration": 1829,
+      "publishedAt": "2020-05-24T19:55:00",
+      "handle": "schengen-visa-57-what-happens-in-schengen-stays-in-schengen",
+      "videoExternalId": "vjsodhum",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "9bkA5JX1kg",
+      "type": 1,
+      "name": "Schengen Visa - 58. Happy End",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Ky episod është xhiruar duke respektuar masat mbrojtëse kundër COVID-19\\n\\nRri në shtëpi, ruajeni shëndetin!\\n\\nAbonuesit e Premium kanë mundesinë të e shohin episodin e ri që nga e premtja, ora 20:00\\n\\nProdhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>Ky episod &euml;sht&euml; xhiruar duke respektuar masat mbrojt&euml;se kund&euml;r COVID-19<br />\r\nRri n&euml; sht&euml;pi, ruajeni sh&euml;ndetin!<br />\r\n<em>Abonuesit e Premium kan&euml; mundesin&euml; t&euml; e shohin episodin e ri q&euml; nga e premtja, ora 20:00</em><br />\r\n<br />\r\nProdhim i GjirafaStudios&nbsp;<br />\r\n<br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhue/thumbnails/retina.jpg",
+      "duration": 1827,
+      "publishedAt": "2020-05-31T19:55:00",
+      "handle": "schengen-visa-58-happy-end",
+      "videoExternalId": "vjsodhue",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "D5jW5bl7pM",
+      "type": 1,
+      "name": "Schengen Visa - Best of Sezoni 3, Pjesa 1",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Gjeni përmbledhjet e pjesëve më të mira nga shumë tjera të sezonit 3 të Schengen Visa.\\n\\nMbajeni distancen, ruajeni shëndetin!\\n\\nProdhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>Gjeni p&euml;rmbledhjet e pjes&euml;ve m&euml; t&euml; mira nga shum&euml; tjera t&euml; sezonit 3 t&euml; Schengen Visa.<br />\r\nMbajeni distancen, ruajeni sh&euml;ndetin!<br />\r\n<br />\r\nProdhim i GjirafaStudios&nbsp;<br />\r\n<br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhtj/thumbnails/retina.jpg",
+      "duration": 1871,
+      "publishedAt": "2020-06-21T19:55:00",
+      "handle": "schengen-visa-best-of-sezoni-3-pjesa-1",
+      "videoExternalId": "vjsodhtj",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    },
+    {
+      "contentId": "xaZjMBvkVL",
+      "videoId": "QAkd3Pvxjd",
+      "type": 1,
+      "name": "Schengen Visa - Best of Sezoni 3, Pjesa 2",
+      "description": "{\"blocks\": [{\"contentHTML\": \"Gjeni përmbledhjet e pjesëve më të mira nga shumë tjera të sezonit 3 të Schengen Visa.\\n\\nMbajeni distancen, ruajeni shëndetin!\\n\\nProdhim i GjirafaStudios\\n\\nNë role: Ernest Malazogu, Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.\\n\\nRegjia: Genc Berisha\\n\\nSkenari: Agon Myftari\"}]}",
+      "shortDescription": "<p>Gjeni p&euml;rmbledhjet e pjes&euml;ve m&euml; t&euml; mira nga shum&euml; tjera t&euml; sezonit 3 t&euml; Schengen Visa.<br />\r\nMbajeni distancen, ruajeni sh&euml;ndetin!<br />\r\n<br />\r\nProdhim i GjirafaStudios&nbsp;<br />\r\n<br />\r\nN&euml; role:&nbsp;Ernest Malazogu,&nbsp;Shengyl Ismaili, Lulzim Bucolli, Granit Uka, Semira Latifi, Rifat Smani, Arta Selimi.<br />\r\n<br />\r\nRegjia: Genc Berisha<br />\r\nSkenari: Agon Myftari</p>\r\n",
+      "thumbnail": "https://cdn.vpplayer.tech/agmipoat/encode/vjsodhtf/thumbnails/retina.jpg",
+      "duration": 2052,
+      "publishedAt": "2020-06-28T19:55:00",
+      "handle": "schengen-visa-best-of-sezoni-3-pjesa-2",
+      "videoExternalId": "vjsodhtf",
+      "payToViewConfig": {
+        "isLocked": false,
+        "payToViewProductId": null
+      }
+    }
+  ]
+}
